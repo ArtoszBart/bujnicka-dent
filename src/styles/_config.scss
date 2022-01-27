@@ -7,3 +7,17 @@ $accent-color: #18b6d2;
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: 'Montserrat',sans-serif;
+}
+
+@mixin transition-ease {
+	transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md {
+	@media screen and (max-width: 860px) {
+		@content;
+	}
+}

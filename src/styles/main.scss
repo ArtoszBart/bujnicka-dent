@@ -1,6 +1,37 @@
 @use 'config' as *;
-
+@use 'header';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&amp;family=Playfair+Display:ital@0;1&amp;display=swap');
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	width: 100%;
+
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		z-index: 2;
+		padding: 1rem 3rem;
+		background-color: rgba($secondary-color, 0);
+	}
+
+	.menu{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+	@include transition-ease;
+
+	&:hover {
+		color: $accent-color;
+	}
+}
 
 .main-page {
 	display: flex;

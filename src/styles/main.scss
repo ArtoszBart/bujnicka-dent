@@ -79,6 +79,19 @@ a {
 		}
 	}
 }
+@include media-md {
+	.main-page{
+		padding: 0;
+		
+		&-device {
+			max-width: 520px;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+	}
+}
 
 .section {
 	position: relative;

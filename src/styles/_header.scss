@@ -86,11 +86,30 @@
 	}
 }
 
+// TABLET MENU
+@include media-td {
+	.menu-nav-item {
+		@for $ii from 2 through 6 {
+			&:nth-child(#{$ii}) {
+				padding-left: .7rem;
+			}
+		}
+	}
+	.menu-nav-link {
+		font-size: 1.2rem;
+		letter-spacing: -px;
+	}
+}
+
 // MOBILE MENU
 @include media-md {
 	header {
 		.header-container {
-			padding: 1rem 1.5rem !important;
+			padding: 0rem 0rem !important;
+
+			.logo {
+				transform: scale(0.6);
+			}
 		}
 	}
 

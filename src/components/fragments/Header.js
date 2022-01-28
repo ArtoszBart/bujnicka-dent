@@ -1,11 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import Navigation from './Navigation';
 import logo from './../../img/logo.png';
 
 function Header() {
+	const [navbar, setNavbar] = useState(false);
+
+	console.log(window.innerHeight);
+	const changeNavbar = () => {
+		if (window.scrollY >= 149) {
+			setNavbar(true);
+		} else {
+			setNavbar(false);
+		}
+	};
+
+	window.addEventListener('scroll', changeNavbar);
+
 	return (
 		<header>
-			<div className="header-container">
+			<div className={'header-container' + (navbar ? ' active' : '')}>
 				<div className="logo">
 					<a href="/">
 						<img src={logo} alt="logo" />

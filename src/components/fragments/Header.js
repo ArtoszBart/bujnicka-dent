@@ -5,7 +5,6 @@ import logo from './../../img/logo.png';
 function Header() {
 	const [navbar, setNavbar] = useState(false);
 
-	console.log(window.innerHeight);
 	const changeNavbar = () => {
 		if (window.scrollY >= 149) {
 			setNavbar(true);

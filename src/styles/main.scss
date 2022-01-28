@@ -76,9 +76,11 @@ a {
 			padding-bottom: 1rem;
 			margin-bottom: 1rem;
 			border-bottom: 2px solid $primary-color;
+			white-space: pre-line;
 		}
 	}
 }
+
 @include media-md {
 	.main-page{
 		padding: 0;

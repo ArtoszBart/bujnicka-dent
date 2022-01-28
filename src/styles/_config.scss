@@ -1,6 +1,7 @@
 $primary-color: #fff;
 $secondary-color: #000;
 $accent-color: #18b6d2;
+$slow-trnsition-time: 0.6s;
 
 * {
 	box-sizing: border-box;
@@ -16,6 +17,10 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 
+@mixin transition-ease-slow {
+	transition: all $slow-trnsition-time ease-in-out;
+}
+
 @mixin media-md {
 	@media screen and (max-width: 970px) {
 		@content;
@@ -25,5 +30,11 @@ body {
 @mixin media-td {
 	@media screen and (max-width: 1200px) {
 		@content;
+	}
+}
+
+@keyframes pulse {
+	100% { 
+		box-shadow: 0 0 0 0 $accent-color;
 	}
 }

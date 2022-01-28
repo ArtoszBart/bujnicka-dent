@@ -10,7 +10,8 @@ function MainPage() {
 				<div className="main-page-device">
 					<h1><i>{device1st}</i> {device2nd}</h1>
 				</div>
-				<a href="#section1" className="scroll-down"><i className="fas fa-chevron-down"></i></a>
+				<a className="button" href="!#">Zapisz się na wizytę</a>
+				<a className="scroll-down" href="#section1"><i className="fas fa-chevron-down"></i></a>
 			</main>
 			<section className="section" id="section1">
 

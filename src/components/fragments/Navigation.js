@@ -19,7 +19,7 @@ function Navigation() {
 			<nav className={'nav' + (open ? ' open' : '')}>
 				<ul className={'menu-nav' + (open ? ' open' : '')}>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="!#" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+						<Link to="/about" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
 							O nas
 						</Link>
 					</li>

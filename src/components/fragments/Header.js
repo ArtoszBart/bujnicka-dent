@@ -17,7 +17,7 @@ function Header() {
 
 	return (
 		<header>
-			<div className={'header-container' + (navbar ? ' active' : '')}>
+			<div className={'header-container' + (navbar ? ' navbar-dark' : '')}>
 				<div className="logo">
 					<a href="/">
 						<img src={logo} alt="logo" />

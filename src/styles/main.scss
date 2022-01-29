@@ -23,6 +23,31 @@ header {
 	}
 }
 
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 1rem;
+	white-space: pre-line;
+}
+
+h1 {
+	font-weight: 400;
+	color: $primary-color;
+	font-size: 3vw;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 3vw;
+}
+
+p {
+	font-weight: 300;
+}
+
+p.subheadder {
+	text-transform: uppercase;
+}
+
 .scroll-down {
 	position: fixed;
 	bottom: 1rem;
@@ -65,7 +90,37 @@ a.button {
 	}
 }
 
-.main-page {
+#main-page {
+	padding-top: 100vh;
+	.banner {
+		height: 100vh;
+		background:
+		linear-gradient(
+			to right,
+			rgba($secondary-color, 0.5),
+			rgba($secondary-color, 0.3)
+		),
+		url('../img/main_view.jpg') center bottom no-repeat;
+		background-size: cover;
+	}
+}
+
+#about {
+	padding-top: 60vh;
+	.banner {
+		height: 60vh;
+		background:
+		linear-gradient(
+			to right,
+			rgba($secondary-color, 0.5),
+			rgba($secondary-color, 0.3)
+		),
+		url('../img/turtle.jpg') no-repeat;
+		background-size: cover;
+	}
+}
+
+.banner {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -74,39 +129,24 @@ a.button {
 	flex-direction: column;
 	justify-content: center;
 	padding: 0 5rem;
-	height: 100vh;
 	align-items: center;
 	text-align: center;
-	background:
-		linear-gradient(
-			to right,
-			rgba($secondary-color, 0.5),
-			rgba($secondary-color, 0.3)
-		),
-		url('../img/main_view.jpg') center bottom no-repeat;
-	background-size: cover;
 
-	&-device {
+	&-title {
 		max-width: 50vw;
 		margin: 10vh 0;
+
 		h1 {
-			font-family: 'Playfair Display', serif;
-			font-weight: 400;
-			color: $primary-color;
-			font-size: 3vw;
-			padding-bottom: 1rem;
-			margin-bottom: 1rem;
 			border-bottom: 2px solid $primary-color;
-			white-space: pre-line;
 		}
 	}
 }
 
 @include media-md {
-	.main-page{
+	.banner{
 		padding: 0;
 		
-		&-device {
+		&-title {
 			max-width: 520px;
 		}
 
@@ -116,17 +156,17 @@ a.button {
 	}
 }
 
-.section {
+section {
 	position: relative;
 	height: 100vh;
 	background-color: $primary-color;
 }
 
-.main-container {
-	padding-top: 100vh;
+.main-wrapper {
+	
 }
 
-.active {
+.navbar-dark {
 	background-color: rgba($secondary-color, 0.7) !important;
 	padding: 0 3rem !important;
 	@include transition-ease;
@@ -140,3 +180,34 @@ a.button {
 		font-size: 1.2rem;
 	}
 }
+
+// .page {
+// 	padding-top: 60vh;
+// 	&-banner {
+// 		position: fixed;
+// 		top: 0;
+// 		width: 100%;
+
+// 		&-photo {
+// 			width: 100%;
+// 		}
+// 	}
+
+// 	&-content {
+// 		position: relative;
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: center;
+// 		padding: 5rem 10vw;
+// 		background-color: white;
+// 	}
+// }
+
+// .employee {
+// 	display: flex;
+	
+// 	img {
+// 		max-width: 100%;
+// 		height:auto
+// 	}
+// }

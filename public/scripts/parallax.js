@@ -3,7 +3,7 @@ var velocity = 0.5;
 
 function update() {
 	var pos = $(window).scrollTop();
-	var $element = $('.main-page');
+	var $element = $('.banner, .page-banner');
 	$($element).css('transform', 'translateY(-' + Math.round(pos * velocity) + 'px)');
 };
 

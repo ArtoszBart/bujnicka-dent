@@ -5,6 +5,8 @@ import {
 } from 'react-router-dom';
 
 import Header from './components/fragments/Header';
+import Footer from './components/fragments/Footer';
+
 import MainPage from './components/pages/MainPage';
 import About from './components/pages/About';
 
@@ -16,6 +18,7 @@ function App() {
         <Route exact path='/' element={<MainPage />} />
         <Route exact path='/about' element={<About />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

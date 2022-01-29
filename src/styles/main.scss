@@ -40,13 +40,6 @@ h2 {
 	font-size: 3vw;
 }
 
-p {
-	font-weight: 300;
-	font-size: 18px;
-	letter-spacing: 0.3px;
-	width: 100%;
-}
-
 b {
 	font-weight: 500;
 }
@@ -66,7 +59,6 @@ b {
 
 a.text-link {
 	color: $primary-color;
-	text-decoration: none;
 	@include transition-ease;
 
 	&:hover {
@@ -161,8 +153,15 @@ a.button {
 
 section {
 	position: relative;
-	height: 100vh;
 	background-color: $primary-color;
+
+	p {
+		font-weight: 300;
+		font-size: 18px;
+		letter-spacing: 0.3px;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
 }
 
 .navbar-dark {
@@ -187,10 +186,6 @@ section {
 	align-items: center;
 	padding: 5rem 10vw;
 	background-color: white;	
-}
-
-p {
-	margin-bottom: 1rem;
 }
 
 article {
@@ -244,5 +239,18 @@ article.history {
 		color: $accent-color;
 		text-transform: uppercase;
 		margin-bottom: 3rem;
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: $footer-color;
+	color: $primary-color;
+	padding: 2rem;
+
+	p {
+		margin: 0 1rem;
+		text-align: center;
 	}
 }

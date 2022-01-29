@@ -1,56 +1,74 @@
 import '../../styles/main.scss';
 import Banner from '../../img/turtle.jpg';
 import PhotoBujnicka from '../../img/bujnicka-profile.jpg';
+import PhotoMorda from '../../img/morda.PNG';
 
 function About() {
 
 	return (
 		<main className="main-wrapper" id="about" role="main">
 			<div className="banner">
-				{/* <img src={Banner} alt="banner" className="page-banner-photo" /> */}
+				<div className="banner-title">
+					<h1><i>O nas</i></h1>
+				</div>
 			</div>
 			<section className="page-content">
-				<div className="employee">
-					<img src={PhotoBujnicka} alt="Magdalena Bujnicka" />
+				<article className="history">
+					<h2>Historia</h2>
+					<p>Historia lekarska w naszej rodzinie zaczęła się w 1953 roku.
+						Moja mama Maria Bałuta, rozpoczęła studia na Wydziale Stomatologicznym Akademii Medycznej w Gdańsku.
+						Po studiach połączyła swoją lekarską pasję z doktorem weterynarii Bohdanem Bujnickim,
+						który w 1959 roku ukończył Wydział Weterynarii w Warszawie.
+					</p><p>
+						Pierwszy gabinet powstał w 1966 roku na Pomorzu Środkowym,
+						a ja wyrastałam w jego sąsiedztwie w atmosferze niesienia pomocy pacjentom.
+						Od wczesnego dzieciństwa wiedziałam, że moim powołaniem jest... również być lekarzem!
+					</p>
+					<p>
+						Drugi gabinet powstał w 1993 roku w Warszawie.
+					</p>
+					<div className="history-pictures">
+						<div className="history-pictures-single">
+							<img src={PhotoMorda} className="employee-picture" alt="Maria Bałuta" />
+							<span>Maria Bałuta</span>
+						</div>
+						<div className="history-pictures-single">
+							<img src={PhotoMorda} className="employee-picture" alt="Bohdan Bujnicki" />
+							<span>Bohdan Bujnicki</span>
+						</div>
+					</div>
+				</article>
+				<article className="employee">
+					<div className="img">
+						<img src={PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
+					</div>
 					<div className="employee-about">
 						<h2>Magdalena Bujnicka</h2>
 						<p className="subheadder">Lekarz stomatolog</p>
-						<p>Zaczęła się w 1953 roku.
-							{/* RODZICE */}
-							Moja mama Maria Bałuta (na zdjęciu pierwsza z lewej w górnym rzędzie),
-							rozpoczęła studia na Wydziale Stomatologicznym Akademii Medycznej w Gdańsku.
-							Po studiach połączyła swoją lekarską pasję z lekarzem weterynarii Bohdanem Bujnickim (na zdjęciu w górnym rzędzie przy cyfrze 1),
-							który w 1959 roku ukończył Wydział Weterynarii w Warszawie.
-							{/* DORASTANIE */}
-						</p><p>
-							Pierwszy gabinet powstał w 1966 roku na Pomorzu Środkowym,
-							a ja wyrastałam w jego sąsiedztwie w atmosferze niesienia pomocy pacjentom.
-							Od wczesnego dzieciństwa wiedziałam, że moim powołaniem jest... również być lekarzem!
-							{/* O MNIE */}
-						</p><p>
+						<p>
 							Jestem absolwentką Pomorskiej Akademii Medycznej w Szczecinie i od pierwszych lat studiów
-							mogłam liczyć na wsparcie oraz poparte wieloletnim doświadczeniem cenne rady rodziców lekarzy.
-							Wpojono mi, że dobro pacjenta jest najwyższą wartością.
-							Drugi gabinet powstał w 1993 roku w Warszawie.
-							{/* OFERTA */}
-						</p><p>
-							Moim pacjentom zapewniam całkowitą pomoc stomatologiczną,
+							mogłam liczyć na wsparcie oraz, poparte wieloletnim doświadczeniem, cenne rady rodziców lekarzy.
+							Wpojono mi, że <b>dobro pacjenta jest najwyższą wartością</b>.
+						</p>
+						<p>
+							Moim pacjentom zapewniam <b>całkowitą pomoc stomatologiczną</b>,
 							począwszy od profilaktyki, aż do uzupełnienia braków zębowych.
-							Zawsze projektuję kilka rozwiązań, dopasowanych do możliwości finansowych pacjenta.
+							Zawsze projektuję kilka rozwiązań, <b>dopasowanych do możliwości finansowych pacjenta</b>.
 							Umiejętność słuchania pozwala mi zbliżyć plan leczenia do oczekiwań pacjenta.
-							Często też udaje mi się uratować zęby przeznaczone przez innych lekarzy do ekstrakcji.
+							Często też udaje mi się <b>uratować zęby przeznaczone przez innych lekarzy do ekstrakcji</b>.
 							Stosowanie zasad minimalnie interweniujących w tkanki zęba,
 							umożliwia uratowanie jak największej ilości własnych zębów pacjenta i pozwala
 							na zastosowanie najkorzystniejszych rozwiązań protetycznych.
+						</p>
+						<p>
 							Dwuletni staż podyplomowy w prywatnym gabinecie w Wiedniu w Austrii,
 							umożliwił mi szybkie zapoznanie się i wdrożenie nowoczesnych procedur.
-							Zgromadzone doświadczenie dwóch pokoleń w połączeniu z najnowocześniejszymi
-							technologiami i wiedzą, gwarantują najlepszy możliwy standard usług stomatologicznych!
-							Zapraszam!
-							lek.stom. Magdalena Bujnicka
+							Zgromadzone <b>doświadczenie dwóch pokoleń</b> w połączeniu
+							z <b>najnowocześniejszymi technologiami</b> i wiedzą,
+							gwarantują najlepszy możliwy standard usług stomatologicznych!
 						</p>
 					</div>
-				</div>
+				</article>
 			</section>
 		</main>
 	);

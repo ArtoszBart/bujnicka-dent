@@ -39,7 +39,7 @@ function About() {
 					</div>
 				</article>
 				<article className="employee">
-					<div className="img">
+					<div className="img-box">
 						<img src={PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
 					</div>
 					<div className="employee-about">

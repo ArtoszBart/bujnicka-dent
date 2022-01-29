@@ -229,7 +229,7 @@ article.history {
 
 .employee {
 	
-	.img {
+	.img-box {
 		flex: 0 0 20%;
 		// max-width: 20%;
 		margin: 2rem 5rem;
@@ -237,6 +237,7 @@ article.history {
 	&-picture {
 		width: 100%;
 		height: auto;
+		box-shadow: 20px 20px 20px 2px rgba($secondary-color, 0.3)
 	}
 
 	p.subheadder {

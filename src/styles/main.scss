@@ -1,12 +1,18 @@
 @use 'config' as *;
-@use 'header';
-@use 'navigation';
-@use 'mainPage';
-@use 'banners';
-@use 'footer';
-@use 'about';
+
+@use 'fragments/header/header';
+@use 'fragments/header/navigation';
+@use 'fragments/banners';
+@use 'fragments/footer';
+
+@use 'pages/mainPage';
+@use 'pages/about';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&amp;family=Playfair+Display:ital@0;1&amp;display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 
 h1, h2 {
 	font-family: 'Playfair Display', serif;

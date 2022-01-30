@@ -12,10 +12,6 @@ $default-banner-height: 40vh;
 	padding: 0;
 }
 
-body {
-	font-family: 'Montserrat', sans-serif;
-}
-
 @function set-page-background($url) {
 		@return 
 		linear-gradient(

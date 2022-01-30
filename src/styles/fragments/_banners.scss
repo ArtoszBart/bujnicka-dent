@@ -1,15 +1,15 @@
-@use 'config' as *;
+@use '../config' as *;
 
 #main-page {
-	background: set-page-background('../img/main_view.jpg') center bottom;
+	background: set-page-background('../../img/main_view.jpg') center bottom;
 }
 
 #about {
-	background: set-page-background('../img/turtle.jpg');
+	background: set-page-background('../../img/turtle.jpg');
 }
 
 #not-found {
-	background: set-page-background('../img/turtle.jpg');
+	background: set-page-background('../../img/turtle.jpg');
 }
 
 .page-wrapper {

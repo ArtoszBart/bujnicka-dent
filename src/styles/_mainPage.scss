@@ -1,0 +1,14 @@
+@use 'config' as *;
+
+.scroll-down {
+	position: fixed;
+	bottom: 1rem;
+	font-size: 1.5vw;
+	color: $primary-color;
+	cursor: pointer;
+	@include transition-ease;
+
+	&:hover {
+		color: $accent-color;
+	}
+}

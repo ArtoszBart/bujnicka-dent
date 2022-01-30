@@ -1,13 +1,10 @@
 import '../../styles/main.scss';
-import Banner from '../../img/turtle.jpg';
-import PhotoBujnicka from '../../img/bujnicka-profile.jpg';
-import PhotoMorda from '../../img/morda.PNG';
 
 function About() {
 
 	return (
-		<main className="main-wrapper" id="not-found" role="main">
-			<div className="banner">
+		<main className="page-wrapper wait-wrapper" role="main">
+			<div className="banner" id="not-found">
 				<div className="banner-title">
 					<h1><i>Ta zakładka jest w budowie</i></h1>
 				</div>

@@ -13,7 +13,17 @@ $default-banner-height: 40vh;
 }
 
 body {
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@function set-page-background($url) {
+		@return 
+		linear-gradient(
+			to right,
+			rgba($secondary-color, 0.5),
+			rgba($secondary-color, 0.3)
+		),
+		url($url) no-repeat;
 }
 
 @mixin transition-ease {

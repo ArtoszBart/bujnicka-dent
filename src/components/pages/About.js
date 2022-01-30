@@ -1,15 +1,14 @@
 import '../../styles/main.scss';
-import Banner from '../../img/turtle.jpg';
 import PhotoBujnicka from '../../img/bujnicka-profile.jpg';
 import PhotoMorda from '../../img/morda.PNG';
 
 function About() {
 
 	return (
-		<main className="main-wrapper" id="about" role="main">
-			<div className="banner">
+		<main className="page-wrapper" role="main">
+			<div className="banner" id="about">
 				<div className="banner-title">
-					<h1><i>O nas</i></h1>
+					<h1>O nas</h1>
 				</div>
 			</div>
 			<section className="page-content">

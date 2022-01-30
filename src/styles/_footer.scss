@@ -1,0 +1,14 @@
+@use 'config' as *;
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: $footer-color;
+	color: $primary-color;
+	padding: 2rem;
+
+	p {
+		margin: 0 1rem;
+		text-align: center;
+	}
+}

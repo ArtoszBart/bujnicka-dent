@@ -10,7 +10,7 @@ function MainPage() {
 				<div className="banner-title">
 					<h1><i>{device1st}</i> {'\n' + device2nd}</h1>
 				</div>
-				<a className="button" href="!#">Zapisz się na wizytę</a>
+				<a className="button" href="/appointment">Zapisz się na wizytę</a>
 				<a className="scroll-down" href="#section1"><i className="fas fa-chevron-down"></i></a>
 			</div>
 			<section className="section" id="section1">

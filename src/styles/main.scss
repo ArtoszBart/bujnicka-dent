@@ -115,6 +115,24 @@ a.button {
 	}
 }
 
+#not-found {
+	padding-top: $default-banner-height;
+	.banner {
+		height: $default-banner-height;
+		background:
+		linear-gradient(
+			to right,
+			rgba($secondary-color, 0.5),
+			rgba($secondary-color, 0.3)
+		),
+		url('../img/turtle.jpg') no-repeat;
+		background-size: cover;
+	}
+	section {
+		height: calc(60vh - 4rem - 19px);
+	}
+}
+
 .banner {
 	position: fixed;
 	top: 0;
@@ -229,10 +247,11 @@ article.history {
 		// max-width: 20%;
 		margin: 2rem 5rem;
 	}
+
 	&-picture {
 		width: 100%;
 		height: auto;
-		box-shadow: 20px 20px 20px 2px rgba($secondary-color, 0.3)
+		box-shadow: 20px 20px 20px 2px rgba($secondary-color, 0.3);
 	}
 
 	p.subheadder {
@@ -253,4 +272,8 @@ footer {
 		margin: 0 1rem;
 		text-align: center;
 	}
+}
+
+.section {
+	height: 100vh;
 }

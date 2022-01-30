@@ -24,27 +24,27 @@ function Navigation() {
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="!#" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+						<Link to="/offer" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
 							Oferta
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="!#" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+						<Link to="/price-list" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
 							Cennik
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="!#" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+						<Link to="/curiosities" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
 							Ciekawostki
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="!#" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+						<Link to="/gallery" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
 							Galeria
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="!#" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+						<Link to="/contact" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
 							Kontakt
 						</Link>
 					</li>

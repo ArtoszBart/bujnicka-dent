@@ -6,7 +6,7 @@ function Prevention() {
 		<main className="page-wrapper" role="main">
 			<div className="banner" id="prevention">
 				<div className="banner-title">
-					<h1>Stomatologia zachowawcza</h1>
+					<h1>Profilaktyka</h1>
 				</div>
 			</div>
 			<section className="page-content">

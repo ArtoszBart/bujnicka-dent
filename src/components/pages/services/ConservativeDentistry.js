@@ -6,7 +6,7 @@ function ConservativeDentistry() {
 		<main className="page-wrapper" role="main">
 			<div className="banner" id="conservative-dentistry">
 				<div className="banner-title">
-					<h1>Profilaktyka</h1>
+					<h1>Stomatologia zachowawcza</h1>
 				</div>
 			</div>
 			<section className="page-content">

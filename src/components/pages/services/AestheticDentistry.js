@@ -6,7 +6,7 @@ function AestheticDentistry() {
 		<main className="page-wrapper" role="main">
 			<div className="banner" id="aesthetic-dentistry">
 				<div className="banner-title">
-					<h1>Stomatologia estetyczna</h1>
+					<h1>Stomatologia Estetyczna</h1>
 				</div>
 			</div>
 			<section className="page-content">

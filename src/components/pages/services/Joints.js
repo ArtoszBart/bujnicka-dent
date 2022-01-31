@@ -6,7 +6,7 @@ function Joints() {
 		<main className="page-wrapper" role="main">
 			<div className="banner" id="joints">
 				<div className="banner-title">
-					<h1>Leczenie stawów skroniowo-żuchwowych</h1>
+					<h1>Leczenie Stawów Skroniowo-Żuchwowych</h1>
 				</div>
 			</div>
 			<section className="page-content">

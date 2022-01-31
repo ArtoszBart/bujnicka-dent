@@ -19,6 +19,14 @@ function Offer() {
 				<div className="offers">
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
+						<h3>Wizyta Diagnostyczna</h3>
+						<p>
+							<b>BEZPŁATNA WIZYTA DIAGNOSTYCZNA</b>, na której dowiesz się, co dzieje się z Twoimi wszystkimi zębami.
+						</p>
+						<a href="/offer/diagnostics" className="button">Zobacz więcej</a>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
 						<h3>Onley'e oraz Inley'e</h3>
 						<p>
 							Inaczej wkłady koronowe - są to wypełnienia zębów o bardzo wysokiej jakości.
@@ -37,7 +45,7 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Stomatologia estetyczna</h3>
+						<h3>Stomatologia Estetyczna</h3>
 						<p>
 							Stomatologia estetyczna zajmuje się przywróceniem lub nadaniem zębom
 							jak najbardziej naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
@@ -46,7 +54,7 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Stomatologia zachowawcza</h3>
+						<h3>Stomatologia Zachowawcza</h3>
 						<p>
 							Stomatologia zachowawcza zajmuje się wykrywaniem i leczeniem
 							najbardziej rozpowszechnionej choroby zębów, jaką jest próchnica.
@@ -90,7 +98,7 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Chirurgia stomatologiczna</h3>
+						<h3>Chirurgia Stomatologiczna</h3>
 						<p>
 							Czasami zęba nie da się już uratować, podejmuję wtedy decyzję o usunięciu - ekstrakcji.
 						</p>
@@ -98,7 +106,7 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Leczenie stawów skroniowo-żuchwowych</h3>
+						<h3>Leczenie Stawów Skroniowo-Żuchwowych</h3>
 						<p>
 							Zaburzeniami w funkcji stawów skroniowo-żuchwowych są niekiedy
 							przyczyną poważnych problemów w funkcjonowaniu całego narządu żucia.

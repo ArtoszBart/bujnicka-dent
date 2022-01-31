@@ -8,7 +8,9 @@ import Header from './components/fragments/Header';
 import Footer from './components/fragments/Footer';
 
 import MainPage from './components/pages/MainPage';
-import About from './components/pages/About';
+import AboutPage from './components/pages/About';
+import OfferPage from './components/pages/Offer';
+
 import NotFound from './components/pages/NotFound';
 
 function App() {
@@ -17,8 +19,8 @@ function App() {
       <Header />
       <Routes>
         <Route exact path='/' element={<MainPage />} />
-        <Route exact path='/about' element={<About />} />
-        <Route exact path='/offer' element={<NotFound />} />
+        <Route exact path='/about' element={<AboutPage />} />
+        <Route exact path='/offer' element={<OfferPage />} />
         <Route exact path='/price-list' element={<NotFound />} />
         <Route exact path='/curiosities' element={<NotFound />} />
         <Route exact path='/gallery' element={<NotFound />} />

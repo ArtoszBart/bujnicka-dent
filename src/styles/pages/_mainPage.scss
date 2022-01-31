@@ -1,5 +1,9 @@
 @use '../config' as *;
 
+h1.device {
+	font-style: normal;
+}
+
 .scroll-down {
 	position: fixed;
 	bottom: 1rem;

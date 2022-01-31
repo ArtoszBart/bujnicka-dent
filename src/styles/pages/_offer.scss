@@ -1,0 +1,23 @@
+@use '../config' as *;
+
+.offers {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5vw;
+
+	&-single {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100%;
+
+		img {
+			width: 100%;
+		}
+
+		a {
+			margin-top: auto;
+		}
+	}
+}

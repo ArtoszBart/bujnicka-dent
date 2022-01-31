@@ -2,6 +2,20 @@
 
 #main-page {
 	background: set-page-background('../../img/main_view.jpg') center bottom;
+	
+	a.button {
+		border-top: 1px solid $primary-color;
+		border-bottom: 1px solid $primary-color;
+		background-color: transparent;
+		@include transition-ease-slow;
+	
+		&:hover {
+			background-color: $accent-color;
+			border-color: rgba($primary-color, 0.3);
+			animation: pulse $slow-trnsition-time;
+			box-shadow: 0 0 0 2rem rgba(#000, 0);
+		}
+	}
 }
 
 #about {
@@ -17,6 +31,10 @@
 	.banner {
 		height: $default-banner-height;
 		background-size: cover !important;
+
+		a {
+			color: $primary-color;
+		}
 	}
 }
 

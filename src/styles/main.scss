@@ -64,6 +64,8 @@ a.button {
 } 
 
 section {
+	min-height: calc(100vh - $default-banner-height - 83px);
+
 	position: relative;
 	display: flex;
 	flex-direction: column;

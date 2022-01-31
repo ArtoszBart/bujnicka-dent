@@ -3,7 +3,8 @@
 .offers {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 5vw;
+	gap: 3vw;
+	padding-top: 5vh;
 
 	&-single {
 		display: flex;

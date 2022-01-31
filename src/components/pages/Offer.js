@@ -19,20 +19,51 @@ function Offer() {
 				<div className="offers">
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Lorem ipsum</h3>
+						<h3>Onley'e oraz Inley'e</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam euismod ante sit amet congue elementum.
-							Cras lacinia augue sed mi vestibulum rhoncus.
-							Praesent fringilla purus lorem, sit amet lobortis tortor fermentum vitae.
-							Donec maximus odio finibus quam posuere, sit amet placerat dolor accumsan.
-							Etiam arcu ante, efficitur at finibus a, vulputate quis est. Cras porttitor mauris tellus.
+							Inaczej wkłady koronowe - są to wypełnienia zębów o bardzo wysokiej jakości.
 						</p>
 						<a href="!#" className="button">Zobacz więcej</a>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Lorem ipsum</h3>
+						<h3>Profilaktyka</h3>
+						<p>
+							Profilaktyka, to podstawowy dział stomatologii,
+							zajmujący się zapobieganiem chorób jamy ustnej oraz uświadamianiem,
+							jak ważna w życiu codziennym jest prawidłowa higiena.
+						</p>
+						<a href="!#" className="button">Zobacz więcej</a>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
+						<h3>Stomatologia estetyczna</h3>
+						<p>
+							Stomatologia estetyczna zajmuje się przywróceniem lub nadaniem zębom
+							jak najbardziej naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
+						</p>
+						<a href="!#" className="button">Zobacz więcej</a>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
+						<h3>Stomatologia zachowawcza</h3>
+						<p>
+							Stomatologia zachowawcza zajmuje się wykrywaniem i leczeniem
+							najbardziej rozpowszechnionej choroby zębów, jaką jest próchnica.
+						</p>
+						<a href="!#" className="button">Zobacz więcej</a>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
+						<h3>Endodoncja</h3>
+						<p>
+							Endodoncja jest dziedziną stomatologii zajmującą się leczeniem kanałów w zębach.
+						</p>
+						<a href="!#" className="button">Zobacz więcej</a>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
+						<h3>Periodontologia</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Etiam euismod ante sit amet congue elementum.
@@ -41,45 +72,36 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Lorem ipsum</h3>
+						<h3>Protetyka</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam euismod ante sit amet congue elementum.
-							Cras lacinia augue sed mi vestibulum rhoncus.
-							Praesent fringilla purus lorem, sit amet lobortis tortor fermentum vitae.
+							Protetyka to dział stomatologii zajmujący się uzupełnianiem
+							utraconych zębów w przypadku, gdy nie jest możliwa ich odbudowa
+							zachowawcza lub zostały one utracone z innych powodów.
 						</p>
 						<a href="!#" className="button">Zobacz więcej</a>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Lorem ipsum</h3>
+						<h3>Implanty</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam euismod ante sit amet congue elementum.
-							Cras lacinia augue sed mi vestibulum rhoncus.
-							Praesent fringilla purus lorem, sit amet lobortis tortor fermentum vitae.
-							Donec maximus odio finibus quam posuere, sit amet placerat dolor accumsan.
-							Etiam arcu ante, efficitur at finibus a, vulputate quis est. Cras porttitor mauris tellus.
+							Dziedzina chirurgii uzupełniająca brakujący korzeń zęba to implantologia.
 						</p>
 						<a href="!#" className="button">Zobacz więcej</a>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Lorem ipsum</h3>
+						<h3>Chirurgia stomatologiczna</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam euismod ante sit amet congue elementum.
+							Czasami zęba nie da się już uratować, podejmuję wtedy decyzję o usunięciu - ekstrakcji.
 						</p>
 						<a href="!#" className="button">Zobacz więcej</a>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Lorem ipsum</h3>
+						<h3>Leczenie stawów skroniowo-żuchwowych</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam euismod ante sit amet congue elementum.
-							Cras lacinia augue sed mi vestibulum rhoncus.
-							Praesent fringilla purus lorem, sit amet lobortis tortor fermentum vitae.
+							Zaburzeniami w funkcji stawów skroniowo-żuchwowych są niekiedy
+							przyczyną poważnych problemów w funkcjonowaniu całego narządu żucia.
 						</p>
 						<a href="!#" className="button">Zobacz więcej</a>
 					</div>

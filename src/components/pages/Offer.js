@@ -5,7 +5,7 @@ function Offer() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="about">
+			<div className="banner" id="offer">
 				<div className="banner-title">
 					<h1>Oferta</h1>
 				</div>

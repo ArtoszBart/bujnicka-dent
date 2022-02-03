@@ -10,6 +10,7 @@ import Footer from './components/fragments/Footer';
 import MainPage from './components/pages/MainPage';
 import AboutPage from './components/pages/About';
 import OfferPage from './components/pages/Offer';
+import Prices from './components/pages/Prices';
 
 import AestheticDentistry from './components/pages/services/AestheticDentistry';
 import ConservativeDentistry from './components/pages/services/ConservativeDentistry';
@@ -33,7 +34,7 @@ function App() {
         <Route exact path='/' element={<MainPage />} />
         <Route exact path='/about' element={<AboutPage />} />
         <Route exact path='/offer' element={<OfferPage />} />
-        <Route exact path='/price-list' element={<NotFound />} />
+        <Route exact path='/prices' element={<Prices />} />
         <Route exact path='/curiosities' element={<NotFound />} />
         <Route exact path='/gallery' element={<NotFound />} />
         <Route exact path='/contact' element={<NotFound />} />

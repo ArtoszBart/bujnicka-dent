@@ -29,7 +29,7 @@ function Navigation() {
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/price-list" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+						<Link to="/prices" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
 							Cennik
 						</Link>
 					</li>

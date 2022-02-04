@@ -1,6 +1,7 @@
 import '../../styles/main.scss';
 import PhotoBujnicka from '../../img/bujnicka-profile.jpg';
-import PhotoMorda from '../../img/morda.PNG';
+import PhotoBohdan from '../../img/Bohdan_Bujnicki.jpg';
+import PhotoMaria from '../../img/Maria_Baluta.jpg';
 
 function About() {
 
@@ -28,11 +29,11 @@ function About() {
 					</p>
 					<div className="history-pictures">
 						<div className="history-pictures-single">
-							<img src={PhotoMorda} className="employee-picture" alt="Maria Bałuta" />
+							<img src={PhotoMaria} className="employee-picture" alt="Maria Bałuta" />
 							<span>Maria Bałuta</span>
 						</div>
 						<div className="history-pictures-single">
-							<img src={PhotoMorda} className="employee-picture" alt="Bohdan Bujnicki" />
+							<img src={PhotoBohdan} className="employee-picture" alt="Bohdan Bujnicki" />
 							<span>Bohdan Bujnicki</span>
 						</div>
 					</div>

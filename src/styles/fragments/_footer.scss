@@ -10,5 +10,9 @@ footer {
 	p {
 		margin: 0 1rem;
 		text-align: center;
+		
+		a.text-link {
+			color: $primary-color;
+		}
 	}
 }

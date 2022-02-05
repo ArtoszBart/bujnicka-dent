@@ -24,20 +24,13 @@ function Implants() {
 					<div className="prices-item">
 						<p>Znieczulenie (również na życzenie pacjenta)</p><p>40 zł</p>
 					</div>
-					<div className="prices-item prices-multiple">
-						<p>Onlay lub Inlay:</p>
-						<div className="prices-multiple-items">
-							<p>Kompozytowy</p><p>900 zł</p>
-							<p>Porcelanowy</p><p>1200 zł</p>
-						</div>
-					</div>
 				</article>
 
 
 				<article className="prices">
 					<h2>Profilaktyka</h2>
 					<div className="prices-item">
-						<p>Scaling i likwidacja osadu</p>
+						<p>Scaling i likwidacja osadu (higienizacja)</p>
 						<p>200-300 zł</p>
 					</div>
 					<div className="prices-item">

@@ -34,13 +34,13 @@ function Navigation() {
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/curiosities" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							Ciekawostki
+						<Link to="/certificates" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+							Certyfikaty
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/gallery" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							Galeria
+						<Link to="/faq" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
+							FAQ
 						</Link>
 					</li>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>

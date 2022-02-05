@@ -36,8 +36,8 @@ function App() {
         <Route exact path='/about' element={<AboutPage />} />
         <Route exact path='/offer' element={<OfferPage />} />
         <Route exact path='/prices' element={<Prices />} />
-        <Route exact path='/curiosities' element={<NotFound />} />
-        <Route exact path='/gallery' element={<NotFound />} />
+        <Route exact path='/faq' element={<NotFound />} />
+        <Route exact path='/certificates' element={<NotFound />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/appointment' element={<NotFound />} />
 

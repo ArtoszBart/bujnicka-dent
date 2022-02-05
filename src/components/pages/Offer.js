@@ -35,6 +35,15 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
+						<h3>Stomatologia Cyfrowa</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Etiam euismod ante sit amet congue elementum.
+						</p>
+						<a href="/offer/digital-dentistry" className="button">Zobacz więcej</a>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
 						<h3>Profilaktyka</h3>
 						<p>
 							Profilaktyka, to podstawowy dział stomatologii,

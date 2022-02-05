@@ -9,6 +9,7 @@
 @use 'pages/about';
 @use 'pages/offer';
 @use 'pages/prices';
+@use 'pages/contact';
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -41,7 +42,7 @@ b {
 }
 
 a.text-link {
-	color: $primary-color;
+	color: $secondary-color;
 	@include transition-ease;
 
 	&:hover {
@@ -49,7 +50,7 @@ a.text-link {
 	}
 }
 
-a.button {
+a.button, .submit {
 	padding: 1rem 2rem;
 	font-size: 0.8rem;
 	text-decoration: none;
@@ -72,15 +73,16 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 5rem 10vw;	
+	padding: 3rem 10vw 5rem;	
 	background-color: $primary-color;
 
-	p {
+	p, input, textarea, address {
 		font-weight: 300;
 		font-size: 18px;
 		letter-spacing: 0.3px;
 		width: 100%;
 		margin-bottom: 1rem;
+		line-height: 25px;
 	}
 
 	p.center {

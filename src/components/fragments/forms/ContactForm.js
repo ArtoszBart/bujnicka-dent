@@ -57,17 +57,11 @@ function ContactForm() {
 				</textarea>
 				{errors.message && <span className="error-text">{errors.message}</span>}
 			</div>
-			{/* <button className="submit" type="submit" tabIndex="5">
-				<i class="fa fa-spinner fa-spin"></i>{sent}
-			</button> */}
-			<div>
-				<span className="info">
+			<div className="contact-form-info">
+				<span className="contact-form-info-message">
 					{sent === '{sending...}' ? <><i className="fa fa-spinner fa-spin"></i>Wysyłanie</> : sent}
 				</span>
 			</div>
-			{/* {sent &&
-				<PopupWindow delay="2000" />
-			} */}
 			<input type="submit" className="submit" value="Wyślij wiadomość" tabIndex="5" />
 		</form>
 	);

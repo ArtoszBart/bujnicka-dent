@@ -1,8 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import useContactForm from './customHooks/useContactForm';
-import { checkRequired, checkTextLengthRange, checkEmail } from '../../../helpers/validationCommon';
 import FormInput from './FormInput';
-import PopupWindow from '../PopupWindow';
 
 function ContactForm() {
 	const { handleChange, handleSubmit, values, errors, sent } = useContactForm();
@@ -64,7 +62,7 @@ function ContactForm() {
 			</button> */}
 			<div>
 				<span className="info">
-					{sent === '{sending...}' ? <><i className="fa fa-spinner fa-spin"></i>Wysyłanie</> : { sent }}
+					{sent === '{sending...}' ? <><i className="fa fa-spinner fa-spin"></i>Wysyłanie</> : sent}
 				</span>
 			</div>
 			{/* {sent &&

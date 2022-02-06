@@ -1,20 +1,22 @@
 import React from 'react'
 
 function FormInput(props) {
-	const errorSpanId = props.id + 'Error'
+	const divClassName = `contact-form-${props.name}`;
 
 	return (
-		<>
+		<div className={divClassName}>
+			<label htmlFor={props.name}>{props.placeholder}</label>
 			<input
 				type={props.type}
-				className={props.className}
-				id={props.id}
+				name={props.name}
+				id={props.name}
 				placeholder={props.placeholder}
+				className={props.className}
 				tabIndex={props.tabIndex}
-				ref={props.forwardedRef}
+				value={props.value}
 				onChange={props.onChange} />
-			<span id={errorSpanId} className="error-text">{props.error}</span>
-		</>
+			{props.error && <span className="error-text">{props.error}</span>}
+		</div>
 	)
 }
 

@@ -13,7 +13,7 @@ function ContactForm() {
 			<FormInput
 				type="text"
 				name="name"
-				placeholder="Imię"
+				placeholder="Imię i nazwisko"
 				className="contact-form-input"
 				tabIndex="1"
 				value={values.name}

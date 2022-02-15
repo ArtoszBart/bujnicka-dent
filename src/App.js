@@ -17,6 +17,7 @@ import AestheticDentistry from './components/pages/services/AestheticDentistry';
 import ConservativeDentistry from './components/pages/services/ConservativeDentistry';
 import DentalSurgery from './components/pages/services/DentalSurgery';
 import Diagnostics from './components/pages/services/Diagnostics';
+import DigitalDentistry from './components/pages/services/DigitalDentistry';
 import Endodontics from './components/pages/services/Endodontics';
 import Implants from './components/pages/services/Implants';
 import Joints from './components/pages/services/Joints';
@@ -45,6 +46,7 @@ function App() {
         <Route exact path='/offer/conservative-dentistry' element={<ConservativeDentistry />} />
         <Route exact path='/offer/dental-surgery' element={<DentalSurgery />} />
         <Route exact path='/offer/diagnostics' element={<Diagnostics />} />
+        <Route exact path='/offer/digital-dentistry' element={<DigitalDentistry />} />
         <Route exact path='/offer/endodontics' element={<Endodontics />} />
         <Route exact path='/offer/implants' element={<Implants />} />
         <Route exact path='/offer/joints' element={<Joints />} />

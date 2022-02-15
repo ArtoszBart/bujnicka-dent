@@ -1,5 +1,6 @@
 import '../../styles/main.scss';
 import CarPhoto from '../../img/samochut.jpg';
+import { Link } from 'react-router-dom';
 
 function Offer() {
 
@@ -23,7 +24,7 @@ function Offer() {
 						<p>
 							<b>BEZPŁATNA WIZYTA DIAGNOSTYCZNA</b>, na której dowiesz się, co dzieje się z Twoimi wszystkimi zębami.
 						</p>
-						<a href="/offer/diagnostics" className="button">Zobacz więcej</a>
+						<Link to="/offer/diagnostics" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -31,7 +32,7 @@ function Offer() {
 						<p>
 							Inaczej wkłady koronowe - są to wypełnienia zębów o bardzo wysokiej jakości.
 						</p>
-						<a href="/offer/onlay-inlay" className="button">Zobacz więcej</a>
+						<Link to="/offer/onlay-inlay" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -40,7 +41,7 @@ function Offer() {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Etiam euismod ante sit amet congue elementum.
 						</p>
-						<a href="/offer/digital-dentistry" className="button">Zobacz więcej</a>
+						<Link to="/offer/digital-dentistry" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -50,7 +51,7 @@ function Offer() {
 							zajmujący się zapobieganiem chorób jamy ustnej oraz uświadamianiem,
 							jak ważna w życiu codziennym jest prawidłowa higiena.
 						</p>
-						<a href="/offer/prevention" className="button">Zobacz więcej</a>
+						<Link to="/offer/prevention" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -59,7 +60,7 @@ function Offer() {
 							Stomatologia estetyczna zajmuje się przywróceniem lub nadaniem zębom
 							jak najbardziej naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
 						</p>
-						<a href="/offer/aesthetic-dentistry" className="button">Zobacz więcej</a>
+						<Link to="/offer/aesthetic-dentistry" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -68,7 +69,7 @@ function Offer() {
 							Stomatologia zachowawcza zajmuje się wykrywaniem i leczeniem
 							najbardziej rozpowszechnionej choroby zębów, jaką jest próchnica.
 						</p>
-						<a href="/offer/conservative-dentistry" className="button">Zobacz więcej</a>
+						<Link to="/offer/conservative-dentistry" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -76,7 +77,7 @@ function Offer() {
 						<p>
 							Endodoncja jest dziedziną stomatologii zajmującą się leczeniem kanałów w zębach.
 						</p>
-						<a href="/offer/endodontics" className="button">Zobacz więcej</a>
+						<Link to="/offer/endodontics" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -85,7 +86,7 @@ function Offer() {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Etiam euismod ante sit amet congue elementum.
 						</p>
-						<a href="/offer/periodontics" className="button">Zobacz więcej</a>
+						<Link to="/offer/periodontics" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -95,7 +96,7 @@ function Offer() {
 							utraconych zębów w przypadku, gdy nie jest możliwa ich odbudowa
 							zachowawcza lub zostały one utracone z innych powodów.
 						</p>
-						<a href="/offer/prosthodontics" className="button">Zobacz więcej</a>
+						<Link to="/offer/prosthodontics" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -103,7 +104,7 @@ function Offer() {
 						<p>
 							Dziedzina chirurgii uzupełniająca brakujący korzeń zęba to implantologia.
 						</p>
-						<a href="/offer/implants" className="button">Zobacz więcej</a>
+						<Link to="/offer/implants" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -111,7 +112,7 @@ function Offer() {
 						<p>
 							Czasami zęba nie da się już uratować, podejmuję wtedy decyzję o usunięciu - ekstrakcji.
 						</p>
-						<a href="/offer/dental-surgery" className="button">Zobacz więcej</a>
+						<Link to="/offer/dental-surgery" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -120,7 +121,7 @@ function Offer() {
 							Zaburzeniami w funkcji stawów skroniowo-żuchwowych są niekiedy
 							przyczyną poważnych problemów w funkcjonowaniu całego narządu żucia.
 						</p>
-						<a href="/offer/joints" className="button">Zobacz więcej</a>
+						<Link to="/offer/joints" className="button">Zobacz więcej</Link>
 					</div>
 				</div>
 			</section>

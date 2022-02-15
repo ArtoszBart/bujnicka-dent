@@ -38,3 +38,26 @@ export function checkEmail(value) {
 	value = value.toString().trim();
 	return pattern.test(value);
 }
+
+export function getErrorMessages(errors) {
+	const dictionary = {
+		validation: {
+			required: 'Pole jest wymagane',
+			format: 'Email ma zły format',
+			length: {
+				name: 'Imię musi mieć od 2 do 30 znaków',
+				subject: 'Temat musi mieć od 10 do 50 znaków',
+				message: 'Treść musi mieć od 10 do 300 znaków'
+			}
+		}
+	}
+
+	let errorMessages = {};
+	for (const [key, value] of Object.entries(errors)) {
+		errorMessages = {
+			...errorMessages, [key]: (value === 'length' ? dictionary.validation.length[key] : dictionary.validation[value])
+		}
+	}
+	console.log(errors);
+	return errorMessages;
+}

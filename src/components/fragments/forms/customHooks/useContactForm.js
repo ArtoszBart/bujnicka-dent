@@ -1,5 +1,6 @@
 import { useState } from "react";
 import validate from './../validation/validateContactForm';
+import { getErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 
 const useContactForm = () => {
@@ -30,15 +31,18 @@ const useContactForm = () => {
 		// API CALL HERE
 		axios.post('http://localhost:4000/api/email/send', values).then(res => {
 			setSent("Wysłano");
-			// setValues({
-			// 	name: '',
-			// 	email: '',
-			// 	subject: '',
-			// 	message: ''
-			// });
-		}).catch(error => {
-			console.log("XD");
-			// console.error(error.response.status);
+			setValues({
+				name: '',
+				email: '',
+				subject: '',
+				message: ''
+			});
+		}).catch(error => { // 400 - validation; 	502 - bad gateway
+			if (error.response.status === 400) {
+				setErrors(getErrorMessages(error.response.data));
+			} else {
+				console.log("Coś nie działa z mailami");
+			}
 		});
 
 	}

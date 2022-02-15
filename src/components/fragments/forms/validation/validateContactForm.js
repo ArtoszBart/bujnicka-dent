@@ -1,31 +1,31 @@
-import { checkRequired, checkTextLengthRange, checkEmail } from './../../../../helpers/validationCommon';
+import { checkRequired, checkTextLengthRange, checkEmail, getErrorMessages } from './../../../../helpers/validationCommon';
 
 export default function validateContactForm(values) {
 	let errors = {}
 
 	if (!checkRequired(values.name)) {
-		errors.name = 'Imię nie może być puste';
+		errors.name = 'required';
 	} else if (!checkTextLengthRange(values.name, 2, 30)) {
-		errors.name = 'Imię musi mieć od 2 do 30 znaków';
+		errors.name = 'length';
 	}
 
 	if (!checkRequired(values.email)) {
-		errors.email = 'Email nie może być pusty';
+		errors.email = 'required';
 	} else if (!checkEmail(values.email)) {
-		errors.email = 'Niepoprawny adres email';
+		errors.email = 'format';
 	}
 
 	if (!checkRequired(values.subject)) {
-		errors.subject = 'Temat nie może być pusty';
+		errors.subject = 'required';
 	} else if (!checkTextLengthRange(values.subject, 10, 50)) {
-		errors.subject = 'Temat musi mieć od 10 do 50 znaków';
+		errors.subject = 'length';
 	}
 
 	if (!checkRequired(values.message)) {
-		errors.message = 'Treść nie może być pusta';
+		errors.message = 'required';
 	} else if (!checkTextLengthRange(values.message, 10, 300)) {
-		errors.message = 'Treść musi mieć od 10 do 300 znaków';
+		errors.message = 'length';
 	}
 
-	return errors;
+	return getErrorMessages(errors);
 };

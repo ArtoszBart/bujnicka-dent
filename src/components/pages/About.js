@@ -12,8 +12,8 @@ function About() {
 					<h1>O nas</h1>
 				</div>
 			</div>
-			<section className="page-content">
-				<article className="history">
+			<article className="page-content">
+				<section className="history">
 					<h2>Historia</h2>
 					<p>Historia lekarska w naszej rodzinie zaczęła się w 1953 roku.
 						Moja mama Maria Bałuta, rozpoczęła studia na Wydziale Stomatologicznym Akademii Medycznej w Gdańsku.
@@ -37,8 +37,8 @@ function About() {
 							<span>Bohdan Bujnicki</span>
 						</div>
 					</div>
-				</article>
-				<article className="employee">
+				</section>
+				<section className="employee">
 					<div className="img-box">
 						<img src={PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
 					</div>
@@ -68,8 +68,8 @@ function About() {
 							gwarantują najlepszy możliwy standard usług stomatologicznych!
 						</p>
 					</div>
-				</article>
-			</section>
+				</section>
+			</article>
 		</main>
 	);
 }

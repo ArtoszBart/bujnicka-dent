@@ -9,9 +9,9 @@ function About() {
 					<h1><i>Ta zakładka jest w budowie</i></h1>
 				</div>
 			</div>
-			<section className="page-content">
+			<article className="page-content">
 				<h2>Odwiedź to miejsce niedługo</h2>
-			</section>
+			</article>
 		</main>
 	);
 }

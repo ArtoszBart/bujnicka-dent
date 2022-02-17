@@ -10,9 +10,22 @@ h1.device {
 	font-size: 2vw;
 	color: $primary-color;
 	cursor: pointer;
-	@include transition-ease;
-
+	
 	&:hover {
-		color: $accent-color;
+		i {
+			color: $accent-color;
+		}
+	}
+}
+
+.quote {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	color: $primary-color;
+
+	q {
+		font-family: "Playfair Display", serif;
+		font-style: italic;
 	}
 }

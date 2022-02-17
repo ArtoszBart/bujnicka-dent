@@ -11,13 +11,15 @@ function Offer() {
 					<h1>Oferta</h1>
 				</div>
 			</div>
-			<section className="page-content">
-				<p className="center">
-					Tu będzie jakiś tekst generalnie o usługach.
-					Fajnie było by tu dodać że specjalizuje się w ratowaniu zębów,
-					które inni lekarze spisali na straty :)
-				</p>
-				<div className="offers">
+			<article className="page-content">
+				<aside>
+					<p className="center">
+						Tu będzie jakiś tekst generalnie o usługach.
+						Fajnie było by tu dodać że specjalizuje się w ratowaniu zębów,
+						które inni lekarze spisali na straty :)
+					</p>
+				</aside>
+				<section className="offers">
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
 						<h3>Wizyta Diagnostyczna</h3>
@@ -123,8 +125,8 @@ function Offer() {
 						</p>
 						<Link to="/offer/joints" className="button">Zobacz więcej</Link>
 					</div>
-				</div>
-			</section>
+				</section>
+			</article>
 		</main>
 	);
 }

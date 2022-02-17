@@ -63,17 +63,20 @@ a.button, .submit {
 	&:hover {
 		background-color: #1cd5f6;
 	}
-} 
+}
 
-section {
-	min-height: calc(100vh - $default-banner-height - 83px);
+i {
+	@include transition-ease;
+}
 
+article {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	min-height: calc(100vh - $banner-height - 83px);
 	align-items: center;
-	padding: 3rem 10vw 5rem;	
+	padding: 0rem 10vw 5rem;	
 	background-color: $primary-color;
 
 	p, input, textarea, address {
@@ -90,9 +93,15 @@ section {
 	}
 }
 
-article {
+section {
 	display: flex;
-	padding-bottom: 5rem;
-	padding-top: 5rem;
+	
+	width: 100%;
+	max-width: 1400px;
+	padding: 5rem;
 	border-bottom: 1px solid rgba($secondary-color, 0.2);
+}
+
+.half-width {
+	width: 50%;
 }

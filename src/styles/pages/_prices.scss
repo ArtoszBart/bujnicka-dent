@@ -2,10 +2,8 @@
 
 .prices {
 	flex-direction: column;
-	padding-bottom: 1rem;
-    padding-top: 3rem;
-	max-width: 1000px;
-	width: 100%;
+	padding-bottom: 0rem;
+	max-width: 1200px;
 	border-bottom: none;
 
 	&-item {
@@ -14,12 +12,11 @@
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		padding: 0.5rem 0.5rem;
 		padding-bottom: 0;
-		margin-bottom: 0.2rem;
 		@include transition-ease;
 
 		&:hover {
+			border-radius: 5px;
 			background-color: rgba($accent-color, 0.1);
-			border-radius: 3px;
 		}
 
 		p {
@@ -44,17 +41,16 @@
 
 			p {
 				padding-top: 0.2rem;
-				display: inline;
+				display: block;
 			}
 
 			p:nth-child(2n) {
 				text-align: right;
-				width: 300px;
 			}
 		}
 	}
 
-	dd {
+	dd, aside {
 		padding: 1rem 1rem 0rem;
 	}
 }

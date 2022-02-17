@@ -9,8 +9,8 @@ function Implants() {
 					<h1>Cennik</h1>
 				</div>
 			</div>
-			<section className="page-content">
-				<article className="prices">
+			<article className="page-content">
+				<section className="prices">
 					<h2>Podstawowe usługi</h2>
 					<div className="prices-item">
 						<p>Wizyta diagnostyczna</p><p>bezpłatnie</p>
@@ -24,10 +24,10 @@ function Implants() {
 					<div className="prices-item">
 						<p>Znieczulenie (również na życzenie pacjenta)</p><p>40 zł</p>
 					</div>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Profilaktyka</h2>
 					<div className="prices-item">
 						<p>Scaling i likwidacja osadu (higienizacja)</p>
@@ -41,10 +41,10 @@ function Implants() {
 						<p>Lakowanie (1 ząb)</p>
 						<p>150 zł</p>
 					</div>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Stomatologia estetyczna</h2>
 					<div className="prices-item">
 						<p>Wybielanie metodą nakładkową (dotyczy zębów żywych)</p>
@@ -72,10 +72,10 @@ function Implants() {
 					<div className="prices-item">
 						<p>Licówka</p><p>1800 zł</p>
 					</div>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Stomatologia zachowawcza</h2>
 					<div className="prices-item">
 						<p>Leczenie biologiczne miazgi</p><p>200 zł</p>
@@ -90,10 +90,10 @@ function Implants() {
 							<p>Porcelanowy</p><p>1200 zł</p>
 						</div>
 					</div>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Endodoncja</h2>
 					<div className="prices-item prices-multiple">
 						<p>Leczenie kanałowe zęba</p>
@@ -104,12 +104,12 @@ function Implants() {
 							<p>4-kanałowego</p><p>730 zł</p>
 						</div>
 					</div>
-					<dd>Cena leczenia kanałowego uzależniona jest od stopnia zaawansowania oraz przebiegu choroby.
-						Powyższe ceny dotyczą leczenia bez powikłań.</dd>
-				</article>
+					<aside>Cena leczenia kanałowego uzależniona jest od stopnia zaawansowania oraz przebiegu choroby.
+						Powyższe ceny dotyczą leczenia bez powikłań.</aside>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Periodontologia</h2>
 					<div className="prices-item">
 						<p>Scaling i likwidacja osadu</p><p>200-250 zł</p>
@@ -117,10 +117,10 @@ function Implants() {
 					<div className="prices-item">
 						<p>Kiretaż</p><p>180-280 zł</p>
 					</div>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Protetyka</h2>
 					<div className="prices-item">
 						<p>Wkład koronowo-korzeniowy</p><p>450-800 zł</p>
@@ -158,10 +158,10 @@ function Implants() {
 						</div>
 					</div>
 					<dd>* Konieczna jest wycena indywidualna pracy protetycznej.</dd>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Implanty</h2>
 					<div className="prices-item">
 						<p>Implant (Część chirurgiczna)</p><p>3000 zł</p>
@@ -169,10 +169,10 @@ function Implants() {
 					<div className="prices-item">
 						<p>Implant (Część protetyczna)</p><p>3000 zł</p>
 					</div>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Chirurgia</h2>
 					<div className="prices-item">
 						<p>Ekstrakcja (usunięcie) zęba</p><p>250 zł<dt>*</dt></p>
@@ -185,16 +185,16 @@ function Implants() {
 					</div>
 
 					<dd>* W przypadku jednoczesnej ekstrakcji kilku zębów, kolejny ząb - 80 zł</dd>
-				</article>
+				</section>
 
 
-				<article className="prices">
+				<section className="prices">
 					<h2>Choroby stawów skroniowo-żuchwowych</h2>
 					<div className="prices-item">
 						<p>Szyna relaksacyjna</p><p>500 zł</p>
 					</div>
-				</article>
-			</section >
+				</section>
+			</article>
 		</main >
 	);
 }

@@ -17,7 +17,7 @@
 			
 			img {
 				margin: 2rem;
-				max-width: 200px;
+				max-width: 150px;
 			}
 
 			span {
@@ -30,8 +30,9 @@
 .employee {
 	.img-box {
 		flex: 0 0 20%;
+		align-self: flex-start;
 		// max-width: 20%;
-		margin: 2rem 5rem;
+		margin: 2rem 5rem 2rem 0rem;
 	}
 
 	&-picture {

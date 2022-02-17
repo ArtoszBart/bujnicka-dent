@@ -38,9 +38,9 @@
 }
 
 .page-wrapper {
-	padding-top: $default-banner-height;
+	padding-top: $banner-height;
 	.banner {
-		height: $default-banner-height;
+		height: $banner-height;
 		background-size: cover !important;
 
 		a {

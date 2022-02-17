@@ -11,6 +11,9 @@ function MainPage() {
 					<h1 className="device"><i>{device1st}</i> {'\n' + device2nd}</h1>
 				</div>
 				<a className="button" href="/appointment">Zapisz się na wizytę</a>
+				{/* <div className="quote"><q>SALUS AEGROTI SUPREMA LEX</q> (dobro chorego najwyższym prawem)<br />
+					<q>PRIMUM NON NOCERE</q> (po pierwsze nie szkodzić)<br />
+					Hipokrates</div> */}
 				<a className="scroll-down" href="#section1"><i className="fas fa-chevron-down"></i></a>
 			</div>
 			<section className="section" id="section1">

@@ -12,11 +12,10 @@ function Offer() {
 				</div>
 			</div>
 			<article className="page-content">
-				<aside>
+				<aside className="h-desc">
 					<p className="center">
-						Tu będzie jakiś tekst generalnie o usługach.
-						Fajnie było by tu dodać że specjalizuje się w ratowaniu zębów,
-						które inni lekarze spisali na straty :)
+						Gabinet specjalizuje się w zaawansowanej protetyce, a szczególnie w ratowaniu zębów bardzo zniszczonych,
+						często spisanych przez innych lekarzy na straty.
 					</p>
 				</aside>
 				<section className="offers">

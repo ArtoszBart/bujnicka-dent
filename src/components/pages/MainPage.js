@@ -16,9 +16,9 @@ function MainPage() {
 					Hipokrates</div> */}
 				<a className="scroll-down" href="#section1"><i className="fas fa-chevron-down"></i></a>
 			</div>
-			<section className="section" id="section1">
+			<article className="section" id="section1">
 
-			</section>
+			</article>
 		</main>
 	);
 }

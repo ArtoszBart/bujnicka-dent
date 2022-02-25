@@ -38,22 +38,23 @@ function Diagnostics() {
 				</p>
 
 				<h2>PRZEROBIONA WERSJA:</h2> */}
-
-				<p>
-					Przychodząc do gabinetu stomatologicznego, często tylko wtedy,
-					gdy "coś dzieje się z zębem", skupiamy się na rozwiązaniu tylko tego jednego problemu.
-					Dzięki dokładnemu badaniu klinicznemu, <b>bezpłatna wizyta diagnostyczna</b> umożliwia
-					zapoznanie się z sytuacją dotyczącą wszystkich zębów.
-				</p>
-				<p>Wizyta zakończona jest przekazaniem w formie pisemnej Diagramu leczenia, który zawiera następujące informacje:</p>
-				<ul>
-					<li>plan leczenia zachowawczego</li>
-					<li>możliwość "<Link to="" className="text-link">poprawienia uśmiechu</Link>"</li>
-					<li>projekt zmiany relacji zwarciowych (mają one bardzo duży wpływ na zdrowie ogólne, np. występowanie migren)</li>
-					<li>1-3 projektów uzupełnienia braków zębowych</li>
-					<li>wstępną symulację finansową</li>
-				</ul>
-				<p><b>Bezpłatna wizyta diagnostyczna</b> daje wiedzę na temat zębów i całego narządu żucia już na pierwszej wizycie!</p>
+				<section className="page-content-text">
+					<p>
+						Przychodząc do gabinetu stomatologicznego, często tylko wtedy,
+						gdy "coś dzieje się z zębem", skupiamy się na rozwiązaniu tylko tego jednego problemu.
+						Dzięki dokładnemu badaniu klinicznemu, <b>bezpłatna wizyta diagnostyczna</b> umożliwia
+						zapoznanie się z sytuacją dotyczącą wszystkich zębów.
+					</p>
+					<p>Wizyta zakończona jest przekazaniem w formie pisemnej Diagramu leczenia, który zawiera następujące informacje:</p>
+					<ul>
+						<li>plan leczenia zachowawczego</li>
+						<li>możliwość "<Link to="" className="text-link">poprawienia uśmiechu</Link>"</li>
+						<li>projekt zmiany relacji zwarciowych (mają one bardzo duży wpływ na zdrowie ogólne, np. występowanie migren)</li>
+						<li>1-3 projektów uzupełnienia braków zębowych</li>
+						<li>wstępną symulację finansową</li>
+					</ul>
+					<p><b>Bezpłatna wizyta diagnostyczna</b> daje wiedzę na temat zębów i całego narządu żucia już na pierwszej wizycie!</p>
+				</section>
 			</article>
 		</main >
 	);

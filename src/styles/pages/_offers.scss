@@ -1,7 +1,7 @@
 @use '../config' as *;
 
 .h-desc {
-	padding: 3rem 5rem;
+	padding: 0 3rem 5rem;
 	text-align: center;
 }
 
@@ -9,7 +9,6 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 3vw;
-	padding-top: 5rem;
 
 	&-single {
 		display: flex;

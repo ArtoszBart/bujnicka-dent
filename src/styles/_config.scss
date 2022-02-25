@@ -8,6 +8,9 @@ $accent-color: #18b6d2;
 $slow-trnsition-time: 0.6s;
 $banner-height: 40vh;
 
+$tab-nav-columns: 5;
+$tab-child-no: 10;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -47,5 +50,25 @@ $banner-height: 40vh;
 @keyframes pulse {
 	100% { 
 		box-shadow: 0 0 0 0 $accent-color;
+	}
+}
+
+@mixin set-corner-round {
+	&:first-child {
+		border-top-left-radius: 1rem;
+	}
+
+	&:nth-child(#{$tab-nav-columns}) {
+		border-top-right-radius: 1rem;
+	}
+
+	&:nth-child(#{(floor(calc($tab-child-no / $tab-nav-columns)) * $tab-nav-columns) + (if($tab-child-no % $tab-nav-columns == 0, -$tab-nav-columns+1, 1))}) {
+		border-bottom-left-radius: 1rem;
+	}
+
+	&:last-child {
+		@if($tab-child-no % $tab-nav-columns == 0){
+			border-bottom-right-radius: 1rem;
+		}
 	}
 }

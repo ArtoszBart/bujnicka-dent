@@ -17,7 +17,7 @@ function About() {
 					<h2>Historia</h2>
 					<p>Historia lekarska w naszej rodzinie zaczęła się w 1953 roku.
 						Moja mama Maria Bałuta, rozpoczęła studia na Wydziale Stomatologicznym Akademii Medycznej w Gdańsku.
-						Po studiach połączyła swoją lekarską pasję z doktorem weterynarii Bohdanem Bujnickim,
+						Po studiach połączyła swoją lekarską pasję z Bohdanem Bujnickim,
 						który w 1959 roku ukończył Wydział Weterynarii w Warszawie.
 					</p><p>
 						Pierwszy gabinet powstał w 1966 roku na Pomorzu Środkowym,
@@ -53,9 +53,9 @@ function About() {
 						<p>
 							Moim pacjentom zapewniam <b>całkowitą pomoc stomatologiczną</b>,
 							począwszy od profilaktyki, aż do uzupełnienia braków zębowych.
-							Zawsze projektuję kilka rozwiązań, <b>dopasowanych do możliwości finansowych pacjenta</b>.
-							Umiejętność słuchania pozwala mi zbliżyć plan leczenia do oczekiwań pacjenta.
-							Często też udaje mi się <b>uratować zęby przeznaczone przez innych lekarzy do ekstrakcji</b>.
+							Zawsze projektuję kilka rozwiązań, <b>dopasowanych do możliwości finansowych</b>,
+							a umiejętność słuchania pozwala mi zbliżyć plan leczenia do oczekiwań pacjenta.
+							Często też udaje mi się <b>uratować zęby bardzo zniszczone i przeznaczone do ekstrakcji</b>.
 							Stosowanie zasad minimalnie interweniujących w tkanki zęba,
 							umożliwia uratowanie jak największej ilości własnych zębów pacjenta i pozwala
 							na zastosowanie najkorzystniejszych rozwiązań protetycznych.

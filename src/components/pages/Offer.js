@@ -29,23 +29,6 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Onley'e oraz Inley'e</h3>
-						<p>
-							Inaczej wkłady koronowe - są to wypełnienia zębów o bardzo wysokiej jakości.
-						</p>
-						<Link to="/offer/onlay-inlay" className="button">Zobacz więcej</Link>
-					</div>
-					<div className="offers-single">
-						<img src={CarPhoto} alt="" />
-						<h3>Stomatologia Cyfrowa</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam euismod ante sit amet congue elementum.
-						</p>
-						<Link to="/offer/digital-dentistry" className="button">Zobacz więcej</Link>
-					</div>
-					<div className="offers-single">
-						<img src={CarPhoto} alt="" />
 						<h3>Profilaktyka</h3>
 						<p>
 							Profilaktyka, to podstawowy dział stomatologii,
@@ -62,6 +45,33 @@ function Offer() {
 							jak najbardziej naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
 						</p>
 						<Link to="/offer/aesthetic-dentistry" className="button">Zobacz więcej</Link>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
+						<h3>Stomatologia Cyfrowa</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Etiam euismod ante sit amet congue elementum.
+						</p>
+						<Link to="/offer/digital-dentistry" className="button">Zobacz więcej</Link>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
+						<h3>Inley'e Onley'e Overlay'e Endokorony </h3>
+						<p>
+							Inaczej wkłady koronowe - są to wypełnienia zębów o bardzo wysokiej jakości.
+						</p>
+						<Link to="/offer/onlay-inlay" className="button">Zobacz więcej</Link>
+					</div>
+					<div className="offers-single">
+						<img src={CarPhoto} alt="" />
+						<h3>Protetyka</h3>
+						<p>
+							Protetyka to dział stomatologii zajmujący się uzupełnianiem
+							utraconych zębów w przypadku, gdy nie jest możliwa ich odbudowa
+							zachowawcza lub zostały one utracone z innych powodów.
+						</p>
+						<Link to="/offer/prosthodontics" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -91,13 +101,11 @@ function Offer() {
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
-						<h3>Protetyka</h3>
+						<h3>Chirurgia Stomatologiczna</h3>
 						<p>
-							Protetyka to dział stomatologii zajmujący się uzupełnianiem
-							utraconych zębów w przypadku, gdy nie jest możliwa ich odbudowa
-							zachowawcza lub zostały one utracone z innych powodów.
+							Czasami zęba nie da się już uratować, podejmuję wtedy decyzję o usunięciu - ekstrakcji.
 						</p>
-						<Link to="/offer/prosthodontics" className="button">Zobacz więcej</Link>
+						<Link to="/offer/dental-surgery" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />
@@ -106,14 +114,6 @@ function Offer() {
 							Dziedzina chirurgii uzupełniająca brakujący korzeń zęba to implantologia.
 						</p>
 						<Link to="/offer/implants" className="button">Zobacz więcej</Link>
-					</div>
-					<div className="offers-single">
-						<img src={CarPhoto} alt="" />
-						<h3>Chirurgia Stomatologiczna</h3>
-						<p>
-							Czasami zęba nie da się już uratować, podejmuję wtedy decyzję o usunięciu - ekstrakcji.
-						</p>
-						<Link to="/offer/dental-surgery" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />

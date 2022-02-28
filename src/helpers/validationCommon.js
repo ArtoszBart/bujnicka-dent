@@ -58,6 +58,5 @@ export function getErrorMessages(errors) {
 			...errorMessages, [key]: (value === 'length' ? dictionary.validation.length[key] : dictionary.validation[value])
 		}
 	}
-	console.log(errors);
 	return errorMessages;
 }

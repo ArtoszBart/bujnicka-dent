@@ -3,7 +3,7 @@ import useContactForm from './customHooks/useContactForm';
 import FormInput from './FormInput';
 
 function ContactForm() {
-	const { handleChange, handleSubmit, values, errors, sent } = useContactForm();
+	const { handleChange, handleSubmit, values, errors, submitInfo } = useContactForm();
 
 	return (
 		<div className="half-width">
@@ -54,13 +54,19 @@ function ContactForm() {
 					{errors.message && <span className="error-text">{errors.message}</span>}
 				</div>
 				<div className="contact-form-info">
-					<span className="contact-form-info-message">
-						{sent === '{sending...}' ? <><i className="fa fa-spinner fa-spin"></i>Wysyłanie</> : sent}
+					<span className={(() => {
+						switch (submitInfo.success) {
+							case true: return 'success-message';
+							case false: return 'error-message';
+							default: return '';
+						}
+					})()}>
+						{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{submitInfo.message}
 					</span>
 				</div>
 				<input type="submit" className="submit" value="Wyślij wiadomość" tabIndex="5" />
-			</form>
-		</div>
+			</form >
+		</div >
 	);
 }
 

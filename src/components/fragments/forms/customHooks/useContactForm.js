@@ -1,5 +1,6 @@
 import { useState } from "react";
 import validate from './../validation/validateContactForm';
+import { setStateSending, setStateSuccess, setStateError } from './../../../../helpers/sendingState';
 import { getErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 
@@ -11,7 +12,7 @@ const useContactForm = () => {
 		message: ''
 	});
 	const [errors, setErrors] = useState({});
-	const [sent, setSent] = useState(null);
+	const [submitInfo, setSubmitInfo] = useState({});
 
 	const handleChange = e => {
 		const { name, value } = e.target;
@@ -28,26 +29,36 @@ const useContactForm = () => {
 		if (Object.keys(currentErrors).length !== 0) {
 			return;
 		}
-		// API CALL HERE
+
+		setStateSending(setSubmitInfo);
+		// API CALL
 		axios.post('http://localhost:4000/api/email/send', values).then(res => {
-			setSent("Wysłano");
+			setStateSuccess(setSubmitInfo);
 			setValues({
 				name: '',
 				email: '',
 				subject: '',
 				message: ''
 			});
-		}).catch(error => { // 400 - validation; 	502 - bad gateway
-			if (error.response.status === 400) {
-				setErrors(getErrorMessages(error.response.data));
+		}).catch(error => {
+			// 400 - validation;
+			// 502 - bad gateway;
+			// 512 - unable to connect to server
+			let code;
+			if (error.response) {
+				if (error.response.status === 400) {
+					setErrors(getErrorMessages(error.response.data));
+				} else {
+					code = error.response.status;
+				}
 			} else {
-				console.log("Coś nie działa z mailami");
+				code = 512;
 			}
+			setStateError(setSubmitInfo, code);
 		});
-
 	}
 
-	return { handleChange, handleSubmit, values, errors, sent };
+	return { handleChange, handleSubmit, values, errors, submitInfo };
 };
 
 export default useContactForm;

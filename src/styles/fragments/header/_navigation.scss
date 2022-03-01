@@ -75,11 +75,15 @@
 	
 
 	&-link {
-		font-size: 1.5rem;
 		text-transform: uppercase;
+		font-size: 1.5rem;
 		font-weight: 300;
 		color: $primary-color !important;
-		text-decoration: none;
+
+		&:hover {
+			color: $accent-color !important;
+			text-decoration: none !important;
+		}
 	}
 }
 

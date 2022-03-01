@@ -16,9 +16,9 @@ function About() {
 				<section className="history">
 					<h2>Historia</h2>
 					<p>Historia lekarska w naszej rodzinie zaczęła się w 1953 roku.
-						Moja mama Maria Bałuta, rozpoczęła studia na <span class="nowrap">Wydziale Stomatologicznym Akademii Medycznej w Gdańsku</span>.
+						Moja mama Maria Bałuta, rozpoczęła studia na <span className="nowrap">Wydziale Stomatologicznym Akademii Medycznej w Gdańsku</span>.
 						Po studiach połączyła swoją lekarską pasję z Bohdanem Bujnickim,
-						który w 1959 roku ukończył <span class="nowrap">Wydział Weterynarii w Warszawie</span>.
+						który w 1959 roku ukończył <span className="nowrap">Wydział Weterynarii w Warszawie</span>.
 					</p><p>
 						Pierwszy gabinet powstał w 1966 roku na Pomorzu Środkowym,
 						a ja wyrastałam w jego sąsiedztwie w atmosferze niesienia pomocy pacjentom.
@@ -46,7 +46,7 @@ function About() {
 						<h2>Magdalena Bujnicka</h2>
 						<p className="subheadder">Lekarz stomatolog</p>
 						<p>
-							Jestem absolwentką <span class="nowrap">Pomorskiej Akademii Medycznej w Szczecinie</span> i od pierwszych lat studiów
+							Jestem absolwentką <span className="nowrap">Pomorskiej Akademii Medycznej w Szczecinie</span> i od pierwszych lat studiów
 							mogłam liczyć na wsparcie oraz, poparte wieloletnim doświadczeniem, cenne rady rodziców lekarzy.
 							Wpojono mi, że <b>dobro pacjenta jest najwyższą wartością</b>.
 						</p>

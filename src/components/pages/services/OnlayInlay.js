@@ -99,7 +99,7 @@ function OnlayInlay() {
 
 					<div className="text-img">
 						<div>
-							<div className="page-photo">
+							<div className="page-photo down-right">
 								<img src={CarPhoto} alt="" />
 								<span>"Starczy wygląd"</span>
 							</div>

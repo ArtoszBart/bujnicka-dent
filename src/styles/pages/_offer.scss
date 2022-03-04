@@ -34,10 +34,21 @@ h2 {
 
     .page-photo {
         float: right;
-        justify-content: end;
         margin: 0 3rem;
+        align-self: start;
+    }
+
+    .down-right {
+        justify-content: end;
         height: 100%;
         shape-outside: inset(calc(100% - 300px) 0 0);
+    }
+
+    .photos {
+        display: flex;
+        flex-direction: column;
+        float: right;
+        gap: 1rem;
     }
 }
 

@@ -1,0 +1,114 @@
+@use '../config' as *;
+
+.sbs-list {
+	margin: 50px 20px;
+
+	&-item {
+		border-top: 2px dashed;
+		border-color: $accent-color !important;
+		margin: 0;
+		padding: 30px;
+		counter-increment: section;
+		position: relative;
+
+		&:first-child {
+			border-top: 0;
+			border-top-left-radius: 0 !important;
+		}
+
+		&:nth-child(odd),
+		&:nth-child(even) {
+			&:before {
+				box-sizing: unset;
+				content: counter(section);
+				position: absolute;
+				border-radius: 50%;
+				margin-top: -10px;
+				padding: 10px;
+				height: 15px;
+				width: 15px;
+				background-color: $accent-color;
+				text-align: center;
+				line-height: 0.9;
+				color: $primary-color;
+				font-size: 110%;
+			}
+		}
+
+		&:nth-child(odd) {
+			border-left: 2px dashed;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+			margin-right: 30px;
+			padding-right: 0;
+
+			&:before {
+				right: 100%;
+				margin-right: -20px;
+			}
+
+			&:after {
+				box-sizing: unset;
+				content: "";
+				position: absolute;
+				top: -32px;
+				left: 100%;
+				height: 30px;
+				width: 30px;
+				border-bottom-right-radius: 30px;
+				border-bottom: 2px dashed $accent-color;
+			}
+		}
+
+		&:nth-child(even) {
+			border-right: 2px dashed;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			margin-left: 30px;
+			padding-left: 0;
+
+			&:before {
+				box-sizing: unset;
+				content: counter(section);
+				left: 100%;
+				margin-left: -20px;
+				position: absolute;
+				border-radius: 50%;
+				margin-top: -10px;
+				padding: 10px;
+				height: 15px;
+				width: 15px;
+				background-color: $accent-color;
+				text-align: center;
+				line-height: 0.9;
+				color: white;
+				font-size: 110%;
+			}
+
+			&:after {
+				box-sizing: unset;
+				content: "";
+				position: absolute;
+				top: -32px;
+				left: -29px;
+				height: 30px;
+				width: 30px;
+				border-bottom-left-radius: 30px;
+				border-bottom: 2px dashed $accent-color;
+			}
+		}
+
+		&:last-child {
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
+	&-item:first-child:after {
+		border: none
+	}
+}
+
+
+
+

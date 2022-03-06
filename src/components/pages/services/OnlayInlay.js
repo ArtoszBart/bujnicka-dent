@@ -8,14 +8,14 @@ function OnlayInlay() {
 		<main className="page-wrapper" role="main">
 			<div className="banner" id="onlay-inlay">
 				<div className="banner-title">
-					<h1>Onley'e, Inley'e, Overlay'e, Endokorony</h1>
+					<h1>Inley'e, Onley'e, Overlay'e, Endokorony</h1>
 				</div>
 			</div>
 			<article className="page-content">
 				<section className="page-content-text">
 					<h2>Czym są wkłady koronowe?</h2>
 					<p>
-						<b>Onlay'e,  Inlay'e,  Overlay'e, Endokorony</b> to inaczej <dfn>Wkłady Koronowe</dfn> -
+						<b>Inley'e, Onley'e, Overlay'e, Endokorony</b> to inaczej <dfn>Wkłady Koronowe</dfn> -
 						są to wypełnienia zębów o bardzo wysokiej jakości, przyklejane do
 						zęba specjalną techniką adhezyjną najnowszej generacji.
 						Są to jedne z <b>najbardziej luksusowych produktów stomatologicznych</b> oferowanych pacjentom.
@@ -122,7 +122,7 @@ function OnlayInlay() {
 					</div>
 					<ImportantInfo>
 						Uzupełnienie brakujących tkanek zęba wykonanych odpowiednio wcześnie oraz z materiałów
-						o twardości i ścieralności, zbliżonej do naturalnego szkliwa, skutecznie zapobiegnie tym objawom.
+						o twardości i ścieralności, zbliżonej do naturalnego szkliwa, skutecznie zapobiega objawom "starczego wyglądu".
 					</ImportantInfo>
 				</section>
 			</article>

@@ -15,7 +15,7 @@ function Prevention() {
 				<section className="page-content-text">
 					<h2>Czym jest profilaktyka</h2>
 					<p>
-						Profilaktyka to podstawowy dział stomatologii zajmujący się <b>zapobieganiem chorób jamy ustnej</b> oraz uświadamianiem,
+						<dfn>Profilaktyka</dfn> to podstawowy dział stomatologii zajmujący się <b>zapobieganiem chorób jamy ustnej</b> oraz uświadamianiem,
 						jak ważna w życiu codziennym jest <b>prawidłowa higiena</b>.
 					</p>
 					<p>
@@ -50,7 +50,7 @@ function Prevention() {
 							<div className="photos">
 								<div className="page-photo">
 									<img src={CarPhoto} alt="" />
-									<span>Płytka nazębna</span>
+									<span>Kamień nazębny</span>
 								</div>
 								<div className="page-photo">
 									<img src={CarPhoto} alt="" />
@@ -58,24 +58,29 @@ function Prevention() {
 								</div>
 							</div>
 							<p>
-								Pozostająca na zębach fizjologiczna <b>płytka nazębna</b>, tworząca się po każdym posiłku z resztek jedzenia i bakterii,
-								występuje w postaci miękkiego, ściśle przylegającego, biało - żółtego nalotu. Po kilku dniach ulega mineralizacji
-								solami mineralnymi ze śliny i tworzy <b>kamień nazębny</b>.
+								Po każdym posiłku z resztek jedzenia i bakterii tworzy się na powierzchni zębów <dfn>płytka nazębna</dfn>,
+								która występuje w postaci miękkiego, ściśle przylegającego, biało - żółtego nalotu.
 							</p>
 							<p>
-								Kamień powstaje więc na skutek nieprawidłowego czyszczenia zębów i nie da się go usunąć przy użyciu przyrządów do
-								podstawowej higieny jamy ustnej. Pozbyć się go można tylko w gabinecie stomatologicznym za pomocą <b>scalera</b>,
-								działającego na zasadzie ultradżwięków.
+								U pacjentów, którzy mają w składzie swojej śliny dużą zawartość soli mineralnych, po kilku
+								dniach płytka nazębna ulega mineralizacji i tworzy się <b>kamień nazębny</b>. Czynnikiem zapobiegającym
+								wytworzeniu się kamienia nazębnego jest <b>prawidłowo i systematycznie</b> przeprowadzana <b>higiena jamy ustnej</b> za
+								pomocą odpowiednich środków do higieny.
 							</p>
 							<p>
-								<b>Płytka nazębna</b> jest podstawowym czynnikiem wywołującym powstanie próchnicy, a kamień - chorób przyzębia,
-								dlatego <a href="#services" className="text-link"><b>scaling</b></a> powinien być wykonywany <b>jak najwcześniej</b> po
-								pojawieniu się kamienia. Częstość wykonywania tego zabiegu zależy więc od osobniczych predyspozycji pacjenta do jego odkładania.
+								<dfn>Kamień nazębny</dfn> powstaje więc na skutek nieprawidłowego czyszczenia
+								zębów i nie da się go usunąć przy użyciu przyrządów do podstawowej higieny jamy ustnej. Można się go
+								pozbyć już tylko w gabinecie stomatologicznym za pomocą <b>scalera</b>, działającego na zasadzie ultradżwięków.
+							</p>
+							<p>
+								<a href="#services" className="text-link"><b>Scaling</b></a> powinien być
+								wykonywany <b>jak najwcześniej po pojawieniu się kamienia</b>, a częstość jego wykonywania
+								zależy od osobniczych predyspozycji pacjenta.
 							</p>
 							<p>
 								Często kamień mylony jest z <b>osadem nazębnym</b>, który jest przebarwieniem zębów powstającym na skutek spożywania,
-								zawierających silne substancje barwiące, napojów i pokarmów, np. kawy, herbaty, potraw z curry itp. oraz palenia papierosów.
-								Usuwa się go razem z kamieniem podczas scalingu.
+								zawierających silne <b>substancje barwiące</b>, napojów i jedzenia, np. kawy, herbaty, potraw z curry itp.
+								oraz <b>palenia papierosów</b>. Usuwa się go razem z kamieniem podczas scalingu.
 							</p>
 						</div>
 					</div>
@@ -102,8 +107,9 @@ function Prevention() {
 
 					<h3>Fluoryzacja (lakierowanie)</h3>
 					<p>
-						Jest to zabieg <b>zapobiegający powstawaniu próchnicy</b>. Fluor, oprócz <b>zmniejszenia nadwrażliwości zębów</b> poprzez
-						remineralizację szkliwa, powoduje <b>wzrost odporności zębów</b> na działanie próchnicotwórcze bakterii.
+						Jest to zabieg <b>zapobiegający powstawaniu próchnicy</b>. Fluor, oprócz powodowania <b>wzrostu odporności zębów</b> na
+						działanie próchnicotwórcze bakterii, powoduje <b>zmniejszenie nadwrażliwości zębów</b> poprzez
+						remineralizację szkliwa.
 					</p>
 					<p>
 						Zabieg ten polegaja na aplikacji preparatów fluoru bezpośrednio na powierzchnię zęba lub zastosowanie
@@ -114,7 +120,7 @@ function Prevention() {
 					<h3>Lakowanie</h3>
 					<p>
 						Jest zabiegiem wykonywanym <b>u dzieci</b> w pełni wykształconych zębach stałych, w których anatomiczny kształt
-						bruzd i zagłębień uniemożliwia ich skuteczne oczyszczanie. Płytka bakteryjna zalegająca w takim miejscu powoduje
+						bruzd i zagłębień uniemożliwia ich skuteczne oczyszczanie. Płytka bakteryjna zalegająca w takich miejscach powoduje
 						duże ryzyko powstania próchnicy zęba.
 					</p>
 					<p>
@@ -124,8 +130,8 @@ function Prevention() {
 						W przypadku wystąpienia próchnicy konieczne jest jej usunięcie, przed przystąpieniem do lakowania.
 					</p>
 					<ImportantInfo>
-						Jest to istotny zabieg w profilaktyce próchnicy, ponieważ zabezpiecza zęby przed powstawaniem ubytków i
-						gwarantuje ich długie przetrwanie w jamie ustnej.
+						Lakowanie jest istotnym zabiegiem w profilaktyce próchnicy, ponieważ <b>zabezpiecza zęby</b> przed powstawaniem ubytków i
+						gwarantuje ich <b>długie przetrwanie</b> w jamie ustnej.
 					</ImportantInfo>
 
 					<h3>Zabieg ICON</h3>

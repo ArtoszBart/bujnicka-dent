@@ -15,7 +15,7 @@ function OnlayInlay() {
 				<section className="page-content-text">
 					<h2>Czym są wkłady koronowe?</h2>
 					<p>
-						<b>Onlay'e,  Inlay'e,  Overlay'e, Endokorony</b> to inaczej <b>Wkłady Koronowe</b> -
+						<b>Onlay'e,  Inlay'e,  Overlay'e, Endokorony</b> to inaczej <dfn>Wkłady Koronowe</dfn> -
 						są to wypełnienia zębów o bardzo wysokiej jakości, przyklejane do
 						zęba specjalną techniką adhezyjną najnowszej generacji.
 						Są to jedne z <b>najbardziej luksusowych produktów stomatologicznych</b> oferowanych pacjentom.
@@ -35,10 +35,10 @@ function OnlayInlay() {
 
 					<h3>Rodzaje wkładów koronowych</h3>
 					<ul>
-						<li><b>Inlay</b> - wkład koronowy wykonywany przy zachowaniu wszystkich ścianek zęba</li>
-						<li><b>Onlay</b> - wkład koronowy odtwarzający całą powierzchnię żującą i guzki zęba</li>
-						<li><b>Overlay</b> (inaczej nakład) - ma poszerzony zasięg o ściany boczne zęba</li>
-						<li><b>Endokorona</b> - dotyczy zębów martwych. Warunkiem jej wykonania jest odpowiednia ilość
+						<li><dfn>Inlay</dfn> - wkład koronowy wykonywany przy zachowaniu wszystkich ścianek zęba</li>
+						<li><dfn>Onlay</dfn> - wkład koronowy odtwarzający całą powierzchnię żującą i guzki zęba</li>
+						<li><dfn>Overlay</dfn> (inaczej nakład) - ma poszerzony zasięg o ściany boczne zęba</li>
+						<li><dfn>Endokorona</dfn> - dotyczy zębów martwych. Warunkiem jej wykonania jest odpowiednia ilość
 							tkanek zęba stanowiąca odpowiednie podparcie.
 							Jeśli w wyniku leczenia kanałowego doszło do znacznego zniszczenia tkanek,
 							musi zostać zastosowana metoda odbudowy protetycznej za pomocą wkładu koronowo-korzeniowego i korony porcelanowej.</li>

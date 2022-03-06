@@ -1,5 +1,7 @@
 import '../../../styles/main.scss';
 import { Link } from 'react-router-dom';
+import ImportantInfo from '../../fragments/pages/ImportantInfo';
+import CarPhoto from '../../../img/samochut.jpg';
 
 function AestheticDentistry() {
 
@@ -14,7 +16,7 @@ function AestheticDentistry() {
 				<section className="page-content-text">
 					<h2>Cel stomatologi estetycznej</h2>
 					<p>
-						<b>Stomatologia estetyczna</b> zajmuje się przywróceniem lub nadaniem zębom jak najbardziej
+						<dfn>Stomatologia estetyczna</dfn> zajmuje się przywróceniem lub nadaniem zębom jak najbardziej
 						naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
 					</p>
 				</section>
@@ -34,95 +36,154 @@ function AestheticDentistry() {
 				<section className="page-content-text">
 					<h2>Wymiana wypełnień</h2>
 					<p>
-						Wymianę nieestetycznych, przebarwionych i niekompletnych wypełnień na NOWE ESTETYCZNE WYPEŁNIENIA KOMPOZYTOWE
-						lub INNE UZUPEŁNIENIA PROTETYCZNE, do których należą:
-					</p>
-					<h3>Licówki</h3>
-					<p>
-						Są to cieniutkie NAKŁADKI PROTETYCZNE tylko na powierzchnię wargową lub policzkową zębów zgodnie z zasadą
-						złotych proporcji i przeznaczone są dla pacjentów, którzy znacząco chcą poprawić wygląd swojego uśmiechu.
-					</p>
-					<h4>Wskazania do licówek:</h4>
-					<ul>
-						<li>zęby przebarwione, w których zabiegi wybielające nie przyniosły oczekiwanych rezultatów</li>
-						<li>zmiana kształtu, wielkości i wzajemnych relacji zębów</li>
-						<li>rozległe wrodzone lub nabyte defekty szkliwa, np. nierówna powierzchnia szkliwa, pęknięcia, ubytki</li>
-						<li>likwidacja diastem (przerw) między zębami</li>
-					</ul>
-					<h4>Przeciwwskazania do wykonania licówek:</h4>
-					<ul>
-						<li>zęby martwe</li>
-						<li>zęby z rozległymi ubytkami lub wypełnieniami kompozytowymi</li>
-						<li>rozległe braki zębów</li>
-						<li>parafunkcje typu zgrzytanie, zaciskanie zębów. Konieczne jest najpierw <Link to="/offer/joints" className="text-link">Leczenie Stawów Skroniowo-Żuchwowych</Link></li>
-						<li>wady zgryzu</li>
-						<li>parodontoza</li>
-						<li>zła higiena jamy ustnej</li>
-					</ul>
-					<h4>Wykonanie licówek:</h4>
-					<div class="sbs-list">
-						<div class="sbs-list-item">
-							<h5>Wizyta konsultacyjno-diagnostyczna</h5>
-							<p>
-								Polega na ocenie istniejących warunków i poznaniu oczekiwań pacjenta. Pobierane są wyciski w
-								celu wykonania modeli orientacyjnych, na których w laboratorium protetycznym wykonuje się tzw.
-								MOCK-UP - tymczasowe nieinwazyjne licówki
-							</p>
-						</div>
-						<div class="sbs-list-item">
-							<h5>Wizyta wizualizacyjna</h5>
-							<p>
-								Za pomocą mock-up'u możliwe jest pokazanie pacjentowi na jego własnych zębach przyszłego efektu
-								zmiany wyglądu zębów. Na tym etapie możliwa jest zmiana kształtu zaprojektowanych licówek
-							</p>
-						</div>
-						<div class="sbs-list-item">
-							<h5>Tytuł</h5>
-							<p>
-								preparacja zębów, pobranie wycisku i zabezpieczenie licówkami tymczasowymi
-							</p>
-						</div>
-						<div class="sbs-list-item">
-							<h5>Tytuł</h5>
-							<p>
-								przyklejenie licówek w specjalnej technice adhezyjnej
-							</p>
-						</div>
-					</div>
-					<p>
-						Obecnie licówki są  NAJPOPULARNIEJSZĄ METODĄ na realizację marzenia o pięknym, białym uśmiechu.
-
-						<h3>Wkłady koronowe</h3>
-						<p>
-							Pełen opis wkładów koronowych znajduje się w
-							zakładce <Link to="/offer/onlay-inlay" className="text-link">Inley'e, Onley'e, Overlay'e, Endokorony</Link>
-						</p>
-						<h3>Korony estetyczne</h3>
-						<p>
-							Pełen opis wkładów koronowych znajduje się w
-							zakładce <Link to="/offer/prosthodontics" className="text-link">Protetyka</Link>
-						</p>
-						<h3>Mosty</h3>
-						<p>Pełen opis wkładów koronowych znajduje się w
-							zakładce <Link to="/offer/prosthodontics" className="text-link">Protetyka</Link>
-						</p>
+						Zęby przednie często mają liczne, nieestetyczne, przebarwione lub niekompletne wypełnienia.
+						Wymiana tych wypełnień na nowe może dać <b>bardzo dobry efekt estetyczny</b>.
+						Warunkiem takiej wymiany jest wystarczająca ilość tkanek własnych zęba.
+						W przeciwnym razie rozważyć trzeba inną metodę poprawy estetyki.
 					</p>
 				</section>
 				<section className="page-content-text">
-					<h2>CLEAR ALIGNER</h2>
+					<h2>Licówki</h2>
 					<p>
-						korekta małych nieprawidłowości w ustawieniu zębów za pomocą metody CLEAR ALIGNER - estetyczna alternatywa dla ortodontycznych aparatów stałych.
-						Metoda ta wykorzystuje przezroczyste, biokompatybilne, SILIKONOWE NAKŁADKI, które nosi się przez 24h i zdejmuje tylko do jedzenia. Dzięki temu, że są przezroczyste i praktycznie niewidoczne na zębach, zapewniają najwyższy stopień estetyki podczas całego procesu leczenia. Idealnie gładkie i dobrze dopasowane do zębów i dziąseł, zapewniają wysoki komfort ich użytkowania.
-						PRZEBIEG LECZENIA:
-						- wizyta konsultacyjna - polega na ocenie, czy pacjent kwalifikuje się do tej metody leczenia. Konieczne jest wykonanie PANTOMOGRAMU i niekiedy CEFALOMETRII (zdjęcia twarzoczaszki);
-						- przygotowanie indywidualnego planu leczenia;
-						- pobranie wycisków obydwu szczęk w celu wykonania w laboratorium protetycznym modeli, na których technik dokona pierwszych przesunięć zębów, tzw. SET-UP;
-						- pacjent otrzymuje pierwszy ZESTAW NAKŁADEK o różnej twardości: SOFT, MUDIUM i HARD na obydwa łuki zębowe. Każdą z nakładek nosi się ok. 7 dni;
-						- po ok. 3-4 tygodniach pobierane są kolejne wyciski, które odzwierciedlają aktualne zmiany w ustawieniu zębów. Na ich podstawie wykonuje się zestaw kolejnych 3 nakładek. Proces ten jest powtarzany do momentu osiągnięcia planowanego efektu leczenia.
-						Czas stabilizacji ustawienia zębów w nowej pozycji ( RETENCJI ) jest 2x dłuższy od czasu leczenia i wymaga noszenia aparatu retencyjnego, którym najczęściej jest ostatnia nakładka.
-
-						Metoda CLEAR ALIGNER jest zdecydowanie tańsza i bardziej komfortowa niż tradycyjne leczenie ortodontyczne.
+						Są to cieniutkie <b>nakładki protetyczne</b> tylko na powierzchnię wargową lub policzkową zębów.
+						Przeznaczone są dla pacjentów, którzy znacząco chcą <b>poprawić wygląd uśmiechu</b>.
 					</p>
+					<div className="text-img list-img">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Licówki</span>
+							</div>
+						</div>
+						<div>
+							<h3>Wskazania do licówek:</h3>
+							<ul>
+								<li>zęby przebarwione, w których <b>zabiegi wybielające nie przyniosły oczekiwanych rezultatów</b></li>
+								<li>zmiana kształtu, wielkości i wzajemnych relacji zębów</li>
+								<li>rozległe wrodzone lub nabyte <b>defekty szkliwa</b>, np. nierówna powierzchnia szkliwa, pęknięcia, ubytki</li>
+								<li><b>likwidacja diastem</b> (przerw) między zębami</li>
+							</ul>
+							<h3>Przeciwwskazania do wykonania licówek:</h3>
+							<ul>
+								<li>zęby martwe</li>
+								<li>zęby z rozległymi ubytkami lub wypełnieniami kompozytowymi</li>
+								<li>rozległe braki zębów</li>
+								<li>
+									parafunkcje typu zgrzytanie, zaciskanie zębów.
+									Konieczne jest najpierw <Link to="/offer/joints" className="text-link">Leczenie Stawów Skroniowo-Żuchwowych</Link>
+								</li>
+								<li>wady zgryzu</li>
+								<li>parodontoza</li>
+								<li>zła higiena jamy ustnej</li>
+							</ul>
+						</div>
+					</div>
+					<h3>Wykonanie licówek:</h3>
+					<ol>
+						<li>
+							<h4>Wizyta konsultacyjno-diagnostyczna</h4>
+							<p>
+								Polega na ocenie istniejących warunków i poznaniu oczekiwań pacjenta. Pobierane są wyciski w
+								celu wykonania <b>modeli orientacyjnych</b>, na których w laboratorium protetycznym wykonuje się
+								tzw. <b>mock-up</b> - tymczasowe nieinwazyjne licówki
+							</p>
+						</li>
+						<li>
+							<h4>Wizyta wizualizacyjna</h4>
+							<p>
+								Za pomocą mock-up'u możliwe jest pokazanie pacjentowi na jego własnych zębach <b>przyszłego efektu</b> zmiany
+								wyglądu zębów. Na tym etapie możliwa jest zmiana kształtu zaprojektowanych licówek
+							</p>
+						</li>
+						<li>
+							<h4>Wykonanie</h4>
+							<p>
+								Przygotowanie zębów, pobranie wycisku i zabezpieczenie licówkami tymczasowymi
+							</p>
+						</li>
+						<li>
+							<h4>Wizyta końcowa</h4>
+							<p>
+								Przyklejenie licówek do zębów w specjalnej technice adhezyjnej
+							</p>
+						</li>
+					</ol>
+					<ImportantInfo>
+						Obecnie licówki są <b>najpopularniejszą metodą</b> na realizację marzenia o pięknym, białym uśmiechu.
+					</ImportantInfo>
+				</section>
+				<section className="page-content-text">
+					<h2>Inne zabiegi</h2>
+					<h3>Wkłady koronowe</h3>
+					<p>
+						Pełen opis wkładów koronowych znajduje się w
+						zakładce <Link to="/offer/onlay-inlay" className="text-link">Inley'e, Onley'e, Overlay'e, Endokorony</Link>
+					</p>
+					<h3>Korony estetyczne</h3>
+					<p>
+						Pełen opis koron estetycznych znajduje się w
+						zakładce <Link to="/offer/prosthodontics" className="text-link">Protetyka</Link>
+					</p>
+					<h3>Mosty</h3>
+					<p>Pełen opis mostów znajduje się w
+						zakładce <Link to="/offer/prosthodontics" className="text-link">Protetyka</Link>
+					</p>
+				</section>
+				<section className="page-content-text">
+					<h2>Clear Aligner</h2>
+					<p>
+						Korekta małych nieprawidłowości w ustawieniu zębów, może zostać wykonana za pomocą metody <dfn>Clear Aligner</dfn>.
+						Jest to estetyczna alternatywa dla ortodontycznych aparatów stałych.
+					</p>
+					<p>
+						Metoda ta wykorzystuje <b>przezroczyste</b>, biokompatybilne, <b>silikonowe nakładki</b>, które nosi się przez 24h i zdejmuje
+						tylko do jedzenia. Dzięki temu, że są przezroczyste i <b>praktycznie niewidoczne</b> na zębach,
+						zapewniają najwyższy stopień estetyki podczas całego procesu leczenia. Idealnie gładkie i dobrze dopasowane
+						do zębów i dziąseł, zapewniają <b>wysoki komfort</b> ich użytkowania.
+					</p>
+					<ImportantInfo>
+						Metoda <b>Clear Aligner</b> jest zdecydowanie tańsza i bardziej komfortowa niż tradycyjne leczenie ortodontyczne.
+					</ImportantInfo>
+					<h3>Przebieg leczenia:</h3>
+					<ol>
+						<li>
+							<p>
+								<b>Wizyta konsultacyjna</b> - polega na ocenie, czy pacjent kwalifikuje się do tej metody leczenia.
+								Konieczne jest wykonanie <b>pantomogramu</b> i niekiedy <b>cefalometrii</b> (zdjęcia twarzoczaszki).
+							</p>
+						</li>
+						<li>
+							<p>
+								Przygotowanie indywidualnego <b>planu leczenia</b>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Pobranie wycisków w celu wykonania w laboratorium protetycznym <b>modeli</b>, na których
+								technik dokona pierwszych przesunięć zębów, tzw. <b>set-up</b>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Pacjent otrzymuje pierwszy <b>zestaw nakładek</b> o różnej twardości: <b>soft</b>, <b>medium</b> i <b>hard</b> na
+								obydwa łuki zębowe. Każdą z nakładek nosi się około 7 dni.
+							</p>
+						</li>
+						<li>
+							<p>
+								Po około 3-4 tygodniach pobierane są <b>kolejne wyciski</b>, które
+								odzwierciedlają <b>aktualne zmiany w ustawieniu zębów</b>. Na ich podstawie wykonuje się zestaw kolejnych 3 nakładek.
+								Ten punkt jest <b>powtarzany do momentu osiągnięcia planowanego efektu leczenia</b>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Ostatnim krokiem leczenia jest <b>stabilizacja ustawienia zębów</b> w nowej pozycji (retencji).
+								Jest on <b>2x dłuższy od czasu leczenia</b> i wymaga noszenia aparatu retencyjnego,
+								którym najczęściej jest ostatnia nakładka.
+							</p>
+						</li>
+					</ol>
 				</section>
 
 			</article>

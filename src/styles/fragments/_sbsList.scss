@@ -1,9 +1,11 @@
 @use '../config' as *;
 
-.sbs-list {
-	margin: 50px 20px;
+ol {
+	margin: 1rem auto;
+	max-width: 700px;
+	list-style: none;
 
-	&-item {
+	li {
 		border-top: 2px dashed;
 		border-color: $accent-color !important;
 		margin: 0;
@@ -14,6 +16,9 @@
 		&:first-child {
 			border-top: 0;
 			border-top-left-radius: 0 !important;
+			&:after {
+				display: none;
+			}
 		}
 
 		&:nth-child(odd),
@@ -23,7 +28,7 @@
 				content: counter(section);
 				position: absolute;
 				border-radius: 50%;
-				margin-top: -10px;
+				margin: -10px -16px 0;
 				padding: 10px;
 				height: 15px;
 				width: 15px;
@@ -32,6 +37,15 @@
 				line-height: 0.9;
 				color: $primary-color;
 				font-size: 110%;
+			}
+
+			&:after {
+				box-sizing: unset;
+				content: "";
+				position: absolute;
+				height: 30px;
+				width: 28px;
+				border-bottom: 2px dashed $accent-color;
 			}
 		}
 
@@ -44,19 +58,12 @@
 
 			&:before {
 				right: 100%;
-				margin-right: -20px;
 			}
 
 			&:after {
-				box-sizing: unset;
-				content: "";
-				position: absolute;
 				top: -32px;
 				left: 100%;
-				height: 30px;
-				width: 30px;
 				border-bottom-right-radius: 30px;
-				border-bottom: 2px dashed $accent-color;
 			}
 		}
 
@@ -68,33 +75,13 @@
 			padding-left: 0;
 
 			&:before {
-				box-sizing: unset;
-				content: counter(section);
 				left: 100%;
-				margin-left: -20px;
-				position: absolute;
-				border-radius: 50%;
-				margin-top: -10px;
-				padding: 10px;
-				height: 15px;
-				width: 15px;
-				background-color: $accent-color;
-				text-align: center;
-				line-height: 0.9;
-				color: white;
-				font-size: 110%;
 			}
 
 			&:after {
-				box-sizing: unset;
-				content: "";
-				position: absolute;
-				top: -32px;
+				top: -33px;
 				left: -29px;
-				height: 30px;
-				width: 30px;
 				border-bottom-left-radius: 30px;
-				border-bottom: 2px dashed $accent-color;
 			}
 		}
 

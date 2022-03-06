@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../../../styles/main.scss';
+import ImportantInfo from '../../fragments/pages/ImportantInfo';
 
 function Diagnostics() {
 
@@ -29,7 +30,9 @@ function Diagnostics() {
 						<li>1-3 projektów uzupełnienia braków zębowych</li>
 						<li>wstępną symulację finansową</li>
 					</ul>
-					<p><b>Bezpłatna wizyta diagnostyczna</b> daje wiedzę na temat zębów i całego narządu żucia już na pierwszej wizycie!</p>
+					<ImportantInfo>
+						<b>Bezpłatna wizyta diagnostyczna</b> daje wiedzę na temat zębów i całego narządu żucia już na pierwszej wizycie!
+					</ImportantInfo>
 				</section>
 			</article>
 		</main >

@@ -12,8 +12,8 @@ function Prevention() {
 				</div>
 			</div>
 			<article className="page-content">
-				<section className="page-content-text">
-					<h2>Czym jest profilaktyka</h2>
+				<section aria-labelledby="what-is-prevention" className="page-content-text">
+					<h2 id="what-is-prevention">Czym jest profilaktyka</h2>
 					<p>
 						<dfn>Profilaktyka</dfn> to podstawowy dział stomatologii zajmujący się <b>zapobieganiem chorób jamy ustnej</b> oraz uświadamianiem,
 						jak ważna w życiu codziennym jest <b>prawidłowa higiena</b>.
@@ -43,8 +43,8 @@ function Prevention() {
 					</ul>
 				</section>
 
-				<section className="page-content-text">
-					<h2>Dlaczego profilaktyka jest tak ważna</h2>
+				<section aria-labelledby="why-prevention-is-important" className="page-content-text">
+					<h2 id="why-prevention-is-important">Dlaczego profilaktyka jest tak ważna</h2>
 					<div className="text-img">
 						<div>
 							<div className="photos">
@@ -90,9 +90,9 @@ function Prevention() {
 					</ImportantInfo>
 
 				</section>
-				<section className="page-content-text" id="services">
+				<section aria-labelledby="preventive-treatments" className="page-content-text" id="services">
 
-					<h2>Zabiegi profilaktyczne</h2>
+					<h2 id="preventive-treatments">Zabiegi profilaktyczne</h2>
 
 					<h3>Scaling</h3>
 					<p>

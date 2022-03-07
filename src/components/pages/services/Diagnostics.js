@@ -12,8 +12,8 @@ function Diagnostics() {
 				</div>
 			</div>
 			<article className="page-content">
-				<section className="page-content-text">
-					<h2>Na czym polega?</h2>
+				<section aria-labelledby="what-is-it" className="page-content-text">
+					<h2 id="what-is-it">Na czym polega?</h2>
 					<p>
 						Przychodząc do gabinetu stomatologicznego, często tylko wtedy, gdy "coś dzieje się z zębem",
 						pacjent skupia się na rozwiązaniu tylko tego jednego problemu, zapominając lub zaniedbując pozostałe zęby.

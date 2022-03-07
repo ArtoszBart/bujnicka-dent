@@ -12,8 +12,8 @@ function OnlayInlay() {
 				</div>
 			</div>
 			<article className="page-content">
-				<section className="page-content-text">
-					<h2>Czym są wkłady koronowe?</h2>
+				<section aria-labelledby="what-are-crown-inserts" className="page-content-text">
+					<h2 id="what-are-crown-inserts">Czym są wkłady koronowe?</h2>
 					<p>
 						<b>Inley'e, Onley'e, Overlay'e, Endokorony</b> to inaczej <dfn>Wkłady Koronowe</dfn> -
 						są to wypełnienia zębów o bardzo wysokiej jakości, przyklejane do
@@ -67,8 +67,8 @@ function OnlayInlay() {
 					</ul>
 				</section>
 
-				<section className="page-content-text">
-					<h2>Zalety wkładów koronowych</h2>
+				<section aria-labelledby="crown-insert-advantages" className="page-content-text">
+					<h2 id="crown-insert-advantages">Zalety wkładów koronowych</h2>
 					<p>
 						Tego typu uzupełnienia są bardziej czasochłonne niż tradycyjne,
 						ale rozwiązanie to warte jest poświęconego czasu i nakładów finansowych.
@@ -88,8 +88,8 @@ function OnlayInlay() {
 					</ul>
 				</section>
 
-				<section className="page-content-text">
-					<h2>Dlaczego wkłady koronowe?</h2>
+				<section aria-labelledby="why-crown-inserts" className="page-content-text">
+					<h2 id="why-crown-inserts">Dlaczego wkłady koronowe?</h2>
 					<p>
 						Ze względu na fakt, że należą już do uzupełnień protetycznych i są
 						wykonywane przez technika w laboratorium protetycznym, wkłady koronowe

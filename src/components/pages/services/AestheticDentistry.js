@@ -13,15 +13,15 @@ function AestheticDentistry() {
 				</div>
 			</div>
 			<article className="page-content">
-				<section className="page-content-text">
-					<h2>Cel stomatologi estetycznej</h2>
+				<section aria-labelledby="aesthetic-dentistry-goal" className="page-content-text">
+					<h2 id="aesthetic-dentistry-goal">Cel stomatologi estetycznej</h2>
 					<p>
 						<dfn>Stomatologia estetyczna</dfn> zajmuje się przywróceniem lub nadaniem zębom jak najbardziej
 						naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
 					</p>
 				</section>
-				<section className="page-content-text">
-					<h2>Wybielanie zębów</h2>
+				<section aria-labelledby="teeth-whitening" className="page-content-text">
+					<h2 id="teeth-whitening">Wybielanie zębów</h2>
 					<h3>Metoda nakładkowa</h3>
 					<p>
 						Dotyczy <b>zębów żywych</b> i polega na wykonaniu specjalnej szyny wybielającej, do której aplikuje
@@ -33,8 +33,8 @@ function AestheticDentistry() {
 						Dotyczy <b>zębów martwych</b> i polega na aplikacji żelu wybielającego bezpośrednio do komory zęba.
 					</p>
 				</section>
-				<section className="page-content-text">
-					<h2>Wymiana wypełnień</h2>
+				<section aria-labelledby="fillings-replacement" className="page-content-text">
+					<h2 id="fillings-replacement">Wymiana wypełnień</h2>
 					<p>
 						Zęby przednie często mają liczne, nieestetyczne, przebarwione lub niekompletne wypełnienia.
 						Wymiana tych wypełnień na nowe może dać <b>bardzo dobry efekt estetyczny</b>.
@@ -42,8 +42,8 @@ function AestheticDentistry() {
 						W przeciwnym razie rozważyć trzeba inną metodę poprawy estetyki.
 					</p>
 				</section>
-				<section className="page-content-text">
-					<h2>Licówki</h2>
+				<section aria-labelledby="veneers" className="page-content-text">
+					<h2 id="veneers">Licówki</h2>
 					<p>
 						Są to cieniutkie <b>nakładki protetyczne</b> tylko na powierzchnię wargową lub policzkową zębów.
 						Przeznaczone są dla pacjentów, którzy znacząco chcą <b>poprawić wygląd uśmiechu</b>.
@@ -73,7 +73,7 @@ function AestheticDentistry() {
 									Konieczne jest najpierw <Link to="/offer/joints" className="text-link">Leczenie Stawów Skroniowo-Żuchwowych</Link>
 								</li>
 								<li>wady zgryzu</li>
-								<li>parodontoza</li>
+								<li>choroby przyzębia</li>
 								<li>zła higiena jamy ustnej</li>
 							</ul>
 						</div>
@@ -112,8 +112,8 @@ function AestheticDentistry() {
 						Obecnie licówki są <b>najpopularniejszą metodą</b> na realizację marzenia o pięknym, białym uśmiechu.
 					</ImportantInfo>
 				</section>
-				<section className="page-content-text">
-					<h2>Inne zabiegi</h2>
+				<section aria-labelledby="rest-treatments" className="page-content-text">
+					<h2 id="rest-treatments">Inne zabiegi</h2>
 					<h3>Wkłady koronowe</h3>
 					<p>
 						Pełen opis wkładów koronowych znajduje się w
@@ -129,8 +129,8 @@ function AestheticDentistry() {
 						zakładce <Link to="/offer/prosthodontics" className="text-link">Protetyka</Link>
 					</p>
 				</section>
-				<section className="page-content-text">
-					<h2>Clear Aligner</h2>
+				<section aria-labelledby="clear-aligner" className="page-content-text">
+					<h2 id="clear-aligner">Clear Aligner</h2>
 					<p>
 						Korekta małych nieprawidłowości w ustawieniu zębów, może zostać wykonana za pomocą metody <dfn>Clear Aligner</dfn>.
 						Jest to estetyczna alternatywa dla ortodontycznych aparatów stałych.

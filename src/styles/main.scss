@@ -57,6 +57,12 @@ dfn {
 	font-style: normal;
 }
 
+abbr {
+	text-decoration: none;
+	font-style: italic;
+	cursor: help;
+}
+
 .text-link {
 	color: $accent-color;
 	@include transition-ease;

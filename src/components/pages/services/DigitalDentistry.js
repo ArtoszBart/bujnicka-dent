@@ -11,8 +11,8 @@ function DigitalDentistry() {
 				</div>
 			</div>
 			<article className="page-content">
-				<section aria-labelledby="aesthetic-dentistry-goal" className="page-content-text">
-					<h2>Digital Smile Design</h2>
+				<section aria-labelledby="digital-smile-design" className="page-content-text">
+					<h2 id="digital-smile-design">Digital Smile Design</h2>
 					<p>
 						jest cyfrową platformą do <b>poprawy uśmiechu</b> i podniesienia walorów estetycznych zębów.
 						Piękny uśmiech sprawia, że jesteśmy postrzegani jako <b>bardziej atrakcyjni i pewni siebie</b>.

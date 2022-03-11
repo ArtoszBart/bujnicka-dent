@@ -32,6 +32,16 @@ function AestheticDentistry() {
 					<p>
 						Dotyczy <b>zębów martwych</b> i polega na aplikacji żelu wybielającego bezpośrednio do komory zęba.
 					</p>
+					<div className="page-gallery">
+						<div className="page-photo">
+							<img src={CarPhoto} alt="" />
+							<span>Przed wybielaniem</span>
+						</div>
+						<div className="page-photo">
+							<img src={CarPhoto} alt="" />
+							<span>Po wybielaniu</span>
+						</div>
+					</div>
 				</section>
 				<section aria-labelledby="fillings-replacement" className="page-content-text">
 					<h2 id="fillings-replacement">Wymiana wypełnień</h2>

@@ -1,5 +1,6 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
+import CarPhoto from '../../../img/samochut.jpg';
 
 function DigitalDentistry() {
 
@@ -23,22 +24,29 @@ function DigitalDentistry() {
 						<dfn><abbr title="Digital Smile Design">DSD</abbr></dfn> została stworzona przez brytyjskiego dentystę
 						Christiana Coachmana jako platforma współpracy pomiędzy pacjentem, lekarzem prowadzącym i zespołem wykonującym plan leczenia.
 					</p>
-
-					<h3>Jak działa <abbr title="Digital Smile Design">DSD</abbr>?</h3>
-					<p>
-						Zdarza się, że pacjent spodziewa się innego efektu końcowego niż zaplanowany i zrealizowany przez
-						lekarza plan leczenia protetycznego. Rozwiązaniem tego problemu jest
-						stworzenie <b>wizualnego planu leczenia</b> i <b>poznanie efektu końcowego</b> -
-						nowego uśmiechu jeszcze <b>przed jego zakończeniem</b>. Nowy uśmiech jest <b>indywidualnie zaprojektowany</b>, wyraża
-						osobowość pacjenta i jest zgodny z fizycznymi cechami jego twarzy.
-					</p>
-					<p>
-						Doskonałość i precyzja w stomatologii estetycznej i funkcjonalnej nie są przypadkowe, wynikają z odpowiedzialnej i
-						konsekwentnej <b>pracy lekarza z pacjentem</b> i całym zespołem. <abbr title="Digital Smile Design">DSD</abbr> znacznie
-						ułatwia proces tej współpracy, poprawia diagnostykę i <b>prezentuje wizję efektów leczenia jeszcze w trakcie jego trwania</b>.
-						Pacjent decydując się na zastosowanie tej metody ma możliwość wyrazić własne oczekiwania i pragnienia.
-						Staje się <b>współtwórcą swojego nowego uśmiechu</b>.
-					</p>
+					<div className="text-img">
+						<div>
+							<div className="page-photo down-right">
+								<img src={CarPhoto} alt="" />
+								<span>DSD</span>
+							</div>
+							<h3>Jak działa <abbr title="Digital Smile Design">DSD</abbr>?</h3>
+							<p>
+								Zdarza się, że pacjent spodziewa się innego efektu końcowego niż zaplanowany i zrealizowany przez
+								lekarza plan leczenia protetycznego. Rozwiązaniem tego problemu jest
+								stworzenie <b>wizualnego planu leczenia</b> i <b>poznanie efektu końcowego</b> -
+								nowego uśmiechu jeszcze <b>przed jego zakończeniem</b>. Nowy uśmiech jest <b>indywidualnie zaprojektowany</b>, wyraża
+								osobowość pacjenta i jest zgodny z fizycznymi cechami jego twarzy.
+							</p>
+							<p>
+								Doskonałość i precyzja w stomatologii estetycznej i funkcjonalnej nie są przypadkowe, wynikają z odpowiedzialnej i
+								konsekwentnej <b>pracy lekarza z pacjentem</b> i całym zespołem. <abbr title="Digital Smile Design">DSD</abbr> znacznie
+								ułatwia proces tej współpracy, poprawia diagnostykę i <b>prezentuje wizję efektów leczenia jeszcze w trakcie jego trwania</b>.
+								Pacjent decydując się na zastosowanie tej metody ma możliwość wyrazić własne oczekiwania i pragnienia.
+								Staje się <b>współtwórcą swojego nowego uśmiechu</b>.
+							</p>
+						</div>
+					</div>
 					<ImportantInfo>
 						Decyzja o podjęciu leczenia jest łatwiejsza, jeśli już na początku można <b>zobaczyć efekt końcowy</b>, na co pozdwala
 						metoda <abbr title="Digital Smile Design">DSD</abbr>.

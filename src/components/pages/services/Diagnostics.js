@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
 import '../../../styles/main.scss';
+import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
+import CarPhoto from '../../../img/samochut.jpg';
 
 function Diagnostics() {
 
@@ -22,14 +23,24 @@ function Diagnostics() {
 						Dzięki dokładnemu badaniu jamy ustnej podczas <b>bezpłatnej wizyty diagnostycznej</b> pacjent
 						może zapoznać się z sytuacją dotyczącą wszystkich zębów, dziąseł, błony śluzowej i stawów skroniowo-żuchwowych.
 					</p>
-					<p>Pod koniec wizyty otrzymuje <b>plan leczenia</b>, który zawiera następujące informacje:</p>
-					<ul>
-						<li>plan leczenia zachowawczego</li>
-						<li>możliwość "<Link to="/offer/digital-dentistry" className="text-link">poprawienia uśmiechu</Link>"</li>
-						<li>projekt zmiany relacji zwarciowych, czyli sposobu, w jaki kontaktują się ze sobą zęby (ma to bardzo duży wpływ na zdrowie ogólne, np. chroniczne występowanie migren)</li>
-						<li>1-3 projektów uzupełnienia braków zębowych</li>
-						<li>wstępną symulację finansową</li>
-					</ul>
+					<div className="text-img list-img">
+						<div>
+							<p>Pod koniec wizyty otrzymuje <b>plan leczenia</b>, który zawiera następujące informacje:</p>
+							<ul>
+								<li>plan leczenia zachowawczego</li>
+								<li>możliwość "<Link to="/offer/digital-dentistry" className="text-link">poprawienia uśmiechu</Link>"</li>
+								<li>projekt zmiany relacji zwarciowych, czyli sposobu, w jaki kontaktują się ze sobą zęby (ma to bardzo duży wpływ na zdrowie ogólne, np. chroniczne występowanie migren)</li>
+								<li>1-3 projektów uzupełnienia braków zębowych</li>
+								<li>wstępną symulację finansową</li>
+							</ul>
+						</div>
+						<div className="photos">
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Zdjęcie</span>
+							</div>
+						</div>
+					</div>
 					<ImportantInfo>
 						<b>Bezpłatna wizyta diagnostyczna</b> daje wiedzę na temat zębów i całego narządu żucia już na pierwszej wizycie!
 					</ImportantInfo>

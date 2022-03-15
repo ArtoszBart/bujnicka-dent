@@ -13,7 +13,7 @@ function Endodontics() {
 			</div>
 			<article className="page-content">
 				<section aria-labelledby="what-is-endodontics" className="page-content-text">
-					<h2>Czym zajmuje się Endodoncja?</h2>
+					<h2 id="what-is-endodontics">Czym zajmuje się Endodoncja?</h2>
 					<p>
 						<dfn>Endodoncja</dfn> - potocznie nazywana <b>leczeniem kanałowym</b> - jest dziedziną stomatologii zachowawczej
 						zajmującą się leczeniem miazgi wypełniającej komorę i kanały zębowe. W zależności od rodzaju

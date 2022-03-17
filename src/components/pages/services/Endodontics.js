@@ -19,6 +19,17 @@ function Endodontics() {
 						zajmującą się leczeniem miazgi wypełniającej komorę i kanały zębowe. W zależności od rodzaju
 						zęba, <b>kanałów w zębie może być od 1 do 5</b> i więcej (np. górne zęby szóste mają najczęściej 5 kanałów, a kły - jeden).
 					</p>
+					<p>
+						Nieleczone ubytki próchnicze z czasem przekształcają się w <b>poważne ubytki</b> obejmujące kolejne tkanki zęba,
+						z czasem docierające do jego centrum - <dfn>miazgi</dfn>. Tutaj znajdujące się w próchnicy bakterie szybko namnażają
+						się i powodują <b>zapalenie miazgi</b>, dające silne objawy
+						bólowe i <b>konieczność</b> przeprowadzenia <b>natychmiastowego leczenia kanałowego</b>.
+					</p>
+					<p>
+						Czasami rozwijająca się próchnica doprowadza do bezobjawowej martwicy
+						miazgi. <b>Chora miazga powinna zostać jak najszybciej usunięta</b>, ponieważ bakterie mogą rozprzestrzeniać się
+						poza kanał zęba do kości i spowodować <b>zapalenie kości</b> w okolicy wierzchołka korzenia zęba.
+					</p>
 					<div className="text-img list-img">
 						<div className="photos">
 							<div className="page-photo">
@@ -29,21 +40,13 @@ function Endodontics() {
 						<div>
 							<h3>Wskazania do leczenia endodontycznego:</h3>
 							<ul>
-								<li>
-									<b>Nieleczona próchnica</b> - stopniowo obejmuje swoim zasięgiem wnętrze zęba dochodząc do miazgi i
-									powodując jej zakażenie. Tutaj bakterie bardzo szybko namnażają się
-									powodując <b>zapalenie miazgi</b> lub <b>martwicę</b>, co daje objawy bólowe. Chora miazga powinna zostać jak
-									najszybciej usunięta, ponieważ bakterie mogą rozprzestrzeniać się poza kanał zęba do kości i
-									spowodować <b>zapalenie kości</b>
-								</li>
-								<li>
-									<b>Ubytki niepróchnicowego pochodzenia</b>, tzw. ubytki klinowe, występujące w okolicy
-									przydziąsłowej - mogą wywoływać zapalenie miazgi i martwicę
-								</li>
+								<li><b>Zapalenie miazgi</b></li>
+								<li><b>Martwica miazgi</b></li>
+								<li><b>Zapalenie kości</b> okolicy przywierzchołkowej zęba, tzw. zmiany zapalne okołowierzchołkowe</li>
 								<li>Procesy chorobowe w obrębie wnętrza zęba jako <b>powikłania chorób przyzębia</b></li>
-								<li>Odsłonięta miazga z powodu <b>urazu mechanicznego</b></li>
+								<li><b>Odsłonięta miazga</b> z powodu urazu mechanicznego</li>
 								<li>
-									<b>Wskazania protetyczne</b> - w sytuacji, gdy rozległe zniszczenie części koronowej zęba uniemożliwia
+									<b>Wskazania protetyczne</b> gdy rozległe zniszczenie części koronowej zęba uniemożliwia
 									stworzenie retencji pod odbudowę protetyczną
 								</li>
 							</ul>

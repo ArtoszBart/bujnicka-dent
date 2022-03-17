@@ -27,7 +27,7 @@ function Diagnostics() {
 						<div>
 							<p>Pod koniec wizyty otrzymuje <b>plan leczenia</b>, który zawiera następujące informacje:</p>
 							<ul>
-								<li>plan leczenia zachowawczego</li>
+								<li>plan leczenia zachowawczego (m. in. leczenie ubytków próchniczych)</li>
 								<li>możliwość "<Link to="/offer/digital-dentistry" className="text-link">poprawienia uśmiechu</Link>"</li>
 								<li>projekt zmiany relacji zwarciowych, czyli sposobu, w jaki kontaktują się ze sobą zęby (ma to bardzo duży wpływ na zdrowie ogólne, np. chroniczne występowanie migren)</li>
 								<li>1-3 projektów uzupełnienia braków zębowych</li>

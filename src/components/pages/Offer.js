@@ -14,8 +14,7 @@ function Offer() {
 			<article className="page-content">
 				<aside className="h-desc">
 					<p className="center">
-						Gabinet specjalizuje się w zaawansowanej protetyce, a szczególnie w ratowaniu zębów bardzo zniszczonych,
-						często spisanych przez innych lekarzy na straty.
+						Gabinet specjalizuje się w zaawansowanej protetyce, a szczególnie w ratowaniu zębów bardzo zniszczonych.
 					</p>
 				</aside>
 				<section className="offers">

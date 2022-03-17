@@ -32,18 +32,19 @@ function DigitalDentistry() {
 							</div>
 							<h3>Jak działa <abbr title="Digital Smile Design">DSD</abbr>?</h3>
 							<p>
-								Zdarza się, że pacjent spodziewa się innego efektu końcowego niż zaplanowany i zrealizowany przez
-								lekarza plan leczenia protetycznego. Rozwiązaniem tego problemu jest
-								stworzenie <b>wizualnego planu leczenia</b> i <b>poznanie efektu końcowego</b> -
-								nowego uśmiechu jeszcze <b>przed jego zakończeniem</b>. Nowy uśmiech jest <b>indywidualnie zaprojektowany</b>, wyraża
-								osobowość pacjenta i jest zgodny z fizycznymi cechami jego twarzy.
+								<b>Doskonałość i precyzja</b> w stomatologii estetycznej i funkcjonalnej nie są przypadkowe,
+								wynikają z odpowiedzialnej i konsekwentnej <b>pracy lekarza z pacjentem</b> i całym
+								zespołem. <abbr title="Digital Smile Design">DSD</abbr> znacznie ułatwia proces tej współpracy, poprawia
+								diagnostykę i prezentuje wizję efektów leczenia jeszcze w trakcie jego trwania.
+								Stworzenie <b>wizualnego planu leczenia</b> umożliwia poznanie <b>efektu końcowego</b> - nowego uśmiechu
+								jeszcze przed jego zakończeniem.
 							</p>
 							<p>
-								Doskonałość i precyzja w stomatologii estetycznej i funkcjonalnej nie są przypadkowe, wynikają z odpowiedzialnej i
-								konsekwentnej <b>pracy lekarza z pacjentem</b> i całym zespołem. <abbr title="Digital Smile Design">DSD</abbr> znacznie
-								ułatwia proces tej współpracy, poprawia diagnostykę i <b>prezentuje wizję efektów leczenia jeszcze w trakcie jego trwania</b>.
-								Pacjent decydując się na zastosowanie tej metody ma możliwość wyrazić własne oczekiwania i pragnienia.
-								Staje się <b>współtwórcą swojego nowego uśmiechu</b>.
+								<b>Pacjent</b> decydując się na zastosowanie tej metody ma możliwość wyrazić własne oczekiwania i pragnienia.
+								Staje się <b>współtwórcą swojego nowego uśmiechu</b>, unikając sytuacji, w której oczekiwany przez niego efekt
+								końcowy jest inny niż zaplanowany i zrealizowany przez lekarza. Dzięki <b>wizualizacji planu leczenia</b>, nowy
+								uśmiech jest <b>indywidualnie zaprojektowany</b>, wyraża osobowość pacjenta i jest zgodny z fizycznymi
+								cechami jego twarzy.
 							</p>
 						</div>
 					</div>

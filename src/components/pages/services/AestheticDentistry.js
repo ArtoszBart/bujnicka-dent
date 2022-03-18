@@ -43,6 +43,27 @@ function AestheticDentistry() {
 						</div>
 					</div>
 				</section>
+				<section aria-labelledby="icon-treatment" className="page-content-text">
+					<h2 id="icon-treatment">Zabieg ICON</h2>
+					<div className="text-img">
+						<div>
+							<div className="page-photo down-right">
+								<img src={CarPhoto} alt="" />
+								<span>Plamy na szkliwie</span>
+							</div>
+							<p>
+								Nazwa zabiegu pochodzi od nazwy fabrycznej stosowanego preparatu - polega na <b>likwidacji białych plam</b> na
+								powierzchni szkliwa, które są <b>odwapnieniami</b> pojawiającymi się po leczeniu ortodontycznym lub
+								antybiotykoterapii. Mogą również występować jako wrodzone defekty szkliwa.
+							</p>
+							<p>
+								Przeprowadza się go stosując <b>płynną żywicę</b>, która wielokrotnie wtarta w powierzchnię szkliwa powoduje zrekonstruowanie
+								uszkodzonej powierzchni zęba. Jest to <b>bardzo delikatna metoda leczenia</b> wczesnego stadium próchnicy oraz defektów szkliwa,
+								pozwalająca na <b>przywrócenie naturalnego koloru i wyglądu zęba</b>.
+							</p>
+						</div>
+					</div>
+				</section>
 				<section aria-labelledby="fillings-replacement" className="page-content-text">
 					<h2 id="fillings-replacement">Wymiana wypełnień</h2>
 					<p>

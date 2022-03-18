@@ -27,7 +27,6 @@ function Prevention() {
 						<li>profesjonalny zabieg czyszczenia, obejmujący <b>scaling</b>, czyli usuwanie kamienia oraz czyszczenie z osadu</li>
 						<li><b>fluoryzacja</b>, potocznie zwana lakierowaniem</li>
 						<li><b>lakowanie</b></li>
-						<li>zabieg ICON</li>
 						<li>wskazówki żywieniowe</li>
 						<li>wizyty kontrolne</li>
 					</ul>
@@ -133,18 +132,6 @@ function Prevention() {
 						Lakowanie jest istotnym zabiegiem w profilaktyce próchnicy, ponieważ <b>zabezpiecza zęby</b> przed powstawaniem ubytków i
 						gwarantuje ich <b>długie przetrwanie</b> w jamie ustnej.
 					</ImportantInfo>
-
-					<h3>Zabieg ICON</h3>
-					<p>
-						Nazwa zabiegu pochodzi od nazwy fabrycznej stosowanego preparatu - polega na <b>likwidacji białych plam</b> na powierzchni
-						szkliwa, które są <b>odwapnieniami</b> pojawiającymi się po leczeniu ortodontycznym lub antybiotykoterapii.
-						Mogą również występować jako wrodzone defekty szkliwa.
-					</p>
-					<p>
-						Przeprowadza się go stosując <b>płynną żywicę</b>, która wielokrotnie wtarta w powierzchnię szkliwa powoduje zrekonstruowanie
-						uszkodzonej powierzchni zęba. Jest to <b>bardzo delikatna metoda leczenia</b> wczesnego stadium próchnicy oraz defektów szkliwa,
-						pozwalająca na <b>przywrócenie naturalnego koloru i wyglądu zęba</b>.
-					</p>
 				</section>
 			</article>
 		</main >

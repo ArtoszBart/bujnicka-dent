@@ -11,6 +11,7 @@ import MainPage from './components/pages/MainPage';
 import AboutPage from './components/pages/About';
 import OfferPage from './components/pages/Offer';
 import Prices from './components/pages/Prices';
+import Certificates from './components/pages/Certificates';
 import Contact from './components/pages/Contact';
 
 import AestheticDentistry from './components/pages/services/AestheticDentistry';
@@ -37,8 +38,8 @@ function App() {
         <Route exact path='/about' element={<AboutPage />} />
         <Route exact path='/offer' element={<OfferPage />} />
         <Route exact path='/prices' element={<Prices />} />
+        <Route exact path='/certificates' element={<Certificates />} />
         <Route exact path='/faq' element={<NotFound />} />
-        <Route exact path='/certificates' element={<NotFound />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/appointment' element={<NotFound />} />
 

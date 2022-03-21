@@ -13,7 +13,7 @@ function Joints() {
 			<article className="page-content">
 				<section aria-labelledby="temporomandibular-joints-treatment" className="page-content-text">
 					<p>
-						<b>Nieprawidłowe funkcjonowaniw stawów skroniowo-żuchwowych</b> stało się w dzisiejszych czasach coraz
+						<b>Nieprawidłowe funkcjonowanie stawów skroniowo-żuchwowych</b> stało się w dzisiejszych czasach coraz
 						powszechniejszą przyczyną <b>dolegliwości w obrębie stawów</b> i zjawisk patologicznych z nim związanych.
 					</p>
 					<h3>Objawy</h3>
@@ -62,8 +62,8 @@ function Joints() {
 					</p>
 					<ul>
 						<li><b>wywiad i badanie</b> stawów skroniowo-żuchwowych i mięśni</li>
-						<li><b>pobranie wycisków</b> i wykonania modeli orientacyjnych do analizy relacji szczęki i żuchwy</li>
-						<li><b>wykonanie</b> różnego rodzaju silikonowych <b>szyn relaksjacyjnych</b></li>
+						<li><b>pobranie wycisków</b> i wykonanie modeli orientacyjnych do analizy relacji szczęki i żuchwy</li>
+						<li><b>wykonanie</b> różnego rodzaju silikonowych <b>szyn relaksacyjnych</b> zmieniających pamięć mięśniową</li>
 						<li><b>ćwiczenia</b> mięśniowe narządu żucia</li>
 						<li><b>korekta warunków zwarciowych</b> i likwidacja węzłów urazowych</li>
 						<li>w razie potrzeby - <b>leczenie farmakologiczne</b></li>

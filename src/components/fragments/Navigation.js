@@ -16,7 +16,7 @@ function Navigation() {
 				<span className={'menu-btn-burger' + (open ? ' open' : '')}></span>
 			</div>
 
-			<nav className={'nav' + (open ? ' open' : '')}>
+			<nav className={'nav' + (open ? ' open' : '')} aria-label="primary">
 				<ul className={'menu-nav' + (open ? ' open' : '')}>
 					<li className={'menu-nav-item' + (open ? ' open' : '')}>
 						<Link to="/about" className="text-link menu-nav-link" onClick={() => setOpen(false)}>

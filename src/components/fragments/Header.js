@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Navigation from './Navigation';
-import logo from './../../img/logo.png';
+import logo from './../../img/logo.svg';
 
 function Header() {
 	const [navbar, setNavbar] = useState(false);
@@ -20,6 +20,7 @@ function Header() {
 			<div className={'header-container' + (navbar ? ' navbar-dark' : '')}>
 				<div className="logo">
 					<a href="/">
+						{/* <Logo /> */}
 						<img src={logo} alt="logo" />
 					</a>
 				</div>

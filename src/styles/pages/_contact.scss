@@ -1,4 +1,4 @@
-@use '../config' as *;
+@use '../config'as *;
 
 .contact {
 	justify-content: space-between;
@@ -10,37 +10,49 @@
 			margin-top: 1rem;
 		}
 	}
-	
+
 	&-form {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		
+
 		label {
 			display: none;
 		}
-	
+
+		label[for=agreement] {
+			display: block;
+		}
+
+		&-text {
+			display: flex;
+			flex-direction: column;
+		}
+
 		&-input {
-	
-			input, textarea {
+
+			input,
+			textarea,
+			select {
 				margin-top: 1rem;
 				margin-bottom: 0;
 				border: none;
 				border-bottom: 1px solid $secondary-color;
 				background-color: $primary-color;
 				color: $secondary-color;
-				font-family: 'Montserrat', sans-serif;;
+				font-family: 'Montserrat', sans-serif;
+				;
 				padding-bottom: 0.4rem;
 				@include transition-ease;
-				
+
 				&::placeholder {
 					color: rgba($secondary-color, $alpha: 0.6);
 				}
-			
+
 				&:hover {
 					border-color: $accent-color;
 				}
-			
+
 				&:focus {
 					border-color: $accent-color;
 					outline: none;
@@ -54,7 +66,7 @@
 			.error-input {
 				border-bottom: 1px solid red;
 			}
-			
+
 			.error-text {
 				color: red;
 				font-family: inherit;
@@ -68,7 +80,21 @@
 				margin-right: 0.5rem;
 			}
 		}
-	
+
+		&-agreement-box {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: start;
+			align-items: center;
+			padding-block: 1rem;
+			gap: 0.5rem;
+
+			input {
+				width: auto;
+				margin: 0;
+			}
+		}
+
 		.submit {
 			border: none;
 			margin: 1rem auto 0;

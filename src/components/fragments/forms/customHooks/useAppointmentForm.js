@@ -35,7 +35,7 @@ const useContactForm = () => {
 	};
 
 	const handleSubmit = e => {
-		// e.preventDefault();
+		e.preventDefault();
 		// const currentErrors = validate(values)
 		// setErrors(currentErrors);
 		// if (Object.keys(currentErrors).length !== 0) {

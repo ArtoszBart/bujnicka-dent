@@ -5,7 +5,7 @@ import useAppointmentForm from './../fragments/forms/customHooks/useAppointmentF
 
 function Appointment() {
 
-	const { doctors, handleDoctorsChange, handleChange, values, errors } = useAppointmentForm();
+	const { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors } = useAppointmentForm();
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
@@ -16,7 +16,7 @@ function Appointment() {
 			</div>
 			<article className="page-content">
 				<h2>Zapisz się na wizytę</h2>
-				<form className="contact-form appointment" noValidate>
+				<form className="contact-form appointment" onSubmit={handleSubmit} noValidate>
 					<div className="contact-form-text">
 						<FormInput
 							type="text"
@@ -72,7 +72,12 @@ function Appointment() {
 							>
 								<option value={'default'} disabled hidden>{'Wybierz lekarza...'}</option>
 								{doctors.map((doctor, index) => (
-									<option key={index} value={doctor.id}>{`${doctor.firstName} ${doctor.lastName}`}</option>
+									<option
+										key={index}
+										value={doctor.id}
+									>
+										{`${doctor.firstName} ${doctor.lastName}`}
+									</option>
 								))}
 							</select>
 							{errors.doctor && <span className="error-text">{errors.doctor}</span>}

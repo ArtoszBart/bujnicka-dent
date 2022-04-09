@@ -30,13 +30,24 @@ export function checkTextLengthRange(value, min, max) {
 	return true;
 }
 
-export function checkEmail(value) {
+export function checkRegex(value, pattern) {
 	if (!value) {
 		return false;
 	}
-	const pattern = /^[a-zA-Z0-9._-]{1,30}@[0-1a-zA-Z]{2,20}\.[a-zA-Z]{2,3}$/;
 	value = value.toString().trim();
 	return pattern.test(value);
+}
+
+export function checkExists(value, array) {
+	if (!value) {
+		return false;
+	}
+	array.forEach(obj => {
+		if (obj === value) {
+			return true;
+		}
+	});
+	return false;
 }
 
 export function getErrorMessages(errors) {

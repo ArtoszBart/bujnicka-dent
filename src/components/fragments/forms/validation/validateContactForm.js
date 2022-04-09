@@ -1,4 +1,4 @@
-import { checkRequired, checkTextLengthRange, checkEmail, getErrorMessages } from './../../../../helpers/validationCommon';
+import { checkRequired, checkTextLengthRange, checkRegex, getErrorMessages } from './../../../../helpers/validationCommon';
 
 export default function validateContactForm(values) {
 	let errors = {}
@@ -11,7 +11,7 @@ export default function validateContactForm(values) {
 
 	if (!checkRequired(values.email)) {
 		errors.email = 'required';
-	} else if (!checkEmail(values.email)) {
+	} else if (!checkRegex(values.email, /^[a-zA-Z0-9._-]{1,30}@[0-1a-zA-Z]{2,20}\.[a-zA-Z]{2,3}$/)) {
 		errors.email = 'format';
 	}
 

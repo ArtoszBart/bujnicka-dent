@@ -1,14 +1,7 @@
-import { checkRequired, checkTextLengthRange, checkRegex, getErrorMessages } from './../../../../helpers/validationCommon';
+import { checkRequired, checkTextLengthRange, checkRegex, decodeErrorMessages } from './../../../../helpers/validationCommon';
 
-export default function validateContactForm(values, doctors) {
+export default function validateAppointment(values, doctors) {
     let errors = {}
-
-    //firstName: '',
-    //lastName: '',
-    //phoneNo: '',
-    //description: '',
-    //doctorId: '',
-    //date: '',``
 
     if (!checkRequired(values.firstName)) {
         errors.firstName = 'required';
@@ -28,21 +21,21 @@ export default function validateContactForm(values, doctors) {
         errors.phoneNo = 'format';
     }
 
-    if (!checkTextLengthRange(values.description, 0, 50)) {
+    if (!checkTextLengthRange(values.description, 0, 300)) {
         errors.description = 'length';
-    } else if (!checkRegex(values.description, /^[0-9\p{L} ,.?\-\n]+$/)) {
-        errors.description = 'format';
     }
 
     if (!checkRequired(values.doctorId)) {
         errors.doctorId = 'required';
-    } else if (checkExists(values.doctorId, doctors)) {
-        errors.doctorId = 'exists';
     }
 
     if (!checkRequired(values.date)) {
         errors.date = 'required';
     }
 
-    return getErrorMessages(errors);
+    if (!values.agreement) {
+        errors.agreement = 'required'
+    }
+
+    return decodeErrorMessages(errors);
 };

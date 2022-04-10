@@ -1,4 +1,4 @@
-import { checkRequired, checkTextLengthRange, checkRegex, getErrorMessages } from './../../../../helpers/validationCommon';
+import { checkRequired, checkTextLengthRange, checkRegex, decodeErrorMessages } from './../../../../helpers/validationCommon';
 
 export default function validateContactForm(values) {
 	let errors = {}
@@ -27,5 +27,5 @@ export default function validateContactForm(values) {
 		errors.message = 'length';
 	}
 
-	return getErrorMessages(errors);
+	return decodeErrorMessages(errors);
 };

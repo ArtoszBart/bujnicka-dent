@@ -38,35 +38,55 @@ export function checkRegex(value, pattern) {
 	return pattern.test(value);
 }
 
-export function checkExists(value, array) {
-	if (!value) {
-		return false;
-	}
-	array.forEach(obj => {
-		if (obj === value) {
-			return true;
-		}
-	});
-	return false;
-}
-
-export function getErrorMessages(errors) {
-	const dictionary = {
-		validation: {
-			required: 'Pole jest wymagane',
-			format: 'Email ma zły format',
-			length: {
-				name: 'Imię musi mieć od 2 do 30 znaków',
-				subject: 'Temat musi mieć od 10 do 50 znaków',
-				message: 'Treść musi mieć od 10 do 300 znaków'
-			}
+export function decodeErrorMessages(errors) {
+	const dictionary2 = {
+		name: {
+			required: 'Imię nie może być puste',
+			length: 'Imię może mieć od 2 do 30 znaków'
+		},
+		email: {
+			required: 'Email nie może być pusty',
+			format: 'Email niepoprawny'
+		},
+		subject: {
+			required: 'Temat nie może być pusty',
+			length: 'Temat może mieć od 10 do 50 znaków'
+		},
+		message: {
+			required: 'Treść nie może być pusta',
+			length: 'Treść może mieć od 10 do 300 znaków'
+		},
+		firstName: {
+			required: 'Imię nie może być puste',
+			length: 'Imię może mieć od 2 do 20 znaków'
+		},
+		lastName: {
+			required: 'Nazwisko nie może być puste',
+			length: 'Nazwisko może mieć od 2 do 30 znaków'
+		},
+		phoneNo: {
+			required: 'Numer telefonu nie może być pusty',
+			format: 'Numer telefonu niepoprawny'
+		},
+		description: {
+			length: 'Opis może mieć maksymalnie 300 znaków',
+			format: 'Opis zawiera niedozwolone znaki'
+		},
+		doctorId: {
+			required: 'Lekarz musi być wybrany'
+		},
+		date: {
+			required: 'Data musi być wybrana'
+		},
+		agreement: {
+			required: 'Wyrażenie zgody jest obowiązkowe'
 		}
 	}
 
 	let errorMessages = {};
 	for (const [key, value] of Object.entries(errors)) {
 		errorMessages = {
-			...errorMessages, [key]: (value === 'length' ? dictionary.validation.length[key] : dictionary.validation[value])
+			...errorMessages, [key]: dictionary2[key][value]
 		}
 	}
 	return errorMessages;

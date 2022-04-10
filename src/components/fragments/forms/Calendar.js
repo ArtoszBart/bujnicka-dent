@@ -38,7 +38,7 @@ function Calendar(props) {
 	useEffect(() => {
 		const dateFrom = formatDateSql(weekDays[0]);
 		const dateTo = formatDateSql(weekDays[weekDays.length - 1]);
-		axios.get(`http://localhost:4000/api/doctors/${dateFrom},${dateTo}`)
+		axios.get(`http://192.168.0.95:4000/api/doctors/${dateFrom},${dateTo}`)
 			.then(res => {
 				res.data.forEach((doc) => {
 					for (let day = 0; day < 5; day++) {
@@ -77,35 +77,40 @@ function Calendar(props) {
 	}
 
 	return (
-		<div className="calendar">
-			<nav className="calendar-nav" aria-label='calendar navigation'>
-				<i className={`fas fa-chevron-left ${isPrevWeekAvailable ? '' : 'disabled'}`} onClick={() => changeWeek(-7)} />
-				<p>{formatDateLong(weekDays[0])} - {formatDateLong(weekDays[weekDays.length - 1])}</p>
-				<i className="fas fa-chevron-right" onClick={() => changeWeek(7)} />
-			</nav>
-			<div className="calendar-schedule">
-				{props.doctors.find(doc => props.values.doctorId === doc.id.toString())?.schedule.map((day, dayIndex) => (
-					<div className="calendar-schedule-day" key={dayIndex}>
-						<p className="center">{`${formatDateShort(weekDays[dayIndex])}`}</p>
-						{day.freeTimes.map((time, timeIndex) => {
-							const dateValue = `${formatDateSql(weekDays[dayIndex])} ${time}`;
-							const dateT = new Date(dateValue);
-							const now = new Date(new Date().setHours(new Date().getHours() + 1));
-							if (dateT < now) return null;
-							return <button
-								key={timeIndex}
-								type="button"
-								name="date"
-								className={`calendar-schedule-time ${(props.values.date === dateValue) ? 'time-selected' : ''}`}
-								value={`${dateValue}`}
-								onClick={props.handleChange}
-							>
-								{time}
-							</button>
-						})}
-					</div>
-				))}
+		// errors.description && 'error-input'}
+		<div className={`calendar ${props.error && 'error-calendar'}`}>
+			<div className="calendar-wrapper">
+				<nav className="calendar-nav" aria-label='calendar navigation'>
+					<i className={`fas fa-chevron-left ${isPrevWeekAvailable ? '' : 'disabled'}`} onClick={() => changeWeek(-7)} />
+					<p>{formatDateLong(weekDays[0])} - {formatDateLong(weekDays[weekDays.length - 1])}</p>
+					<i className="fas fa-chevron-right" onClick={() => changeWeek(7)} />
+				</nav>
+				<div className="calendar-schedule">
+					{props.doctors.find(doc => props.values.doctorId === doc.id.toString())?.schedule.map((day, dayIndex) => (
+						<div className="calendar-schedule-day" key={dayIndex}>
+							<p className="center">{`${formatDateShort(weekDays[dayIndex])}`}</p>
+							{day.freeTimes.map((time, timeIndex) => {
+								const dateValue = `${formatDateSql(weekDays[dayIndex])} ${time}`;
+								const dateT = new Date(dateValue);
+								const now = new Date(new Date().setHours(new Date().getHours() + 1));
+								if (dateT < now) return null;
+								return <button
+									key={timeIndex}
+									type="button"
+									name="date"
+									className={`calendar-schedule-time ${(props.values.date === dateValue) ? 'time-selected' : ''}`}
+									value={`${dateValue}`}
+									onClick={props.handleChange}
+								>
+									{time}
+								</button>
+							})}
+						</div>
+					))}
+				</div>
+				{props.doctors.length === 0 ? <span>Wybierz lekarza aby zobaczyć dostępne godziny</span> : <></>}
 			</div>
+			{props.error && <span className="error-text">{props.error}</span>}
 		</div>
 	)
 }

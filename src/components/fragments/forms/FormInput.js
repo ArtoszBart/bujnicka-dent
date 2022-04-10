@@ -2,7 +2,7 @@ import React from 'react'
 
 function FormInput(props) {
 	return (
-		<div className={props.name !== 'agreement' ? 'contact-form-input' : 'contact-form-agreement-box'}>
+		<div className="contact-form-input">
 			<label htmlFor={props.name}>{props.placeholder}</label>
 			<input
 				className={props.error && 'error-input'}

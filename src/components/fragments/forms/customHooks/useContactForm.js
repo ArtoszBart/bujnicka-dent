@@ -1,7 +1,7 @@
 import { useState } from "react";
 import validate from './../validation/validateContactForm';
 import { setStateSending, setStateSuccess, setStateError } from './../../../../helpers/sendingState';
-import { getErrorMessages } from './../../../../helpers/validationCommon';
+import { decodeErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 
 const useContactForm = () => {
@@ -47,7 +47,7 @@ const useContactForm = () => {
 			let code;
 			if (error.response) {
 				if (error.response.status === 400) {
-					setErrors(getErrorMessages(error.response.data));
+					setErrors(decodeErrorMessages(error.response.data));
 				} else {
 					code = error.response.status;
 				}

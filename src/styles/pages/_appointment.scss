@@ -1,6 +1,7 @@
 @use '../config'as *;
 
 .calendar {
+	text-align: center;
 
 	&-nav {
 		width: 100%;
@@ -92,4 +93,10 @@
 		color: $primary-color;
 		border-color: $accent-color;
 	}
+}
+
+.select-input {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }

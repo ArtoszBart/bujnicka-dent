@@ -1,5 +1,6 @@
 import '../../styles/main.scss';
 import FormInput from './../fragments/forms/FormInput';
+import AgreementBox from './../fragments/forms/AgreementBox';
 import CalendarForm from './../fragments/forms/Calendar';
 import useAppointmentForm from './../fragments/forms/customHooks/useAppointmentForm';
 
@@ -16,6 +17,7 @@ function Appointment() {
 			</div>
 			<article className="page-content">
 				<h2>Zapisz się na wizytę</h2>
+				<p>Zapisy mogą być do miesiąca w przód</p>
 				<form className="contact-form appointment" onSubmit={handleSubmit} noValidate>
 					<div className="contact-form-text">
 						<FormInput
@@ -61,9 +63,10 @@ function Appointment() {
 							</textarea>
 							{errors.description && <span className="error-text">{errors.description}</span>}
 						</div>
-						<div className="contact-form-input">
+						<div className="contact-form-input select-input">
 							<label htmlFor="description">Lekarz</label>
 							<select
+								className={errors.doctorId && 'error-input'}
 								onChange={(e) => handleChange(e)}
 								name="doctorId"
 								id="doctorId"
@@ -80,16 +83,16 @@ function Appointment() {
 									</option>
 								))}
 							</select>
-							{errors.doctor && <span className="error-text">{errors.doctor}</span>}
+							{errors.doctorId && <span className="error-text">{errors.doctorId}</span>}
 						</div>
-						<FormInput
+						<AgreementBox
 							type="checkbox"
 							name="agreement"
 							placeholder="Zgadzam się"
 							tabIndex="7"
-							value={values.lastName}
+							value={values.agreement}
 							onChange={handleChange}
-							error={errors.lastName}
+							error={errors.agreement}
 						/>
 						<input type="submit" className="submit" value="Zapisz się" tabIndex="8" />
 					</div>
@@ -99,7 +102,7 @@ function Appointment() {
 						doctors={doctors}
 						handleDoctorsChange={handleDoctorsChange}
 						handleChange={handleChange}
-						errors={errors}
+						error={errors.date}
 					/>
 				</form>
 			</article>

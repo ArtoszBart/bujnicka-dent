@@ -1,5 +1,5 @@
 import { useState } from "react";
-import validate from './../validation/validateContactForm';
+import validate from './../validation/validateAppointment';
 import { setStateSending, setStateSuccess, setStateError } from './../../../../helpers/sendingState';
 import { getErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
@@ -12,7 +12,7 @@ const useContactForm = () => {
 		description: '',
 		doctorId: '',
 		date: '',
-
+		agreement: false
 	});
 
 	const [doctors, setDoctors] = useState([]);
@@ -21,7 +21,8 @@ const useContactForm = () => {
 
 	const handleChange = e => {
 		let { name, value } = e.target;
-		if (e.target.checked) {
+		// console.log(e.target.type === 'checkbox');
+		if (e.target.type === 'checkbox') {
 			value = e.target.checked
 		}
 		setValues({
@@ -36,11 +37,12 @@ const useContactForm = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		// const currentErrors = validate(values)
-		// setErrors(currentErrors);
-		// if (Object.keys(currentErrors).length !== 0) {
-		// 	return;
-		// }
+		console.log(errors);
+		const currentErrors = validate(values)
+		setErrors(currentErrors);
+		if (Object.keys(currentErrors).length !== 0) {
+			return;
+		}
 	}
 
 	return { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors, submitInfo };

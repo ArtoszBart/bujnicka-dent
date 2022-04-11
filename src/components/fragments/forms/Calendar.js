@@ -48,11 +48,7 @@ function Calendar(props) {
 				res.data.forEach((doc) => {
 					for (let day = 0; day < 5; day++) {
 						doc.schedule[day].freeTimes.forEach((time) => {
-							everyone.schedule[day].freeTimes.push(
-								{
-									doctorId: doc.id,
-									time: time
-								});
+							everyone.schedule[day].freeTimes.push(time);
 						});
 					}
 				});
@@ -114,15 +110,12 @@ function Calendar(props) {
 					<i className={`fas fa-chevron-right ${isNextWeekAvailable ? '' : 'disabled'}`} onClick={() => nextWeek()} />
 				</nav>
 				<div className="calendar-schedule">
-					{props.doctors.find(doc => props.showingDoctorId === doc.id.toString())?.schedule.map((day, dayIndex) => {
+					{props.doctors.find(doc => props.values.doctorId === doc.id.toString())?.schedule.map((day, dayIndex) => {
 						let ii = 0;
 						return (
 							<div className="calendar-schedule-day" key={dayIndex}>
 								<p className="center">{`${formatDateShort(weekDays[dayIndex])}`}</p>
-								{day.freeTimes.map((docFreeTime, timeIndex) => {
-									const time = docFreeTime.time ? docFreeTime.time : docFreeTime;
-									const doctorId = docFreeTime.doctorId ? docFreeTime.doctorId : props.showingDoctorId;
-									const doctor = props.doctors.find(doc => doctorId === doc.id);
+								{day.freeTimes.map((time, timeIndex) => {
 									const dateValue = `${formatDateSql(weekDays[dayIndex])} ${time}`;
 									const nextHour = new Date(new Date().setHours(new Date().getHours() + 1));
 									if (weekDays[dayIndex] < nextHour) return null;
@@ -132,10 +125,10 @@ function Calendar(props) {
 										type="button"
 										name="date"
 										className={`calendar-schedule-time ${(props.values.date === dateValue) ? 'time-selected' : ''}`}
-										value={`${doctorId}@${dateValue}`}
+										value={dateValue}
 										onClick={props.handleChange}
 									>
-										{time}<br />{props.showingDoctorId === '0' ? `${doctor.firstName} ${doctor.lastName}` : ''}
+										{time}
 									</button>
 								})}
 								{ii == 0 ? <span>Brak wolnych terminów</span> : <></>}

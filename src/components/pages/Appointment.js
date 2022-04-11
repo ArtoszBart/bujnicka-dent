@@ -6,7 +6,7 @@ import useAppointmentForm from './../fragments/forms/customHooks/useAppointmentF
 
 function Appointment() {
 
-	const { doctors, handleDoctorsChange, handleDateSelected, handleChange, handleSubmit, values, errors, doctorScheduleShowing, handleDoctorChange } = useAppointmentForm();
+	const { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors } = useAppointmentForm();
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
@@ -67,7 +67,7 @@ function Appointment() {
 							<label htmlFor="description">Lekarz</label>
 							<select
 								className={errors.doctorId && 'error-input'}
-								onChange={(e) => handleDoctorChange(e)}
+								onChange={(e) => handleChange(e)}
 								name="doctorId"
 								id="doctorId"
 								tabIndex="5"
@@ -100,9 +100,8 @@ function Appointment() {
 						tabIndex="6"
 						values={values}
 						doctors={doctors}
-						showingDoctorId={doctorScheduleShowing}
 						handleDoctorsChange={handleDoctorsChange}
-						handleChange={handleDateSelected}
+						handleChange={handleChange}
 						error={errors.date}
 					/>
 				</form>

@@ -15,7 +15,6 @@ const useContactForm = () => {
 		agreement: false
 	});
 
-	const [doctorScheduleShowing, setDoctorScheduleShowing] = useState(0);
 	const [doctors, setDoctors] = useState([]);
 	const [errors, setErrors] = useState({});
 	const [submitInfo, setSubmitInfo] = useState({});
@@ -32,16 +31,6 @@ const useContactForm = () => {
 		deleteErrors(name);
 	};
 
-	const handleDateSelected = e => {
-		const data = e.target.value.split('@');
-		setValues({
-			...values,
-			doctorId: data[0],
-			date: data[1]
-		});
-		deleteErrors('date');
-	};
-
 	const deleteErrors = fieldName => {
 		const oldErrors = errors;
 		delete oldErrors[fieldName];
@@ -52,17 +41,9 @@ const useContactForm = () => {
 		setDoctors(docs)
 	};
 
-	const handleDoctorChange = e => {
-		setValues({
-			...values,
-			doctorId: '',
-			date: ''
-		});
-		setDoctorScheduleShowing(e.target.value)
-	};
-
 	const handleSubmit = e => {
 		e.preventDefault();
+		console.log(values);
 		const currentErrors = validate(values)
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
@@ -70,7 +51,7 @@ const useContactForm = () => {
 		}
 	}
 
-	return { doctors, handleDoctorsChange, handleDateSelected, handleChange, handleSubmit, values, errors, submitInfo, doctorScheduleShowing, handleDoctorChange };
+	return { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors, submitInfo };
 };
 
 export default useContactForm;

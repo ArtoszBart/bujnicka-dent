@@ -25,9 +25,9 @@ export default function validateAppointment(values, doctors) {
         errors.description = 'length';
     }
 
-    if (!checkRequired(values.doctorId)) {
-        errors.doctorId = 'required';
-    }
+    // if (!checkRequired(values.doctorId)) {
+    //     errors.doctorId = 'required';
+    // }
 
     if (!checkRequired(values.date)) {
         errors.date = 'required';

@@ -61,7 +61,7 @@ function ContactForm() {
 							default: return '';
 						}
 					})()}>
-						{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{submitInfo.message}
+						{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{` ${submitInfo.message}`}
 					</span>
 				</div>
 				<input type="submit" className="submit" value="Wyślij wiadomość" tabIndex="5" />

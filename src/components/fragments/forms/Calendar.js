@@ -27,39 +27,15 @@ function Calendar(props) {
 			return thisWeek;
 		}
 	);
-	const everyone = {
-		id: 0,
-		firstName: 'Wszyscy',
-		lastName: '',
-		schedule: [
-			{ dayOfWeek: 1, freeTimes: [] },
-			{ dayOfWeek: 2, freeTimes: [] },
-			{ dayOfWeek: 3, freeTimes: [] },
-			{ dayOfWeek: 4, freeTimes: [] },
-			{ dayOfWeek: 5, freeTimes: [] }
-		]
-	}
+
+	/// TO DO USEAPPOINTMENT AŻEBY PO ZAPISIE SIĘ USUWAŁA GODZINA
 
 	useEffect(() => {
 		const dateFrom = formatDateSql(weekDays[0]);
 		const dateTo = formatDateSql(weekDays[weekDays.length - 1]);
 		axios.get(`http://192.168.0.95:4000/api/doctors/${dateFrom},${dateTo}`)
 			.then(res => {
-				res.data.forEach((doc) => {
-					for (let day = 0; day < 5; day++) {
-						doc.schedule[day].freeTimes.forEach((time) => {
-							everyone.schedule[day].freeTimes.push(time);
-						});
-					}
-				});
-				everyone.schedule.forEach((day) => {
-					day.freeTimes.sort((time1, time2) => {
-						if (time1.time > time2.time) return 1;
-						return -1;
-					});
-				});
-				const doctorsRes = [everyone, ...res.data];
-				props.handleDoctorsChange(doctorsRes);
+				props.handleDoctorsChange(res.data);
 			}).catch(error => {
 				console.log(error);
 			});
@@ -131,12 +107,12 @@ function Calendar(props) {
 										{time}
 									</button>
 								})}
-								{ii == 0 ? <span>Brak wolnych terminów</span> : <></>}
+								{ii === 0 ? <span>Brak wolnych terminów</span> : <></>}
 							</div>
 						)
 					})}
 				</div>
-				{props.doctors.length === 0 ? <span>Wybierz lekarza aby zobaczyć dostępne godziny</span> : <></>}
+				{props.values.doctorId === '' ? <span className='info'>Wybierz lekarza aby zobaczyć dostępne godziny</span> : <></>}
 			</div>
 			{props.error && <span className="error-text">{props.error}</span>}
 		</div>

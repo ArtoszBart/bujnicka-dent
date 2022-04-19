@@ -6,7 +6,7 @@ import useAppointmentForm from './../fragments/forms/customHooks/useAppointmentF
 
 function Appointment() {
 
-	const { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors } = useAppointmentForm();
+	const { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors, submitInfo } = useAppointmentForm();
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
@@ -71,9 +71,10 @@ function Appointment() {
 								name="doctorId"
 								id="doctorId"
 								tabIndex="5"
-								defaultValue={'default'}
+								defaultValue={''}
+								value={values.doctorId}
 							>
-								<option value={'default'} disabled hidden>{'Wybierz lekarza...'}</option>
+								<option value={''} disabled hidden>{'Wybierz lekarza...'}</option>
 								{doctors.map((doctor, index) => (
 									<option
 										key={index}
@@ -94,6 +95,17 @@ function Appointment() {
 							onChange={handleChange}
 							error={errors.agreement}
 						/>
+						<div className="contact-form-info">
+							<span className={(() => {
+								switch (submitInfo.success) {
+									case true: return 'success-message';
+									case false: return 'error-message';
+									default: return '';
+								}
+							})()}>
+								{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{` ${submitInfo.message}`}
+							</span>
+						</div>
 						<input type="submit" className="submit" value="Zapisz się" tabIndex="8" />
 					</div>
 					<CalendarForm

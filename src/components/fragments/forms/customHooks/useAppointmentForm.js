@@ -1,7 +1,7 @@
 import { useState } from "react";
 import validate from './../validation/validateAppointment';
 import { setStateSending, setStateSuccess, setStateError } from './../../../../helpers/sendingState';
-import { getErrorMessages } from './../../../../helpers/validationCommon';
+import { decodeErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 
 const useContactForm = () => {
@@ -17,7 +17,7 @@ const useContactForm = () => {
 
 	const [doctors, setDoctors] = useState([]);
 	const [errors, setErrors] = useState({});
-	const [submitInfo, setSubmitInfo] = useState({});
+	const [submitInfo, setSubmitInfo] = useState({ message: '' });
 
 	const handleChange = e => {
 		let { name, value } = e.target;
@@ -47,8 +47,38 @@ const useContactForm = () => {
 		const currentErrors = validate(values)
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
-			return;
+			// return;
 		}
+
+		setStateSending(setSubmitInfo);
+
+		axios.post('http://localhost:4000/api/appointments/new', values).then(res => {
+			setStateSuccess(setSubmitInfo);
+			setValues({
+				firstName: '',
+				lastName: '',
+				phoneNo: '',
+				description: '',
+				doctorId: '',
+				date: '',
+				agreement: false
+			});
+		}).catch(error => {
+			// 400 - validation;
+			// 502 - bad gateway;
+			// 512 - unable to connect to server
+			let code;
+			if (error.response) {
+				if (error.response.status === 400) {
+					setErrors(decodeErrorMessages(error.response.data));
+				} else {
+					code = error.response.status;
+				}
+			} else {
+				code = 512;
+			}
+			setStateError(setSubmitInfo, code);
+		});
 	}
 
 	return { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors, submitInfo };

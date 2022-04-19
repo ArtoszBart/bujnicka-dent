@@ -3,6 +3,13 @@
 .calendar {
 	text-align: center;
 
+	&-wrapper {
+		.info {
+			display: block;
+			margin: 1rem;
+		}
+	}
+
 	&-nav {
 		width: 100%;
 		background-color: $accent-color;

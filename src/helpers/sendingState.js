@@ -17,10 +17,12 @@ export function setStateSuccess(setSubmitInfo) {
 }
 
 export function setStateError(setSubmitInfo, code) {
+	const message = code ? `Wystąpił problem, spróbuj ponownie później. Jeśli błąd się będzie powtarzał, daj nam znać podając kod błędu: ${code}` : 'Formularz zawiera błędy';
 	const state = {
 		sending: false,
-		message: code && `Wystąpił problem, spróbuj ponownie później. Jeśli błąd się będzie powtarzał, daj nam znać podając kod błędu: ${code}`,
+		message: message,
 		success: false
 	};
+	console.log(code && `Wys`);
 	setSubmitInfo(state)
 }

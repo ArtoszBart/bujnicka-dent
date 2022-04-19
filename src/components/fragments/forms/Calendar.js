@@ -1,45 +1,16 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import axios from 'axios';
 import { formatDateShort, formatDateLong, formatDateSql } from './../../../helpers/dateAndTime';
 
 function Calendar(props) {
 
 	const [isPrevWeekAvailable, setIsPrevWeekAvailable] = useState(false);
 	const [isNextWeekAvailable, setIsNextWeekAvailable] = useState(true);
-	const [weekDays, setWeekDays] = useState(
-		() => {
-			let today = new Date();
-			let dayOfWeek = today.getDay() - 1;
-			let monday = new Date();
-			if (dayOfWeek > 4) {
-				monday.setDate(monday.getDate() + 7 - dayOfWeek);
-			} else {
-				monday.setDate(monday.getDate() - dayOfWeek);
-			}
-
-			let thisWeek = [];
-			for (let ii = 0; ii < 5; ii++) {
-				const nextDay = new Date(monday)
-				nextDay.setDate(nextDay.getDate() + ii)
-				thisWeek.push(nextDay)
-			}
-			return thisWeek;
-		}
-	);
-
-	/// TO DO USEAPPOINTMENT AŻEBY PO ZAPISIE SIĘ USUWAŁA GODZINA
+	const weekDays = props.weekDays;
 
 	useEffect(() => {
-		const dateFrom = formatDateSql(weekDays[0]);
-		const dateTo = formatDateSql(weekDays[weekDays.length - 1]);
-		axios.get(`http://192.168.0.95:4000/api/doctors/${dateFrom},${dateTo}`)
-			.then(res => {
-				props.handleDoctorsChange(res.data);
-			}).catch(error => {
-				console.log(error);
-			});
-	}, [weekDays]);
+		props.getFreeDates();
+	}, [props.weekDays]);
 
 	const previousWeek = () => {
 		if (!isPrevWeekAvailable) {
@@ -50,7 +21,7 @@ function Calendar(props) {
 			setIsPrevWeekAvailable(false);
 		}
 		setIsNextWeekAvailable(true);
-		setWeekDays(newWeek);
+		props.setWeekDays(newWeek);
 	}
 
 	const nextWeek = () => {
@@ -64,7 +35,7 @@ function Calendar(props) {
 			setIsNextWeekAvailable(false);
 		}
 		setIsPrevWeekAvailable(true);
-		setWeekDays(newWeek);
+		props.setWeekDays(newWeek);
 	}
 
 	const getNewDays = days => {

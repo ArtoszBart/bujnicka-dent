@@ -1,6 +1,6 @@
 import { useState } from "react";
 import validate from './../validation/validateContactForm';
-import { setStateSending, setStateSuccess, setStateError } from './../../../../helpers/sendingState';
+import { sendingState, successStateSending, getErrorState } from './../../../../helpers/sendingStates';
 import { decodeErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 
@@ -30,10 +30,10 @@ const useContactForm = () => {
 			return;
 		}
 
-		setStateSending(setSubmitInfo);
+		setSubmitInfo(sendingState);
 		// API CALL
 		axios.post('http://localhost:4000/api/email/send', values).then(res => {
-			setStateSuccess(setSubmitInfo);
+			setSubmitInfo(successStateSending);
 			setValues({
 				name: '',
 				email: '',
@@ -54,7 +54,7 @@ const useContactForm = () => {
 			} else {
 				code = 512;
 			}
-			setStateError(setSubmitInfo, code);
+			setSubmitInfo(getErrorState(code));
 		});
 	}
 

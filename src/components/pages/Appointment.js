@@ -6,7 +6,7 @@ import useAppointmentForm from './../fragments/forms/customHooks/useAppointmentF
 
 function Appointment() {
 
-	const { doctors, handleDoctorsChange, handleChange, handleSubmit, values, errors, submitInfo } = useAppointmentForm();
+	const { doctors, handleChange, handleSubmit, values, errors, submitInfo, weekDays, setWeekDays, getFreeDates } = useAppointmentForm();
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
@@ -71,7 +71,6 @@ function Appointment() {
 								name="doctorId"
 								id="doctorId"
 								tabIndex="5"
-								defaultValue={''}
 								value={values.doctorId}
 							>
 								<option value={''} disabled hidden>{'Wybierz lekarza...'}</option>
@@ -112,7 +111,9 @@ function Appointment() {
 						tabIndex="6"
 						values={values}
 						doctors={doctors}
-						handleDoctorsChange={handleDoctorsChange}
+						weekDays={weekDays}
+						setWeekDays={setWeekDays}
+						getFreeDates={getFreeDates}
 						handleChange={handleChange}
 						error={errors.date}
 					/>

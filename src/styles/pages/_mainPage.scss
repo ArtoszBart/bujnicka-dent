@@ -1,4 +1,4 @@
-@use '../config' as *;
+@use '../config'as *;
 
 h1.device {
 	font-style: normal;
@@ -10,7 +10,7 @@ h1.device {
 	font-size: 2vw;
 	color: $primary-color;
 	cursor: pointer;
-	
+
 	&:hover {
 		i {
 			color: $accent-color;
@@ -20,12 +20,20 @@ h1.device {
 
 .quote {
 	position: absolute;
-	bottom: 5px;
-	right: 5px;
+	bottom: 2vw;
+	right: 2vw;
 	color: $primary-color;
+	text-align: right;
+	font-family: 'Playfair Display', serif;
+	// width: 300px;
 
 	q {
-		font-family: "Playfair Display", serif;
+		font-size: 25px;
 		font-style: italic;
+	}
+
+	.author {
+		margin-top: 0.5rem;
+		// text-align: right;
 	}
 }

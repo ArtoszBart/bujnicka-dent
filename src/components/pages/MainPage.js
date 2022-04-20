@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../../styles/main.scss';
+import ParallaxBanner from '../fragments/ParallaxBanner'
 
 function MainPage() {
 	const device1st = 'Autorski gabinet stomatologiczny';
@@ -7,16 +8,10 @@ function MainPage() {
 
 	return (
 		<main className="main-wrapper page-wrapper" role="main">
-			<div className="banner" id="main-page">
-				<div className="banner-title">
-					<h1 className="device"><i>{device1st}</i> {'\n' + device2nd}</h1>
-				</div>
+			<ParallaxBanner id="main-page" text={device1st} text2={'\n' + device2nd}>
 				<Link className="button" to="/appointment">Zapisz się na wizytę</Link>
-				{/* <div className="quote"><q>SALUS AEGROTI SUPREMA LEX</q> (dobro chorego najwyższym prawem)<br />
-					<q>PRIMUM NON NOCERE</q> (po pierwsze nie szkodzić)<br />
-					Hipokrates</div> */}
 				<a className="scroll-down" href="#section1"><i className="fas fa-chevron-down"></i></a>
-			</div>
+			</ParallaxBanner>
 			<article className="section" id="section1">
 
 			</article>

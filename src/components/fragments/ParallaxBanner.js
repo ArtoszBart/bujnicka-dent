@@ -14,8 +14,9 @@ function Header(props) {
     return (
         <div className="banner" id={props.id} style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
             <div className="banner-title">
-                <h1><i>{props.text}</i></h1>
+                <h1><i>{props.text}</i>{props.text2}</h1>
             </div>
+            {props.children}
         </div>
     )
 }

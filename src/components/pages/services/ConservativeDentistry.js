@@ -1,16 +1,13 @@
 import '../../../styles/main.scss';
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function ConservativeDentistry() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="conservative-dentistry">
-				<div className="banner-title">
-					<h1>Stomatologia Zachowawcza</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="conservative-dentistry" text="Stomatoligia Zachowawcza" />
 			<article className="page-content">
 				<section aria-labelledby="what-is-conservative-dentistry" className="page-content-text">
 					<h2 id="what-is-conservative-dentistry">Czym jest Stomatologia Zachowawcza?</h2>

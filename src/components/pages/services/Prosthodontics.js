@@ -1,14 +1,11 @@
 import '../../../styles/main.scss';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Prosthodontics() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="prosthodontics">
-				<div className="banner-title">
-					<h1>Protetyka</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="prosthodontics" text="Protetyka" />
 			<section className="page-content">
 
 			</section>

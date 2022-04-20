@@ -1,15 +1,12 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Joints() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="joints">
-				<div className="banner-title">
-					<h1>Leczenie Stawów Skroniowo-Żuchwowych</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="joints" text="Leczenie Stawów Skroniowo-Żuchwowych" />
 			<article className="page-content">
 				<section aria-labelledby="temporomandibular-joints-treatment" className="page-content-text">
 					<p>

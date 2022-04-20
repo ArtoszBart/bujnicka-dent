@@ -2,16 +2,13 @@ import '../../../styles/main.scss';
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Diagnostics() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="diagnostics">
-				<div className="banner-title">
-					<h1>Wizyta Diagnostyczna</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="diagnostics" text="Wizyta Diagnostyczna" />
 			<article className="page-content">
 				<section aria-labelledby="what-is-it" className="page-content-text">
 					<h2 id="what-is-it">Na czym polega?</h2>

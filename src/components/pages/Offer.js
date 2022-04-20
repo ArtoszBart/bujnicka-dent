@@ -1,16 +1,13 @@
 import '../../styles/main.scss';
 import CarPhoto from '../../img/samochut.jpg';
 import { Link } from 'react-router-dom';
+import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Offer() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="offer">
-				<div className="banner-title">
-					<h1>Oferta</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="offer" text="Oferta" />
 			<article className="page-content">
 				<aside className="h-desc">
 					<p className="center">
@@ -60,7 +57,7 @@ function Offer() {
 						<p>
 							Inaczej wkłady koronowe - są to wypełnienia zębów o bardzo wysokiej jakości.
 						</p>
-						<Link to="/offer/onlay-inlay" className="button">Zobacz więcej</Link>
+						<Link to="/offer/inlay-onlay" className="button">Zobacz więcej</Link>
 					</div>
 					<div className="offers-single">
 						<img src={CarPhoto} alt="" />

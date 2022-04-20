@@ -1,16 +1,13 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function DigitalDentistry() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="dental-surgery">
-				<div className="banner-title">
-					<h1>Stomatologia Cyfrowa</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="digital-dentistry" text="Stomatoligia Cyfrowa" />
 			<article className="page-content">
 				<section aria-labelledby="digital-smile-design" className="page-content-text">
 					<h2 id="digital-smile-design">Digital Smile Design</h2>

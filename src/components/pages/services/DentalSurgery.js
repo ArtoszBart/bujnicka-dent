@@ -1,16 +1,13 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function DentalSurgery() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="dental-surgery">
-				<div className="banner-title">
-					<h1>Chirurgia Stomatologiczna</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="dental-surgery" text="Chirurgia Stomatoligiczna" />
 			<article className="page-content">
 				<section aria-labelledby="what-is-dental-surgery" className="page-content-text">
 					<h2 id="what-is-dental-surgery">Czym zajmuje się Chirurgia Stomatologiczna</h2>

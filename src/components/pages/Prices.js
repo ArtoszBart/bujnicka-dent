@@ -4,6 +4,7 @@ import TabNavItem from '../fragments/tabs/TabNavItem'
 import TabContent from '../fragments/tabs/TabContent'
 import SinglePrice from '../fragments/prices/SinglePrice'
 import MultiplePrices from '../fragments/prices/MultiplePrice'
+import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Implants() {
 	const [activeTab, setActiveTab] = useState(0);
@@ -15,6 +16,7 @@ function Implants() {
 					<h1>Cennik</h1>
 				</div>
 			</div>
+			<ParallaxBaner id="prices" text="Cennik" />
 			<article className="page-content">
 
 				<ul className="tabs-nav">

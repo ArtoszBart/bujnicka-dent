@@ -2,16 +2,13 @@ import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
 import { Link } from 'react-router-dom';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Periodontics() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="periodontics">
-				<div className="banner-title">
-					<h1>Periodontologia</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="periodontics" text="Periodontologia" />
 			<article className="page-content">
 				<section aria-labelledby="what-is-periodontics" className="page-content-text">
 					<h2 id="what-is-periodontics">Czym zajmuje się periodontologia?</h2>

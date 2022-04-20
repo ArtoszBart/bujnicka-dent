@@ -1,16 +1,13 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Prevention() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="prevention">
-				<div className="banner-title">
-					<h1>Profilaktyka</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="prevention" text="Profilaktyka" />
 			<article className="page-content">
 				<section aria-labelledby="what-is-prevention" className="page-content-text">
 					<h2 id="what-is-prevention">Czym jest profilaktyka</h2>

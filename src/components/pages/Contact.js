@@ -1,15 +1,12 @@
 import React from 'react';
 import ContactForm from '../fragments/forms/ContactForm';
+import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Contact() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="contact">
-				<div className="banner-title">
-					<h1>Kontakt</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="contact" text="Kontakt" />
 			<article className="page-content">
 				<section className="contact">
 					<div className="contact-info half-width">

@@ -3,6 +3,7 @@ import FormInput from './../fragments/forms/FormInput';
 import AgreementBox from './../fragments/forms/AgreementBox';
 import CalendarForm from './../fragments/forms/Calendar';
 import useAppointmentForm from './../fragments/forms/customHooks/useAppointmentForm';
+import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Appointment() {
 
@@ -10,11 +11,7 @@ function Appointment() {
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
-			<div className="banner" id="appointments">
-				<div className="banner-title">
-					<h1><i>Zapis na wizytę</i></h1>
-				</div>
-			</div>
+			<ParallaxBaner id="appointments" text="Zapis na wizytę" />
 			<article className="page-content">
 				<h2>Zapisz się na wizytę</h2>
 				<p>Zapisy mogą być do miesiąca w przód</p>

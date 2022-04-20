@@ -1,16 +1,13 @@
 import '../../../styles/main.scss';
 import CarPhoto from '../../../img/samochut.jpg';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
-function OnlayInlay() {
+function InlayOnlay() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="onlay-inlay">
-				<div className="banner-title">
-					<h1>Inley'e, Onley'e, Overlay'e, Endokorony</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="inlay-onlay" text="Inlay'e, Onlay'e, Overlay'e, Endokorony" />
 			<article className="page-content">
 				<section aria-labelledby="what-are-crown-inserts" className="page-content-text">
 					<h2 id="what-are-crown-inserts">Czym są wkłady koronowe?</h2>
@@ -130,4 +127,4 @@ function OnlayInlay() {
 	);
 }
 
-export default OnlayInlay;
+export default InlayOnlay;

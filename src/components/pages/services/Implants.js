@@ -1,16 +1,13 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Implants() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="implantology">
-				<div className="banner-title">
-					<h1>Implanty</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="implantology" text="Implanty" />
 
 			<article className="page-content">
 				<section aria-labelledby="what-is-implantology" className="page-content-text">

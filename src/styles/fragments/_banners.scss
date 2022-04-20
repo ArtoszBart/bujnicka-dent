@@ -1,14 +1,14 @@
-@use '../config' as *;
+@use '../config'as *;
 
 #main-page {
 	background: set-page-background('../../img/main_view.jpg') center bottom;
-	
+
 	a.button {
 		border-top: 1px solid $primary-color;
 		border-bottom: 1px solid $primary-color;
 		background-color: transparent;
 		@include transition-ease-slow;
-	
+
 		&:hover {
 			background-color: $accent-color;
 			border-color: rgba($primary-color, 0.3);
@@ -28,11 +28,12 @@
 #aesthetic-dentistry,
 #conservative-dentistry,
 #dental-surgery,
+#digital-dentistry,
 #diagnostics,
 #endodontics,
 #implantology,
+#inlay-onlay,
 #joints,
-#onlay-inlay,
 #periodontics,
 #prevention,
 #prosthodontics {
@@ -41,6 +42,7 @@
 
 .page-wrapper {
 	padding-top: $banner-height;
+
 	.banner {
 		height: $banner-height;
 		background-size: cover !important;
@@ -53,9 +55,11 @@
 
 .main-wrapper {
 	padding-top: 100vh;
+
 	.banner {
 		height: 100vh;
 	}
+
 	.section {
 		height: 100vh;
 	}
@@ -84,9 +88,9 @@
 }
 
 @include media-md {
-	.banner{
+	.banner {
 		padding: 0;
-		
+
 		&-title {
 			max-width: 520px;
 		}

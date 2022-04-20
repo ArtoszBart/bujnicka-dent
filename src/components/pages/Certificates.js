@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { certificates } from '../../img/certificates/index';
 import GalleryOverlay from '../fragments/gallery/GalleryOverlay'
 import useGalleryOverlay from './../fragments/gallery/customHooks/useGalleryOverlay';
+import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Certificates() {
 
@@ -18,12 +19,7 @@ function Certificates() {
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
-			<div className="banner" id="certificates">
-				<div className="banner-title">
-					<h1><i>Certyfikaty</i></h1>
-				</div>
-			</div>
-
+			<ParallaxBaner id="certificates" text="Certyfikaty" />
 			<article className="page-content gallery">
 				{certificates.map((value, index) => {
 					return <img src={value} key={index} onClick={() => openBox(index)} alt="Certificate" />

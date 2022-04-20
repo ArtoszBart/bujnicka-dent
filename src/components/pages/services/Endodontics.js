@@ -1,16 +1,13 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Endodontics() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="endodontics">
-				<div className="banner-title">
-					<h1>Endodoncja</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="endodontics" text="Endodoncja" />
 			<article className="page-content">
 				<section aria-labelledby="what-is-endodontics" className="page-content-text">
 					<h2 id="what-is-endodontics">Czym zajmuje się Endodoncja?</h2>

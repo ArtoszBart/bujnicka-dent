@@ -2,16 +2,13 @@ import '../../styles/main.scss';
 import PhotoBujnicka from '../../img/bujnicka-profile.jpg';
 import PhotoBohdan from '../../img/Bohdan_Bujnicki.jpg';
 import PhotoMaria from '../../img/Maria_Baluta.jpg';
+import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function About() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="about">
-				<div className="banner-title">
-					<h1>O nas</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="about" text="O nas" />
 			<article className="page-content">
 				<section className="history">
 					<h2>Historia</h2>

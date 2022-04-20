@@ -23,16 +23,18 @@ import DigitalDentistry from './components/pages/services/DigitalDentistry';
 import Endodontics from './components/pages/services/Endodontics';
 import Implants from './components/pages/services/Implants';
 import Joints from './components/pages/services/Joints';
-import OnlayInlay from './components/pages/services/OnlayInlay';
+import InlayOnlay from './components/pages/services/InlayOnlay';
 import Periodontics from './components/pages/services/Periodontics';
 import Prevention from './components/pages/services/Prevention';
 import Prosthodontics from './components/pages/services/Prosthodontics';
 
 import NotFound from './components/pages/NotFound';
+import ScrollToTop from './helpers/scrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route exact path='/' element={<MainPage />} />
@@ -52,7 +54,7 @@ function App() {
         <Route exact path='/offer/endodontics' element={<Endodontics />} />
         <Route exact path='/offer/implants' element={<Implants />} />
         <Route exact path='/offer/joints' element={<Joints />} />
-        <Route exact path='/offer/onlay-inlay' element={<OnlayInlay />} />
+        <Route exact path='/offer/inlay-onlay' element={<InlayOnlay />} />
         <Route exact path='/offer/periodontics' element={<Periodontics />} />
         <Route exact path='/offer/prevention' element={<Prevention />} />
         <Route exact path='/offer/prosthodontics' element={<Prosthodontics />} />

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 519.684 519.684" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<vectornator:setting key="IsTimeLapseWatermarkDisabled" value="false"/>
+<vectornator:setting key="UndoHistoryDisabled" value="true"/>
+<vectornator:setting key="VNDimensionsVisible" value="true"/>
+<vectornator:setting key="VNSnapToGuides" value="true"/>
+<vectornator:setting key="WDCMYKEnabledKey" value="false"/>
+<vectornator:setting key="WDDisplayWhiteBackground" value="false"/>
+<vectornator:setting key="WDDynamicGuides" value="true"/>
+<vectornator:setting key="WDGuidesVisible" value="true"/>
+<vectornator:setting key="WDIsolateActiveLayer" value="false"/>
+<vectornator:setting key="WDOutlineMode" value="false"/>
+<vectornator:setting key="WDRulersVisible" value="true"/>
+<vectornator:setting key="WDSnapToEdges" value="false"/>
+<vectornator:setting key="WDSnapToGrid" value="false"/>
+<vectornator:setting key="WDSnapToPoints" value="false"/>
+<vectornator:setting key="WDUnits" value="Millimeters"/>
+</metadata>
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="519.684" width="519.684" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Background" vectornator:layerName="Background">
+<path d="M0.0128517 259.836C0.0128517 116.333 116.345 0 259.849 0C403.352 0 519.685 116.333 519.685 259.836C519.685 403.34 403.352 519.672 259.849 519.672C116.345 519.672 0.0128517 403.34 0.0128517 259.836Z" fill="#18b6d2" fill-rule="evenodd" opacity="1" stroke="none"/>
+</g>
+<g id="Shadow" vectornator:layerName="Shadow">
+<path d="M86.9272 429.585C86.9272 411.572 164.234 396.971 259.598 396.971C354.961 396.971 432.268 411.572 432.268 429.585C432.268 447.597 354.961 462.199 259.598 462.199C164.234 462.199 86.9272 447.597 86.9272 429.585Z" fill="#158295" fill-rule="evenodd" opacity="1" stroke="none"/>
+</g>
+<g id="Tooth" vectornator:layerName="Tooth">
+<path d="M258.829 115.116C214.56 113.787 210.767 95.4006 178.552 95.4978C139.156 95.4978 108.557 122.958 108.557 167.194C108.557 202.751 121.428 247.199 132.381 270.099C148.369 303.526 145.215 331.683 145.215 346.507C145.215 420.691 161.489 443.475 174.662 443.475C183.798 443.475 193.741 427.961 209.542 397.177C213.417 389.627 236.946 340.171 259.65 340.171C283.627 340.171 306.533 392.917 309.064 397.687C330.993 439.014 338.061 443.635 344.796 443.635C358.735 443.635 373.543 419.773 373.543 343.702C373.543 317.679 373.669 304.962 389.638 261.318C407.427 212.702 410.638 183.965 410.638 164.385C410.638 131.523 381.999 95.4006 344.646 95.4006C301.982 95.4006 306.045 115.116 258.829 115.116Z" fill="#ffffff" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.89807"/>
+</g>
+</svg>

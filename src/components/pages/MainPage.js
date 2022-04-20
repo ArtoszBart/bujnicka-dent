@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../styles/main.scss';
 
 function MainPage() {
@@ -10,7 +11,7 @@ function MainPage() {
 				<div className="banner-title">
 					<h1 className="device"><i>{device1st}</i> {'\n' + device2nd}</h1>
 				</div>
-				<a className="button" href="/appointment">Zapisz się na wizytę</a>
+				<Link className="button" to="/appointment">Zapisz się na wizytę</Link>
 				{/* <div className="quote"><q>SALUS AEGROTI SUPREMA LEX</q> (dobro chorego najwyższym prawem)<br />
 					<q>PRIMUM NON NOCERE</q> (po pierwsze nie szkodzić)<br />
 					Hipokrates</div> */}

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Navigation from './Navigation';
 import logo from './../../img/logo.svg';
+import { Link } from "react-router-dom";
 
 function Header() {
 	const [navbar, setNavbar] = useState(false);
@@ -19,10 +20,10 @@ function Header() {
 		<header>
 			<div className={'header-container' + (navbar ? ' navbar-dark' : '')}>
 				<div className="logo">
-					<a href="/">
+					<Link to="/">
 						{/* <Logo /> */}
 						<img src={logo} alt="logo" />
-					</a>
+					</Link>
 				</div>
 				<Navigation />
 			</div>

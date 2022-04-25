@@ -12,6 +12,7 @@ function Header() {
 		} else {
 			setNavbar(false);
 		}
+		console.log(typeof document.cookie);
 	};
 
 	window.addEventListener('scroll', changeNavbar);

@@ -28,6 +28,7 @@ import Periodontics from './components/pages/services/Periodontics';
 import Prevention from './components/pages/services/Prevention';
 import Prosthodontics from './components/pages/services/Prosthodontics';
 
+import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import NotFound from './components/pages/NotFound';
 import ScrollToTop from './helpers/scrollToTop';
 
@@ -58,6 +59,8 @@ function App() {
         <Route exact path='/offer/periodontics' element={<Periodontics />} />
         <Route exact path='/offer/prevention' element={<Prevention />} />
         <Route exact path='/offer/prosthodontics' element={<Prosthodontics />} />
+
+        <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </Router>

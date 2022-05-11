@@ -18,8 +18,8 @@ function Periodontics() {
 						(dotyczą 50% dorosłych) i są <b>główną przyczyną utraty zębów</b>.
 					</p>
 				</section>
-				<section aria-labelledby="periodontal-disease" className="page-content-text">
-					<h2 id="periodontal-disease">Co to są choroby przyzębia?</h2>
+				<section aria-labelledby="periodontal-disease-causes" className="page-content-text">
+					<h2 id="periodontal-disease">Przyczyny powstania chorób przyzębia?</h2>
 					<p>
 						Choroby przyzębia są schorzeniami wieloczynnikowymi, ale czynnikiem pierwotnym są zawsze <b>bakterie płytki nazębnej</b>.
 					</p>
@@ -111,11 +111,11 @@ function Periodontics() {
 						<li>
 							<h3>Faza ogólna - przygotowawcza</h3>
 							<p>
-								Przeprowadzenie dokładnego wywiadu dotyczącego ogólnego stanu zdrowia znacząco wpływa na efekty leczenia.
-								Właściwe leczenie chorób towarzyszących jest kluczowym elementem postępowania leczniczego.
-								Może wiązać się z zastosowaniem dodatkowych leków w chorobie podstawowej, ich zmianą lub odstawieniem.
-								W tej fazie planujemy również szczegółowy plan leczenia specjalistycznego,
-								przygotowywany indywidualnie dla danego pacjenta.
+								Wywiad dotyczący ogólnego stanu zdrowia  leczenie choroby ogólnoustrojowej. W chorobie podstawowej
+								może ono wiązać się z zastosowanie dodatkowych leków, ich zmianą lub odstawieniem.
+								-zaplanowanie szczegółowego leczenia specjalistycznego: zachowawczego, chirurgicznego, ortodontycznego, protetycznego.
+
+
 							</p>
 						</li>
 						<li>

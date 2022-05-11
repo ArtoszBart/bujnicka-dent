@@ -189,7 +189,7 @@ function Implants() {
 							<ul>
 								<li><b>Pojedyńcza korona</b> w sytuacji braku jednego zęba</li>
 								<li>
-									<b>Most protetyczny</b> w sytuacji braku grupy zębów, natomiast może być oparty <b>wyłącznie</b> na
+									<b>Most protetyczny</b> w sytuacji braku grupy zębów, może być oparty <b>wyłącznie</b> na
 									implantach <b>lub</b> na zębach własnych pacjenta
 								</li>
 								<li>

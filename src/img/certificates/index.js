@@ -23,11 +23,11 @@ import Certificate22 from '../../img/certificates/ver-cert-16.jpg';
 import Certificate23 from '../../img/certificates/ver-cert-17.jpg';
 
 export const certificates = [
-	Certificate1, Certificate2, Certificate3,
-	Certificate4, Certificate5, Certificate6,
-	Certificate7, Certificate8, Certificate9,
-	Certificate10, Certificate11, Certificate12,
-	Certificate13, Certificate14, Certificate15,
-	Certificate16, Certificate17, Certificate18,
-	Certificate19, Certificate20, Certificate21,
-	Certificate22, Certificate23];
+	Certificate6, Certificate5, Certificate1,
+	Certificate2, Certificate3, Certificate4,
+	Certificate9, Certificate10, Certificate20,
+	Certificate23, Certificate14, Certificate7,
+	Certificate11, Certificate8, Certificate15,
+	Certificate16, Certificate21, Certificate22,
+	Certificate12, Certificate13, Certificate18,
+	Certificate17, Certificate19];

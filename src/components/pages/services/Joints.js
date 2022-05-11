@@ -8,7 +8,7 @@ function Joints() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="joints" text="Leczenie Stawów Skroniowo-Żuchwowych" />
 			<article className="page-content">
-				<section aria-labelledby="temporomandibular-joints-treatment" className="page-content-text">
+				<section aria-labelledby="joints-treatment" className="page-content-text">
 					<p>
 						<b>Nieprawidłowe funkcjonowanie stawów skroniowo-żuchwowych</b> stało się w dzisiejszych czasach coraz
 						powszechniejszą przyczyną <b>dolegliwości w obrębie stawów</b> i zjawisk patologicznych z nim związanych.
@@ -68,6 +68,27 @@ function Joints() {
 					<ImportantInfo>
 						Szybkie rozpoznanie i leczenie nieprawidłowości w funkcjonowaniu stawów skroniowo-żuchwowych skróci
 						czas leczenia i <b>zapobiegnie utrwaleniu się złych nawyków</b> i powolnemu niszczeniu całego narządu żucia.
+					</ImportantInfo>
+				</section>
+				<section aria-labelledby="relaxation-rails" className="page-content-text">
+					<h2 id="what-are-crown-inserts">Szyna Relaksacyjna</h2>
+					<p>
+						<b>Szyna relaksacyjna</b> jest przezroczystą nakładką na zęby, indywidualnie dopasowaną do zębów pacjenta.
+						W zależności od potrzeb wykonuje się ją z różnej twardości <b>masy silikonowej</b>, wykazującej wysoką
+						odporność na uszkodzenia. Szyna jest wykonana w taki sposób,
+						żeby <b>nie powodowała żadnych uszkodzeń dziąsła.</b>
+					</p>
+					<p>
+						Najczęściej szynę relaksacyjną wykonuje się pacjentom z bruksizmem lub <b>nadmiernym zaciskaniem zębów</b>.
+						Zalecana jest do noszenia w ciągu dnia, a w <b>szczególności w nocy</b>, kiedy występujące parafunkcje
+						uniemożliwiają sen lub są przyczyną bezsenności.
+					</p>
+					<p>
+						Jej <b>czas noszenia</b> jest zależny od stopnia zaawansowania zaburzeń stawów skroniowo-żuchwowych
+						lub siły występujących parafunkcji.
+					</p>
+					<ImportantInfo>
+						Szyny relaksacyjne oprócz funkcji leczniczej <b>chronią zęby</b> przed uszkodzeniami.
 					</ImportantInfo>
 				</section>
 			</article>

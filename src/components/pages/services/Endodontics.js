@@ -1,9 +1,15 @@
 import '../../../styles/main.scss';
+import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
+import Modal from './../../fragments/Modal';
 
 function Endodontics() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const openModal = () => {
+		setIsModalOpen(true);
+	}
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -100,7 +106,7 @@ function Endodontics() {
 					<p>
 						Pacjenci często nie podejmują leczenia kanałowego ze względu na koszty finansowe tego zabiegu. Doprowadza to
 						do <b>całkowitego zniszczenia zęba</b> i konieczności <b>usunięcia go</b>. Uzupełnienie brakującego zęba metodami protetycznymi -
-						mostem lub implantem, jest zdecydowanie <b>bardziej inwazyjne</b> ze względu na konieczność szlifowania zębów filarowych w
+						mostem lub implantem, jest zdecydowanie <b>bardziej inwazyjne</b> ze względu na konieczność szlifowania <span className='text-link' onClick={openModal}>zębów filarowych</span> w
 						przypadku mostu lub wykonania inwazyjnego zabiegu chirurgicznego w przypadku implantów.
 					</p>
 					<p>
@@ -118,6 +124,15 @@ function Endodontics() {
 						Warto jest zadbać o to, aby zachować <b>jak największą ilość swoich własnych zębów</b>.
 					</ImportantInfo>
 				</section>
+				<Modal
+					title='Ząb filarowy'
+					image={CarPhoto}
+					alt=""
+					isModalOpen={isModalOpen}
+					setIsModalOpen={setIsModalOpen}
+				>
+					Ząb, na którym oparty jest most, czyli ząb będący filarem mostu.
+				</Modal>
 			</article>
 		</main>
 	);

@@ -1,17 +1,16 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 const useGalleryOverlay = (certificates) => {
 
 	const [isBoxOpen, setIsBoxOpen] = useState(false);
 	const [openedImg, setOpenedImg] = useState(null);
 
-	const openBox = (id) => {
+	const openGalleryOverlay = (id) => {
 		setOpenedImg(id);
 		setIsBoxOpen(true);
 	};
 
-	const closeBox = () => {
-		console.log("close");
+	const closeGalleryOverlay = () => {
 		setIsBoxOpen(false);
 	};
 
@@ -39,17 +38,25 @@ const useGalleryOverlay = (certificates) => {
 
 	}, [openedImg]);
 
-	const escFunction = useCallback((event) => {
+	const keyListener = useCallback((event) => {
 		if (event.key === "ArrowRight") {
 			nextImage();
 		} else if (event.key === "ArrowLeft") {
 			prevImage();
 		} else if (event.key === "Escape") {
-			closeBox();
+			closeGalleryOverlay();
 		}
 	}, [nextImage, prevImage]);
 
-	return { isBoxOpen, openedImg, openBox, closeBox, nextImage, prevImage, escFunction };
+	useEffect(() => {
+		document.addEventListener("keydown", keyListener);
+
+		return () => {
+			document.removeEventListener("keydown", keyListener);
+		};
+	}, [keyListener]);
+
+	return { isBoxOpen, openedImg, openGalleryOverlay, closeGalleryOverlay, nextImage, prevImage };
 };
 
 export default useGalleryOverlay;

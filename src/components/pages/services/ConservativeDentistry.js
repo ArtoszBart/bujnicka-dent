@@ -1,9 +1,16 @@
 import '../../../styles/main.scss';
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import ParallaxBaner from '../../fragments/ParallaxBanner'
+import CarPhoto from '../../../img/samochut.jpg';
+import ParallaxBaner from '../../fragments/ParallaxBanner';
+import Modal from './../../fragments/Modal';
 
 function ConservativeDentistry() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const openModal = () => {
+		setIsModalOpen(true);
+	}
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -47,7 +54,7 @@ function ConservativeDentistry() {
 						plastycznego materiału kształtowanego przez lekarza w zębie. Aby powstało twarde, odporne na siły gryzienia wypełnienie,
 						potrzebny jest czynnik inicjujący - specjalny rodzaj światła ultrafioletowego, który wywołuje proces <dfn>polimeryzacji</dfn>,
 						czyli twardnienia materiału kompozytowego. Aby wypełnienie ściśle i szczelnie przylegało do zęba,
-						lekarz w specjalny sposób przygotowuje tkanki zęba używając <b>adhezyjnych systemów łączących</b>.
+						lekarz w specjalny sposób przygotowuje tkanki zęba używając <b><span className='text-link' onClick={openModal}>adhezyjnych</span> systemów łączących</b>.
 					</p>
 					<h3>Współczesne materiały do wypełnień ubytków cechuje:</h3>
 					<ul>
@@ -69,6 +76,19 @@ function ConservativeDentistry() {
 						można już całkowicie oczyścić chore tkanki i założyć wypełnienie.
 					</p>
 				</section>
+				<Modal
+					title='Technika adhezyjna'
+					image={CarPhoto}
+					alt=""
+					isModalOpen={isModalOpen}
+					setIsModalOpen={setIsModalOpen}
+				>
+					Jest to najnowocześniejsza technologicznie metoda połączenia porcelanowego
+					uzupełnienia protetycznego (licówki, wkładów koronowych) z zębem, za pomocą dwufazowego
+					systemu bondingowego (łączącego). Po utwardzeniu lampą polimeryzacyjną tworzy on
+					ścisły konglomerat z zębem i porcelaną, odporny na siły powstające podczas żucia i
+					gwarantujący wieloletnie komfortowe użytkowanie odbudowy zęba.
+				</Modal>
 			</article >
 		</main >
 	);

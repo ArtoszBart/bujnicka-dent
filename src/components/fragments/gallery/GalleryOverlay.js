@@ -1,27 +1,24 @@
-import { useState, useCallback, useEffect } from "react";
 import { certificates } from './../../../img/certificates/index';
-import useGalleryOverlay from './customHooks/useGalleryOverlay';
 
 function GalleryOverlay(props) {
 
-	const { openedImg, closeBox, nextImage, prevImage } = useGalleryOverlay(certificates);
 	return (
-		<div className={`gallery-overlay ${props.opened ? 'opened' : ''}`}>
-			<div className="top-pane" onClick={closeBox}>
+		<div className={`gallery-overlay${props.hook.isBoxOpen ? ' opened' : ''}`}>
+			<div className="top-pane" onClick={props.hook.closeGalleryOverlay}>
 				<i className="fas fa-times" />
 			</div>
-			<div className="left-pane" onClick={prevImage}>
+			<div className="left-pane" onClick={props.hook.prevImage}>
 				<i className="fas fa-chevron-left" />
 			</div>
-			<div className="right-pane" onClick={nextImage}>
+			<div className="right-pane" onClick={props.hook.nextImage}>
 				<i className="fas fa-chevron-right" />
 			</div>
 			<div className="bottom-pane">
-				<p>{openedImg + 1} / {certificates.length}</p>
+				<p>{props.hook.openedImg + 1} / {certificates.length}</p>
 			</div>
 
 			<div className="img-box">
-				<img src={certificates[openedImg]} alt="" />
+				<img src={certificates[props.hook.openedImg]} alt="" />
 			</div>
 		</div>
 	);

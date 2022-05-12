@@ -1,4 +1,4 @@
-@use '../config'as *;
+@use '../config' as *;
 
 
 
@@ -15,7 +15,7 @@
     opacity: 0;
     overflow: hidden;
     transition: visibility 0s linear 400ms,
-    opacity 400ms;
+        opacity 400ms;
 
     &.opened {
         opacity: 1;
@@ -23,18 +23,43 @@
         transition: visibility 0s, opacity 400ms;
     }
 
-    &-content {
+    &-body {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 70%;
+        width: 60%;
         transform: translate(-50%, -50%);
         background-color: $primary-color;
-        padding: 1rem 5rem;
+        padding: 2rem 5rem;
         border-radius: 0.5rem;
 
-        img {
-            width: 300px;
+        &-content {
+            display: flex;
+
+            img {
+                width: 300px;
+            }
+        }
+
+
+        &-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 1.2rem;
+            background-color: rgba($secondary-color, 0.1);
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                font-size: 1.4rem;
+            }
         }
     }
 }

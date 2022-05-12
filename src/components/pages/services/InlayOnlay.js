@@ -1,9 +1,15 @@
 import '../../../styles/main.scss';
-import CarPhoto from '../../../img/samochut.jpg';
+import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import ParallaxBaner from '../../fragments/ParallaxBanner'
+import ParallaxBaner from '../../fragments/ParallaxBanner';
+import CarPhoto from '../../../img/samochut.jpg';
+import Modal from './../../fragments/Modal';
 
 function InlayOnlay() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const openModal = () => {
+		setIsModalOpen(true);
+	}
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -14,7 +20,7 @@ function InlayOnlay() {
 					<p>
 						<b>Inley'e, Onley'e, Overlay'e, Endokorony</b> to inaczej <dfn>Wkłady Koronowe</dfn> -
 						są to wypełnienia zębów o bardzo wysokiej jakości, przyklejane do
-						zęba specjalną techniką adhezyjną najnowszej generacji.
+						zęba specjalną <span className='text-link' onClick={openModal}>techniką adhezyjną</span> najnowszej generacji.
 						Są to jedne z <b>najbardziej luksusowych produktów stomatologicznych</b> oferowanych pacjentom.
 					</p>
 					<p>
@@ -24,7 +30,8 @@ function InlayOnlay() {
 						miejscowym w przypadku zębów żywych lub bez znieczulenia w zębach martwych.<br />
 						Następnie pobierane są <b>wyciski</b> obu łuków zębowych i wysyłane do <b>laboratorium protetycznego</b>.
 						Ząb zabezpieczany jest wypełnieniem tymczasowym. <br />
-						Na kolejnej wizycie wkład koronowy jest <b>cementowany</b> do zęba specjalną techniką adhezyjną.
+						Na kolejnej wizycie wkład koronowy jest <b>cementowany</b> do
+						zęba <span className='text-link' onClick={openModal}>techniką adhezyjną</span>.
 					</p>
 					<ImportantInfo>
 						Wkłady koronowe dotyczą tylko zębów bocznych, zarówno żywych, jak i martwych.
@@ -122,6 +129,19 @@ function InlayOnlay() {
 						o twardości i ścieralności, zbliżonej do naturalnego szkliwa, skutecznie zapobiega objawom "starczego wyglądu".
 					</ImportantInfo>
 				</section>
+				<Modal
+					title='Technika adhezyjna'
+					image={CarPhoto}
+					alt=""
+					isModalOpen={isModalOpen}
+					setIsModalOpen={setIsModalOpen}
+				>
+					Jest to najnowocześniejsza technologicznie metoda połączenia porcelanowego
+					uzupełnienia protetycznego (licówki, wkładów koronowych) z zębem, za pomocą dwufazowego
+					systemu bondingowego (łączącego). Po utwardzeniu lampą polimeryzacyjną tworzy on
+					ścisły konglomerat z zębem i porcelaną, odporny na siły powstające podczas żucia i
+					gwarantujący wieloletnie komfortowe użytkowanie odbudowy zęba.
+				</Modal>
 			</article>
 		</main>
 	);

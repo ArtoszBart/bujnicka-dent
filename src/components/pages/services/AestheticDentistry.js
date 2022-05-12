@@ -1,10 +1,16 @@
 import '../../../styles/main.scss';
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
-import ParallaxBaner from '../../fragments/ParallaxBanner'
+import ParallaxBaner from '../../fragments/ParallaxBanner';
+import Modal from './../../fragments/Modal';
 
 function AestheticDentistry() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const openModal = () => {
+		setIsModalOpen(true);
+	}
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -132,7 +138,7 @@ function AestheticDentistry() {
 						<li>
 							<h4>Wizyta końcowa</h4>
 							<p>
-								Przyklejenie licówek do zębów w specjalnej technice adhezyjnej
+								Przyklejenie licówek do zębów w specjalnej <span className='text-link' onClick={openModal}>technice adhezyjnej</span>
 							</p>
 						</li>
 					</ol>
@@ -145,7 +151,7 @@ function AestheticDentistry() {
 					<h3>Wkłady koronowe</h3>
 					<p>
 						Pełen opis wkładów koronowych znajduje się w
-						zakładce <Link to="/offer/onlay-inlay" className="text-link">Inley'e, Onley'e, Overlay'e, Endokorony</Link>
+						zakładce <Link to="/offer/inlay-onlay" className="text-link">Inley'e, Onley'e, Overlay'e, Endokorony</Link>
 					</p>
 					<h3>Korony estetyczne</h3>
 					<p>
@@ -213,7 +219,19 @@ function AestheticDentistry() {
 						</li>
 					</ol>
 				</section>
-
+				<Modal
+					title='Technika adhezyjna'
+					image={CarPhoto}
+					alt=""
+					isModalOpen={isModalOpen}
+					setIsModalOpen={setIsModalOpen}
+				>
+					Jest to najnowocześniejsza technologicznie metoda połączenia porcelanowego
+					uzupełnienia protetycznego (licówki, wkładów koronowych) z zębem, za pomocą dwufazowego
+					systemu bondingowego (łączącego). Po utwardzeniu lampą polimeryzacyjną tworzy on
+					ścisły konglomerat z zębem i porcelaną, odporny na siły powstające podczas żucia i
+					gwarantujący wieloletnie komfortowe użytkowanie odbudowy zęba.
+				</Modal>
 			</article>
 		</main>
 	);

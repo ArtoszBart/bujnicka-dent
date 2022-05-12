@@ -1,4 +1,4 @@
-@use 'config'as *;
+@use 'config' as *;
 
 @use 'fragments/header/header';
 @use 'fragments/header/navigation';
@@ -73,6 +73,7 @@ abbr {
 
 .text-link {
 	color: $accent-color;
+	cursor: pointer;
 	@include transition-ease;
 	text-decoration: none;
 

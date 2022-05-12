@@ -1,9 +1,15 @@
 import '../../../styles/main.scss';
+import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
-import ParallaxBaner from '../../fragments/ParallaxBanner'
+import ParallaxBaner from '../../fragments/ParallaxBanner';
+import Modal from './../../fragments/Modal';
 
 function Implants() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const openModal = () => {
+		setIsModalOpen(true);
+	}
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -31,7 +37,8 @@ function Implants() {
 							<p>
 								W takiej sytuacji wykonuje się koronę
 								tymczasową opartą na implancie za pośrednictwem łącznika (jest to natychmiastowe obciążenie implantu) lub
-								stosuje się uzupełnienie tymczasowe wykonane w laboratorium protetycznym, np. most adhezyjny, szynę Essex lub protezę.
+								stosuje się uzupełnienie tymczasowe wykonane w laboratorium protetycznym,
+								np. <span className='text-link' onClick={openModal}>most adhezyjny</span>, szynę Essex lub protezę.
 							</p>
 							<p>
 								Dzięki temu pacjent nie wychodzi z gabinetu z widocznym brakiem zęba, co daje
@@ -204,6 +211,19 @@ function Implants() {
 						</li>
 					</ol>
 				</section>
+				<Modal
+					title='Technika adhezyjna'
+					image={CarPhoto}
+					alt=""
+					isModalOpen={isModalOpen}
+					setIsModalOpen={setIsModalOpen}
+				>
+					Jest to najnowocześniejsza technologicznie metoda połączenia porcelanowego
+					uzupełnienia protetycznego (licówki, wkładów koronowych) z zębem, za pomocą dwufazowego
+					systemu bondingowego (łączącego). Po utwardzeniu lampą polimeryzacyjną tworzy on
+					ścisły konglomerat z zębem i porcelaną, odporny na siły powstające podczas żucia i
+					gwarantujący wieloletnie komfortowe użytkowanie odbudowy zęba.
+				</Modal>
 			</article>
 		</main>
 	);

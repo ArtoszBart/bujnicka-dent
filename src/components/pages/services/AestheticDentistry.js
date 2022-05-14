@@ -19,8 +19,8 @@ function AestheticDentistry() {
 				<section aria-labelledby="aesthetic-dentistry-goal" className="page-content-text">
 					<h2 id="aesthetic-dentistry-goal">Cel stomatologi estetycznej</h2>
 					<p>
-						<dfn>Stomatologia estetyczna</dfn> zajmuje się przywróceniem lub nadaniem zębom jak najbardziej
-						naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
+						<dfn>Stomatologia estetyczna</dfn> zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
+						czego efektem staje się piękny, naturalny uśmiech.
 					</p>
 				</section>
 				<section aria-labelledby="teeth-whitening" className="page-content-text">

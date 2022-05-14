@@ -7,7 +7,23 @@ import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Appointment() {
 
-	const { doctors, handleChange, handleSubmit, values, errors, submitInfo, weekDays, setWeekDays, getFreeDates } = useAppointmentForm();
+	const { doctors, handleChange, handleSubmit, values, errors, submitInfo, weekDays, setWeekDays, getFreeDates, docsFetched } = useAppointmentForm();
+
+	const getDefaultOptionText = () => {
+		switch (docsFetched) {
+			case null: return "Pobieranie lekarzy...";
+			case true: return "Wybierz lekarza...";
+			case false: return "Nie można pobrać lekarzy!";
+		}
+	}
+
+	const getInfoClassName = () => {
+		switch (submitInfo.success) {
+			case true: return 'success-message';
+			case false: return 'error-message';
+			default: return '';
+		}
+	}
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
@@ -69,16 +85,17 @@ function Appointment() {
 								id="doctorId"
 								tabIndex="5"
 								value={values.doctorId}
+								disabled={!docsFetched}
 							>
-								<option value={''} disabled hidden>{'Wybierz lekarza...'}</option>
-								{doctors.map((doctor, index) => (
+								<option value={''} disabled hidden>{getDefaultOptionText()}</option>
+								{doctors.map((doctor, index) =>
 									<option
 										key={index}
 										value={doctor.id}
 									>
 										{`${doctor.firstName} ${doctor.lastName}`}
 									</option>
-								))}
+								)}
 							</select>
 							{errors.doctorId && <span className="error-text">{errors.doctorId}</span>}
 						</div>
@@ -92,13 +109,7 @@ function Appointment() {
 							error={errors.agreement}
 						/>
 						<div className="contact-form-info">
-							<span className={(() => {
-								switch (submitInfo.success) {
-									case true: return 'success-message';
-									case false: return 'error-message';
-									default: return '';
-								}
-							})()}>
+							<span className={getInfoClassName()}>
 								{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{` ${submitInfo.message}`}
 							</span>
 						</div>

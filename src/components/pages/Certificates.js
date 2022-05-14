@@ -19,7 +19,7 @@ function Certificates() {
 						alt="Certificate" />
 				})}
 			</article>
-			<GalleryOverlay hook={useGalleryOverlay} />
+			<GalleryOverlay hook={useGalleryOverlay} multiple />
 		</main>
 	);
 }

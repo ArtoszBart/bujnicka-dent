@@ -12,7 +12,7 @@ const useContactForm = () => {
 		message: ''
 	});
 	const [errors, setErrors] = useState({});
-	const [submitInfo, setSubmitInfo] = useState({});
+	const [submitInfo, setSubmitInfo] = useState({ message: '' });
 
 	const handleChange = e => {
 		const { name, value } = e.target;

@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 
 const useGalleryOverlay = (certificates) => {
-
+	console.log(certificates);
 	const [isBoxOpen, setIsBoxOpen] = useState(false);
 	const [openedImg, setOpenedImg] = useState(null);
 
@@ -10,8 +10,10 @@ const useGalleryOverlay = (certificates) => {
 		setIsBoxOpen(true);
 	};
 
-	const closeGalleryOverlay = () => {
-		setIsBoxOpen(false);
+	const closeGalleryOverlay = (e) => {
+		if (e.target.id === "overlay-closing") {
+			setIsBoxOpen(false);
+		}
 	};
 
 	const nextImage = useCallback(() => {
@@ -44,7 +46,7 @@ const useGalleryOverlay = (certificates) => {
 		} else if (event.key === "ArrowLeft") {
 			prevImage();
 		} else if (event.key === "Escape") {
-			closeGalleryOverlay();
+			setIsBoxOpen(false);
 		}
 	}, [nextImage, prevImage]);
 

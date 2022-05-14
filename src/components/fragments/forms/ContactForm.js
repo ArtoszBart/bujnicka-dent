@@ -5,6 +5,14 @@ import FormInput from './FormInput';
 function ContactForm() {
 	const { handleChange, handleSubmit, values, errors, submitInfo } = useContactForm();
 
+	const getInfoClassName = () => {
+		switch (submitInfo.success) {
+			case true: return 'success-message';
+			case false: return 'error-message';
+			default: return '';
+		}
+	}
+
 	return (
 		<div className="half-width">
 			<h3>Napisz do nas!</h3>
@@ -12,7 +20,7 @@ function ContactForm() {
 				<FormInput
 					type="text"
 					name="name"
-					placeholder="Imię i nazwisko"
+					placeholder="Imię"
 					tabIndex="1"
 					value={values.name}
 					onChange={handleChange}
@@ -54,13 +62,7 @@ function ContactForm() {
 					{errors.message && <span className="error-text">{errors.message}</span>}
 				</div>
 				<div className="contact-form-info">
-					<span className={(() => {
-						switch (submitInfo.success) {
-							case true: return 'success-message';
-							case false: return 'error-message';
-							default: return '';
-						}
-					})()}>
+					<span className={getInfoClassName()}>
 						{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{` ${submitInfo.message}`}
 					</span>
 				</div>

@@ -6,6 +6,7 @@ import axios from 'axios';
 import { formatDateSql } from './../../../../helpers/dateAndTime';
 
 const useContactForm = () => {
+	const [docsFetched, setDocsFetched] = useState(null);
 	const [doctors, setDoctors] = useState([]);
 	const [errors, setErrors] = useState({});
 	const [submitInfo, setSubmitInfo] = useState({ message: '' });
@@ -63,18 +64,18 @@ const useContactForm = () => {
 		axios.get(`http://192.168.0.95:4000/api/doctors/${dateFrom},${dateTo}`)
 			.then(res => {
 				setDoctors(res.data);
+				setDocsFetched(true);
 			}).catch(error => {
-				console.log(error);
+				setDocsFetched(false);
 			});
 	};
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		console.log(values);
 		const currentErrors = validate(values)
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
-			// return;
+			return;
 		}
 
 		setSubmitInfo(sendingState);
@@ -110,7 +111,7 @@ const useContactForm = () => {
 		});
 	}
 
-	return { doctors, handleChange, handleSubmit, values, errors, submitInfo, weekDays, setWeekDays, getFreeDates };
+	return { doctors, handleChange, handleSubmit, values, errors, submitInfo, weekDays, setWeekDays, getFreeDates, docsFetched };
 };
 
 export default useContactForm;

@@ -36,22 +36,23 @@ function Offer() {
 						title="Stomatologia Estetyczna"
 						link="/offer/aesthetic-dentistry"
 					>
-						Stomatologia estetyczna zajmuje się przywróceniem lub nadaniem zębom
-						jak najbardziej naturalnego wyglądu, czego efektem staje się piękny, naturalny uśmiech.
+						Stomatologia estetyczna zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
+						czego efektem staje się piękny, naturalny uśmiech.
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
 						title="Stomatologia Cyfrowa"
 						link="/offer/digital-dentistry"
 					>
-						Piękny uśmiech sprawia, że jesteśmy postrzegani jako bardziej atrakcyjni i pewni siebie.
+						Wykorzystując najnowocześniejsze rozwiązania technologiczne, umożliwia pełne zaprojektowanie
+						uśmiechu.
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
 						title="Inley'e Onley'e Overlay'e Endokorony"
 						link="/offer/inlay-onlay"
 					>
-						Inaczej wkłady koronowe - są to wypełnienia zębów o bardzo wysokiej jakości.
+						Inaczej wkłady koronowe, są to wypełnienia zębów o bardzo wysokiej jakości.
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
@@ -60,7 +61,7 @@ function Offer() {
 					>
 						Dział stomatologii zajmujący się uzupełnianiem
 						utraconych zębów, gdy nie jest możliwa ich odbudowa
-						lub zostały one utracone z innych powodów.
+						lub zostały one utracone.
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
@@ -82,29 +83,29 @@ function Offer() {
 						title="Periodontologia"
 						link="/offer/periodontics"
 					>
-						Periodontologia to dziedzina stomatologii zajmująca się leczeniem chorób błony śluzowej i przyzębia
+						Dziedzina stomatologii zajmująca się leczeniem chorób błony śluzowej i przyzębia (dziąseł).
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
 						title="Chirurgia Stomatologiczna"
 						link="/offer/dental-surgery"
 					>
-						Czasami zęba nie da się już uratować, podejmuję wtedy decyzję o usunięciu - ekstrakcji.
+						Gdy zęba nie da się już uratować, podejmuję się decyzję o usunięciu jego części lub całości.
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
 						title="Implanty"
 						link="/offer/implants"
 					>
-						Dziedzina chirurgii uzupełniająca brakujący korzeń zęba to implantologia.
+						Uzupełniają brakujący korzeń, cały ząb lub część uzębienia.
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
 						title="Leczenie Stawów Skroniowo-Żuchwowych"
 						link="/offer/joints"
 					>
-						Zaburzeniami w funkcji stawów skroniowo-żuchwowych są niekiedy
-						przyczyną poważnych problemów w funkcjonowaniu całego narządu żucia.
+						Zaburzenia funkcji stawów skroniowo-żuchwowych są przyczyną poważnych problemów ze szczęką oraz
+						funkcjonowaniem całego narządu żucia.
 					</SingleOffer>
 				</section>
 			</article>

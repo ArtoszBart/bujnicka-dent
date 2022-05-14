@@ -4,7 +4,7 @@ This is frontend part of [Bujnicka-Dent](https://bujnicka-dent.herokuapp.com/) p
 
 Bujnicka-Dent is project which contains:
 - [Web Application](https://github.com/ArtoszBart/bujnicka-dent)
-- [API](https://github.com/ArtoszBart/bujnicka-dent-api)
+- API
 - Database
 - Mobile Application
 

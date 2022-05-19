@@ -8,7 +8,7 @@ function GalleryOverlay(props) {
 			onClick={props.hook.closeGalleryOverlay}
 		>
 			<div className="top-pane" id="overlay-closing" onClick={props.hook.closeGalleryOverlay}>
-				<i className="fas fa-times" />
+				<i className="fas fa-times" id="overlay-closing" />
 			</div>
 			{props.multiple &&
 				<>

@@ -49,7 +49,7 @@ function Offer() {
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
-						title="Inley'e Onley'e Overlay'e Endokorony"
+						title="Onley'e Endokorony"
 						link="/offer/inlay-onlay"
 					>
 						Inaczej wkłady koronowe, są to wypełnienia zębów o bardzo wysokiej jakości.
@@ -101,7 +101,7 @@ function Offer() {
 					</SingleOffer>
 					<SingleOffer
 						image={CarPhoto}
-						title="Leczenie Stawów Skroniowo-Żuchwowych"
+						title="Leczenie Stawów"
 						link="/offer/joints"
 					>
 						Zaburzenia funkcji stawów skroniowo-żuchwowych są przyczyną poważnych problemów ze szczęką oraz

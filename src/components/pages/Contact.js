@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import ContactForm from '../fragments/forms/ContactForm';
 import ParallaxBaner from '../fragments/ParallaxBanner'
 
@@ -19,6 +20,9 @@ function Contact() {
 							<a className="text-link" href="tel:+48609606814">+48 609-606-814</a><br />
 							<a className="text-link" href="mailto:magdalena.bujnicka@gmail.com">magdalena.bujnicka@gmail.com</a>
 						</address>
+						<div className='appointment'>
+							<Link to='/appointment' className='button'>Zapisz się na wizytę</Link>
+						</div>
 					</div>
 					<ContactForm />
 				</section>

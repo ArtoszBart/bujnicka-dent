@@ -9,6 +9,12 @@
 			display: inline-block;
 			margin-top: 1rem;
 		}
+
+		.appointment {
+			display: flex;
+			justify-content: center;
+			// align-items: center;
+		}
 	}
 
 	&-form {

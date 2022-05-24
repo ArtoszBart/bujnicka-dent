@@ -1,0 +1,8 @@
+@use './colors' as *;
+
+@function set-page-background($url) {
+    @return linear-gradient(to right,
+        rgba($color-text, 0.5),
+        rgba($color-text, 0.3)),
+    url($url) no-repeat;
+}

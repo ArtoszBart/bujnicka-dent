@@ -1,33 +1,31 @@
-@use '../config' as *;
+@use '../abstracts/' as *;
 
 .history {
-	flex-direction: column;
 	align-items: center;
-	padding-left: 10rem;
-	padding-right: 10rem;
+	padding-inline: 10rem;
 
 	&-pictures {
 		display: flex;
 		justify-content: center;
 
 		&-single {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			@include flex-center;
 			
 			img {
 				margin: 2rem;
-				max-width: 150px;
+				max-width: $image-history-max-width;
 			}
 
 			span {
-				font-weight: 300;
+				font-weight: $font-weight-pale;
 			}
 		}
 	}
 }
 
 .employee {
+	flex-direction: row;
+
 	.img-box {
 		flex: 0 0 20%;
 		align-self: flex-start;
@@ -38,12 +36,18 @@
 	&-picture {
 		width: 100%;
 		height: auto;
-		box-shadow: 20px 20px 20px 2px rgba($secondary-color, 0.3);
+		box-shadow: $img-shadow;
 	}
 
-	p.subheadder {
-		color: $accent-color;
-		text-transform: uppercase;
-		margin-bottom: 3rem;
+	&-about {
+		h2 {
+			margin-bottom: 0.5rem;
+		}
+
+		.subheadder {
+			color: $color-accent;
+			text-transform: uppercase;
+			margin-bottom: 3rem;
+		}
 	}
 }

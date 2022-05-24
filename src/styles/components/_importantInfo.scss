@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.important-info {
+    margin: 2rem 1rem 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: $color-accent;
+    color: $color-background;
+
+    p {
+        width: auto;
+        margin: 1rem;
+
+        .text-link {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1rem;
+    }
+}

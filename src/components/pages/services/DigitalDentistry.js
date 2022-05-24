@@ -9,7 +9,7 @@ function DigitalDentistry() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="digital-dentistry" text="Stomatoligia Cyfrowa" />
 			<article className="page-content">
-				<section aria-labelledby="digital-smile-design" className="page-content-text">
+				<section aria-labelledby="digital-smile-design">
 					<h2 id="digital-smile-design">Digital Smile Design</h2>
 					<p>
 						jest cyfrową platformą do <b>poprawy uśmiechu</b> i podniesienia walorów estetycznych zębów.
@@ -21,11 +21,13 @@ function DigitalDentistry() {
 						<dfn><abbr title="Digital Smile Design">DSD</abbr></dfn> została stworzona przez brytyjskiego dentystę
 						Christiana Coachmana jako platforma współpracy pomiędzy pacjentem, lekarzem prowadzącym i zespołem wykonującym plan leczenia.
 					</p>
-					<div className="text-img">
+					<div className="text-img downright">
 						<div>
-							<div className="page-photo down-right">
-								<img src={CarPhoto} alt="" />
-								<span>DSD</span>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={CarPhoto} alt="" />
+									<span>DSD</span>
+								</div>
 							</div>
 							<h3>Jak działa <abbr title="Digital Smile Design">DSD</abbr>?</h3>
 							<p>

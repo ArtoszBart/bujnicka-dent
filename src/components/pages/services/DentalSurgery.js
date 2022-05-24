@@ -9,13 +9,13 @@ function DentalSurgery() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="dental-surgery" text="Chirurgia Stomatoligiczna" />
 			<article className="page-content">
-				<section aria-labelledby="what-is-dental-surgery" className="page-content-text">
+				<section aria-labelledby="what-is-dental-surgery">
 					<h2 id="what-is-dental-surgery">Czym zajmuje się Chirurgia Stomatologiczna</h2>
 					<p>
 						Chirurgia Stomatologiczna obejmuje szereg zabiegów w jamie ustnej, wykonywanych w znieczuleniu miejscowym.
 					</p>
 				</section>
-				<section aria-labelledby="tooth-extraction" className="page-content-text">
+				<section aria-labelledby="tooth-extraction">
 					<h2 id="tooth-extraction">Ekstrakcje Zębów</h2>
 					<p>
 						Czasami zęba nie da się już uratować, podejmuje się wtedy decyzję o jego <b>usunięciu - ekstrakcji</b>. Jest to ostateczność,
@@ -34,14 +34,14 @@ function DentalSurgery() {
 					</ul>
 
 					<h3>Usuwanie Ósemek</h3>
-					<div className="text-img">
-						<div>
-							<div className="photos">
-								<div className="page-photo">
-									<img src={CarPhoto} alt="" />
-									<span>Zła ósemka</span>
-								</div>
+					<div className="text-img upright">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Zła ósemka</span>
 							</div>
+						</div>
+						<div>
 							<p>
 								Szczególną grupą zębów, które bardzo często usuwa się są <b>ósemki</b> (zęby mądrości).
 								Położone są w miejscach, które mają zdecydowanie <b>mniejsze możliwości samooczyszczania</b>,
@@ -79,7 +79,7 @@ function DentalSurgery() {
 						<li>porażenie nerwu zębodołowego, czego objawem są zaburzenia czucia w obrębie wargi dolnej</li>
 					</ul>
 				</section>
-				<section aria-labelledby="hemisection-and-radectomy" className="page-content-text">
+				<section aria-labelledby="hemisection-and-radectomy">
 					<h2 id="hemisection-and-radectomy">Hemisekcja i Radektomia</h2>
 					<p>
 						Są to zabiegi tzw. <b>ostatniej szansy dla zębów trzonowych</b>, kiedy tylko jeden
@@ -97,7 +97,7 @@ function DentalSurgery() {
 						Pozostałe fragmenty zęba wykorzystuje się do odbudowy protetycznej wkładem koronowo-korzeniowym i koroną estetyczną.
 					</ImportantInfo>
 				</section>
-				<section aria-labelledby="resection" className="page-content-text">
+				<section aria-labelledby="resection">
 					<h2 id="resection">Resekcja</h2>
 					<p>
 						Dotyczy <b>wierzchołków korzeni zębów</b> najczęściej jednokorzeniowych i polega na
@@ -114,7 +114,7 @@ function DentalSurgery() {
 						</li>
 					</ul>
 				</section>
-				<section aria-labelledby="implantology-surgery" className="page-content-text">
+				<section aria-labelledby="implantology-surgery">
 					<h2 id="implantology-surgery">Chirurgia Implantologiczna</h2>
 					<p>
 						Dział ten obejmuje zabiegi <b>poprawiające warunki kostne szczęk przed implantacją</b>.

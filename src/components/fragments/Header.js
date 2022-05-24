@@ -18,10 +18,9 @@ function Header() {
 
 	return (
 		<header>
-			<div className={'header-container' + (navbar ? ' navbar-dark' : '')}>
+			<div className={'header-container' + (navbar ? ' scrolled' : '')}>
 				<div className="logo">
 					<Link to="/">
-						{/* <Logo /> */}
 						<img src={logo} alt="logo" />
 					</Link>
 				</div>

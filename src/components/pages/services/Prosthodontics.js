@@ -10,14 +10,16 @@ function Prosthodontics() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="prosthodontics" text="Protetyka" />
 			<article className="page-content">
-				<section aria-labelledby="what-is-prosthodontics" className="page-content-text">
+				<section aria-labelledby="what-is-prosthodontics">
 					<h2 id="what-is-prosthodontics">Czym jest protetyka</h2>
-					<div className="text-img">
-						<div>
+					<div className="text-img upright">
+						<div className="photos">
 							<div className="page-photo">
 								<img src={CarPhoto} alt="" />
 								<span> Braki w zębach</span>
 							</div>
+						</div>
+						<div>
 							<p>
 								<dfn>Protetyka</dfn> to dział stomatologii zajmujący się <b>uzupełnianiem utraconych tkanek zębów</b> w przypadku,
 								gdy nie jest możliwa ich odbudowa zachowawcza lub zostały one całkowicie utracone z innych powodów.
@@ -27,12 +29,12 @@ function Prosthodontics() {
 								na <b>odtworzenie wcześniejszej</b> sytuacji w jamie ustnej, <b>przywrócenie pełnej funkcjonalności</b> narządu żucia
 								oraz <b>pięknego uśmiechu</b>.
 							</p>
+							<p>
+								Dzisiejsza protetyka daje szeroki wachlarz różnych rozwiązań, <b>dostosowanych do możliwości finansowych</b> pacjenta.
+								Zostały one opisane niżej.
+							</p>
 						</div>
 					</div>
-					<p>
-						Dzisiejsza protetyka daje szeroki wachlarz różnych rozwiązań, <b>dostosowanych do możliwości finansowych</b> pacjenta.
-						Zostały one opisane niżej.
-					</p>
 
 					<h3>Dlaczego warto podjąć leczenie protetyczne</h3>
 					<p>
@@ -51,7 +53,7 @@ function Prosthodontics() {
 
 					<ImportantInfo>Utraconego zęba warto <b>jak najszybciej</b> uzupełnić nowym.</ImportantInfo>
 				</section>
-				<section aria-labelledby="crown-inlays" className="page-content-text">
+				<section aria-labelledby="crown-inlays">
 					<h2 id="crown-inlays">Wkłady koronowe</h2>
 					<p>
 						Tak zwane inley'e, onley'e, overlay'e oraz endokorony - odtwarzają utracone tkanki zęba.
@@ -72,7 +74,7 @@ function Prosthodontics() {
 						chromo-kobaltowe, złoto, tytan oraz cyrkon. Decyzję o wyborze rodzaju materiału podejmuje lekarz.
 					</p>
 				</section>
-				<section aria-labelledby="prosthetic-crowns" className="page-content-text">
+				<section aria-labelledby="prosthetic-crowns">
 					<h2 id="prosthetic-crowns">Korony protetyczne</h2>
 					<p>
 						Są uzupełnieniem protetycznym odbudowującym <b>pojedyńczy ząb</b>. Mogą być
@@ -133,7 +135,7 @@ function Prosthodontics() {
 						aby <b>nie odróżniały się od naturalnych zębów</b> pacjenta.
 					</ImportantInfo>
 				</section>
-				<section aria-labelledby="prosthetic-bridges" className="page-content-text">
+				<section aria-labelledby="prosthetic-bridges">
 					<h2 id="prosthetic-bridges">Mosty</h2>
 					<p>
 						Są uzupełnieniem protetycznym <b>złożonym z szeregu koron</b>, uzupełniającym brak pojedyńczego
@@ -165,7 +167,7 @@ function Prosthodontics() {
 						</li>
 					</ul>
 				</section>
-				<section aria-labelledby="dentures" className="page-content-text">
+				<section aria-labelledby="dentures">
 					<h2 id="dentures">Protezy</h2>
 					<p>Protezy są uzupełnieniami protetycznymi, możliwymi do wyjęcia z ust w dowolnym momencie.</p>
 
@@ -205,7 +207,7 @@ function Prosthodontics() {
 						Proteza tego rodzaju <b>może być użytkowana tylko do 6 miesięcy</b>, póżniej wymaga wymiany z powodu zmienionego w wyniku gojenia dziąsła.
 					</p>
 				</section>
-				<section aria-labelledby="why-prosthodontics" className="page-content-text">
+				<section aria-labelledby="why-prosthodontics">
 					<h3>Wykonanie protez</h3>
 					<p>
 						Protezy można wykonać <b>po całkowitym wyleczeniu z próchnicy</b> wszystkich zębów, usunięciu zębów nie

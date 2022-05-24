@@ -15,7 +15,7 @@ function Endodontics() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="endodontics" text="Endodoncja" />
 			<article className="page-content">
-				<section aria-labelledby="what-is-endodontics" className="page-content-text">
+				<section aria-labelledby="what-is-endodontics">
 					<h2 id="what-is-endodontics">Czym zajmuje się Endodoncja?</h2>
 					<p>
 						<dfn>Endodoncja</dfn> - potocznie nazywana <b>leczeniem kanałowym</b> - jest dziedziną stomatologii zachowawczej
@@ -33,7 +33,7 @@ function Endodontics() {
 						miazgi. <b>Chora miazga powinna zostać jak najszybciej usunięta</b>, ponieważ bakterie mogą rozprzestrzeniać się
 						poza kanał zęba do kości i spowodować <b>zapalenie kości</b> w okolicy wierzchołka korzenia zęba.
 					</p>
-					<div className="text-img list-img">
+					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
 								<img src={CarPhoto} alt="" />
@@ -56,7 +56,7 @@ function Endodontics() {
 						</div>
 					</div>
 				</section>
-				<section aria-labelledby="endodontics-process" className="page-content-text">
+				<section aria-labelledby="endodontics-process">
 					<h2 id="endodontics-process">Przebieg leczenia endodontycznego:</h2>
 					<h3>Leczenie endodontyczne polega na:</h3>
 					<ol>
@@ -101,7 +101,7 @@ function Endodontics() {
 						lecznicze i doprowadzić leczenie do końca.
 					</p>
 				</section>
-				<section aria-labelledby="why-endodontics" className="page-content-text">
+				<section aria-labelledby="why-endodontics">
 					<h2 id="why-endodontics">Dlaczego warto podjąć leczenie kanałowe?</h2>
 					<p>
 						Pacjenci często nie podejmują leczenia kanałowego ze względu na koszty finansowe tego zabiegu. Doprowadza to

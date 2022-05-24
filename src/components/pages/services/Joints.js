@@ -8,7 +8,7 @@ function Joints() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="joints" text="Leczenie Stawów Skroniowo-Żuchwowych" />
 			<article className="page-content">
-				<section aria-labelledby="joints-treatment" className="page-content-text">
+				<section aria-labelledby="joints-treatment">
 					<p>
 						<b>Nieprawidłowe funkcjonowanie stawów skroniowo-żuchwowych</b> stało się w dzisiejszych czasach coraz
 						powszechniejszą przyczyną <b>dolegliwości w obrębie stawów</b> i zjawisk patologicznych z nim związanych.
@@ -70,7 +70,7 @@ function Joints() {
 						czas leczenia i <b>zapobiegnie utrwaleniu się złych nawyków</b> i powolnemu niszczeniu całego narządu żucia.
 					</ImportantInfo>
 				</section>
-				<section aria-labelledby="relaxation-rails" className="page-content-text">
+				<section aria-labelledby="relaxation-rails">
 					<h2 id="what-are-crown-inserts">Szyna Relaksacyjna</h2>
 					<p>
 						<b>Szyna relaksacyjna</b> jest przezroczystą nakładką na zęby, indywidualnie dopasowaną do zębów pacjenta.

@@ -29,7 +29,7 @@ export function formatDateShort(date) {
 	const weekDay = days[date.getDay() - 1];
 	const day = date.getDate();
 	const month = (date.getMonth() + 1).toString().padStart(2, '0');
-	var stringDate = `${weekDay}, ${day}.${month}`;
+	var stringDate = `${weekDay} ${day}.${month}`;
 	return stringDate;
 };
 

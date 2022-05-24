@@ -1,0 +1,58 @@
+@use '../abstracts' as *;
+
+#main-page {
+	background: set-page-background('../../img/main_view.jpg') center bottom;
+}
+
+#about,
+#offer,
+#prices,
+#contact,
+#certificates,
+#appointments,
+#not-found,
+#aesthetic-dentistry,
+#conservative-dentistry,
+#dental-surgery,
+#digital-dentistry,
+#diagnostics,
+#endodontics,
+#implantology,
+#inlay-onlay,
+#joints,
+#periodontics,
+#prevention,
+#prosthodontics,
+#privacy-policy {
+	background: set-page-background('../../img/turtle.jpg');
+}
+
+.page-wrapper {
+	padding-top: $banner-height;
+
+	.banner {
+		@include fixed-full-width;
+		height: $banner-height;
+		background-size: cover !important;
+		@include flex-column-center-screen;
+		text-align: center;
+	
+		&-title {
+			border-bottom: 2px solid $color-text-secondary;
+		}
+	}
+}
+
+@include media-md {
+	.banner {
+		padding: 5rem;
+
+		&-title {
+			max-width: 520px;
+		}
+
+		h1 {
+			font-size: $font-size-h1;
+		}
+	}
+}

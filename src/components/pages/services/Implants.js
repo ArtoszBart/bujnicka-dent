@@ -16,14 +16,16 @@ function Implants() {
 			<ParallaxBaner id="implantology" text="Implanty" />
 
 			<article className="page-content">
-				<section aria-labelledby="what-is-implantology" className="page-content-text">
+				<section aria-labelledby="what-is-implantology">
 					<h2 id="what-is-implantology">Czym zajmuje się Implantologia</h2>
-					<div className="text-img">
-						<div>
-							<div className="page-photo down-right">
+					<div className="text-img upright">
+						<div className="photos">
+							<div className="page-photo">
 								<img src={CarPhoto} alt="" />
 								<span>Coś tam nie wiem</span>
 							</div>
+						</div>
+						<div>
 							<p>
 								<b>Implantologia</b> to dziedzina chirurgii stomatologicznej zajmująca się <b>uzupełnieniem brakującego korzenia zęba</b>.
 								Jest to najbardziej zaawansowana technologicznie metoda leczenia braków zębowych.
@@ -47,7 +49,7 @@ function Implants() {
 						</div>
 					</div>
 				</section>
-				<section aria-labelledby="implants" className="page-content-text">
+				<section aria-labelledby="implants">
 					<h2 id="implants">Implanty</h2>
 					<p>
 						<dfn>Implant</dfn> to inaczej sztuczny korzeń. Jest to mała "śrubka" umieszczana w obrębie kości żuchwy lub
@@ -103,7 +105,7 @@ function Implants() {
 						Do czynników zwiększonego ryzyka należą palenie tytoniu i nadużywanie napojów alkoholowych.
 					</ImportantInfo>
 				</section>
-				<section aria-labelledby="immediate-implants" className="page-content-text">
+				<section aria-labelledby="immediate-implants">
 					<h2 id="immediate-implants">Implanty natychmiastowe</h2>
 					<p>
 						Dużym zainteresowaniem cieszą się <b>implanty natychmiastowe</b>.
@@ -136,7 +138,7 @@ function Implants() {
 						<li>możliwość wykonania natychmiastowej korony tymczasowej na tej samej wizycie</li>
 					</ul>
 				</section>
-				<section aria-labelledby="implantology-treatment-stages" className="page-content-text">
+				<section aria-labelledby="implantology-treatment-stages">
 					<h2 id="implantology-treatment-stages">Etapy leczenia implantologicznego</h2>
 					<ol className="wide">
 						<li>

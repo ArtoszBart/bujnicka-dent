@@ -9,7 +9,7 @@ function Prevention() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="prevention" text="Profilaktyka" />
 			<article className="page-content">
-				<section aria-labelledby="what-is-prevention" className="page-content-text">
+				<section aria-labelledby="what-is-prevention">
 					<h2 id="what-is-prevention">Czym jest profilaktyka</h2>
 					<p>
 						<dfn>Profilaktyka</dfn> to podstawowy dział stomatologii zajmujący się <b>zapobieganiem chorób jamy ustnej</b> oraz uświadamianiem,
@@ -39,20 +39,20 @@ function Prevention() {
 					</ul>
 				</section>
 
-				<section aria-labelledby="why-prevention-is-important" className="page-content-text">
+				<section aria-labelledby="why-prevention-is-important">
 					<h2 id="why-prevention-is-important">Dlaczego profilaktyka jest tak ważna</h2>
-					<div className="text-img">
-						<div>
-							<div className="photos">
-								<div className="page-photo">
-									<img src={CarPhoto} alt="" />
-									<span>Kamień nazębny</span>
-								</div>
-								<div className="page-photo">
-									<img src={CarPhoto} alt="" />
-									<span>Osad nazębny</span>
-								</div>
+					<div className="text-img upright">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Kamień nazębny</span>
 							</div>
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Osad nazębny</span>
+							</div>
+						</div>
+						<div>
 							<p>
 								Po każdym posiłku z resztek jedzenia i bakterii tworzy się na powierzchni zębów <dfn>płytka nazębna</dfn>,
 								która występuje w postaci miękkiego, ściśle przylegającego, biało - żółtego nalotu.
@@ -86,7 +86,7 @@ function Prevention() {
 					</ImportantInfo>
 
 				</section>
-				<section aria-labelledby="preventive-treatments" className="page-content-text" id="services">
+				<section aria-labelledby="preventive-treatments" id="services">
 
 					<h2 id="preventive-treatments">Zabiegi profilaktyczne</h2>
 

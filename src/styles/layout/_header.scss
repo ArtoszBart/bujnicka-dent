@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+header {
+	@include fixed-full-width;
+	z-index: 10;
+
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 3rem;
+		background-color: rgba($color-text, 0);
+		@include transition-ease-fast;
+
+		.logo img {
+			width: 100%;
+			@include transition-ease-fast;
+		}
+	}
+	
+	.scrolled {
+		background-color: rgba($color-text, 0.7);
+		padding-block: 0.5rem;
+	
+		.logo img {
+			width: 50%;
+		}
+	}
+
+	.menu {
+		@include flex-center;
+	}
+}

@@ -16,14 +16,14 @@ function AestheticDentistry() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="aesthetic-dentistry" text="Stomatoligia Estetyczna" />
 			<article className="page-content">
-				<section aria-labelledby="aesthetic-dentistry-goal" className="page-content-text">
+				<section aria-labelledby="aesthetic-dentistry-goal">
 					<h2 id="aesthetic-dentistry-goal">Cel stomatologi estetycznej</h2>
 					<p>
 						<dfn>Stomatologia estetyczna</dfn> zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
 						czego efektem staje się piękny, naturalny uśmiech.
 					</p>
 				</section>
-				<section aria-labelledby="teeth-whitening" className="page-content-text">
+				<section aria-labelledby="teeth-whitening">
 					<h2 id="teeth-whitening">Wybielanie zębów</h2>
 					<h3>Metoda nakładkowa</h3>
 					<p>
@@ -35,24 +35,28 @@ function AestheticDentistry() {
 					<p>
 						Dotyczy <b>zębów martwych</b> i polega na aplikacji żelu wybielającego bezpośrednio do komory zęba.
 					</p>
-					<div className="page-gallery">
-						<div className="page-photo">
-							<img src={CarPhoto} alt="" />
-							<span>Przed wybielaniem</span>
-						</div>
-						<div className="page-photo">
-							<img src={CarPhoto} alt="" />
-							<span>Po wybielaniu</span>
+					<div className="text-img horizontal">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Przed wybielaniem</span>
+							</div>
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Po wybielaniu</span>
+							</div>
 						</div>
 					</div>
 				</section>
-				<section aria-labelledby="icon-treatment" className="page-content-text">
+				<section aria-labelledby="icon-treatment">
 					<h2 id="icon-treatment">Zabieg ICON</h2>
-					<div className="text-img">
+					<div className="text-img downright">
 						<div>
-							<div className="page-photo down-right">
-								<img src={CarPhoto} alt="" />
-								<span>Plamy na szkliwie</span>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={CarPhoto} alt="" />
+									<span>Plamy na szkliwie</span>
+								</div>
 							</div>
 							<p>
 								Nazwa zabiegu pochodzi od nazwy fabrycznej stosowanego preparatu - polega na <b>likwidacji białych plam</b> na
@@ -67,7 +71,7 @@ function AestheticDentistry() {
 						</div>
 					</div>
 				</section>
-				<section aria-labelledby="fillings-replacement" className="page-content-text">
+				<section aria-labelledby="fillings-replacement">
 					<h2 id="fillings-replacement">Wymiana wypełnień</h2>
 					<p>
 						Zęby przednie często mają liczne, nieestetyczne, przebarwione lub niekompletne wypełnienia.
@@ -76,13 +80,13 @@ function AestheticDentistry() {
 						W przeciwnym razie rozważyć trzeba inną metodę poprawy estetyki.
 					</p>
 				</section>
-				<section aria-labelledby="veneers" className="page-content-text">
+				<section aria-labelledby="veneers">
 					<h2 id="veneers">Licówki</h2>
 					<p>
 						Są to cieniutkie <b>nakładki protetyczne</b> tylko na powierzchnię wargową lub policzkową zębów.
 						Przeznaczone są dla pacjentów, którzy znacząco chcą <b>poprawić wygląd uśmiechu</b>.
 					</p>
-					<div className="text-img list-img">
+					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
 								<img src={CarPhoto} alt="" />
@@ -97,21 +101,21 @@ function AestheticDentistry() {
 								<li>rozległe wrodzone lub nabyte <b>defekty szkliwa</b>, np. nierówna powierzchnia szkliwa, pęknięcia, ubytki</li>
 								<li><b>likwidacja diastem</b> (przerw) między zębami</li>
 							</ul>
-							<h3>Przeciwwskazania do wykonania licówek:</h3>
-							<ul>
-								<li>zęby martwe</li>
-								<li>zęby z rozległymi ubytkami lub wypełnieniami kompozytowymi</li>
-								<li>rozległe braki zębów</li>
-								<li>
-									parafunkcje typu zgrzytanie, zaciskanie zębów.
-									Konieczne jest najpierw <Link to="/offer/joints" className="text-link">Leczenie Stawów Skroniowo-Żuchwowych</Link>
-								</li>
-								<li>wady zgryzu</li>
-								<li>choroby przyzębia</li>
-								<li>zła higiena jamy ustnej</li>
-							</ul>
 						</div>
 					</div>
+					<h3>Przeciwwskazania do wykonania licówek:</h3>
+					<ul>
+						<li>zęby martwe</li>
+						<li>zęby z rozległymi ubytkami lub wypełnieniami kompozytowymi</li>
+						<li>rozległe braki zębów</li>
+						<li>
+							parafunkcje typu zgrzytanie, zaciskanie zębów.
+							Konieczne jest najpierw <Link to="/offer/joints" className="text-link">Leczenie Stawów Skroniowo-Żuchwowych</Link>
+						</li>
+						<li>wady zgryzu</li>
+						<li>choroby przyzębia</li>
+						<li>zła higiena jamy ustnej</li>
+					</ul>
 					<h3>Wykonanie licówek:</h3>
 					<ol>
 						<li>
@@ -146,7 +150,7 @@ function AestheticDentistry() {
 						Obecnie licówki są <b>najpopularniejszą metodą</b> na realizację marzenia o pięknym, białym uśmiechu.
 					</ImportantInfo>
 				</section>
-				<section aria-labelledby="rest-treatments" className="page-content-text">
+				<section aria-labelledby="rest-treatments">
 					<h2 id="rest-treatments">Inne zabiegi</h2>
 					<h3>Wkłady koronowe</h3>
 					<p>
@@ -163,7 +167,7 @@ function AestheticDentistry() {
 						zakładce <Link to="/offer/prosthodontics" className="text-link">Protetyka</Link>
 					</p>
 				</section>
-				<section aria-labelledby="clear-aligner" className="page-content-text">
+				<section aria-labelledby="clear-aligner">
 					<h2 id="clear-aligner">Clear Aligner</h2>
 					<p>
 						Korekta małych nieprawidłowości w ustawieniu zębów, może zostać wykonana za pomocą metody <dfn>Clear Aligner</dfn>.

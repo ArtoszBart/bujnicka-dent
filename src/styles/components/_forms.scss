@@ -1,0 +1,82 @@
+@use '../abstracts/' as *;
+
+.contact-form {
+	width: 100%;
+    @include flex-column;
+
+	&-input {
+        label {
+            display: none;
+        }
+                
+		input,
+		textarea,
+		select {
+            margin-block: 1rem 0rem;
+			border: none;
+			border-bottom: 1px solid $color-text;
+			background-color: $color-background;
+			color: $color-text;
+			font-family: inherit;
+			padding-bottom: 0.4rem;
+			@include transition-ease-fast;
+
+			&::placeholder {
+				color: rgba($color-text, $alpha: 0.6);
+			}
+
+			&:focus,
+            &:hover {
+				border-color: $color-accent;
+				outline: none;
+			}
+
+			&:-webkit-autofill {
+				box-shadow: 0 0 0 1000px rgba($color-accent, 0.1) inset;
+			}
+		}
+
+		.error-input {
+			border-bottom: 1px solid $color-error;
+		}
+	}
+
+    .error-text {
+        color: $color-error;
+        font-family: inherit;
+        font-size: 0.8rem;
+        min-height: 20px;
+    }
+    
+	.submit {
+        margin: 1rem auto 0;
+	}
+    
+    .agreement-box {
+        padding-block: 1rem;
+        
+        &-input {
+            
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            align-items: center;
+            gap: 0.5rem;
+            
+            label[for=agreement] {
+                display: block;
+            }
+            
+            input {
+                width: auto;
+                margin: 0;
+            }
+        }
+        
+        & .error-input {
+            outline: 2px solid $color-error;
+            outline-offset: -2px;
+        }
+    }
+}

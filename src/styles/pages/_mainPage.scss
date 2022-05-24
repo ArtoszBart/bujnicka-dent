@@ -1,31 +1,43 @@
-@use '../config'as *;
+@use '../abstracts/' as *;
 
-h1.device {
-	font-style: normal;
+.main-wrapper {
+	padding-top: 100vh;
+
+	.banner {
+		height: 100vh;
+
+		&-title {
+			margin-block: 10vh;
+		}
+	}
+
+	.section {
+		height: 100vh;
+	}
 }
 
 .scroll-down {
 	position: fixed;
 	bottom: 1rem;
 	font-size: 2vw;
-	color: $primary-color;
+	color: $color-background;
 	cursor: pointer;
 
 	&:hover {
 		i {
-			color: $accent-color;
+			color: $color-accent;
+			font-size: 3vw;
 		}
 	}
 }
 
 .quote {
 	position: absolute;
-	bottom: 2vw;
-	right: 2vw;
-	color: $primary-color;
+	bottom: 3rem;
+	right: 3rem;
+	color: $color-background;
 	text-align: right;
-	font-family: 'Playfair Display', serif;
-	// width: 300px;
+	font-family: $font-family-fancy;
 
 	q {
 		font-size: 25px;
@@ -34,6 +46,6 @@ h1.device {
 
 	.author {
 		margin-top: 0.5rem;
-		// text-align: right;
+		margin-bottom: 0;
 	}
 }

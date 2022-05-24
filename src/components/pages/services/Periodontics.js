@@ -10,7 +10,7 @@ function Periodontics() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="periodontics" text="Periodontologia" />
 			<article className="page-content">
-				<section aria-labelledby="what-is-periodontics" className="page-content-text">
+				<section aria-labelledby="what-is-periodontics">
 					<h2 id="what-is-periodontics">Czym zajmuje się periodontologia?</h2>
 					<p>
 						<b>Periodontologia</b> to dziedzina stomatologii zajmująca się leczeniem chorób <b>błony śluzowej i przyzębia</b>,
@@ -18,7 +18,7 @@ function Periodontics() {
 						(dotyczą 50% dorosłych) i są <b>główną przyczyną utraty zębów</b>.
 					</p>
 				</section>
-				<section aria-labelledby="periodontal-disease-causes" className="page-content-text">
+				<section aria-labelledby="periodontal-disease-causes">
 					<h2 id="periodontal-disease">Przyczyny powstania chorób przyzębia?</h2>
 					<p>
 						Choroby przyzębia są schorzeniami wieloczynnikowymi, ale czynnikiem pierwotnym są zawsze <b>bakterie płytki nazębnej</b>.
@@ -27,7 +27,7 @@ function Periodontics() {
 						Przedłużające się nagromadzenie płytki bakteryjnej powoduje <b>pojawienie się zjadliwych szczepów bakterii</b>,
 						których oddziaływanie na tkanki przyzębia jest wyjątkowo niebezpieczne.
 					</p>
-					<div className="text-img list-img">
+					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
 								<img src={CarPhoto} alt="" />
@@ -65,7 +65,7 @@ function Periodontics() {
 						rozchwiania zęba i jego utraty.
 					</p>
 				</section>
-				<section aria-labelledby="treatment" className="page-content-text">
+				<section aria-labelledby="treatment">
 					<h2>Objawy chorób przyzębia</h2>
 					<p>
 						Choroby przyzębia są schorzeniem przewlekłym, ich objawy mogą przez długi czas być<b> niezauważone</b> i
@@ -79,14 +79,16 @@ function Periodontics() {
 						<li>ruchomość zęba lub grupy zębów</li>
 						<li>zmiana położenia zęba lub grupy zębów</li>
 					</ul>
-					<div className="page-gallery">
-						<div className="page-photo">
-							<img src={CarPhoto} alt="" />
-							<span>Zdrowe dziąsło</span>
-						</div>
-						<div className="page-photo">
-							<img src={CarPhoto} alt="" />
-							<span>Chore dziąsło</span>
+					<div className="text-img horizontal">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Zdrowe dziąsło</span>
+							</div>
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Chore dziąsło</span>
+							</div>
 						</div>
 					</div>
 					<p>
@@ -101,7 +103,7 @@ function Periodontics() {
 						nawet w ciężkiej postaci zapalenia przyzębia <b>można nie odczuwać bólu</b>.
 					</ImportantInfo>
 				</section>
-				<section aria-labelledby="treatment" className="page-content-text">
+				<section aria-labelledby="treatment">
 					<h2 id="treatment">Ogólne zasady leczenia:</h2>
 					<p>
 						Ze względu na wieloobjawowość chorób przyzębia, każdy plan leczenia musi być przygotowany indywidualnie,

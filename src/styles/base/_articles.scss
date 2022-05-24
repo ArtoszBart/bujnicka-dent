@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+article {
+    position: relative;
+    @include flex-column-center;
+    min-height: $article-min-height;
+    padding: 5rem 10vw;
+    background-color: $color-background;
+
+    section {
+        @include flex-column;
+        width: 100%;
+        max-width: 1400px;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid rgba($color-text, 0.2);
+
+        &:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: $color-background-dark;
+	color: $color-text-secondary;
+	padding: 2rem;
+
+	p {
+		margin-inline: 1rem;
+		width: auto;
+		
+		a.text-link {
+			color: $color-text-secondary;
+		}
+	}
+}

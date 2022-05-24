@@ -17,7 +17,9 @@ function Calendar(props) {
 			return;
 		}
 		let newWeek = getNewDays(-7);
-		if (newWeek[0] < new Date()) {
+		const today = new Date();
+		const prevTue = new Date(newWeek[0]).setDate(newWeek[0].getDate() - 4);
+		if (newWeek[0] < today || prevTue < today) {
 			setIsPrevWeekAvailable(false);
 		}
 		setIsNextWeekAvailable(true);
@@ -49,7 +51,7 @@ function Calendar(props) {
 	}
 
 	return (
-		<div className={`calendar ${props.error && 'error-calendar'}`}>
+		<div className={`calendar${props.error ? ' error-calendar' : ''}`}>
 			<div className="calendar-wrapper">
 				<nav className="calendar-nav" aria-label='calendar navigation'>
 					<i className={`fas fa-chevron-left ${isPrevWeekAvailable ? '' : 'disabled'}`} onClick={() => previousWeek()} />

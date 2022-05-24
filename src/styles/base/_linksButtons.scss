@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.text-link,
+.button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-link {
+    color: $color-accent;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.button {
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    font-size: $font-size-button;
+    color: $color-text-secondary;
+    background-color: $color-accent;
+    @include transition-ease-fast;
+
+    &:hover {
+        background-color: $color-accent-light;
+    }
+}
+
+.submit {
+    border: none;
+    width: auto;
+    font-weight: 400;
+    line-height: inherit;
+}
+
+#main-page .button {
+    border-top: 1px solid $color-background;
+    border-bottom: 1px solid $color-background;
+    background-color: transparent;
+    @include transition-ease-slow;
+
+    &:hover {
+        background-color: $color-accent;
+        border-color: rgba($color-background, 0.3);
+        animation: pulse $time-slow;
+        box-shadow: 0 0 0 2rem rgba(#000, 0);
+    }
+}

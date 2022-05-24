@@ -1,53 +1,72 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import NavItem from './NavItem';
 
 function Navigation() {
-	const [open, setOpen] = useState(false);
+	const [opened, setOpened] = useState(false);
+
+	const handleBurgerClick = () => {
+		if (!opened) {
+			setOpened(true);
+		} else {
+			setOpened(false);
+		}
+	}
+
+	const handleNavItemClick = () => {
+		setOpened(false);
+	}
 
 	return (
 		<div className="menu">
-			<div className="menu-btn" onClick={() => {
-				if (!open) {
-					setOpen(true);
-				} else {
-					setOpen(false);
-				}
-			}}>
-				<span className={'menu-btn-burger' + (open ? ' open' : '')}></span>
+			<div className="menu-btn" onClick={handleBurgerClick}>
+				<span className={'menu-btn-burger' + (opened ? ' opened' : '')}></span>
 			</div>
 
-			<nav className={'nav' + (open ? ' open' : '')} aria-label="primary">
-				<ul className={'menu-nav' + (open ? ' open' : '')}>
-					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/about" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							O nas
-						</Link>
-					</li>
-					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/offer" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							Oferta
-						</Link>
-					</li>
-					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/prices" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							Cennik
-						</Link>
-					</li>
-					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/certificates" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							Certyfikaty
-						</Link>
-					</li>
-					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/faq" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							FAQ
-						</Link>
-					</li>
-					<li className={'menu-nav-item' + (open ? ' open' : '')}>
-						<Link to="/contact" className="text-link menu-nav-link" onClick={() => setOpen(false)}>
-							Kontakt
-						</Link>
-					</li>
+			<nav className={'nav' + (opened ? ' opened' : '')} aria-label="primary">
+				<ul className={'menu-nav' + (opened ? ' opened' : '')}>
+					<NavItem
+						opened={opened}
+						setOpened={setOpened}
+						to="/about"
+						label="O nas"
+						click={handleNavItemClick}
+					/>
+					<NavItem
+						opened={opened}
+						setOpened={setOpened}
+						to="/offer"
+						label="Oferta"
+						click={handleNavItemClick}
+					/>
+					<NavItem
+						opened={opened}
+						setOpened={setOpened}
+						to="/prices"
+						label="Cennik"
+						click={handleNavItemClick}
+					/>
+					<NavItem
+						opened={opened}
+						setOpened={setOpened}
+						to="/certificates"
+						label="Certyfikaty"
+						click={handleNavItemClick}
+					/>
+					<NavItem
+						opened={opened}
+						setOpened={setOpened}
+						to="/faq"
+						label="FAQ"
+						click={handleNavItemClick}
+					/>
+					<NavItem
+						opened={opened}
+						setOpened={setOpened}
+						to="/contact"
+						label="Kontakt"
+						click={handleNavItemClick}
+					/>
 				</ul>
 			</nav>
 		</div>

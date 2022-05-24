@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+// @for $ii from 2 through 6 {
+// 	&:nth-child(#{$ii}) {
+// 	}
+// }
+
+.menu-nav {
+	margin: 0;
+	
+	&-item {
+		display: inline;
+		padding-left: 1.5rem;
+	}
+	
+	&-link {
+		text-transform: uppercase;
+		font-size: $font-size-nav-l;
+		color: $color-text-secondary;
+		@include transition-ease-fast;
+
+		&:hover {
+			color: $color-accent;
+			text-decoration: none;
+		}
+	}
+}
+
+// TABLET MENU
+@include media-td {
+	.menu-nav-item {
+		padding-left: .7rem;
+	}
+	.menu-nav-link {
+		font-size: $font-size-nav-m;
+	}
+}
+
+.scrolled {
+	.menu-nav-link {
+		font-size: $font-size-nav-scrolled;
+	}
+}

@@ -1,5 +1,6 @@
 import '../../styles/main.scss';
-import { useState } from "react"
+import { useState } from 'react';
+import ParallaxBaner from '../fragments/ParallaxBanner'
 import TabNavItem from '../fragments/tabs/TabNavItem'
 import TabContent from '../fragments/tabs/TabContent'
 import SinglePrice from '../fragments/prices/SinglePrice'
@@ -10,24 +11,20 @@ function Prices() {
 
 	return (
 		<main className="page-wrapper" role="main">
-			<div className="banner" id="prices">
-				<div className="banner-title">
-					<h1>Cennik</h1>
-				</div>
-			</div>
+			<ParallaxBaner id="prices" text="Cennik" />
 			<article className="page-content">
 
 				<ul className="tabs-nav">
 					<TabNavItem title="Podstawowe usługi" id={0} activeTab={activeTab} setActiveTab={setActiveTab} />
 					<TabNavItem title="Profilaktyka" id={1} activeTab={activeTab} setActiveTab={setActiveTab} />
-					<TabNavItem title="Stomatologia estetyczna" id={2} activeTab={activeTab} setActiveTab={setActiveTab} />
-					<TabNavItem title="Stomatologia zachowawcza" id={3} activeTab={activeTab} setActiveTab={setActiveTab} />
+					<TabNavItem title="Stom. estetyczna" id={2} activeTab={activeTab} setActiveTab={setActiveTab} />
+					<TabNavItem title="Stom. zachowawcza" id={3} activeTab={activeTab} setActiveTab={setActiveTab} />
 					<TabNavItem title="Endodoncja" id={4} activeTab={activeTab} setActiveTab={setActiveTab} />
 					<TabNavItem title="Periodontologia" id={5} activeTab={activeTab} setActiveTab={setActiveTab} />
 					<TabNavItem title="Protetyka" id={6} activeTab={activeTab} setActiveTab={setActiveTab} />
 					<TabNavItem title="Implanty" id={7} activeTab={activeTab} setActiveTab={setActiveTab} />
 					<TabNavItem title="Chirurgia" id={8} activeTab={activeTab} setActiveTab={setActiveTab} />
-					<TabNavItem title="Stawy skroniowo-żuchwowe" id={9} activeTab={activeTab} setActiveTab={setActiveTab} />
+					<TabNavItem title="Leczenie stawów" id={9} activeTab={activeTab} setActiveTab={setActiveTab} />
 				</ul>
 
 				<TabContent id={0} activeTab={activeTab}>
@@ -50,8 +47,8 @@ function Prices() {
 					<SinglePrice name="Wybielanie metodą nakładkową (dotyczy zębów żywych)" price="1500 zł" />
 					<MultiplePrices
 						title="Wybielanie metodą dokomorową (dotyczy zębów martwych)"
-						names={["Pierwsza wizyta", "Każda następna wizyta", "tutaj nowa pozycja"]}
-						prices={["250 zł", "150 zł", "nowa cena"]}
+						names={["Pierwsza wizyta", "Każda następna wizyta"]}
+						prices={["250 zł", "150 zł"]}
 					/>
 					<MultiplePrices
 						title="Onlay lub Inlay"

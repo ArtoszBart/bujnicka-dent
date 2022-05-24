@@ -1,0 +1,14 @@
+$banner-height: 40vh;
+$article-min-height: calc(100vh - $banner-height - 83px);
+
+$tab-child-no: 10;
+$tab-nav-columns: 5;
+
+$image-text-max-width: 350px;
+$image-modal-max-width: 300px;
+$image-history-max-width: 150px;
+
+$gallery-columns: repeat(6, 1fr);
+$gallery-gap: 5rem;
+$gallery-overlay-nav-size: 50px;
+$gallery-overlay-icon-size: 1.5rem;

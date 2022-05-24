@@ -1,0 +1,59 @@
+@use '../abstracts' as *;
+
+b {
+    font-weight: $font-weight-bold;
+}
+
+dfn {
+    font-weight: $font-weight-bold;
+    font-style: normal;
+}
+
+abbr {
+    text-decoration: none;
+    font-style: italic;
+    cursor: help;
+}
+
+p,
+input,
+textarea,
+address,
+ul {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-weight: $font-weight-pale;
+    font-size: $font-size-text;
+    letter-spacing: 0.3px;
+    line-height: 25px;
+
+    &.center {
+        text-align: center;
+    }
+}
+
+ul {
+    font-size: $font-size-ul;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.white {
+    color: $color-text-secondary;
+}
+
+.error-message {
+    color: $color-error;
+}
+
+.success-message {
+    color: $color-success;
+}

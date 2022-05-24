@@ -1,0 +1,125 @@
+@use '../abstracts' as *;
+
+// BURGER BUTTON
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    visibility: hidden;
+
+    &-burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: $color-text-secondary;
+        @include transition-ease-fast;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: $color-text-secondary;
+            // @include transition-ease-fast;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background: $color-text-secondary;
+            @include transition-ease-fast;
+        }
+
+        &.opened {
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &::after {
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+// MOBILE MENU
+@include media-md {
+    header {
+        .header-container {
+            padding-inline: 1rem;
+
+            .logo img {
+                width: 50%;
+            }
+        }
+    }
+
+    .menu-btn {
+        visibility: visible;
+    }
+
+    .nav {
+        @include fixed-full-width;
+        visibility: hidden;
+
+        &.opened {
+            visibility: visible;
+        }
+
+        .menu-nav {
+            @include flex-column-center-screen;
+            height: 100vh;
+            background: $color-background-trans;
+            padding: 0;
+            transform: translateY(-100%);
+            @include transition-ease-fast;
+
+            &.opened {
+                transform: translateY(0);
+            }
+
+            &-item {
+                transform: translateX(100vw);
+                @include transition-ease-fast;
+                padding: 0;
+
+                &.opened {
+                    transform: translateX(0);
+                }
+            }
+
+            &-link {
+                display: inline-block;
+                font-size: $font-size-nav-mobile;
+                padding-block: 2rem;
+                @include transition-ease-fast;
+
+                &:hover {
+                    color: $color-accent;
+                }
+            }
+        }
+    }
+}
+
+// MENU ITEMS ANIMATION
+@for $ii from 1 through 7 {
+    .menu-nav-item:nth-child(#{$ii}) {
+        transition-delay: set-item-delay($ii);
+    }
+}

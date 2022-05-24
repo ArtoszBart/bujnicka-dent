@@ -8,7 +8,12 @@ const MultiplePrices = ({ title, names, prices }) => {
 			<div className="prices-multiple-items">
 				{names.map((value, index) => {
 					const price = prices[index];
-					return <><p key="value">{value}</p><p>{price}</p></>
+					return (
+						<React.Fragment key={index}>
+							<p>{value}</p>
+							<p>{price}</p>
+						</React.Fragment>
+					);
 				})}
 			</div>
 		</div>

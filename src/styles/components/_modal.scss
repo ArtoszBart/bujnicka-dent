@@ -1,35 +1,29 @@
-@use '../config' as *;
-
-
+@use '../abstracts' as *;
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    @include fixed-full-width;
     height: 100vh;
     z-index: 20;
-    background-color: rgba(black, 0.8);
+    background-color: $color-background-trans;
     display: block;
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-    transition: visibility 0s linear 400ms,
-        opacity 400ms;
+    @include transition-modal-closing;
 
     &.opened {
         opacity: 1;
         visibility: visible;
-        transition: visibility 0s, opacity 400ms;
+        @include transition-modal-opening;
     }
 
     &-body {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 60%;
         transform: translate(-50%, -50%);
-        background-color: $primary-color;
+        width: 60%;
+        background-color: $color-background;
         padding: 2rem 5rem;
         border-radius: 0.5rem;
 
@@ -37,28 +31,26 @@
             display: flex;
 
             img {
-                width: 300px;
+                width: $image-modal-max-width;
             }
         }
-
 
         &-close {
             position: absolute;
             top: 2rem;
             right: 2rem;
-            font-size: 1.2rem;
-            background-color: rgba($secondary-color, 0.1);
-            border-radius: 5px;
-            padding: 5px;
-            cursor: pointer;
             width: 2rem;
             height: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 5px;
+            @include flex-row-center-screen;
+            background-color: rgba($color-background-dark, 0.2);
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            @include transition-ease-fast;
 
             &:hover {
-                font-size: 1.4rem;
+                background-color: rgba($color-background-dark, 0.5);
             }
         }
     }

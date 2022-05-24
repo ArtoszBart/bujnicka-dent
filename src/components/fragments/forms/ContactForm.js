@@ -1,6 +1,7 @@
 import React from 'react';
 import useContactForm from './customHooks/useContactForm';
 import FormInput from './FormInput';
+import AgreementBox from './AgreementBox';
 
 function ContactForm() {
 	const { handleChange, handleSubmit, values, errors, submitInfo } = useContactForm();
@@ -14,7 +15,7 @@ function ContactForm() {
 	}
 
 	return (
-		<div className="half-width">
+		<div>
 			<h3>Napisz do nas!</h3>
 			<form className="contact-form" onSubmit={handleSubmit} noValidate>
 				<FormInput
@@ -61,12 +62,21 @@ function ContactForm() {
 					</textarea>
 					{errors.message && <span className="error-text">{errors.message}</span>}
 				</div>
+				<AgreementBox
+					type="checkbox"
+					name="agreement"
+					placeholder="Zgadzam się"
+					tabIndex="7"
+					value={values.agreement}
+					onChange={handleChange}
+					error={errors.agreement}
+				/>
 				<div className="contact-form-info">
 					<span className={getInfoClassName()}>
 						{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{` ${submitInfo.message}`}
 					</span>
 				</div>
-				<input type="submit" className="submit" value="Wyślij wiadomość" tabIndex="5" />
+				<input type="submit" className="submit button" value="Wyślij wiadomość" tabIndex="5" />
 			</form >
 		</div >
 	);

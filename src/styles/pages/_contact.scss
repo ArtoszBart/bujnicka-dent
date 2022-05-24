@@ -1,132 +1,39 @@
-@use '../config'as *;
+@use '../abstracts/' as *;
 
 .contact {
+	flex-direction: row;
 	justify-content: space-between;
 	padding-bottom: 3rem;
 
+	> div {
+		width: 50%;
+	}
+	
 	&-info {
+		@include flex-column;
+
+		h3 {
+			margin-bottom: 2rem;
+		}
+
 		address a {
 			display: inline-block;
 			margin-top: 1rem;
-		}
 
-		.appointment {
-			display: flex;
-			justify-content: center;
-			// align-items: center;
-		}
-	}
-
-	&-form {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-
-		label {
-			display: none;
-		}
-
-		label[for=agreement] {
-			display: block;
-		}
-
-		&-text {
-			display: flex;
-			flex-direction: column;
-		}
-
-		&-input {
-
-			input,
-			textarea,
-			select {
-				margin-top: 1rem;
-				margin-bottom: 0;
-				border: none;
-				border-bottom: 1px solid $secondary-color;
-				background-color: $primary-color;
-				color: $secondary-color;
-				font-family: 'Montserrat', sans-serif;
-				;
-				padding-bottom: 0.4rem;
-				@include transition-ease;
-
-				&::placeholder {
-					color: rgba($secondary-color, $alpha: 0.6);
-				}
-
-				&:hover {
-					border-color: $accent-color;
-				}
-
-				&:focus {
-					border-color: $accent-color;
-					outline: none;
-				}
-
-				&:-webkit-autofill {
-					box-shadow: 0 0 0 1000px $primary-color inset !important;
-				}
-			}
-
-			.error-input {
-				border-bottom: 1px solid red;
+			&:last-child {
+				margin-bottom: 1rem;
 			}
 		}
 
-		&-info-message {
-			i {
-				margin-right: 0.5rem;
-			}
-		}
-
-		.submit {
-			border: none;
-			margin: 1rem auto 0;
-			padding: 0.7rem 2rem;
-			width: 170px;
+		.button {
+			align-self: center;
+			margin-top: auto;
 		}
 	}
-}
-
-.agreement-box {
-	padding-block: 1rem;
-
-	&-input {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: start;
-		align-items: center;
-		gap: 0.5rem;
-
-		input {
-			width: auto;
-			margin: 0;
-		}
-	}
-}
-
-.error-text {
-	color: red;
-	font-family: inherit;
-	font-size: 0.8rem;
-	min-height: 20px;
-}
-
-.error-calendar .calendar-wrapper {
-	border: 2px solid red;
-}
-
-.agreement-box .error-input {
-	outline: 1px solid red;
-	outline-offset: -1px;
-
 }
 
 .map-container {
-	flex-direction: column;
 	align-items: center;
-	padding-top: 2rem;
 
 	.map {
 		width: 100%;

@@ -1,38 +1,35 @@
-@use '../config' as *;
+@use '../abstracts/' as *;
 
 .tabs-nav {
 	display: grid;
     grid-template-columns: repeat($tab-nav-columns, 1fr);
-	width: 100%;
 	margin-bottom: 3rem;
 	padding-left: 0px;
-	border: 1px solid rgba($secondary-color, 0.2);
+	border: 1px solid rgba($color-text, 0.2);
 	border-radius: 1rem;
 
 	li {
+		@include flex-center;
 		padding: 0.5rem;
 		list-style: none;
 		text-align: center;
 		cursor: pointer;
-		@include transition-ease;
+		@include transition-ease-fast;
 		@include set-corner-round;
 
 		&:hover {
-			background: rgba($accent-color, 0.2);
+			background: rgba($color-accent, 0.2);
 		}
 
 		&.active {
-			color: $primary-color;
-			background: $accent-color;
+			color: $color-text-secondary;
+			background: $color-accent;
 		}
 	}
 }
 
 .prices {
-	flex-direction: column;
-	padding-bottom: 0rem;
 	max-width: 1200px;
-	border-bottom: none;
 
 	&-item {
 		display: flex;
@@ -40,17 +37,16 @@
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		padding: 0.5rem 0.5rem;
 		padding-bottom: 0;
-		@include transition-ease;
+		@include transition-ease-fast;
 
 		&:hover {
 			border-radius: 5px;
-			background-color: rgba($accent-color, 0.1);
+			background-color: rgba($color-accent, 0.1);
 		}
 
 		p {
 			width: auto;
 			margin-bottom: 0.2rem;
-			display: flex;
 
 			dt {
 				margin-right: -8px;
@@ -64,12 +60,10 @@
 		&-items {
 			display: grid;
 			grid-template-columns: repeat(2, auto);
-			justify-content: space-between;
 			padding-left: 2rem;
 
 			p {
 				padding-top: 0.2rem;
-				display: block;
 			}
 
 			p:nth-child(2n) {

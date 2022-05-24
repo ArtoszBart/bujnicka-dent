@@ -5,7 +5,7 @@ const ImportantInfo = ({ children }) => {
 		<div className="important-info">
 			<div className="important-info-title">
 				<i className="fas fa-info-circle"></i>
-				<span>Ważne</span>
+				<h5>Ważne</h5>
 			</div>
 			<p>
 				{children}

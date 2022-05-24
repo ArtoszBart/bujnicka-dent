@@ -15,7 +15,7 @@ function InlayOnlay() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="inlay-onlay" text="Inlay'e, Onlay'e, Overlay'e, Endokorony" />
 			<article className="page-content">
-				<section aria-labelledby="what-are-crown-inserts" className="page-content-text">
+				<section aria-labelledby="what-are-crown-inserts">
 					<h2 id="what-are-crown-inserts">Czym są wkłady koronowe?</h2>
 					<p>
 						<b>Inley'e, Onley'e, Overlay'e, Endokorony</b> to inaczej <dfn>Wkłady Koronowe</dfn> -
@@ -47,18 +47,20 @@ function InlayOnlay() {
 							Jeśli w wyniku leczenia kanałowego doszło do znacznego zniszczenia tkanek,
 							musi zostać zastosowana metoda odbudowy protetycznej za pomocą wkładu koronowo-korzeniowego i korony porcelanowej.</li>
 					</ul>
-					<div className="page-gallery">
-						<div className="page-photo">
-							<img src={CarPhoto} alt="" />
-							<span>Inlay</span>
-						</div>
-						<div className="page-photo">
-							<img src={CarPhoto} alt="" />
-							<span>Onlay</span>
-						</div>
-						<div className="page-photo">
-							<img src={CarPhoto} alt="" />
-							<span>Overlay</span>
+					<div className="text-img horizontal">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Inlay</span>
+							</div>
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Onlay</span>
+							</div>
+							<div className="page-photo">
+								<img src={CarPhoto} alt="" />
+								<span>Overlay</span>
+							</div>
 						</div>
 					</div>
 
@@ -71,7 +73,7 @@ function InlayOnlay() {
 					</ul>
 				</section>
 
-				<section aria-labelledby="crown-insert-advantages" className="page-content-text">
+				<section aria-labelledby="crown-insert-advantages">
 					<h2 id="crown-insert-advantages">Zalety wkładów koronowych</h2>
 					<p>
 						Tego typu uzupełnienia są bardziej czasochłonne niż tradycyjne,
@@ -92,21 +94,23 @@ function InlayOnlay() {
 					</ul>
 				</section>
 
-				<section aria-labelledby="why-crown-inserts" className="page-content-text">
+				<section aria-labelledby="why-crown-inserts">
 					<h2 id="why-crown-inserts">Dlaczego wkłady koronowe?</h2>
-					<p>
-						Ze względu na fakt, że należą już do uzupełnień protetycznych i są
-						wykonywane przez technika w laboratorium protetycznym, wkłady koronowe
-						odtwarzają w prawidłowy sposób powierzchnię żującą zęba. Ma to olbrzymie
-						znaczenie nie tylko dla zębów, w których się znajdują, ale też dla całego narządu żucia.
-					</p>
 
-					<div className="text-img">
+					<div className="text-img downright">
 						<div>
-							<div className="page-photo down-right">
-								<img src={CarPhoto} alt="" />
-								<span>"Starczy wygląd"</span>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={CarPhoto} alt="" />
+									<span>"Starczy wygląd"</span>
+								</div>
 							</div>
+							<p>
+								Ze względu na fakt, że należą już do uzupełnień protetycznych i są
+								wykonywane przez technika w laboratorium protetycznym, wkłady koronowe
+								odtwarzają w prawidłowy sposób powierzchnię żującą zęba. Ma to olbrzymie
+								znaczenie nie tylko dla zębów, w których się znajdują, ale też dla całego narządu żucia.
+							</p>
 							<p>
 								W sytuacji kiedy powierzchnie żujące są wykonane z miękkich materiałów,
 								jakimi są standardowe kompozyty, nadmierne ścieranie się takiego uzupełnienia
@@ -129,6 +133,7 @@ function InlayOnlay() {
 						o twardości i ścieralności, zbliżonej do naturalnego szkliwa, skutecznie zapobiega objawom "starczego wyglądu".
 					</ImportantInfo>
 				</section>
+
 				<Modal
 					title='Technika adhezyjna'
 					image={CarPhoto}

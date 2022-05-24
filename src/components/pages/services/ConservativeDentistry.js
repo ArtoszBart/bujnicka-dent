@@ -16,14 +16,14 @@ function ConservativeDentistry() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="conservative-dentistry" text="Stomatoligia Zachowawcza" />
 			<article className="page-content">
-				<section aria-labelledby="what-is-conservative-dentistry" className="page-content-text">
+				<section aria-labelledby="what-is-conservative-dentistry">
 					<h2 id="what-is-conservative-dentistry">Czym jest Stomatologia Zachowawcza?</h2>
 					<p>
 						<b>Stomatologia zachowawcza</b> zajmuje się wykrywaniem i leczeniem najbardziej rozpowszechnionej choroby zębów,
 						czyli <b>próchnicy</b> wraz z odtwarzaniem utraconych tkanek wskutek tej choroby oraz urazów.
 					</p>
 				</section>
-				<section aria-labelledby="dental-caries" className="page-content-text">
+				<section aria-labelledby="dental-caries">
 					<h2 id="dental-caries">Próchnica</h2>
 					<p>
 						Przyczyną powstania próchnicy jest <b>płytka nazębna</b>, tworząca się po każdym posiłku z resztek jedzenia i bakterii,
@@ -38,12 +38,12 @@ function ConservativeDentistry() {
 					</p>
 					<ImportantInfo>
 						Aby uniknąć rozwoju próchnicy wskazane
-						są <Link to={'/offer/diagnostics'} className="text-link white"><b>wizyty kontrolne</b></Link>,
+						są <Link to={'/offer/diagnostics'} className="text-link"><b>wizyty kontrolne</b></Link>,
 						które powinny odbywać się co pół roku.
 						Mają one na celu wykrycie próchnicy w bardzo wczesnym stadium oraz uniknięcie leczenia kanałowego.
 					</ImportantInfo>
 				</section>
-				<section aria-labelledby="dental-caries-treatment" className="page-content-text">
+				<section aria-labelledby="dental-caries-treatment">
 					<h2 id="dental-caries-treatment">Leczenie próchnicy</h2>
 					<p>
 						Zabieg polega na <b>usunięciu zniszczonych tkanek</b> i zastąpieniu ich specjalnie do tego celu przeznaczonym

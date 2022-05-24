@@ -10,7 +10,7 @@ function Diagnostics() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="diagnostics" text="Wizyta Diagnostyczna" />
 			<article className="page-content">
-				<section aria-labelledby="what-is-it" className="page-content-text">
+				<section aria-labelledby="what-is-it">
 					<h2 id="what-is-it">Na czym polega?</h2>
 					<p>
 						Przychodząc do gabinetu stomatologicznego, często tylko wtedy, gdy "coś dzieje się z zębem",
@@ -20,7 +20,7 @@ function Diagnostics() {
 						Dzięki dokładnemu badaniu jamy ustnej podczas <b>bezpłatnej wizyty diagnostycznej</b> pacjent
 						może zapoznać się z sytuacją dotyczącą wszystkich zębów, dziąseł, błony śluzowej i stawów skroniowo-żuchwowych.
 					</p>
-					<div className="text-img list-img">
+					<div className="text-img normal">
 						<div>
 							<p>Pod koniec wizyty otrzymuje <b>plan leczenia</b>, który zawiera następujące informacje:</p>
 							<ul>

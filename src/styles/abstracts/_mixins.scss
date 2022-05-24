@@ -1,0 +1,55 @@
+@use '../abstracts/sizes' as *;
+
+@mixin set-corner-round {
+    &:first-child {
+        border-top-left-radius: 1rem;
+    }
+
+    &:nth-child(#{$tab-nav-columns}) {
+        border-top-right-radius: 1rem;
+    }
+
+    &:nth-child(#{(floor(calc($tab-child-no / $tab-nav-columns)) * $tab-nav-columns) + (if($tab-child-no % $tab-nav-columns == 0, -$tab-nav-columns+1, 1))}) {
+        border-bottom-left-radius: 1rem;
+    }
+
+    &:last-child {
+        @if($tab-child-no % $tab-nav-columns ==0) {
+            border-bottom-right-radius: 1rem;
+        }
+    }
+}
+
+@mixin fixed-full-width {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-column-center {
+    @include flex-column;
+    align-items: center;
+}
+
+@mixin flex-column-center-screen {
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-row-center-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -4,8 +4,14 @@
 	background: set-page-background('../../img/main_view.jpg') center bottom;
 }
 
+#offer {
+	background: set-page-background('../../img/banners/Offer_300DPI.jpeg') center center ;
+	// background-: cover !important;
+	background-position: 0 70%;
+}
+
+
 #about,
-#offer,
 #prices,
 #contact,
 #certificates,

@@ -1,7 +1,7 @@
 import '../../../styles/main.scss';
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
+import ImgPlan from '../../../img/texts/diagnostics/plan.jpeg';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Diagnostics() {
@@ -33,7 +33,7 @@ function Diagnostics() {
 						</div>
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={ImgPlan} alt="" />
 								<span>Zdjęcie</span>
 							</div>
 						</div>

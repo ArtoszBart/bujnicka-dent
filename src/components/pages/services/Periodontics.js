@@ -1,6 +1,7 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ImgCigarette from '../../../img/texts/periodontics/cigarette.jpeg';
 import { Link } from 'react-router-dom';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 
@@ -30,8 +31,8 @@ function Periodontics() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
-								<span>Zęby z palącym się papierosem</span>
+								<img src={ImgCigarette} alt="" />
+								<span></span>
 							</div>
 						</div>
 						<div>

@@ -2,6 +2,7 @@ import '../../../styles/main.scss';
 import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ImgEquipment from '../../../img/offers/offer_endodontics.jpeg';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 import Modal from './../../fragments/Modal';
 

@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ImgVeneers from '../../../img/texts/aesthetics/veneers.jpeg';
+import ImgTrayBasedWhitening from '../../../img/texts/aesthetics/tray-based_whitening.jpeg';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import Modal from './../../fragments/Modal';
 
@@ -89,7 +91,7 @@ function AestheticDentistry() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={ImgVeneers} alt="veneers" />
 								<span>Licówki</span>
 							</div>
 						</div>

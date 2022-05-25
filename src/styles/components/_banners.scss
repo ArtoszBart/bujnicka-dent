@@ -9,24 +9,59 @@
 	background-position-y: 70%;
 }
 
+#prevention {
+	background: set-page-background('../../img/banners/banner_prevention.jpeg');
+	background-position-y: 50%;
+}
+
+#aesthetic-dentistry {
+	background: set-page-background('../../img/banners/banner_aesthetics.jpeg');
+	background-position-y: 20%;
+}
+
+#digital-dentistry {
+	background: set-page-background('../../img/banners/banner_digital.jpeg');
+	background-position-y: 35%;
+}
+
+#inlay-onlay {
+	background: set-page-background('../../img/banners/banner_inlay_onlay.jpeg');
+	background-position-y: 40%;
+}
+
+#prosthodontics {
+	background: set-page-background('../../img/banners/banner_prosthodontics.jpeg');
+	background-position-y: 57%;
+}
+
+#periodontics {
+	background: set-page-background('../../img/banners/banner_periodontics.jpeg');
+}
+
+#joints {
+	background: set-page-background('../../img/banners/banner_joints.jpeg');
+	background-position-y: 60%;
+}
+
+#prices {
+	background: set-page-background('../../img/banners/banner_prices.jpeg');
+	background-position-y: 25%;
+}
+
+#contact {
+	background: set-page-background('../../img/banners/banner_contact.jpeg');
+	background-position-y: 10%;
+}
+
 #about,
-#prices,
-#contact,
 #certificates,
 #appointments,
 #not-found,
-#aesthetic-dentistry,
 #conservative-dentistry,
 #dental-surgery,
-#digital-dentistry,
 #diagnostics,
 #endodontics,
 #implantology,
-#inlay-onlay,
-#joints,
-#periodontics,
-#prevention,
-#prosthodontics,
 #privacy-policy {
 	background: set-page-background('../../img/turtle.jpg');
 }

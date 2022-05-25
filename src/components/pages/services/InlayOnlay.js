@@ -3,6 +3,8 @@ import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import CarPhoto from '../../../img/samochut.jpg';
+import ImgOnlay from '../../../img/texts/inlay-onlay/onlay.jpeg';
+import ImgOverlay from '../../../img/texts/inlay-onlay/overlay.jpeg';
 import Modal from './../../fragments/Modal';
 
 function InlayOnlay() {
@@ -54,11 +56,11 @@ function InlayOnlay() {
 								<span>Inlay</span>
 							</div>
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={ImgOnlay} alt="" />
 								<span>Onlay</span>
 							</div>
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={ImgOverlay} alt="" />
 								<span>Overlay</span>
 							</div>
 						</div>

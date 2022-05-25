@@ -1,6 +1,6 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
+import ImgDsd from '../../../img/texts/digital/dsd.jpeg';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function DigitalDentistry() {
@@ -12,7 +12,7 @@ function DigitalDentistry() {
 				<section aria-labelledby="digital-smile-design">
 					<h2 id="digital-smile-design">Digital Smile Design</h2>
 					<p>
-						jest cyfrową platformą do <b>poprawy uśmiechu</b> i podniesienia walorów estetycznych zębów.
+						Jest cyfrową platformą do <b>poprawy uśmiechu</b> i podniesienia walorów estetycznych zębów.
 						Piękny uśmiech sprawia, że jesteśmy postrzegani jako <b>bardziej atrakcyjni i pewni siebie</b>.
 					</p>
 
@@ -25,7 +25,7 @@ function DigitalDentistry() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={CarPhoto} alt="" />
+									<img src={ImgDsd} alt="Digital Smile Design" />
 									<span>DSD</span>
 								</div>
 							</div>

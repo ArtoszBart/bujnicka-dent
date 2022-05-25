@@ -2,6 +2,8 @@ import '../../../styles/main.scss';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import ImgProsthodontics from '../../../img/offers/offer_prosthodontics.jpeg';
+import ImgImplantsPlate from '../../../img/texts/prosthodontics/implants_plate.jpeg';
 import { Link } from 'react-router-dom';
 
 function Prosthodontics() {

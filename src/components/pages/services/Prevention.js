@@ -1,6 +1,7 @@
 import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
+import ImgPlaque from '../../../img/texts/prevention/plaque.jpeg';
+import ImgScale from '../../../img/texts/prevention/scale.jpeg';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Prevention() {
@@ -44,11 +45,11 @@ function Prevention() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={ImgScale} alt="" />
 								<span>Kamień nazębny</span>
 							</div>
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={ImgPlaque} alt="" />
 								<span>Osad nazębny</span>
 							</div>
 						</div>

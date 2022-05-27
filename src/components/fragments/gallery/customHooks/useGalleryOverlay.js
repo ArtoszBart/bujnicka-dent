@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 
-const useGalleryOverlay = (certificates) => {
-	console.log(certificates);
+const useGalleryOverlay = (images) => {
+	console.log(images);
 	const [isBoxOpen, setIsBoxOpen] = useState(false);
 	const [openedImg, setOpenedImg] = useState(null);
 
@@ -18,7 +18,7 @@ const useGalleryOverlay = (certificates) => {
 
 	const nextImage = useCallback(() => {
 		let nextId;
-		if (openedImg < certificates.length - 1) {
+		if (openedImg < images.length - 1) {
 			nextId = openedImg + 1;
 		} else {
 			nextId = 0;
@@ -33,7 +33,7 @@ const useGalleryOverlay = (certificates) => {
 		if (openedImg > 0) {
 			prevId = openedImg - 1;
 		} else {
-			prevId = certificates.length - 1;
+			prevId = images.length - 1;
 		}
 
 		setOpenedImg(prevId);
@@ -58,7 +58,7 @@ const useGalleryOverlay = (certificates) => {
 		};
 	}, [keyListener]);
 
-	return { isBoxOpen, openedImg, openGalleryOverlay, closeGalleryOverlay, nextImage, prevImage };
+	return { isBoxOpen, openedImg, openGalleryOverlay, closeGalleryOverlay, nextImage, prevImage, images };
 };
 
 export default useGalleryOverlay;

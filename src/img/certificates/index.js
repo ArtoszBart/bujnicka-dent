@@ -31,3 +31,5 @@ export const certificates = [
 	Certificate16, Certificate21, Certificate22,
 	Certificate12, Certificate13, Certificate18,
 	Certificate17, Certificate19];
+
+export default certificates;

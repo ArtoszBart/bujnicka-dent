@@ -1,7 +1,4 @@
-import { certificates } from './../../../img/certificates/index';
-
 function GalleryOverlay(props) {
-
 	return (
 		<div className={`gallery-overlay${props.hook.isBoxOpen ? ' opened' : ''}`}
 			id="overlay-closing"
@@ -19,14 +16,14 @@ function GalleryOverlay(props) {
 						<i className="fas fa-chevron-right" />
 					</div>
 					<div className="bottom-pane">
-						<p>{props.hook.openedImg + 1} / {certificates.length}</p>
+						<p>{props.hook.openedImg + 1} / {props.hook.images.length}</p>
 					</div>
 				</>
 			}
 
 			<div className="img-box"
 				id="overlay-closing">
-				<img src={certificates[props.hook.openedImg]} alt="Certificate" />
+				<img src={props.hook.images[props.hook.openedImg]} alt="Certificate" />
 			</div>
 		</div>
 	);

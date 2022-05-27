@@ -1,14 +1,6 @@
 import '../../styles/main.scss';
 import CarPhoto from '../../img/samochut.jpg';
-import ImgPrevention from '../../img/offers/offer_prevention.jpeg';
-import ImgAesthetics from '../../img/offers/offer_aesthetics.jpeg';
-import ImgDigitalDentistry from '../../img/offers/offer_digital.jpeg';
-import ImgInlayOnlay from '../../img/offers/offer_inlay_onlay.jpeg';
-import ImgProsthodontics from '../../img/offers/offer_prosthodontics.jpeg';
-import ImgEndodontics from '../../img/offers/offer_endodontics.jpeg';
-import ImgPeriodontics from '../../img/offers/offer_periodontics.jpeg';
-import ImgImplants from '../../img/offers/offer_implants.jpeg';
-import ImgJoints from '../../img/offers/offer_joints.jpeg';
+import Images from '../../img/offers';
 import ParallaxBaner from '../fragments/ParallaxBanner'
 import SingleOffer from '../fragments/SingleOffer';
 
@@ -32,7 +24,7 @@ function Offer() {
 						<b>BEZPŁATNA WIZYTA DIAGNOSTYCZNA</b>, na której dowiesz się, co dzieje się z Twoimi wszystkimi zębami.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgPrevention}
+						image={Images.Prevention}
 						title="Profilaktyka"
 						link="/offer/prevention"
 					>
@@ -41,7 +33,7 @@ function Offer() {
 						jak ważna w życiu codziennym jest prawidłowa higiena.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgAesthetics}
+						image={Images.Aesthetics}
 						title="Stomatologia Estetyczna"
 						link="/offer/aesthetic-dentistry"
 					>
@@ -49,7 +41,7 @@ function Offer() {
 						czego efektem staje się piękny, naturalny uśmiech.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgDigitalDentistry}
+						image={Images.DigitalDentistry}
 						title="Stomatologia Cyfrowa"
 						link="/offer/digital-dentistry"
 					>
@@ -57,14 +49,14 @@ function Offer() {
 						uśmiechu.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgInlayOnlay}
+						image={Images.InlayOnlay}
 						title="Onley'e Endokorony"
 						link="/offer/inlay-onlay"
 					>
 						Inaczej wkłady koronowe, są to wypełnienia zębów o bardzo wysokiej jakości.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgProsthodontics}
+						image={Images.Prosthodontics}
 						title="Protetyka"
 						link="/offer/prosthodontics"
 					>
@@ -81,14 +73,14 @@ function Offer() {
 						najbardziej rozpowszechnionej choroby zębów, jaką jest próchnica.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgEndodontics}
+						image={Images.Endodontics}
 						title="Endodoncja"
 						link="/offer/endodontics"
 					>
 						Endodoncja jest dziedziną stomatologii zajmującą się leczeniem kanałów w zębach.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgPeriodontics}
+						image={Images.Periodontics}
 						title="Periodontologia"
 						link="/offer/periodontics"
 					>
@@ -102,14 +94,14 @@ function Offer() {
 						Gdy zęba nie da się już uratować, podejmuję się decyzję o usunięciu jego części lub całości.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgImplants}
+						image={Images.Implants}
 						title="Implanty"
 						link="/offer/implants"
 					>
 						Uzupełniają brakujący korzeń, cały ząb lub część uzębienia.
 					</SingleOffer>
 					<SingleOffer
-						image={ImgJoints}
+						image={Images.Joints}
 						title="Leczenie Stawów"
 						link="/offer/joints"
 					>

@@ -4,8 +4,7 @@ import GalleryOverlayHook from './../fragments/gallery/customHooks/useGalleryOve
 import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Certificates() {
-
-	const useGalleryOverlay = GalleryOverlayHook(certificates);
+	const useGalleryOverlay = GalleryOverlayHook([certificates]);
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
@@ -15,11 +14,14 @@ function Certificates() {
 					return <img
 						src={value}
 						key={index}
-						onClick={() => useGalleryOverlay.openGalleryOverlay(index)}
+						onClick={() => useGalleryOverlay.openGalleryOverlay(0, index)}
 						alt="Certificate" />
 				})}
 			</article>
-			<GalleryOverlay hook={useGalleryOverlay} multiple />
+			{
+				useGalleryOverlay.isMounted &&
+				<GalleryOverlay hook={useGalleryOverlay} multipleImages />
+			}
 		</main>
 	);
 }

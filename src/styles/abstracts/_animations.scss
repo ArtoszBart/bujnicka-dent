@@ -12,16 +12,43 @@ $time-fast: 0.3s;
 }
 
 @mixin transition-modal-closing {
-    transition: visibility 0s linear $time-fast, opacity $time-fast;
+    animation: outAnimation $time-fast ease-out,
 }
 
 @mixin transition-modal-opening {
-    transition: visibility 0s, opacity 400ms;
+    animation: inAnimation $time-fast ease-in
+}
+
+@mixin animation-pulse {
+    animation: pulse $time-slow;
 }
 
 @keyframes pulse {
     100% {
         box-shadow: 0 0 0 0 $color-accent;
+    }
+}
+
+@keyframes inAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes outAnimation {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        visibility: hidden;
     }
 }
 

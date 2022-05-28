@@ -1,29 +1,30 @@
-function GalleryOverlay(props) {
+function GalleryOverlay({ hook, multipleImages }) {
 	return (
-		<div className={`gallery-overlay${props.hook.isBoxOpen ? ' opened' : ''}`}
+		<div className={`gallery-overlay${hook.isMounted ? ' opened' : ' closing'}`}
+			onAnimationEnd={hook.onAnimationEnd}
 			id="overlay-closing"
-			onClick={props.hook.closeGalleryOverlay}
+			onClick={hook.closeGalleryOverlay}
 		>
-			<div className="top-pane" id="overlay-closing" onClick={props.hook.closeGalleryOverlay}>
+			<div className="top-pane" id="overlay-closing" onClick={hook.closeGalleryOverlay}>
 				<i className="fas fa-times" id="overlay-closing" />
 			</div>
-			{props.multiple &&
+			{multipleImages &&
 				<>
-					<div className="left-pane" onClick={props.hook.prevImage}>
+					<div className="left-pane" onClick={hook.prevImage}>
 						<i className="fas fa-chevron-left" />
 					</div>
-					<div className="right-pane" onClick={props.hook.nextImage}>
+					<div className="right-pane" onClick={hook.nextImage}>
 						<i className="fas fa-chevron-right" />
 					</div>
 					<div className="bottom-pane">
-						<p>{props.hook.openedImg + 1} / {props.hook.images.length}</p>
+						<p>{hook.openedImg + 1} / {hook.activeImageSet.length}</p>
 					</div>
 				</>
 			}
 
 			<div className="img-box"
 				id="overlay-closing">
-				<img src={props.hook.images[props.hook.openedImg]} alt="Certificate" />
+				<img src={hook.activeImageSet[hook.openedImg]} alt="Certificate" />
 			</div>
 		</div>
 	);

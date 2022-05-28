@@ -1,24 +1,38 @@
 import { useState, useCallback, useEffect } from "react";
 
 const useGalleryOverlay = (images) => {
-	console.log(images);
-	const [isBoxOpen, setIsBoxOpen] = useState(false);
+
+	const [isOpened, setIsOpened] = useState(false);
+	const [isMounted, setIsMounted] = useState(false);
+	const [activeImageSet, setActiveImageSet] = useState(null);
 	const [openedImg, setOpenedImg] = useState(null);
 
-	const openGalleryOverlay = (id) => {
+	const openGalleryOverlay = (set, id) => {
+		if (!images) {
+			return;
+		}
+		setActiveImageSet(images[set]);
 		setOpenedImg(id);
-		setIsBoxOpen(true);
+		setIsMounted(true);
+		if (!isOpened)
+			setIsOpened(true);
+	};
+
+	const onAnimationEnd = () => {
+		if (!isMounted) {
+			setIsOpened(false);
+		}
 	};
 
 	const closeGalleryOverlay = (e) => {
 		if (e.target.id === "overlay-closing") {
-			setIsBoxOpen(false);
+			setIsMounted(false);
 		}
 	};
 
 	const nextImage = useCallback(() => {
 		let nextId;
-		if (openedImg < images.length - 1) {
+		if (openedImg < activeImageSet.length - 1) {
 			nextId = openedImg + 1;
 		} else {
 			nextId = 0;
@@ -33,7 +47,7 @@ const useGalleryOverlay = (images) => {
 		if (openedImg > 0) {
 			prevId = openedImg - 1;
 		} else {
-			prevId = images.length - 1;
+			prevId = activeImageSet.length - 1;
 		}
 
 		setOpenedImg(prevId);
@@ -46,7 +60,7 @@ const useGalleryOverlay = (images) => {
 		} else if (event.key === "ArrowLeft") {
 			prevImage();
 		} else if (event.key === "Escape") {
-			setIsBoxOpen(false);
+			setIsMounted(false);
 		}
 	}, [nextImage, prevImage]);
 
@@ -58,7 +72,10 @@ const useGalleryOverlay = (images) => {
 		};
 	}, [keyListener]);
 
-	return { isBoxOpen, openedImg, openGalleryOverlay, closeGalleryOverlay, nextImage, prevImage, images };
+	return {
+		isMounted, openedImg, openGalleryOverlay, closeGalleryOverlay, nextImage, prevImage,
+		isOpened, onAnimationEnd, activeImageSet
+	};
 };
 
 export default useGalleryOverlay;

@@ -4,18 +4,18 @@
     @include fixed-full-width;
     height: 100vh;
     z-index: 11;
-    visibility: hidden;
-    opacity: 0;
     background: $color-background-trans;
-    @include transition-modal-closing;
-
+    
     > * {
         position: absolute;
     }
 
+    &.closing {
+        @include transition-modal-closing;
+
+    }
+    
     &.opened {
-        opacity: 1;
-        visibility: visible;
         @include transition-modal-opening;
     }
 

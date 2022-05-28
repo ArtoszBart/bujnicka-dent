@@ -41,7 +41,7 @@ function Periodontics() {
 							<ul>
 								<li>czynniki niezależne: wiek, płeć, rasa, kondycja układu odpornościowego, czynnik genetyczny</li>
 								<li>specyficzna flora bakteryjna</li>
-								<li><b>palenie tytoniu</b></li>
+								<li><b>palenie tytoniu</b> (zależne od ilości wypalonych papierosów)</li>
 								<li>cukrzyca</li>
 								<li>otyłość</li>
 								<li>osteoporoza</li>
@@ -75,6 +75,7 @@ function Periodontics() {
 						<li><b>zaczerwienienie dziąsła</b>, mogące przybierać nawet odcień siny</li>
 						<li>obrzęk dziąsła</li>
 						<li><b>krwawienie</b> dziąsła</li>
+						<li>nieprzyjemny zapach z ust</li>
 						<li>wysięk ropny</li>
 						<li>ruchomość zęba lub grupy zębów</li>
 						<li>zmiana położenia zęba lub grupy zębów</li>
@@ -95,7 +96,7 @@ function Periodontics() {
 						<b>Objawy bólowe pojawiają się rzadko</b> w szczególnych sytuacjach, np.:
 					</p>
 					<ul>
-						<li>stan zapalny występuje <b>nie tylko w przyzębiu</b>, ale również wewnątrz zęba</li>
+						<li>gdy stan zapalny występuje <b>nie tylko w przyzębiu</b>, ale również wewnątrz zęba</li>
 						<li>przy <b>ropniach przyzębnych</b>, gdy zawartość ropna kieszonki przyzębnej nie ma możliwości swobodnego wypływu</li>
 					</ul>
 					<ImportantInfo>
@@ -113,12 +114,26 @@ function Periodontics() {
 						<li>
 							<h3>Faza ogólna - przygotowawcza</h3>
 							<p>
-								Wywiad dotyczący ogólnego stanu zdrowia  leczenie choroby ogólnoustrojowej. W chorobie podstawowej
+								{/* Wywiad dotyczący ogólnego stanu zdrowia  leczenie choroby ogólnoustrojowej. W chorobie podstawowej
 								może ono wiązać się z zastosowanie dodatkowych leków, ich zmianą lub odstawieniem.
-								-zaplanowanie szczegółowego leczenia specjalistycznego: zachowawczego, chirurgicznego, ortodontycznego, protetycznego.
-
-
+								-zaplanowanie szczegółowego leczenia specjalistycznego: zachowawczego, chirurgicznego, ortodontycznego, protetycznego. */}
+								Leczenie periodontologiczne rozpoczyna się od wywiadu dotyczącego <b>ogólnego stanu zdrowia</b> pacjenta
+								oraz <b>rozpoznania przyczyny wystąpienia choroby</b>.
 							</p>
+							<p>
+								Kuracja choroby ogólnoustrojowej może wiązać się z zastosowaniem <b>dodatkowych leków</b>,
+								ich zmianą lub odstawieniem.
+							</p>
+							<p>
+								Następnie planowane jest szczegółowe leczenie specjalistyczne:
+							</p>
+							<ul>
+								<li>zachowawcze</li>
+								<li>chirurgiczne</li>
+								<li>ortodontyczne</li>
+								<li>protetyczne</li>
+							</ul>
+							<p>przygotowane indywidualnie dla każdego pacjenta.</p>
 						</li>
 						<li>
 							<h3>Faza przyczynowa</h3>
@@ -131,7 +146,12 @@ function Periodontics() {
 								zielonych złogów wokół szyjek zębów. Największe jednak uszkodzenie tkanek powoduje <b>ukryty kamień poddziąsłowy</b>.
 							</p>
 							<p>
-								Dodatkowo zaleca się do płukania jamy ustnej <b>preparaty antyseptyczne</b> w postaci płukanek i żelów.
+								Zabiegiem eliminującym skupiska bakterii, kamień i ziarninę zapalną z kieszonek dziąsłowych jest <b> kiretaż</b>.
+								Używa się do niego specjalnego zestawu narzędzi zwanych kiretami. Celem tego postępowania oprócz <b>eliminacji
+									czynników zapalnych</b> jest <b>spłycenie kieszonek dziąsłowych</b>.
+							</p>
+							<p>
+								Dodatkowo zaleca się do płukania jamy ustnej <b>preparaty antyseptyczne</b> w postaci płukanek oraz żele do masażu dziąseł.
 							</p>
 							<p>
 								W tej fazie przeprowadza się również kompleksowe leczenie jamy ustnej, które może obejmować:

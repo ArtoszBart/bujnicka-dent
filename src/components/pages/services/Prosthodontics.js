@@ -1,4 +1,3 @@
-import '../../../styles/main.scss';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';

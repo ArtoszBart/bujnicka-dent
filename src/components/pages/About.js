@@ -1,4 +1,3 @@
-import '../../styles/main.scss';
 import PhotoBujnicka from '../../img/bujnicka-profile.jpg';
 import PhotoBohdan from '../../img/Bohdan_Bujnicki.jpg';
 import PhotoMaria from '../../img/Maria_Baluta.jpg';

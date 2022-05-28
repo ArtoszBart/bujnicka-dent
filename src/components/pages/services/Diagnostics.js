@@ -1,4 +1,3 @@
-import '../../../styles/main.scss';
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ImgPlan from '../../../img/texts/diagnostics/plan.jpeg';

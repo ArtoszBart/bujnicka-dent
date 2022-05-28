@@ -1,4 +1,3 @@
-import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ImgDsd from '../../../img/texts/digital/dsd.jpeg';
 import ParallaxBaner from '../../fragments/ParallaxBanner'

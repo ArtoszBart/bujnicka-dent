@@ -1,4 +1,3 @@
-import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ImgPlaque from '../../../img/texts/prevention/plaque.jpeg';
 import ImgScale from '../../../img/texts/prevention/scale.jpeg';

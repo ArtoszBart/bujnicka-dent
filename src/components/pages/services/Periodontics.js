@@ -1,4 +1,3 @@
-import '../../../styles/main.scss';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
 import ImgCigarette from '../../../img/texts/periodontics/cigarette.jpeg';

@@ -1,4 +1,3 @@
-import '../../styles/main.scss';
 import { useState } from 'react';
 import ParallaxBaner from '../fragments/ParallaxBanner'
 import TabNavItem from '../fragments/tabs/TabNavItem'

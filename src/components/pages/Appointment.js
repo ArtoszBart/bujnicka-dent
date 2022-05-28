@@ -1,4 +1,3 @@
-import '../../styles/main.scss';
 import FormInput from './../fragments/forms/FormInput';
 import AgreementBox from './../fragments/forms/AgreementBox';
 import CalendarForm from './../fragments/forms/Calendar';

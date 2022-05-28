@@ -1,8 +1,7 @@
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
-import ImgProsthodontics from '../../../img/offers/offer_prosthodontics.jpeg';
-import ImgImplantsPlate from '../../../img/texts/prosthodontics/implants_plate.jpeg';
+import ImgFullDenture from '../../../img/offers/offer_prosthodontics.jpeg';
+import ImgImplantsDenture from '../../../img/texts/prosthodontics/implants_plate.jpeg';
 import { Link } from 'react-router-dom';
 
 function Prosthodontics() {
@@ -16,8 +15,8 @@ function Prosthodontics() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
-								<span> Braki w zębach</span>
+								<img src={ImgImplantsDenture} alt="" />
+								<span>Proteza na implantach</span>
 							</div>
 						</div>
 						<div>
@@ -105,12 +104,6 @@ function Prosthodontics() {
 						w zębie znajdują się liczne wypełnienia, złamanie zęba lub wyłamanie jednej ze ścianek, korekta kształtu
 						lub koloru lub konieczne jest wykorzystanie zęba jako filaru mostu protetycznego
 					</p>
-					{/* Wskazania do wykonania korony:
-					-rozlegle zniszczenie zęba próchnicą
-					-liczne wypełnienia w zębie
-					-złamanie całego zęba lub wyłamanie jednej ze ścianek
-					-korekta kształtu lub koloru zęba
-					-konieczność wykorzystania zęba jako filaru mostu protetycznego */}
 
 					<h3>Etapy wykonania korony:</h3>
 					<ol>
@@ -172,12 +165,23 @@ function Prosthodontics() {
 					<h2 id="dentures">Protezy</h2>
 					<p>Protezy są uzupełnieniami protetycznymi, możliwymi do wyjęcia z ust w dowolnym momencie.</p>
 
-					<h3>Protezy akrylowe częściowe lub całkowite</h3>
-					<p>
-						Zwane są też protezami osiadającymi, ze względu na zjawisko osiadania
-						protezy wraz z zanikiem kości w miejscach braków zębowych. Są one utrzymywane są na zębach dzięki specjalnie
-						ukształtowanym <b>metalowym klamrom</b>.
-					</p>
+					<div className="text-img normal">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={ImgFullDenture} alt="" />
+								<span>Proteza całkowita</span>
+							</div>
+						</div>
+						<div>
+
+							<h3>Protezy akrylowe częściowe lub całkowite</h3>
+							<p>
+								Zwane są też protezami osiadającymi, ze względu na zjawisko osiadania
+								protezy wraz z zanikiem kości w miejscach braków zębowych. Są one utrzymywane są na zębach dzięki specjalnie
+								ukształtowanym <b>metalowym klamrom</b>.
+							</p>
+						</div>
+					</div>
 					<h3>Protezy Szkieletowe</h3>
 					<p>
 						Podparte są <b>na zębach własnych pacjenta</b> specjalnymi elementami stanowiącymi integralną
@@ -209,7 +213,7 @@ function Prosthodontics() {
 					</p>
 				</section>
 				<section aria-labelledby="why-prosthodontics">
-					<h3>Wykonanie protez</h3>
+					<h2>Wykonanie protez</h2>
 					<p>
 						Protezy można wykonać <b>po całkowitym wyleczeniu z próchnicy</b> wszystkich zębów, usunięciu zębów nie
 						nadających się do odbudowy protetycznej lub nie rokujących dobrze (np. rozchwianych)

@@ -75,26 +75,38 @@ function Endodontics() {
 						w trakcie jak i po leczeniu. Procedura postępowania jest czasochłonna, wymagająca kosztownego instrumentarium i
 						dużych umiejętności lekarza.
 					</ImportantInfo>
-					<p>
-						Nowoczesna endodoncja wykorzystuje <b>szereg zaawansowanych technologicznie urządzeń</b>, np.:
-					</p>
-					<ul>
-						<li><dfn>Endometr</dfn> - służy do pomiaru długości kanałów korzeniowych</li>
-						<li><dfn>Tomografię komputerową</dfn> - umożliwia ocenę anatomii zęba w wymiarach 3D</li>
-						<li><dfn>Mikroskop</dfn> - pozwalaja na pracę wewnątrz kanałów pod kontrolą wzroku lekarza</li>
-					</ul>
-					<p>
-						W sytuacji, kiedy leczenie endodontyczne <b>nie przyniosło oczekiwanych rezultatów</b>, np:
-					</p>
-					<ul>
-						<li>ponownie wystąpiły <b>objawy bólowe</b></li>
-						<li>
-							<b>kanały zostały reinfekowane</b> z powodu braku prawidłowego zabezpieczenia zęba po leczeniu lub
-							zaniechania postępowania leczniczego przez pacjenta
-						</li>
-						<li>kanały <b>nie zostały prawidłowo wypełnione</b></li>
-						<li>rozwinęły się <b>zmiany zapalne w kości</b></li>
-					</ul>
+
+					<div className="text-img normal">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={ImgEquipment} alt="" />
+								<span>Endometr</span>
+							</div>
+						</div>
+						<div>
+							<p>
+								Nowoczesna endodoncja wykorzystuje <b>szereg zaawansowanych technologicznie urządzeń</b>, np.:
+							</p>
+							<ul>
+								<li><dfn>Endometr</dfn> - służy do pomiaru długości kanałów korzeniowych</li>
+								<li><dfn>Tomografię komputerową</dfn> - umożliwia ocenę anatomii zęba w wymiarach 3D</li>
+								<li><dfn>Mikroskop</dfn> - pozwalaja na pracę wewnątrz kanałów pod kontrolą wzroku lekarza</li>
+							</ul>
+
+							<p>
+								W sytuacji, kiedy leczenie endodontyczne <b>nie przyniosło oczekiwanych rezultatów</b>, np:
+							</p>
+							<ul>
+								<li>ponownie wystąpiły <b>objawy bólowe</b></li>
+								<li>
+									<b>kanały zostały reinfekowane</b> z powodu braku prawidłowego zabezpieczenia zęba po leczeniu lub
+									zaniechania postępowania leczniczego przez pacjenta
+								</li>
+								<li>kanały <b>nie zostały prawidłowo wypełnione</b></li>
+								<li>rozwinęły się <b>zmiany zapalne w kości</b></li>
+							</ul>
+						</div>
+					</div>
 					<p>
 						wykonuje się powtórne leczenie endodontyczne, tzw. REENDO. Jest ono bardziej skomplikowane, a co za tym idzie
 						bardziej czasochłonne i kosztowne niż leczenie pierwotne. Warto jest więc zainwestować w nowoczesne procedury

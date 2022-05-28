@@ -23,19 +23,6 @@ function AestheticDentistry() {
 						<dfn>Stomatologia estetyczna</dfn> zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
 						czego efektem staje się piękny, naturalny uśmiech.
 					</p>
-				</section>
-				<section aria-labelledby="teeth-whitening">
-					<h2 id="teeth-whitening">Wybielanie zębów</h2>
-					<h3>Metoda nakładkowa</h3>
-					<p>
-						Dotyczy <b>zębów żywych</b> i polega na wykonaniu specjalnej szyny wybielającej, do której aplikuje
-						się <b>żel wybielający</b> na określony czas. Nawet po pierwszej aplikacji żelu widoczny jest efekt wybielenia zębów.
-						Ilość koniecznych zabiegów zależy od indywidualnej podatności zębów na działanie żelu i od stopnia ich rozjaśnienia.
-					</p>
-					<h3>Metoda dokomorowa</h3>
-					<p>
-						Dotyczy <b>zębów martwych</b> i polega na aplikacji żelu wybielającego bezpośrednio do komory zęba.
-					</p>
 					<div className="text-img horizontal">
 						<div className="photos">
 							<div className="page-photo">
@@ -48,6 +35,29 @@ function AestheticDentistry() {
 							</div>
 						</div>
 					</div>
+				</section>
+				<section aria-labelledby="teeth-whitening">
+					<h2 id="teeth-whitening">Wybielanie zębów</h2>
+					<div className="text-img upright">
+
+						<div className="photos">
+							<div className="page-photo">
+								<img src={ImgTrayBasedWhitening} alt="Szyna wybielająca" />
+								<span>Szyna wybielająca</span>
+							</div>
+						</div>
+						<h3>Metoda nakładkowa</h3>
+						<p>
+							Dotyczy <b>zębów żywych</b> i polega na wykonaniu specjalnej szyny wybielającej, do której aplikuje
+							się <b>żel wybielający</b> na określony czas. Już po pierwszej aplikacji żelu widoczny jest efekt wybielenia zębów.
+							Ilość koniecznych zabiegów zależy od indywidualnej podatności zębów na działanie żelu i od stopnia ich rozjaśnienia.
+						</p>
+					</div>
+					<h3>Metoda dokomorowa</h3>
+					<p>
+						Dotyczy <b>zębów martwych</b> i polega na aplikacji żelu wybielającego bezpośrednio do komory zęba.
+					</p>
+
 				</section>
 				<section aria-labelledby="icon-treatment">
 					<h2 id="icon-treatment">Zabieg ICON</h2>

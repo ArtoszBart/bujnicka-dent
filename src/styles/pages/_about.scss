@@ -9,7 +9,7 @@
 		justify-content: center;
 
 		&-single {
-			@include flex-center;
+			@include flex-column-center;
 			
 			img {
 				margin: 2rem;

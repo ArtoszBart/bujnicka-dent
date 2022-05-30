@@ -19,6 +19,10 @@ $time-fast: 0.3s;
     animation: inAnimation $time-fast ease-in
 }
 
+@mixin transition-collapsible {
+    transition: height $time-slow;
+}
+
 @mixin animation-pulse {
     animation: pulse $time-slow;
 }

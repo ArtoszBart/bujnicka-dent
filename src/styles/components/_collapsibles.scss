@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+.collapsible {
+    padding: 2rem 3rem;
+    margin-bottom: 0;
+
+    
+    &-header {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        cursor: pointer;
+        
+        &:hover {
+            i {
+                background: rgba($color-accent, 0.2);
+            }
+        }
+
+        > h3 {
+            margin: 0;
+        }
+
+        i {
+            min-height: 2.5rem;
+            min-width: 2.5rem;
+            border: 1px solid rgba($color-text, 0.5);
+            border-radius: 3rem;
+            @include flex-center;
+
+            &.opened {
+                transform: rotate(-540deg);
+            }
+        }
+    }
+
+    &-body{
+        height: 0;
+        overflow: hidden;
+        @include transition-collapsible;
+
+        &-content {
+            border-top: 1px solid rgba($color-text, 0.2);
+            margin-left: 4.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+
+            .important-info {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

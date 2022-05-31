@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
+import Images from '../../../img/texts/conservatives';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import Modal from './../../fragments/Modal';
 
@@ -24,17 +25,27 @@ function ConservativeDentistry() {
 				</section>
 				<section aria-labelledby="dental-caries">
 					<h2 id="dental-caries">Próchnica</h2>
-					<p>
-						Przyczyną powstania próchnicy jest <b>płytka nazębna</b>, tworząca się po każdym posiłku z resztek jedzenia i bakterii,
-						głównie z grupy paciorkowców. Rozwój próchnicy zaczyna się bardzo niewinnie od białych plam możliwych do wykrycia
-						tylko w gabinecie stomatologicznym. Nieleczone, przekształcają się w poważne <b>ubytki</b> obejmujące kolejne tkanki zęba, z
-						czasem docierające do jego centrum - <b>miazgi</b>.
-					</p>
-					<p>
-						Zniszczona przez próchnicę struktura zęba <b>nie regeneruje się</b>, jednak jej leczenie może zatrzymać rozwój choroby.
-						Próchnica daje o sobie znać dopiero wtedy, gdy znajduje się w bliskim sąsiedztwie
-						miazgi. Tak późne wykrycie ubytków grozi jednak <b>obumarciem zęba</b> i <b>koniecznością leczenia kanałowego</b>.
-					</p>
+					<div className="text-img downright">
+						<div>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={Images.Caries} alt="Próchnica" />
+									<span>Próchnica</span>
+								</div>
+							</div>
+							<p>
+								Przyczyną powstania próchnicy jest <b>płytka nazębna</b>, tworząca się po każdym posiłku z resztek jedzenia i bakterii,
+								głównie z grupy paciorkowców. Rozwój próchnicy zaczyna się bardzo niewinnie od białych plam możliwych do wykrycia
+								tylko w gabinecie stomatologicznym. Nieleczone, przekształcają się w poważne <b>ubytki</b> obejmujące kolejne tkanki zęba, z
+								czasem docierające do jego centrum - <b>miazgi</b>.
+							</p>
+							<p>
+								Zniszczona przez próchnicę struktura zęba <b>nie regeneruje się</b>, jednak jej leczenie może zatrzymać rozwój choroby.
+								Próchnica daje o sobie znać dopiero wtedy, gdy znajduje się w bliskim sąsiedztwie
+								miazgi. Tak późne wykrycie ubytków grozi jednak <b>obumarciem zęba</b> i <b>koniecznością leczenia kanałowego</b>.
+							</p>
+						</div>
+					</div>
 					<ImportantInfo>
 						Aby uniknąć rozwoju próchnicy wskazane
 						są <Link to={'/offer/diagnostics'} className="text-link"><b>wizyty kontrolne</b></Link>,
@@ -44,30 +55,44 @@ function ConservativeDentistry() {
 				</section>
 				<section aria-labelledby="dental-caries-treatment">
 					<h2 id="dental-caries-treatment">Leczenie próchnicy</h2>
-					<p>
-						Zabieg polega na <b>usunięciu zniszczonych tkanek</b> i zastąpieniu ich specjalnie do tego celu przeznaczonym
-						wypełnieniem, potocznie zwanym <b>plombą</b>.
-					</p>
-					<p>
-						Powszechnie stosowanym materiałem do wypełnień jest <b>kompozyt</b>, który występuje w postaci miękkiego,
-						plastycznego materiału kształtowanego przez lekarza w zębie. Aby powstało twarde, odporne na siły gryzienia wypełnienie,
-						potrzebny jest czynnik inicjujący - specjalny rodzaj światła ultrafioletowego, który wywołuje proces <dfn>polimeryzacji</dfn>,
-						czyli twardnienia materiału kompozytowego. Aby wypełnienie ściśle i szczelnie przylegało do zęba,
-						lekarz w specjalny sposób przygotowuje tkanki zęba używając <b><span className='text-link' onClick={openModal}>adhezyjnych</span> systemów łączących</b>.
-					</p>
-					<h3>Współczesne materiały do wypełnień ubytków cechuje:</h3>
-					<ul>
-						<li><b>duża wytrzymałość</b></li>
-						<li>
-							trwałość na ścieranie i zgniatanie, dzięki czemu wytrzymałość i elastyczność
-							uzyskanych wypełnień jest bardzo <b>zbliżona do wytrzymałości zębów</b> własnych pacjenta
-						</li>
-						<li>możliwość dokładnego odtworzenia funkcji zęba</li>
-						<li>
-							możliwość odtworzenia kształtu i koloru utraconych tkanek,
-							dzięki czemu wypełnienie jest <b>praktycznie niezauważalne</b>
-						</li>
-					</ul>
+					<div className="text-img upright">
+						<div>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={Images.Treatment} alt="" />
+									<span>Leczenie próchnicy</span>
+								</div>
+								<div className="page-photo">
+									<img src={Images.Polymerisation} alt="" />
+									<span>Polimeryzacja</span>
+								</div>
+							</div>
+							<p>
+								Zabieg polega na <b>usunięciu zniszczonych tkanek</b> i zastąpieniu ich specjalnie do tego celu przeznaczonym
+								wypełnieniem, potocznie zwanym <b>plombą</b>.
+							</p>
+							<p>
+								Powszechnie stosowanym materiałem do wypełnień jest <b>kompozyt</b>, który występuje w postaci miękkiego,
+								plastycznego materiału kształtowanego przez lekarza w zębie. Aby powstało twarde, odporne na siły gryzienia wypełnienie,
+								potrzebny jest czynnik inicjujący - specjalny rodzaj światła ultrafioletowego, który wywołuje proces <dfn>polimeryzacji</dfn>,
+								czyli twardnienia materiału kompozytowego. Aby wypełnienie ściśle i szczelnie przylegało do zęba,
+								lekarz w specjalny sposób przygotowuje tkanki zęba używając <b><span className='text-link' onClick={openModal}>adhezyjnych</span> systemów łączących</b>.
+							</p>
+							<h3>Współczesne materiały do wypełnień ubytków cechuje:</h3>
+							<ul>
+								<li><b>duża wytrzymałość</b></li>
+								<li>
+									trwałość na ścieranie i zgniatanie, dzięki czemu wytrzymałość i elastyczność
+									uzyskanych wypełnień jest bardzo <b>zbliżona do wytrzymałości zębów</b> własnych pacjenta
+								</li>
+								<li>możliwość dokładnego odtworzenia funkcji zęba</li>
+								<li>
+									możliwość odtworzenia kształtu i koloru utraconych tkanek,
+									dzięki czemu wypełnienie jest <b>praktycznie niezauważalne</b>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<h3>Leczenie Biologiczne</h3>
 					<p>
 						Czasami zniszczenie tkanek zęba sięga tak głęboko, że założenie wypełnienia jest niemożliwe. Stosuje się wtedy

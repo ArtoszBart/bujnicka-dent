@@ -1,6 +1,5 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
-import ImgCigarette from '../../../img/texts/periodontics/cigarette.jpeg';
+import Images from '../../../img/texts/periodontics';
 import { Link } from 'react-router-dom';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 
@@ -30,7 +29,7 @@ function Periodontics() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={ImgCigarette} alt="" />
+								<img src={Images.Cigarette} alt="" />
 								<span></span>
 							</div>
 						</div>
@@ -80,18 +79,6 @@ function Periodontics() {
 						<li>ruchomość zęba lub grupy zębów</li>
 						<li>zmiana położenia zęba lub grupy zębów</li>
 					</ul>
-					<div className="text-img horizontal">
-						<div className="photos">
-							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
-								<span>Zdrowe dziąsło</span>
-							</div>
-							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
-								<span>Chore dziąsło</span>
-							</div>
-						</div>
-					</div>
 					<p>
 						<b>Objawy bólowe pojawiają się rzadko</b> w szczególnych sytuacjach, np.:
 					</p>

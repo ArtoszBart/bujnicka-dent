@@ -1,5 +1,5 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
+import Images from '../../../img/texts/surgeries';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function DentalSurgery() {
@@ -36,8 +36,8 @@ function DentalSurgery() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
-								<span>Zła ósemka</span>
+								<img src={Images.Bad8th} alt="" />
+								<span>Niewłaściwe położenie ósemki</span>
 							</div>
 						</div>
 						<div>

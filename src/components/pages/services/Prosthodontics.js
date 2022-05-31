@@ -1,7 +1,6 @@
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import ImgFullDenture from '../../../img/offers/offer_prosthodontics.jpeg';
-import ImgImplantsDenture from '../../../img/texts/prosthodontics/implants_plate.jpeg';
+import Images from '../../../img/texts/prosthodontics';
 import { Link } from 'react-router-dom';
 
 function Prosthodontics() {
@@ -15,7 +14,7 @@ function Prosthodontics() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={ImgImplantsDenture} alt="" />
+								<img src={Images.ImplantsDenture} alt="" />
 								<span>Proteza na implantach</span>
 							</div>
 						</div>
@@ -76,17 +75,29 @@ function Prosthodontics() {
 				</section>
 				<section aria-labelledby="prosthetic-crowns">
 					<h2 id="prosthetic-crowns">Korony protetyczne</h2>
-					<p>
-						Są uzupełnieniem protetycznym odbudowującym <b>pojedyńczy ząb</b>. Mogą być
-						wykonane <b>na zębie żywym lub martwym</b>.
-					</p>
-					<h3>Rodzaje koron</h3>
-					<p>Korony protetyczne możemy podziedzić na 3 rodzaje:</p>
-					<ul>
-						<li>korona porcelanowa na podbudowie metalowej</li>
-						<li>korona pełnoceramiczna na podbudowie cyrkonowej</li>
-						<li>korona pełnocyrkonowa</li>
-					</ul>
+					<div className="text-img normal">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={Images.Crown} alt="veneers" />
+								<span>Korona</span>
+							</div>
+						</div>
+						<div>
+							<p>
+								Są uzupełnieniem protetycznym odbudowującym <b>pojedyńczy ząb</b>. Mogą być
+								wykonane <b>na zębie żywym lub martwym</b>.
+							</p>
+							<h3>Rodzaje koron</h3>
+							<p>Korony protetyczne możemy podziedzić na 3 rodzaje:</p>
+							<ul>
+								<li>korona porcelanowa na podbudowie metalowej</li>
+								<li>korona pełnoceramiczna na podbudowie cyrkonowej</li>
+								<li>korona pełnocyrkonowa</li>
+							</ul>
+
+						</div>
+					</div>
+
 					<h3>Korony pełnoceramiczne</h3>
 					<p>
 						Są szczególnie <b>godne polecenia</b> ze względu na:
@@ -98,7 +109,6 @@ function Prosthodontics() {
 						<li>szczelność i przyleganie</li>
 						<li>efekt kosmetyczny idealnie naśladujący naturalny ząb</li>
 					</ul>
-
 					<p>
 						<b>Wskazania do wykonania korony</b> pojawiają się gdy zniszczenia zęba przez pruchnicę są już rozległe,
 						w zębie znajdują się liczne wypełnienia, złamanie zęba lub wyłamanie jednej ze ścianek, korekta kształtu
@@ -131,49 +141,53 @@ function Prosthodontics() {
 				</section>
 				<section aria-labelledby="prosthetic-bridges">
 					<h2 id="prosthetic-bridges">Mosty</h2>
-					<p>
-						Są uzupełnieniem protetycznym <b>złożonym z szeregu koron</b>, uzupełniającym brak pojedyńczego
-						zęba lub kilku zębów. Cementowane są na stałe do zębów filarowych.
-					</p>
-					<p>
-						Procedura wykonania mostów jest taka sama jak w przypadku koron protetycznych.
-					</p>
-					<h3>Most teleskopowy</h3>
-					<p>
-						Szczególnym rodzajem mostu jest <b>most teleskopowy</b>, którego filarami mogą być zarówno zęby własne
-						pacjenta, jak i implanty.
-					</p>
-					<p>
-						Jest to most ruchomy, czyli <b>wyjmowany z jamy ustnej</b>, ale mający szczególne zalety:
-					</p>
-					<ul>
-						<li>
-							w przypadku zbyt małej ilości własnych zębów pacjenta, wykonanie dodatkowych filarów w postaci implantów
-							umożliwia uzupełnienie brakujących zębów mostem i <b>uniknięcie protezy</b>
-						</li>
-						<li>
-							dzięki właściwościom amortyzującym <b>mniej obciąża zęby</b>, co ma szczególne znaczenie w przypadku
-							zębów słabiej rokujących, np. z zanikiem kości w przypadku chorób przyzębia
-						</li>
-						<li>
-							ze względu na możliwość jego wyjęcia, <b>umożliwia jego przerobienie</b> w przypadku konieczności ekstrakcji
-							któregoś z filarów
-						</li>
-					</ul>
+					<div className="text-img upright">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={Images.Bridge} alt="veneers" />
+								<span>Most</span>
+							</div>
+						</div>
+						<div>
+							<p>
+								Są uzupełnieniem protetycznym <b>złożonym z szeregu koron</b>, uzupełniającym brak pojedyńczego
+								zęba lub kilku zębów. Cementowane są na stałe do zębów filarowych.
+							</p>
+							<p>
+								Procedura wykonania mostów jest taka sama jak w przypadku koron protetycznych.
+							</p>
+
+							<h3>Most teleskopowy</h3>
+							<p>
+								Szczególnym rodzajem mostu jest <b>most teleskopowy</b>, którego filarami mogą być zarówno zęby własne
+								pacjenta, jak i implanty.
+							</p>
+							<p>
+								Jest to most ruchomy, czyli <b>wyjmowany z jamy ustnej</b>, ale mający szczególne zalety:
+							</p>
+							<ul>
+								<li>
+									w przypadku zbyt małej ilości własnych zębów pacjenta, wykonanie dodatkowych filarów w postaci implantów
+									umożliwia uzupełnienie brakujących zębów mostem i <b>uniknięcie protezy</b>
+								</li>
+								<li>
+									dzięki właściwościom amortyzującym <b>mniej obciąża zęby</b>, co ma szczególne znaczenie w przypadku
+									zębów słabiej rokujących, np. z zanikiem kości w przypadku chorób przyzębia
+								</li>
+								<li>
+									ze względu na możliwość jego wyjęcia, <b>umożliwia jego przerobienie</b> w przypadku konieczności ekstrakcji
+									któregoś z filarów
+								</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 				<section aria-labelledby="dentures">
 					<h2 id="dentures">Protezy</h2>
 					<p>Protezy są uzupełnieniami protetycznymi, możliwymi do wyjęcia z ust w dowolnym momencie.</p>
 
 					<div className="text-img normal">
-						<div className="photos">
-							<div className="page-photo">
-								<img src={ImgFullDenture} alt="" />
-								<span>Proteza całkowita</span>
-							</div>
-						</div>
 						<div>
-
 							<h3>Protezy akrylowe częściowe lub całkowite</h3>
 							<p>
 								Zwane są też protezami osiadającymi, ze względu na zjawisko osiadania
@@ -181,23 +195,50 @@ function Prosthodontics() {
 								ukształtowanym <b>metalowym klamrom</b>.
 							</p>
 						</div>
+						<div className="photos">
+							<div className="page-photo">
+								<img src={Images.FullDenture} alt="" />
+								<span>Proteza całkowita</span>
+							</div>
+						</div>
 					</div>
-					<h3>Protezy Szkieletowe</h3>
-					<p>
-						Podparte są <b>na zębach własnych pacjenta</b> specjalnymi elementami stanowiącymi integralną
-						część protezy. Daje to <b>bardzo dobrą stabilizację</b> i pozwala na ograniczenie zasięgu, np. płyty
-						podniebiennej. To z kolei sprzyja znacznemu <b>zwiększeniu komfortu użytkowania</b> protezy.
-					</p>
-					<h3>Protezy bezklamrowe</h3>
-					<p>
-						Są one <b>wersją kosmetyczną protez szkieletowych</b>. Utrzymywane są na zębach dzięki różnego
-						rodzaju zamkom, przymocowywanym do protezy i koron porcelanowych, więc wymagane jest wykonanie po obydwu
-						stronach szczęki dwóch zblokowanych koron porcelanowych.
-					</p>
-					<p>
-						Zaletą tych protez jest <b>bardzo dobry efekt kosmetyczny</b>, ponieważ elementy utrzymujące protezę są umieszczone
-						wewnątrz protezy i niewidoczne na zewnątrz
-					</p>
+					<div className="text-img normal">
+						<div className="photos">
+							<div className="page-photo">
+								<img src={Images.FrameDenture} alt="" />
+								<span>Proteza szkieletowa</span>
+							</div>
+						</div>
+						<div>
+							<h3>Protezy Szkieletowe</h3>
+							<p>
+								Podparte są <b>na zębach własnych pacjenta</b> specjalnymi elementami stanowiącymi integralną
+								część protezy. Daje to <b>bardzo dobrą stabilizację</b> i pozwala na ograniczenie zasięgu, np. płyty
+								podniebiennej. To z kolei sprzyja znacznemu <b>zwiększeniu komfortu użytkowania</b> protezy.
+							</p>
+
+						</div>
+					</div>
+					<div className="text-img normal">
+						<div>
+							<h3>Protezy bezklamrowe</h3>
+							<p>
+								Są one <b>wersją kosmetyczną protez szkieletowych</b>. Utrzymywane są na zębach dzięki różnego
+								rodzaju zamkom, przymocowywanym do protezy i koron porcelanowych, więc wymagane jest wykonanie po obydwu
+								stronach szczęki dwóch zblokowanych koron porcelanowych.
+							</p>
+							<p>
+								Zaletą tych protez jest <b>bardzo dobry efekt kosmetyczny</b>, ponieważ elementy utrzymujące protezę są umieszczone
+								wewnątrz protezy i niewidoczne na zewnątrz
+							</p>
+						</div>
+						<div className="photos">
+							<div className="page-photo">
+								<img src={Images.HaspDenture} alt="" />
+								<span>Proteza bezklamrowa</span>
+							</div>
+						</div>
+					</div>
 					<h3>Protezy natychmiastowe</h3>
 					<p>
 						Protezy te są <b>akrylowe</b>, wykonywane w sytuacji konieczności jednoczesnej ekstrakcji

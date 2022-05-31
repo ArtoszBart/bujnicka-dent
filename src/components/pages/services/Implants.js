@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
+import Images from '../../../img/texts/implants';
 import CarPhoto from '../../../img/samochut.jpg';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import Modal from './../../fragments/Modal';
@@ -20,8 +21,8 @@ function Implants() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
-								<span>Coś tam nie wiem</span>
+								<img src={Images.Implant} alt="" />
+								<span>Implant</span>
 							</div>
 						</div>
 						<div>
@@ -50,15 +51,26 @@ function Implants() {
 				</section>
 				<section aria-labelledby="implants">
 					<h2 id="implants">Implanty</h2>
-					<p>
-						<dfn>Implant</dfn> to inaczej sztuczny korzeń. Jest to mała "śrubka" umieszczana w obrębie kości żuchwy lub
-						szczęki i połączona tzw. "łącznikiem" z odbudową protetyczną w postaci korony, mostu lub protezy.
-					</p>
-					<p>
-						Najczęstszym materiałem, z którego wykonany jest implant jest <b>tytan</b>, ale są również implanty wykonane z
-						materiału <b>ceramicznego</b> - cyrkonu. Są to materiały biokompatybilne - biologicznie obojętne,
-						czyli <b>nie wywołujące reakcji alergicznych</b> w zetknięciu z tkanką żywą.
-					</p>
+					<div className="text-img downright">
+						<div>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={Images.ImplantBridge} alt="Próchnica" />
+									<span>Most na implantach</span>
+								</div>
+							</div>
+							<p>
+								<dfn>Implant</dfn> to inaczej sztuczny korzeń. Jest to mała "śrubka" umieszczana w obrębie kości żuchwy lub
+								szczęki i połączona tzw. "łącznikiem" z odbudową protetyczną w postaci korony, mostu lub protezy.
+							</p>
+							<p>
+								Najczęstszym materiałem, z którego wykonany jest implant jest <b>tytan</b>, ale są również implanty wykonane z
+								materiału <b>ceramicznego</b> - cyrkonu. Są to materiały biokompatybilne - biologicznie obojętne,
+								czyli <b>nie wywołujące reakcji alergicznych</b> w zetknięciu z tkanką żywą.
+							</p>
+
+						</div>
+					</div>
 					<ImportantInfo>
 						Powierzchnia implantu jest specjalnie przygotowana do tego, aby <b>stymulować wzrost kości</b> wokół niego w procesie
 						tzw. osteointegracji i przyczyniać się do powstania zrostu z żywą tkanką kostną. Proces ten trwa ok. 3-6 miesięcy.

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import ImgPlan from '../../../img/texts/diagnostics/plan.jpeg';
+import Images from '../../../img/texts/diagnostics';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 
 function Diagnostics() {
@@ -32,8 +32,7 @@ function Diagnostics() {
 						</div>
 						<div className="photos">
 							<div className="page-photo">
-								<img src={ImgPlan} alt="" />
-								<span>Zdjęcie</span>
+								<img src={Images.Plan} alt="" />
 							</div>
 						</div>
 					</div>

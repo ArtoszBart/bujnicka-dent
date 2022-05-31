@@ -1,5 +1,6 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
+import Images from '../../../img/texts/joints';
 
 function Joints() {
 
@@ -71,21 +72,31 @@ function Joints() {
 				</section>
 				<section aria-labelledby="relaxation-rails">
 					<h2 id="what-are-crown-inserts">Szyna Relaksacyjna</h2>
-					<p>
-						<b>Szyna relaksacyjna</b> jest przezroczystą nakładką na zęby, indywidualnie dopasowaną do zębów pacjenta.
-						W zależności od potrzeb wykonuje się ją z różnej twardości <b>masy silikonowej</b>, wykazującej wysoką
-						odporność na uszkodzenia. Szyna jest wykonana w taki sposób,
-						żeby <b>nie powodowała żadnych uszkodzeń dziąsła.</b>
-					</p>
-					<p>
-						Najczęściej szynę relaksacyjną wykonuje się pacjentom z bruksizmem lub <b>nadmiernym zaciskaniem zębów</b>.
-						Zalecana jest do noszenia w ciągu dnia, a w <b>szczególności w nocy</b>, kiedy występujące parafunkcje
-						uniemożliwiają sen lub są przyczyną bezsenności.
-					</p>
-					<p>
-						Jej <b>czas noszenia</b> jest zależny od stopnia zaawansowania zaburzeń stawów skroniowo-żuchwowych
-						lub siły występujących parafunkcji.
-					</p>
+					<div className="text-img downright">
+						<div>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={Images.RelaxRail} alt="Próchnica" />
+									<span>Szyna relaksacyjna</span>
+								</div>
+							</div>
+							<p>
+								<b>Szyna relaksacyjna</b> jest przezroczystą nakładką na zęby, indywidualnie dopasowaną do zębów pacjenta.
+								W zależności od potrzeb wykonuje się ją z różnej twardości <b>masy silikonowej</b>, wykazującej wysoką
+								odporność na uszkodzenia. Szyna jest wykonana w taki sposób,
+								żeby <b>nie powodowała żadnych uszkodzeń dziąsła.</b>
+							</p>
+							<p>
+								Najczęściej szynę relaksacyjną wykonuje się pacjentom z bruksizmem lub <b>nadmiernym zaciskaniem zębów</b>.
+								Zalecana jest do noszenia w ciągu dnia, a w <b>szczególności w nocy</b>, kiedy występujące parafunkcje
+								uniemożliwiają sen lub są przyczyną bezsenności.
+							</p>
+							<p>
+								Jej <b>czas noszenia</b> jest zależny od stopnia zaawansowania zaburzeń stawów skroniowo-żuchwowych
+								lub siły występujących parafunkcji.
+							</p>
+						</div>
+					</div>
 					<ImportantInfo>
 						Szyny relaksacyjne oprócz funkcji leczniczej <b>chronią zęby</b> przed uszkodzeniami.
 					</ImportantInfo>

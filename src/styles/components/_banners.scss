@@ -58,15 +58,39 @@
 	background-position-y: 30%;
 }
 
+#appointments {
+	background: set-page-background('../../img/banners/banner_appointment.jpeg');
+	background-position-y: 35%;
+}
+
+#conservative-dentistry {
+	background: set-page-background('../../img/banners/banner_conservatives.jpeg');
+	background-position-y: 15%;
+	background-position-x: 50%;
+}
+
+#diagnostics {
+	background: set-page-background('../../img/banners/banner_diagnostics.jpeg');
+	background-position-y: 50%;
+}
+
+#endodontics {
+	background: set-page-background('../../img/banners/banner_endodontics.jpeg');
+	background-position-y: 10%;
+}
+
+#implantology {
+	background: set-page-background('../../img/banners/banner_implants.jpeg');
+}
+
+#dental-surgery {
+	background: set-page-background('../../img/banners/banner_surgeries.jpeg');
+	background-position-y: 50%;
+}
+
 #about,
 #certificates,
-#appointments,
 #not-found,
-#conservative-dentistry,
-#dental-surgery,
-#diagnostics,
-#endodontics,
-#implantology,
 #privacy-policy {
 	background: set-page-background('../../img/turtle.jpg');
 }

@@ -1,4 +1,3 @@
-import CarPhoto from '../../img/samochut.jpg';
 import Images from '../../img/offers';
 import ParallaxBaner from '../fragments/ParallaxBanner'
 import SingleOffer from '../fragments/SingleOffer';
@@ -16,7 +15,7 @@ function Offer() {
 				</aside>
 				<section className="offers">
 					<SingleOffer
-						image={CarPhoto}
+						image={Images.Diagnostics}
 						title="Wizyta Diagnostyczna"
 						link="/offer/diagnostics"
 					>
@@ -64,7 +63,7 @@ function Offer() {
 						lub zostały one utracone.
 					</SingleOffer>
 					<SingleOffer
-						image={CarPhoto}
+						image={Images.Conservatives}
 						title="Stomatologia Zachowawcza"
 						link="/offer/conservative-dentistry"
 					>
@@ -86,7 +85,7 @@ function Offer() {
 						Dziedzina stomatologii zajmująca się leczeniem chorób błony śluzowej i przyzębia (dziąseł).
 					</SingleOffer>
 					<SingleOffer
-						image={CarPhoto}
+						image={Images.Surgeries}
 						title="Chirurgia Stomatologiczna"
 						link="/offer/dental-surgery"
 					>

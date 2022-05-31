@@ -2,8 +2,7 @@ import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import CarPhoto from '../../../img/samochut.jpg';
-import ImgOnlay from '../../../img/texts/inlay-onlay/onlay.jpeg';
-import ImgOverlay from '../../../img/texts/inlay-onlay/overlay.jpeg';
+import Images from '../../../img/texts/inlay-onlay';
 import Modal from './../../fragments/Modal';
 
 function InlayOnlay() {
@@ -41,8 +40,8 @@ function InlayOnlay() {
 					<h3>Rodzaje wkładów koronowych</h3>
 					<ul>
 						<li><dfn>Inlay</dfn> - wkład koronowy wykonywany przy zachowaniu wszystkich ścianek zęba</li>
-						<li><dfn>Onlay</dfn> - wkład koronowy odtwarzający całą powierzchnię żującą i guzki zęba</li>
-						<li><dfn>Overlay</dfn> (inaczej nakład) - ma poszerzony zasięg o ściany boczne zęba</li>
+						<li><dfn>Onlay</dfn> - wkład koronowy odtwarzający część powierzchni żującej i ściankę zęba</li>
+						<li><dfn>Overlay</dfn> - ma poszerzony zasięg o całą powierzchnię żującą oraz ściany boczne zęba</li>
 						<li><dfn>Endokorona</dfn> - dotyczy zębów martwych. Warunkiem jej wykonania jest odpowiednia ilość
 							tkanek zęba stanowiąca odpowiednie podparcie.
 							Jeśli w wyniku leczenia kanałowego doszło do znacznego zniszczenia tkanek,
@@ -51,15 +50,15 @@ function InlayOnlay() {
 					<div className="text-img horizontal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={Images.Inlay} alt="" />
 								<span>Inlay</span>
 							</div>
 							<div className="page-photo">
-								<img src={ImgOnlay} alt="" />
+								<img src={Images.Onlay} alt="" />
 								<span>Onlay</span>
 							</div>
 							<div className="page-photo">
-								<img src={ImgOverlay} alt="" />
+								<img src={Images.Overlay} alt="" />
 								<span>Overlay</span>
 							</div>
 						</div>
@@ -102,7 +101,7 @@ function InlayOnlay() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={CarPhoto} alt="" />
+									<img src={Images.OldLook} alt="" />
 									<span>"Starczy wygląd"</span>
 								</div>
 							</div>

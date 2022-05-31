@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
-import ImgVeneers from '../../../img/texts/aesthetics/veneers.jpeg';
-import ImgTrayBasedWhitening from '../../../img/texts/aesthetics/tray-based_whitening.jpeg';
+import Images from '../../../img/texts/aesthetics';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import Modal from './../../fragments/Modal';
 
@@ -26,11 +25,11 @@ function AestheticDentistry() {
 					<div className="text-img horizontal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={Images.WhiteningBefore} alt="" />
 								<span>Przed wybielaniem</span>
 							</div>
 							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
+								<img src={Images.WhiteningAfter} alt="" />
 								<span>Po wybielaniu</span>
 							</div>
 						</div>
@@ -42,7 +41,7 @@ function AestheticDentistry() {
 
 						<div className="photos">
 							<div className="page-photo">
-								<img src={ImgTrayBasedWhitening} alt="Szyna wybielająca" />
+								<img src={Images.TrayBasedWhitening} alt="Szyna wybielająca" />
 								<span>Szyna wybielająca</span>
 							</div>
 						</div>
@@ -100,7 +99,7 @@ function AestheticDentistry() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={ImgVeneers} alt="veneers" />
+								<img src={Images.Veneers} alt="veneers" />
 								<span>Licówki</span>
 							</div>
 						</div>
@@ -180,16 +179,26 @@ function AestheticDentistry() {
 				</section>
 				<section aria-labelledby="clear-aligner">
 					<h2 id="clear-aligner">Clear Aligner</h2>
-					<p>
-						Korekta małych nieprawidłowości w ustawieniu zębów, może zostać wykonana za pomocą metody <dfn>Clear Aligner</dfn>.
-						Jest to estetyczna alternatywa dla ortodontycznych aparatów stałych.
-					</p>
-					<p>
-						Metoda ta wykorzystuje <b>przezroczyste</b>, biokompatybilne, <b>silikonowe nakładki</b>, które nosi się przez 24h i zdejmuje
-						tylko do jedzenia. Dzięki temu, że są przezroczyste i <b>praktycznie niewidoczne</b> na zębach,
-						zapewniają najwyższy stopień estetyki podczas całego procesu leczenia. Idealnie gładkie i dobrze dopasowane
-						do zębów i dziąseł, zapewniają <b>wysoki komfort</b> ich użytkowania.
-					</p>
+					<div className="text-img downright">
+						<div>
+							<div className="photos">
+								<div className="page-photo">
+									<img src={Images.ClearAligner} alt="" />
+									<span>Nakładka Clear Aligner</span>
+								</div>
+							</div>
+							<p>
+								Korekta małych nieprawidłowości w ustawieniu zębów, może zostać wykonana za pomocą metody <dfn>Clear Aligner</dfn>.
+								Jest to estetyczna alternatywa dla ortodontycznych aparatów stałych.
+							</p>
+							<p>
+								Metoda ta wykorzystuje <b>przezroczyste</b>, biokompatybilne, <b>silikonowe nakładki</b>, które nosi się przez 24h i zdejmuje
+								tylko do jedzenia. Dzięki temu, że są przezroczyste i <b>praktycznie niewidoczne</b> na zębach,
+								zapewniają najwyższy stopień estetyki podczas całego procesu leczenia. Idealnie gładkie i dobrze dopasowane
+								do zębów i dziąseł, zapewniają <b>wysoki komfort</b> ich użytkowania.
+							</p>
+						</div>
+					</div>
 					<ImportantInfo>
 						Metoda <b>Clear Aligner</b> jest zdecydowanie tańsza i bardziej komfortowa niż tradycyjne leczenie ortodontyczne.
 					</ImportantInfo>

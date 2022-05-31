@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import CarPhoto from '../../../img/samochut.jpg';
-import ImgEquipment from '../../../img/offers/offer_endodontics.jpeg';
+import Images from '../../../img/texts/endodontics';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 import Modal from './../../fragments/Modal';
 
@@ -79,7 +79,7 @@ function Endodontics() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={ImgEquipment} alt="" />
+								<img src={Images.Endometer} alt="" />
 								<span>Endometr</span>
 							</div>
 						</div>

@@ -88,8 +88,16 @@
 	background-position-y: 50%;
 }
 
-#about,
-#certificates,
+#certificates {
+	background: set-page-background('../../img/banners/banner_certificates.jpeg');
+	background-position-y: 35%;
+}
+
+#about {
+	background: set-page-background('../../img/banners/banner_about.jpeg');
+	background-position-y: 40%;
+}
+	
 #not-found,
 #privacy-policy {
 	background: set-page-background('../../img/turtle.jpg');

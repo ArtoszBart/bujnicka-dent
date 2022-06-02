@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.compare{
+    width: fit-content;
+    @include flex-column;
+    gap: 1rem;
+    margin-inline: 3rem;
+
+    &-content {
+        position: relative;
+        display: flex;
+        width: fit-content;
+        cursor: col-resize;
+        box-shadow: $img-shadow;
+        
+        &-line {
+            position: absolute;
+            top: 0;
+            left: calc(50% - ($compare-line-width/2));
+            height: 100%;
+            width: $compare-line-width;
+            background-color: $color-accent;
+        }
+
+        &-active-img {
+            position: absolute;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0%;
+        }
+        .img{
+            width: 450px;
+        }
+    }
+
+    &-captions {
+        display: flex;
+        justify-content: space-around;
+    }
+}

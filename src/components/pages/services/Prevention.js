@@ -74,7 +74,7 @@ function Prevention() {
 							</p>
 							<p>
 								Często kamień mylony jest z <b>osadem nazębnym</b>, który jest przebarwieniem zębów powstającym na skutek spożywania,
-								zawierających silne <b>substancje barwiące</b>, napojów i jedzenia, np. kawy, herbaty, potraw z curry itp.
+								zawierających <b>silne substancje barwiące</b>, napojów i jedzenia, np. kawy, herbaty, potraw z curry itp.
 								oraz <b>palenia papierosów</b>. Usuwa się go razem z kamieniem podczas scalingu.
 							</p>
 						</div>

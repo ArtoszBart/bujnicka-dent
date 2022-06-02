@@ -5,6 +5,7 @@ import CarPhoto from '../../../img/samochut.jpg';
 import Images from '../../../img/texts/aesthetics';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import Modal from './../../fragments/Modal';
+import ImgCompare from "../../fragments/ImgComparer";
 
 function AestheticDentistry() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,23 +18,24 @@ function AestheticDentistry() {
 			<ParallaxBaner id="aesthetic-dentistry" text="Stomatoligia Estetyczna" />
 			<article className="page-content">
 				<section aria-labelledby="aesthetic-dentistry-goal">
-					<h2 id="aesthetic-dentistry-goal">Cel stomatologi estetycznej</h2>
-					<p>
-						<dfn>Stomatologia estetyczna</dfn> zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
-						czego efektem staje się piękny, naturalny uśmiech.
-					</p>
-					<div className="text-img horizontal">
+
+					<div className="text-img upright">
+
 						<div className="photos">
-							<div className="page-photo">
-								<img src={Images.WhiteningBefore} alt="" />
-								<span>Przed wybielaniem</span>
-							</div>
-							<div className="page-photo">
-								<img src={Images.WhiteningAfter} alt="" />
-								<span>Po wybielaniu</span>
-							</div>
+							<ImgCompare
+								img1={Images.WhiteningBefore}
+								label1="Przed"
+								img2={Images.WhiteningAfter}
+								label2="Po"
+							/>
 						</div>
+						<h2 id="aesthetic-dentistry-goal">Cel stomatologi estetycznej</h2>
+						<p>
+							<dfn>Stomatologia estetyczna</dfn> zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
+							czego efektem staje się piękny, naturalny uśmiech.
+						</p>
 					</div>
+
 				</section>
 				<section aria-labelledby="teeth-whitening">
 					<h2 id="teeth-whitening">Wybielanie zębów</h2>
@@ -64,7 +66,7 @@ function AestheticDentistry() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={CarPhoto} alt="" />
+									<img src={Images.EnamelStains} alt="" />
 									<span>Plamy na szkliwie</span>
 								</div>
 							</div>

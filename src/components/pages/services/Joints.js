@@ -1,8 +1,12 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 import Images from '../../../img/texts/joints';
+import BruxismModal from '../../fragments/modals/BruxismModal';
+import useModal from '../../fragments/customHooks/useModal';
 
 function Joints() {
+
+	const UseModal = useModal();
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -24,7 +28,7 @@ function Joints() {
 						<li>szum w uszach</li>
 						<li>ograniczenie otwierania ust</li>
 						<li>wzrost napięcia mięśni, odczuwalny np. rano, prowadzący do przerostu mięśni żwaczy</li>
-						<li><dfn>bruksizm</dfn> - zaciskanie lub zgrzytanie zębami</li>
+						<li><span className="text-link" onClick={() => UseModal.openModal("Bruksizm")}>bruksizm</span></li>
 					</ul>
 
 					<h3>Przyczyny</h3>
@@ -87,7 +91,7 @@ function Joints() {
 								żeby <b>nie powodowała żadnych uszkodzeń dziąsła.</b>
 							</p>
 							<p>
-								Najczęściej szynę relaksacyjną wykonuje się pacjentom z bruksizmem lub <b>nadmiernym zaciskaniem zębów</b>.
+								Najczęściej szynę relaksacyjną wykonuje się pacjentom z <span className="text-link" onClick={() => UseModal.openModal("Bruksizm")}>bruksizmem</span> lub <b>nadmiernym zaciskaniem zębów</b>.
 								Zalecana jest do noszenia w ciągu dnia, a w <b>szczególności w nocy</b>, kiedy występujące parafunkcje
 								uniemożliwiają sen lub są przyczyną bezsenności.
 							</p>
@@ -100,7 +104,9 @@ function Joints() {
 					<ImportantInfo>
 						Szyny relaksacyjne oprócz funkcji leczniczej <b>chronią zęby</b> przed uszkodzeniami.
 					</ImportantInfo>
+
 				</section>
+				<BruxismModal hook={UseModal} />
 			</article>
 		</main>
 	);

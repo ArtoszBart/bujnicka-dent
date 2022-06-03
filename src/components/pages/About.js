@@ -1,15 +1,11 @@
-import PhotoBujnicka from '../../img/bujnicka-profile.jpg';
-import PhotoBohdan from '../../img/Bohdan_Bujnicki.jpg';
-import PhotoMaria from '../../img/Maria_Baluta.jpg';
 import GalleryOverlay from '../fragments/gallery/GalleryOverlay'
 import GalleryOverlayHook from './../fragments/gallery/customHooks/useGalleryOverlay';
 import ParallaxBaner from '../fragments/ParallaxBanner';
-import TablBohdan from '../../img/Tableau_Bohdan.jpg';
-import TablMaria from '../../img/Tableau_Maria.jpg';
+import Images from '../../img/persons';
 
 function About() {
 
-	const useGalleryOverlay = GalleryOverlayHook([[TablBohdan], [TablMaria]]);
+	const useGalleryOverlay = GalleryOverlayHook([[Images.TablBohdan], [Images.TablMaria]]);
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -31,7 +27,7 @@ function About() {
 					</p>
 					<div className="history-pictures">
 						<div className="history-pictures-single">
-							<img src={PhotoMaria} className="employee-picture" alt="Maria Bałuta" />
+							<img src={Images.PhotoMaria} className="employee-picture" alt="Maria Bałuta" />
 							<span>Maria Bałuta</span>
 							<span className="text-link"
 								onClick={() => useGalleryOverlay.openGalleryOverlay(1, 0)}>
@@ -39,7 +35,7 @@ function About() {
 							</span>
 						</div>
 						<div className="history-pictures-single">
-							<img src={PhotoBohdan} className="employee-picture" alt="Bohdan Bujnicki" />
+							<img src={Images.PhotoBohdan} className="employee-picture" alt="Bohdan Bujnicki" />
 							<span>Bohdan Bujnicki</span>
 							<span
 								className="text-link"
@@ -55,7 +51,7 @@ function About() {
 				</section>
 				<section className="employee">
 					<div className="img-box">
-						<img src={PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
+						<img src={Images.PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
 					</div>
 					<div className="employee-about">
 						<h2>Magdalena Bujnicka</h2>

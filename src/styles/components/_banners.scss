@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 #main-page {
-	background: set-page-background('../../img/main_view.jpg') center bottom;
+	background: set-page-background('../../img/banners/banner_main.jpeg') center bottom;
 }
 
 #offer {
@@ -97,10 +97,11 @@
 	background: set-page-background('../../img/banners/banner_about.jpeg');
 	background-position-y: 40%;
 }
-	
+
 #not-found,
 #privacy-policy {
-	background: set-page-background('../../img/turtle.jpg');
+	background: set-page-background('../../img/banners/banner_about.jpeg');
+	background-position-y: 40%;
 }
 
 .page-wrapper {

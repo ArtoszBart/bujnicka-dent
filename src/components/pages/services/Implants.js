@@ -1,15 +1,11 @@
-import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import Images from '../../../img/texts/implants';
-import CarPhoto from '../../../img/samochut.jpg';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
-import Modal from './../../fragments/Modal';
+import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
+import useModal from '../../fragments/customHooks/useModal';
 
 function Implants() {
-	const [isModalOpen, setIsModalOpen] = useState(false);
-	const openModal = () => {
-		setIsModalOpen(true);
-	}
+	const UseModal = useModal();
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -40,7 +36,7 @@ function Implants() {
 								W takiej sytuacji wykonuje się koronę
 								tymczasową opartą na implancie za pośrednictwem łącznika (jest to natychmiastowe obciążenie implantu) lub
 								stosuje się uzupełnienie tymczasowe wykonane w laboratorium protetycznym,
-								np. <span className='text-link' onClick={openModal}>most adhezyjny</span>, szynę Essex lub protezę.
+								np. <span className='text-link' onClick={() => UseModal.openModal("Technika adhezyjna")}>most adhezyjny</span>, szynę Essex lub protezę.
 							</p>
 							<p>
 								Dzięki temu pacjent nie wychodzi z gabinetu z widocznym brakiem zęba, co daje
@@ -224,19 +220,8 @@ function Implants() {
 						</li>
 					</ol>
 				</section>
-				<Modal
-					title='Technika adhezyjna'
-					image={CarPhoto}
-					alt=""
-					isModalOpen={isModalOpen}
-					setIsModalOpen={setIsModalOpen}
-				>
-					Jest to najnowocześniejsza technologicznie metoda połączenia porcelanowego
-					uzupełnienia protetycznego (licówki, wkładów koronowych) z zębem, za pomocą dwufazowego
-					systemu bondingowego (łączącego). Po utwardzeniu lampą polimeryzacyjną tworzy on
-					ścisły konglomerat z zębem i porcelaną, odporny na siły powstające podczas żucia i
-					gwarantujący wieloletnie komfortowe użytkowanie odbudowy zęba.
-				</Modal>
+
+				<AdhesiveTechniqueModal hook={UseModal} />
 			</article>
 		</main>
 	);

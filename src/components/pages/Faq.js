@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Collapsible from '../fragments/collapsible/Collapsible';
 import ParallaxBaner from '../fragments/ParallaxBanner';
-import ImportantInfo from '../fragments/pages/ImportantInfo'
+import ImportantInfo from '../fragments/pages/ImportantInfo';
+import PillarToothModal from '../fragments/modals/PillarToothModal';
+import useModal from '../fragments/customHooks/useModal';
 
 const Faq = () => {
+    const UseModal = useModal();
     return (
         <main className="page-wrapper" role="main">
             <ParallaxBaner id="faq" text="Często Zadawane Pytania" />
@@ -55,7 +58,7 @@ const Faq = () => {
                     </p>
                     <p>
                         Natomiast jeśli nie sprawiają żadnych kłopotów, są prawidłowo umiejscowione i ustawione, to <b>spokojnie możemy je pozostawić</b>.
-                        Mogą okazać się <b>bardzo przydatne</b> w sytuacji konieczności wykonania mostu protetycznego, służąc jako zęby filarowe do jego podparcia.
+                        Mogą okazać się <b>bardzo przydatne</b> w sytuacji konieczności wykonania mostu protetycznego, służąc jako <span className="text-link" onClick={() => UseModal.openModal("Ząb filarowy")}>zęby filarowe</span> do jego podparcia.
                     </p>
                     <p>
                         <Link className="text-link" to='/offer/dental-surgery'>Więcej o usuwaniu ósemek</Link>
@@ -143,6 +146,8 @@ const Faq = () => {
                         <Link className="text-link" to="/offer/endodontics">Więcej o leczeniu kanałowym</Link>
                     </p>
                 </Collapsible>
+
+                <PillarToothModal hook={UseModal} />
             </article>
         </main>
     );

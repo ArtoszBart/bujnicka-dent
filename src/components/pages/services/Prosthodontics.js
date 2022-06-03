@@ -2,8 +2,12 @@ import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import Images from '../../../img/texts/prosthodontics';
 import { Link } from 'react-router-dom';
+import PillarToothModal from '../../fragments/modals/PillarToothModal';
+import useModal from '../../fragments/customHooks/useModal';
 
 function Prosthodontics() {
+
+	const UseModal = useModal();
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -151,7 +155,7 @@ function Prosthodontics() {
 						<div>
 							<p>
 								Są uzupełnieniem protetycznym <b>złożonym z szeregu koron</b>, uzupełniającym brak pojedyńczego
-								zęba lub kilku zębów. Cementowane są na stałe do zębów filarowych.
+								zęba lub kilku zębów. Cementowane są na stałe do <span className="text-link" onClick={() => UseModal.openModal("Ząb filarowy")}>zębów filarowych</span>.
 							</p>
 							<p>
 								Procedura wykonania mostów jest taka sama jak w przypadku koron protetycznych.
@@ -272,8 +276,9 @@ function Prosthodontics() {
 					<ImportantInfo>
 						Przywrócenie pełnej funkcji narządu żucia wpływa na <b>dobre samopoczucie</b> i prawidłowe <b>funkcjonowanie całego organizmu</b>.
 					</ImportantInfo>
-
 				</section>
+
+				<PillarToothModal hook={UseModal} />
 			</article>
 		</main >
 	);

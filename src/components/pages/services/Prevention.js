@@ -99,7 +99,8 @@ function Prevention() {
 
 						<h3>Scaling</h3>
 						<p>
-							Zabieg polegający na <b>usunięciu kamienia nazębnego</b> za pomocą ultradźwięków.
+							Profesjonalny zabieg <b>czyszczenia płytki nazębnej, kamienia i osadu za pomocą ultradzwięków</b>.
+							Należy do podstawowych zabiegów higienizacyjnych jamy ustnej i jest podstawą w leczeniu oraz <b>zapobieganiu chorób przyzębia</b>.
 						</p>
 						<p>
 							<b>Jest bezbolesny</b>, trwa od 15 do 50 minut w zależności od ilości złogów i kończy się polerowaniem zębów

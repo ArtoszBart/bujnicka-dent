@@ -1,17 +1,13 @@
-import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
 import Images from '../../../img/texts/aesthetics';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
-import Modal from './../../fragments/Modal';
-import ImgCompare from "../../fragments/ImgComparer";
+import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
+import useModal from "../../fragments/customHooks/useModal";
+import ImgComparer from "../../fragments/ImgComparer";
 
 function AestheticDentistry() {
-	const [isModalOpen, setIsModalOpen] = useState(false);
-	const openModal = () => {
-		setIsModalOpen(true);
-	}
+	const UseModal = useModal();
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -22,7 +18,7 @@ function AestheticDentistry() {
 					<div className="text-img upright">
 
 						<div className="photos">
-							<ImgCompare
+							<ImgComparer
 								img1={Images.WhiteningBefore}
 								label1="Przed"
 								img2={Images.WhiteningAfter}
@@ -154,7 +150,7 @@ function AestheticDentistry() {
 						<li>
 							<h4>Wizyta końcowa</h4>
 							<p>
-								Przyklejenie licówek do zębów w specjalnej <span className='text-link' onClick={openModal}>technice adhezyjnej</span>
+								Przyklejenie licówek do zębów w specjalnej <span className='text-link' onClick={() => UseModal.openModal("Technika adhezyjna")}>technice adhezyjnej</span>
 							</p>
 						</li>
 					</ol>
@@ -245,19 +241,8 @@ function AestheticDentistry() {
 						</li>
 					</ol>
 				</section>
-				<Modal
-					title='Technika adhezyjna'
-					image={CarPhoto}
-					alt=""
-					isModalOpen={isModalOpen}
-					setIsModalOpen={setIsModalOpen}
-				>
-					Jest to najnowocześniejsza technologicznie metoda połączenia porcelanowego
-					uzupełnienia protetycznego (licówki, wkładów koronowych) z zębem, za pomocą dwufazowego
-					systemu bondingowego (łączącego). Po utwardzeniu lampą polimeryzacyjną tworzy on
-					ścisły konglomerat z zębem i porcelaną, odporny na siły powstające podczas żucia i
-					gwarantujący wieloletnie komfortowe użytkowanie odbudowy zęba.
-				</Modal>
+
+				<AdhesiveTechniqueModal hook={UseModal} />
 			</article>
 		</main>
 	);

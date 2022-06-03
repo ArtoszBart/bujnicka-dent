@@ -1,16 +1,14 @@
-import { useState } from "react";
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
 import Images from '../../../img/texts/conservatives';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
-import Modal from './../../fragments/Modal';
+import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
+import PolymerizationModal from '../../fragments/modals/PolymerizationModal';
+import useModal from "../../fragments/customHooks/useModal";
 
 function ConservativeDentistry() {
-	const [isModalOpen, setIsModalOpen] = useState(false);
-	const openModal = () => {
-		setIsModalOpen(true);
-	}
+
+	const UseModal = useModal();
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -62,10 +60,6 @@ function ConservativeDentistry() {
 									<img src={Images.Treatment} alt="" />
 									<span>Leczenie próchnicy</span>
 								</div>
-								<div className="page-photo">
-									<img src={Images.Polymerisation} alt="" />
-									<span>Polimeryzacja</span>
-								</div>
 							</div>
 							<p>
 								Zabieg polega na <b>usunięciu zniszczonych tkanek</b> i zastąpieniu ich specjalnie do tego celu przeznaczonym
@@ -74,25 +68,25 @@ function ConservativeDentistry() {
 							<p>
 								Powszechnie stosowanym materiałem do wypełnień jest <b>kompozyt</b>, który występuje w postaci miękkiego,
 								plastycznego materiału kształtowanego przez lekarza w zębie. Aby powstało twarde, odporne na siły gryzienia wypełnienie,
-								potrzebny jest czynnik inicjujący - specjalny rodzaj światła ultrafioletowego, który wywołuje proces <dfn>polimeryzacji</dfn>,
+								potrzebny jest czynnik inicjujący - specjalny rodzaj światła ultrafioletowego, który wywołuje proces <dfn><span className='text-link' onClick={() => UseModal.openModal("Polimeryzacja")}>polimeryzacji</span></dfn>,
 								czyli twardnienia materiału kompozytowego. Aby wypełnienie ściśle i szczelnie przylegało do zęba,
-								lekarz w specjalny sposób przygotowuje tkanki zęba używając <b><span className='text-link' onClick={openModal}>adhezyjnych</span> systemów łączących</b>.
+								lekarz w specjalny sposób przygotowuje tkanki zęba używając <b><span className='text-link' onClick={() => UseModal.openModal("Technika adhezyjna")}>adhezyjnych</span> systemów łączących</b>.
 							</p>
-							<h3>Współczesne materiały do wypełnień ubytków cechuje:</h3>
-							<ul>
-								<li><b>duża wytrzymałość</b></li>
-								<li>
-									trwałość na ścieranie i zgniatanie, dzięki czemu wytrzymałość i elastyczność
-									uzyskanych wypełnień jest bardzo <b>zbliżona do wytrzymałości zębów</b> własnych pacjenta
-								</li>
-								<li>możliwość dokładnego odtworzenia funkcji zęba</li>
-								<li>
-									możliwość odtworzenia kształtu i koloru utraconych tkanek,
-									dzięki czemu wypełnienie jest <b>praktycznie niezauważalne</b>
-								</li>
-							</ul>
 						</div>
 					</div>
+					<h3>Współczesne materiały do wypełnień ubytków cechuje:</h3>
+					<ul>
+						<li><b>duża wytrzymałość</b></li>
+						<li>
+							trwałość na ścieranie i zgniatanie, dzięki czemu wytrzymałość i elastyczność
+							uzyskanych wypełnień jest bardzo <b>zbliżona do wytrzymałości zębów</b> własnych pacjenta
+						</li>
+						<li>możliwość dokładnego odtworzenia funkcji zęba</li>
+						<li>
+							możliwość odtworzenia kształtu i koloru utraconych tkanek,
+							dzięki czemu wypełnienie jest <b>praktycznie niezauważalne</b>
+						</li>
+					</ul>
 					<h3>Leczenie Biologiczne</h3>
 					<p>
 						Czasami zniszczenie tkanek zęba sięga tak głęboko, że założenie wypełnienia jest niemożliwe. Stosuje się wtedy
@@ -100,19 +94,9 @@ function ConservativeDentistry() {
 						można już całkowicie oczyścić chore tkanki i założyć wypełnienie.
 					</p>
 				</section>
-				<Modal
-					title='Technika adhezyjna'
-					image={CarPhoto}
-					alt=""
-					isModalOpen={isModalOpen}
-					setIsModalOpen={setIsModalOpen}
-				>
-					Jest to najnowocześniejsza technologicznie metoda połączenia porcelanowego
-					uzupełnienia protetycznego (licówki, wkładów koronowych) z zębem, za pomocą dwufazowego
-					systemu bondingowego (łączącego). Po utwardzeniu lampą polimeryzacyjną tworzy on
-					ścisły konglomerat z zębem i porcelaną, odporny na siły powstające podczas żucia i
-					gwarantujący wieloletnie komfortowe użytkowanie odbudowy zęba.
-				</Modal>
+
+				<AdhesiveTechniqueModal hook={UseModal} />
+				<PolymerizationModal hook={UseModal} />
 			</article >
 		</main >
 	);

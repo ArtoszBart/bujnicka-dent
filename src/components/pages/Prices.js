@@ -1,12 +1,16 @@
 import { useState } from 'react';
-import ParallaxBaner from '../fragments/ParallaxBanner'
-import TabNavItem from '../fragments/tabs/TabNavItem'
-import TabContent from '../fragments/tabs/TabContent'
-import SinglePrice from '../fragments/prices/SinglePrice'
-import MultiplePrices from '../fragments/prices/MultiplePrice'
+import ParallaxBaner from '../fragments/ParallaxBanner';
+import TabNavItem from '../fragments/tabs/TabNavItem';
+import TabContent from '../fragments/tabs/TabContent';
+import SinglePrice from '../fragments/prices/SinglePrice';
+import MultiplePrices from '../fragments/prices/MultiplePrice';
+import CekaModal from '../fragments/modals/CekaModal';
+import PillarToothModal from '../fragments/modals/PillarToothModal';
+import useModal from '../fragments/customHooks/useModal';
 
 function Prices() {
 	const [activeTab, setActiveTab] = useState(0);
+	const UseModal = useModal();
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -103,6 +107,13 @@ function Prices() {
 						prices={["1000 zł", "1300 zł"]}
 					/>
 					<dd>* Konieczna jest wycena indywidualna pracy protetycznej.</dd>
+					<dd>** <span className='text-link' onClick={() => UseModal.openModal("Ząb filarowy")}>
+						Ząb filarowy
+					</span></dd>
+					<dd>*** <span className='text-link' onClick={() => UseModal.openModal("Proteza bezklamrowa z zamkami typu CEKA")}>
+						Proteza bezklamrowa z zamkami typu CEKA
+					</span></dd>
+
 				</TabContent>
 
 				<TabContent id={7} activeTab={activeTab}>
@@ -123,6 +134,9 @@ function Prices() {
 					<h2>Choroby stawów skroniowo-żuchwowych</h2>
 					<SinglePrice name="Szyna relaksacyjna" price="od 550 zł" />
 				</TabContent>
+
+				<CekaModal hook={UseModal} />
+				<PillarToothModal hook={UseModal} />
 			</article>
 		</main >
 	);

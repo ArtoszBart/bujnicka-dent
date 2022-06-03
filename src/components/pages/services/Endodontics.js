@@ -1,15 +1,12 @@
-import { useState } from "react";
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import CarPhoto from '../../../img/samochut.jpg';
 import Images from '../../../img/texts/endodontics';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
-import Modal from './../../fragments/Modal';
+import PillarToothModal from '../../fragments/modals/PillarToothModal';
+import useModal from '../../fragments/customHooks/useModal';
 
 function Endodontics() {
-	const [isModalOpen, setIsModalOpen] = useState(false);
-	const openModal = () => {
-		setIsModalOpen(true);
-	}
+
+	const UseModal = useModal();
 
 	return (
 		<main className="page-wrapper" role="main">
@@ -33,28 +30,19 @@ function Endodontics() {
 						miazgi. <b>Chora miazga powinna zostać jak najszybciej usunięta</b>, ponieważ bakterie mogą rozprzestrzeniać się
 						poza kanał zęba do kości i spowodować <b>zapalenie kości</b> w okolicy wierzchołka korzenia zęba.
 					</p>
-					<div className="text-img normal">
-						<div className="photos">
-							<div className="page-photo">
-								<img src={CarPhoto} alt="" />
-								<span>Kanały</span>
-							</div>
-						</div>
-						<div>
-							<h3>Wskazania do leczenia endodontycznego:</h3>
-							<ul>
-								<li><b>Zapalenie miazgi</b></li>
-								<li><b>Martwica miazgi</b></li>
-								<li><b>Zapalenie kości</b> okolicy przywierzchołkowej zęba, tzw. zmiany zapalne okołowierzchołkowe</li>
-								<li>Procesy chorobowe w obrębie wnętrza zęba jako <b>powikłania chorób przyzębia</b></li>
-								<li><b>Odsłonięta miazga</b> z powodu urazu mechanicznego</li>
-								<li>
-									<b>Wskazania protetyczne</b> gdy rozległe zniszczenie części koronowej zęba uniemożliwia
-									stworzenie retencji pod odbudowę protetyczną
-								</li>
-							</ul>
-						</div>
-					</div>
+
+					<h3>Wskazania do leczenia endodontycznego:</h3>
+					<ul>
+						<li><b>Zapalenie miazgi</b></li>
+						<li><b>Martwica miazgi</b></li>
+						<li><b>Zapalenie kości</b> okolicy przywierzchołkowej zęba, tzw. zmiany zapalne okołowierzchołkowe</li>
+						<li>Procesy chorobowe w obrębie wnętrza zęba jako <b>powikłania chorób przyzębia</b></li>
+						<li><b>Odsłonięta miazga</b> z powodu urazu mechanicznego</li>
+						<li>
+							<b>Wskazania protetyczne</b> gdy rozległe zniszczenie części koronowej zęba uniemożliwia
+							stworzenie retencji pod odbudowę protetyczną
+						</li>
+					</ul>
 				</section>
 				<section aria-labelledby="endodontics-process">
 					<h2 id="endodontics-process">Przebieg leczenia endodontycznego:</h2>
@@ -118,7 +106,7 @@ function Endodontics() {
 					<p>
 						Pacjenci często nie podejmują leczenia kanałowego ze względu na koszty finansowe tego zabiegu. Doprowadza to
 						do <b>całkowitego zniszczenia zęba</b> i konieczności <b>usunięcia go</b>. Uzupełnienie brakującego zęba metodami protetycznymi -
-						mostem lub implantem, jest zdecydowanie <b>bardziej inwazyjne</b> ze względu na konieczność szlifowania <span className='text-link' onClick={openModal}>zębów filarowych</span> w
+						mostem lub implantem, jest zdecydowanie <b>bardziej inwazyjne</b> ze względu na konieczność szlifowania <span className='text-link' onClick={() => UseModal.openModal("Ząb filarowy")}>zębów filarowych</span> w
 						przypadku mostu lub wykonania inwazyjnego zabiegu chirurgicznego w przypadku implantów.
 					</p>
 					<p>
@@ -136,15 +124,8 @@ function Endodontics() {
 						Warto jest zadbać o to, aby zachować <b>jak największą ilość swoich własnych zębów</b>.
 					</ImportantInfo>
 				</section>
-				<Modal
-					title='Ząb filarowy'
-					image={CarPhoto}
-					alt=""
-					isModalOpen={isModalOpen}
-					setIsModalOpen={setIsModalOpen}
-				>
-					Ząb, na którym oparty jest most, czyli ząb będący filarem mostu.
-				</Modal>
+
+				<PillarToothModal hook={UseModal} />
 			</article>
 		</main>
 	);

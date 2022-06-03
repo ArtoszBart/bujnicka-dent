@@ -28,7 +28,8 @@
         border-radius: 0.5rem;
 
         &-content {
-            display: flex;
+            @include flex-column;
+
 
             img {
                 width: $image-modal-max-width;

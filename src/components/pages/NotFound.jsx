@@ -1,17 +1,20 @@
-function About() {
+import { Link } from 'react-router-dom';
+
+const About = () => {
 
 	return (
 		<main className="page-wrapper wait-wrapper" role="main">
 			<div className="banner" id="not-found">
 				<div className="banner-title">
-					<h1><i>Ta zakładka jest w budowie</i></h1>
+					<h1><i>404</i></h1>
 				</div>
 			</div>
 			<article className="page-content">
-				<h2>Odwiedź to miejsce niedługo</h2>
+				<h2>Niestety nie znaleziono tej strony.</h2>
+				<Link className="button" to={"/"}>Wróć do strony głównej</Link>
 			</article>
 		</main>
 	);
-}
+};
 
 export default About;

@@ -1,6 +1,6 @@
 import certificates from '../../img/certificates/index';
 import GalleryOverlay from '../fragments/gallery/GalleryOverlay'
-import GalleryOverlayHook from './../fragments/gallery/customHooks/useGalleryOverlay';
+import GalleryOverlayHook from '../fragments/gallery/customHooks/useGalleryOverlay';
 import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Certificates() {

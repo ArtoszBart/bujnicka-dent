@@ -63,6 +63,7 @@ function App() {
         <Route exact path='/offer/prosthodontics' element={<Prosthodontics />} />
 
         <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

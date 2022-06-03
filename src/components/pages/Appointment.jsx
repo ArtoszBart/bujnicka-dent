@@ -1,7 +1,7 @@
-import FormInput from './../fragments/forms/FormInput';
-import AgreementBox from './../fragments/forms/AgreementBox';
-import CalendarForm from './../fragments/forms/Calendar';
-import useAppointmentForm from './../fragments/forms/customHooks/useAppointmentForm';
+import FormInput from '../fragments/forms/FormInput';
+import AgreementBox from '../fragments/forms/AgreementBox';
+import CalendarForm from '../fragments/forms/Calendar';
+import useAppointmentForm from '../fragments/forms/customHooks/useAppointmentForm';
 import ParallaxBaner from '../fragments/ParallaxBanner'
 
 function Appointment() {

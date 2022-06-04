@@ -21,14 +21,8 @@ import Certificate20 from './ver-cert-14.jpg';
 import Certificate21 from './ver-cert-15.jpg';
 import Certificate22 from './ver-cert-16.jpg';
 import Certificate23 from './ver-cert-17.jpg';
-import CertificateX from './hor-cert-x.jpg'
-import CertificateY from './hor-cert-y.jpg'
-import CertificateZ from './hor-cert-z.jpg'
 
 export const certificates = [
-	// test line - whole to delete
-	Certificate1, CertificateX, CertificateY, CertificateZ,
-	//
 	Certificate6, Certificate5, Certificate1,
 	Certificate2, Certificate3, Certificate4,
 	Certificate9, Certificate10, Certificate20,

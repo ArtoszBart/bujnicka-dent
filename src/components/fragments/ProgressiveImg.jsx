@@ -5,7 +5,7 @@ const ProgressiveImg = ({ placeholderSrc, src, ...props }) => {
 
 	useEffect(() => {
 		setImgSrc(src);
-	}, []);
+	}, [src]);
 
 	return (
 		<img

@@ -3,6 +3,7 @@ import Images from '../../../img/texts/endodontics';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
 import PillarToothModal from '../../fragments/modals/PillarToothModal';
 import useModal from '../../fragments/customHooks/useModal';
+import ImgLoading from '../../fragments/ImgLoading';
 
 function Endodontics() {
 
@@ -67,7 +68,7 @@ function Endodontics() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Endometer} alt="" />
+								<ImgLoading src={Images.Endometer} alt="" />
 								<span>Endometr</span>
 							</div>
 						</div>

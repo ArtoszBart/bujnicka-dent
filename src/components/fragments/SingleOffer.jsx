@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import ImgLoadingLink from './ImgLoadingLink';
 
 const SingleOffer = ({ image, title, link, children }) => {
     return (
         <div className="offers-single">
-            <Link to={link}><img src={image} alt="" /></Link>
+            <ImgLoadingLink to={link} src={image} alt="" ></ImgLoadingLink>
 
             <h3>{title}</h3>
             <p>

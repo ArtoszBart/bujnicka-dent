@@ -3,6 +3,7 @@ import ParallaxBaner from '../../fragments/ParallaxBanner'
 import Images from '../../../img/texts/joints';
 import BruxismModal from '../../fragments/modals/BruxismModal';
 import useModal from '../../fragments/customHooks/useModal';
+import ImgLoading from '../../fragments/ImgLoading';
 
 function Joints() {
 
@@ -80,7 +81,7 @@ function Joints() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.RelaxRail} alt="Próchnica" />
+									<ImgLoading src={Images.RelaxRail} alt="Próchnica" />
 									<span>Szyna relaksacyjna</span>
 								</div>
 							</div>

@@ -5,6 +5,7 @@ import ParallaxBaner from '../../fragments/ParallaxBanner';
 import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
 import useModal from "../../fragments/customHooks/useModal";
 import ImgComparer from "../../fragments/ImgComparer";
+import ImgLoading from '../../fragments/ImgLoading';
 
 function AestheticDentistry() {
 	const UseModal = useModal();
@@ -39,7 +40,7 @@ function AestheticDentistry() {
 
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.TrayBasedWhitening} alt="Szyna wybielająca" />
+								<ImgLoading src={Images.TrayBasedWhitening} alt="Szyna wybielająca" />
 								<span>Szyna wybielająca</span>
 							</div>
 						</div>
@@ -62,7 +63,7 @@ function AestheticDentistry() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.EnamelStains} alt="" />
+									<ImgLoading src={Images.EnamelStains} alt="" />
 									<span>Plamy na szkliwie</span>
 								</div>
 							</div>
@@ -97,7 +98,7 @@ function AestheticDentistry() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Veneers} alt="veneers" />
+								<ImgLoading src={Images.Veneers} alt="veneers" />
 								<span>Licówki</span>
 							</div>
 						</div>
@@ -181,7 +182,7 @@ function AestheticDentistry() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.ClearAligner} alt="" />
+									<ImgLoading src={Images.ClearAligner} alt="" />
 									<span>Nakładka Clear Aligner</span>
 								</div>
 							</div>

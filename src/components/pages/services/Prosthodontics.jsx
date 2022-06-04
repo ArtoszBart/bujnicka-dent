@@ -4,6 +4,7 @@ import Images from '../../../img/texts/prosthodontics';
 import { Link } from 'react-router-dom';
 import PillarToothModal from '../../fragments/modals/PillarToothModal';
 import useModal from '../../fragments/customHooks/useModal';
+import ImgLoading from '../../fragments/ImgLoading';
 
 function Prosthodontics() {
 
@@ -18,7 +19,7 @@ function Prosthodontics() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.ImplantsDenture} alt="" />
+								<ImgLoading src={Images.ImplantsDenture} alt="" />
 								<span>Proteza na implantach</span>
 							</div>
 						</div>
@@ -82,7 +83,7 @@ function Prosthodontics() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Crown} alt="veneers" />
+								<ImgLoading src={Images.Crown} alt="veneers" />
 								<span>Korona</span>
 							</div>
 						</div>
@@ -148,7 +149,7 @@ function Prosthodontics() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Bridge} alt="veneers" />
+								<ImgLoading src={Images.Bridge} alt="veneers" />
 								<span>Most</span>
 							</div>
 						</div>
@@ -201,7 +202,7 @@ function Prosthodontics() {
 						</div>
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.FullDenture} alt="" />
+								<ImgLoading src={Images.FullDenture} alt="" />
 								<span>Proteza całkowita</span>
 							</div>
 						</div>
@@ -209,7 +210,7 @@ function Prosthodontics() {
 					<div className="text-img normal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.FrameDenture} alt="" />
+								<ImgLoading src={Images.FrameDenture} alt="" />
 								<span>Proteza szkieletowa</span>
 							</div>
 						</div>
@@ -238,7 +239,7 @@ function Prosthodontics() {
 						</div>
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.HaspDenture} alt="" />
+								<ImgLoading src={Images.HaspDenture} alt="" />
 								<span>Proteza bezklamrowa</span>
 							</div>
 						</div>

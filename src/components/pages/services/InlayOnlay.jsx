@@ -4,6 +4,7 @@ import Images from '../../../img/texts/inlay-onlay';
 import useModal from '../../fragments/customHooks/useModal';
 import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
 import BruxismModal from '../../fragments/modals/BruxismModal';
+import ImgLoading from '../../fragments/ImgLoading';
 
 function InlayOnlay() {
 	const UseModal = useModal();
@@ -47,15 +48,15 @@ function InlayOnlay() {
 					<div className="text-img horizontal">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Inlay} alt="" />
+								<ImgLoading src={Images.Inlay} alt="" />
 								<span>Inlay</span>
 							</div>
 							<div className="page-photo">
-								<img src={Images.Onlay} alt="" />
+								<ImgLoading src={Images.Onlay} alt="" />
 								<span>Onlay</span>
 							</div>
 							<div className="page-photo">
-								<img src={Images.Overlay} alt="" />
+								<ImgLoading src={Images.Overlay} alt="" />
 								<span>Overlay</span>
 							</div>
 						</div>
@@ -98,7 +99,7 @@ function InlayOnlay() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.OldLook} alt="" />
+									<ImgLoading src={Images.OldLook} alt="" />
 									<span>"Starczy wygląd"</span>
 								</div>
 							</div>

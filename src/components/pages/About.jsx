@@ -2,6 +2,7 @@ import GalleryOverlay from '../fragments/gallery/GalleryOverlay'
 import GalleryOverlayHook from '../fragments/gallery/customHooks/useGalleryOverlay';
 import ParallaxBaner from '../fragments/ParallaxBanner';
 import Images from '../../img/persons';
+import ImgLoading from '../fragments/ImgLoading';
 
 function About() {
 
@@ -27,7 +28,7 @@ function About() {
 					</p>
 					<div className="history-pictures">
 						<div className="history-pictures-single">
-							<img src={Images.PhotoMaria} className="employee-picture" alt="Maria Bałuta" />
+							<ImgLoading src={Images.PhotoMaria} className="employee-picture" alt="Maria Bałuta" />
 							<span>Maria Bałuta</span>
 							<span className="text-link"
 								onClick={() => useGalleryOverlay.openGalleryOverlay(1, 0)}>
@@ -35,7 +36,7 @@ function About() {
 							</span>
 						</div>
 						<div className="history-pictures-single">
-							<img src={Images.PhotoBohdan} className="employee-picture" alt="Bohdan Bujnicki" />
+							<ImgLoading src={Images.PhotoBohdan} className="employee-picture" alt="Bohdan Bujnicki" />
 							<span>Bohdan Bujnicki</span>
 							<span
 								className="text-link"
@@ -51,7 +52,7 @@ function About() {
 				</section>
 				<section className="employee">
 					<div className="img-box">
-						<img src={Images.PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
+						<ImgLoading src={Images.PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
 					</div>
 					<div className="employee-about">
 						<h2>Magdalena Bujnicka</h2>

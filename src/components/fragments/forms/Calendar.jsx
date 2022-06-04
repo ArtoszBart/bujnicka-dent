@@ -10,7 +10,7 @@ function Calendar(props) {
 
 	useEffect(() => {
 		props.getFreeDates();
-	}, [props.weekDays]);
+	});
 
 	const previousWeek = () => {
 		if (!isPrevWeekAvailable) {

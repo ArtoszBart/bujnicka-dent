@@ -5,6 +5,7 @@ import ParallaxBaner from '../../fragments/ParallaxBanner';
 import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
 import PolymerizationModal from '../../fragments/modals/PolymerizationModal';
 import useModal from "../../fragments/customHooks/useModal";
+import ImgLoading from '../../fragments/ImgLoading';
 
 function ConservativeDentistry() {
 
@@ -27,7 +28,7 @@ function ConservativeDentistry() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.Caries} alt="Próchnica" />
+									<ImgLoading src={Images.Caries} alt="Próchnica" />
 									<span>Próchnica</span>
 								</div>
 							</div>
@@ -57,7 +58,7 @@ function ConservativeDentistry() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.Treatment} alt="" />
+									<ImgLoading src={Images.Treatment} alt="" />
 									<span>Leczenie próchnicy</span>
 								</div>
 							</div>

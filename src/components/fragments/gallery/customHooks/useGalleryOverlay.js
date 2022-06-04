@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const useGalleryOverlay = (images) => {
 
@@ -30,7 +30,7 @@ const useGalleryOverlay = (images) => {
 		}
 	};
 
-	const nextImage = useCallback(() => {
+	const nextImage = () => {
 		let nextId;
 		if (openedImg < activeImageSet.length - 1) {
 			nextId = openedImg + 1;
@@ -39,10 +39,9 @@ const useGalleryOverlay = (images) => {
 		}
 
 		setOpenedImg(nextId);
+	};
 
-	}, [openedImg]);
-
-	const prevImage = useCallback(() => {
+	const prevImage = () => {
 		let prevId;
 		if (openedImg > 0) {
 			prevId = openedImg - 1;
@@ -51,10 +50,9 @@ const useGalleryOverlay = (images) => {
 		}
 
 		setOpenedImg(prevId);
+	};
 
-	}, [openedImg]);
-
-	const keyListener = useCallback((event) => {
+	const keyListener = (event) => {
 		if (event.key === "ArrowRight") {
 			nextImage();
 		} else if (event.key === "ArrowLeft") {
@@ -62,7 +60,7 @@ const useGalleryOverlay = (images) => {
 		} else if (event.key === "Escape") {
 			setIsMounted(false);
 		}
-	}, [nextImage, prevImage]);
+	};
 
 	useEffect(() => {
 		document.addEventListener("keydown", keyListener);
@@ -70,7 +68,7 @@ const useGalleryOverlay = (images) => {
 		return () => {
 			document.removeEventListener("keydown", keyListener);
 		};
-	}, [keyListener]);
+	});
 
 	return {
 		isMounted, openedImg, openGalleryOverlay, closeGalleryOverlay, nextImage, prevImage,

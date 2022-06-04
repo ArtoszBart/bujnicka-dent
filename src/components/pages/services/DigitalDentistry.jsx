@@ -1,6 +1,7 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import Images from '../../../img/texts/digital';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
+import ImgLoading from '../../fragments/ImgLoading';
 
 function DigitalDentistry() {
 
@@ -24,7 +25,7 @@ function DigitalDentistry() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.Dsd} alt="Digital Smile Design" />
+									<ImgLoading src={Images.Dsd} alt="Digital Smile Design" />
 								</div>
 							</div>
 							<h3>Jak działa <abbr title="Digital Smile Design">DSD</abbr>?</h3>

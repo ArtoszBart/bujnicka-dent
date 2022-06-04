@@ -1,6 +1,7 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import Images from '../../../img/texts/prevention';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
+import ImgLoading from '../../fragments/ImgLoading';
 
 function Prevention() {
 
@@ -43,11 +44,11 @@ function Prevention() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Scale} alt="" />
+								<ImgLoading src={Images.Scale} alt="" />
 								<span>Kamień nazębny</span>
 							</div>
 							<div className="page-photo">
-								<img src={Images.Plaque} alt="" />
+								<ImgLoading src={Images.Plaque} alt="" />
 								<span>Osad nazębny</span>
 							</div>
 						</div>
@@ -92,7 +93,7 @@ function Prevention() {
 
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Scaling} alt="Próchnica" />
+								<ImgLoading src={Images.Scaling} alt="Próchnica" />
 								<span>Scaling</span>
 							</div>
 						</div>
@@ -126,7 +127,7 @@ function Prevention() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.Sealing} alt="Próchnica" />
+									<ImgLoading src={Images.Sealing} alt="Próchnica" />
 									<span>Lakowanie</span>
 								</div>
 							</div>

@@ -1,6 +1,7 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import Images from '../../../img/texts/surgeries';
 import ParallaxBaner from '../../fragments/ParallaxBanner'
+import ImgLoading from '../../fragments/ImgLoading';
 
 function DentalSurgery() {
 
@@ -36,7 +37,7 @@ function DentalSurgery() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Bad8th} alt="" />
+								<ImgLoading src={Images.Bad8th} alt="" />
 								<span>Niewłaściwe położenie ósemki</span>
 							</div>
 						</div>

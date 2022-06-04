@@ -3,6 +3,7 @@ import Images from '../../../img/texts/implants';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
 import useModal from '../../fragments/customHooks/useModal';
+import ImgLoading from '../../fragments/ImgLoading';
 
 function Implants() {
 	const UseModal = useModal();
@@ -17,7 +18,7 @@ function Implants() {
 					<div className="text-img upright">
 						<div className="photos">
 							<div className="page-photo">
-								<img src={Images.Implant} alt="" />
+								<ImgLoading src={Images.Implant} alt="" />
 								<span>Implant</span>
 							</div>
 						</div>
@@ -51,7 +52,7 @@ function Implants() {
 						<div>
 							<div className="photos">
 								<div className="page-photo">
-									<img src={Images.ImplantBridge} alt="Próchnica" />
+									<ImgLoading src={Images.ImplantBridge} alt="Próchnica" />
 									<span>Most na implantach</span>
 								</div>
 							</div>

@@ -70,9 +70,17 @@
     }
 }
 
-.image-loading {
+.loading {
     margin: auto;
     @include flex-column-center;
     gap: 1rem;
     text-align: center;
+}
+
+.img-loading {
+    filter: blur(3px);
+}
+
+.img-loaded {
+    filter: blur(0px);
 }

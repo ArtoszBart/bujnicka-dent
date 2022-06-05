@@ -1,3 +1,5 @@
+import ImgLoading from '../ImgLoading';
+
 function GalleryOverlay({ hook, multipleImages }) {
 	return (
 		<div className={`gallery-overlay${hook.isMounted ? ' opened' : ' closing'}`}
@@ -22,9 +24,8 @@ function GalleryOverlay({ hook, multipleImages }) {
 				</>
 			}
 
-			<div className="img-box"
-				id="overlay-closing">
-				<img src={hook.activeImageSet[hook.openedImg]} alt="Certificate" />
+			<div className="img-box" id="overlay-closing">
+				<ImgLoading src={hook.activeImageSet[hook.openedImg]} alt="Certificate" />
 			</div>
 		</div>
 	);

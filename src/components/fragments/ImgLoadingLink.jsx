@@ -6,28 +6,32 @@ const ImgLoadingLink = (props) => {
 	const [imgLoaded, setImgLoaded] = useState(false);
 
 	useEffect(() => {
+		let isSubscribed = true;
+
 		const img = new Image();
 		img.src = props.src;
 		img.onload = () => {
-			setImgLoaded(true);
+			if (isSubscribed) {
+				setImgLoaded(true);
+			}
 		};
+		return () => (isSubscribed = false);
 	}, [props.src]);
 
 	return (
 		<>
-			{
-				imgLoaded ?
-					<Link to={props.to}>
-						<img
-							src={props.src}
-							alt={props.alt || ""}
-						/>
-					</Link>
-					:
-					<div className="image-loading">
-						<i className="fa fa-spinner fa-spin"></i>
-						<span>Ładowanie zdjęcia</span>
-					</div>
+			{imgLoaded ?
+				<Link to={props.to}>
+					<img
+						src={props.src}
+						alt={props.alt || ""}
+					/>
+				</Link>
+				:
+				<div className="loading">
+					<i className="fa fa-spinner fa-spin"></i>
+					<span>Ładowanie zdjęcia</span>
+				</div>
 			}
 		</>
 	);

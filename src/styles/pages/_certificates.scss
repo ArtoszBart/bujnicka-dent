@@ -7,12 +7,14 @@
 
 	img {
 		width: 100%;
-		@include transition-ease-fast;
+		box-shadow: $img-shadow;
 		cursor: pointer;
+		@include transition-ease-fast;
 
 		&:hover {
 			transform: scale(1.1);
-			@include transition-ease-fast;
+			box-shadow: $img-shadow-far;
 		}
 	}
+
 }

@@ -5,8 +5,8 @@
     height: 100vh;
     z-index: 11;
     background: $color-background-trans;
-    
-    > * {
+
+    >* {
         position: absolute;
     }
 
@@ -14,7 +14,7 @@
         @include transition-modal-closing;
 
     }
-    
+
     &.opened {
         @include transition-modal-opening;
     }
@@ -66,12 +66,12 @@
         height: 5%;
         width: 100%;
         @include flex-center;
-        
-            p {
-                margin: 0;
-                color: $color-text-secondary;
-                text-align: center;
-            }
+
+        p {
+            margin: 0;
+            color: $color-text-secondary;
+            text-align: center;
+        }
     }
 
     .img-box {
@@ -81,6 +81,10 @@
         width: 70%;
         height: 90%;
         @include flex-center;
+
+        .loading {
+            color: $color-text-secondary;
+        }
 
         img {
             z-index: 12;

@@ -38,7 +38,7 @@ $time-fast: 0.3s;
         opacity: 0;
         visibility: hidden;
     }
-    
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -49,7 +49,7 @@ $time-fast: 0.3s;
     0% {
         opacity: 1;
     }
-    
+
     100% {
         opacity: 0;
         visibility: hidden;
@@ -57,5 +57,5 @@ $time-fast: 0.3s;
 }
 
 @function set-item-delay($itemNo) {
-    @return ($itemNo * 0.1s) + 0.15s;
+    @return ($itemNo * 0.1s)+0.15s;
 }

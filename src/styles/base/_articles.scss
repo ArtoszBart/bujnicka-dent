@@ -6,6 +6,10 @@ article {
     min-height: $article-min-height;
     padding: 5rem 10vw;
     background-color: $color-background;
+    @include media-md {
+        padding-inline: 2rem;
+        padding-bottom: 2rem;
+    }
 
     section {
         @include flex-column;
@@ -22,3 +26,4 @@ article {
         }
     }
 }
+

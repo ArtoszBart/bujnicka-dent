@@ -8,7 +8,7 @@ function Certificates() {
 	const useGalleryOverlay = GalleryOverlayHook([certificates.map(cert => cert.full)]);
 
 	return (
-		<main className="page-wrapper wait-wrapper" role="main">
+		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="certificates" text="Certyfikaty" />
 
 			<article className="page-content gallery">

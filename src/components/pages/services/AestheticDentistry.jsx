@@ -14,10 +14,9 @@ function AestheticDentistry() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="aesthetic-dentistry" text="Stomatoligia Estetyczna" />
 			<article className="page-content">
+
 				<section aria-labelledby="aesthetic-dentistry-goal">
-
 					<div className="text-img upright">
-
 						<div className="photos">
 							<ImgComparer
 								img1={Images.WhiteningBefore}
@@ -26,11 +25,13 @@ function AestheticDentistry() {
 								label2="Po"
 							/>
 						</div>
-						<h2 id="aesthetic-dentistry-goal">Cel stomatologi estetycznej</h2>
-						<p>
-							<dfn>Stomatologia estetyczna</dfn> zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
-							czego efektem staje się piękny, naturalny uśmiech.
-						</p>
+						<div>
+							<h2 id="aesthetic-dentistry-goal">Cel stomatologi estetycznej</h2>
+							<p>
+								<dfn>Stomatologia estetyczna</dfn> zajmuje się nadaniem zębom jak najbardziej naturalnego wyglądu lub ich upiększeniem,
+								czego efektem staje się piękny, naturalny uśmiech.
+							</p>
+						</div>
 					</div>
 
 				</section>
@@ -44,12 +45,14 @@ function AestheticDentistry() {
 								<span>Szyna wybielająca</span>
 							</div>
 						</div>
-						<h3>Metoda nakładkowa</h3>
-						<p>
-							Dotyczy <b>zębów żywych</b> i polega na wykonaniu specjalnej szyny wybielającej, do której aplikuje
-							się <b>żel wybielający</b> na określony czas. Już po pierwszej aplikacji żelu widoczny jest efekt wybielenia zębów.
-							Ilość koniecznych zabiegów zależy od indywidualnej podatności zębów na działanie żelu i od stopnia ich rozjaśnienia.
-						</p>
+						<div>
+							<h3>Metoda nakładkowa</h3>
+							<p>
+								Dotyczy <b>zębów żywych</b> i polega na wykonaniu specjalnej szyny wybielającej, do której aplikuje
+								się <b>żel wybielający</b> na określony czas. Już po pierwszej aplikacji żelu widoczny jest efekt wybielenia zębów.
+								Ilość koniecznych zabiegów zależy od indywidualnej podatności zębów na działanie żelu i od stopnia ich rozjaśnienia.
+							</p>
+						</div>
 					</div>
 					<h3>Metoda dokomorowa</h3>
 					<p>

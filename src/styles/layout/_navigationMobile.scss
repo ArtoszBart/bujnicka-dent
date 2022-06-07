@@ -76,6 +76,7 @@
     .nav {
         @include fixed-full-width;
         visibility: hidden;
+        left: 0;
 
         &.opened {
             visibility: visible;

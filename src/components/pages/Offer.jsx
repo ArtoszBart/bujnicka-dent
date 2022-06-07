@@ -8,11 +8,6 @@ function Offer() {
 		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="offer" text="Oferta" />
 			<article className="page-content">
-				<aside className="h-desc">
-					<p className="center">
-						Gabinet specjalizuje się w zaawansowanej protetyce, a szczególnie w ratowaniu zębów bardzo zniszczonych.
-					</p>
-				</aside>
 				<section className="offers">
 					<SingleOffer
 						image={Images.Diagnostics}

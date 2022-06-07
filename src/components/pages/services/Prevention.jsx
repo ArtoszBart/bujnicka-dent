@@ -90,25 +90,25 @@ function Prevention() {
 
 					<h2 id="preventive-treatments">Zabiegi profilaktyczne</h2>
 					<div className="text-img upright">
-
 						<div className="photos">
 							<div className="page-photo">
 								<ImgLoading src={Images.Scaling} alt="Próchnica" />
 								<span>Scaling</span>
 							</div>
 						</div>
-
-						<h3>Scaling</h3>
-						<p>
-							Profesjonalny zabieg <b>czyszczenia płytki nazębnej, kamienia i osadu za pomocą ultradzwięków</b>.
-							Należy do podstawowych zabiegów higienizacyjnych jamy ustnej i jest podstawą w leczeniu oraz <b>zapobieganiu chorób przyzębia</b>.
-						</p>
-						<p>
-							<b>Jest bezbolesny</b>, trwa od 15 do 50 minut w zależności od ilości złogów i kończy się polerowaniem zębów
-							specjalną pastą. Zabieg powinien być wykonywany od 2 do 4 razy w roku, w zależności od indywidualnych potrzeb pacjenta.
-							Po zabiegu <b>może</b> pojawić się <b>nadwrażliwość zębów</b> trwająca do 3-4 dni. W celu jej zmniejszenia, zaleca się
-							zabezpieczenie zębów fluorem, potocznie nazywane lakierowaniem.
-						</p>
+						<div>
+							<h3>Scaling</h3>
+							<p>
+								Profesjonalny zabieg <b>czyszczenia płytki nazębnej, kamienia i osadu za pomocą ultradzwięków</b>.
+								Należy do podstawowych zabiegów higienizacyjnych jamy ustnej i jest podstawą w leczeniu oraz <b>zapobieganiu chorób przyzębia</b>.
+							</p>
+							<p>
+								<b>Jest bezbolesny</b>, trwa od 15 do 50 minut w zależności od ilości złogów i kończy się polerowaniem zębów
+								specjalną pastą. Zabieg powinien być wykonywany od 2 do 4 razy w roku, w zależności od indywidualnych potrzeb pacjenta.
+								Po zabiegu <b>może</b> pojawić się <b>nadwrażliwość zębów</b> trwająca do 3-4 dni. W celu jej zmniejszenia, zaleca się
+								zabezpieczenie zębów fluorem, potocznie nazywane lakierowaniem.
+							</p>
+						</div>
 					</div>
 
 
@@ -132,19 +132,20 @@ function Prevention() {
 								</div>
 							</div>
 
-							<h3>Lakowanie</h3>
-
-							<p>
-								Jest zabiegiem wykonywanym <b>u dzieci</b> w pełni wykształconych zębach stałych, w których anatomiczny kształt
-								bruzd i zagłębień uniemożliwia ich skuteczne oczyszczanie. Płytka bakteryjna zalegająca w takich miejscach powoduje
-								duże ryzyko powstania próchnicy zęba.
-							</p>
-							<p>
-								Polega ono na <b>blokadzie zagłębień anatomicznych</b> specjalnym lakiem, który uszczelnia je mechanicznie oraz
-								uwalnia fluor. Uszczelnione bruzdy <b>przestają być potencjalnym miejscem rozwoju próchnicy</b>.
-								Warunkiem nieinwazyjnego przeprowadzenia zabiegu jest <b>całkowity brak plam próchniczych i ubytków w danym zębie</b>.
-								W przypadku wystąpienia próchnicy konieczne jest jej usunięcie, przed przystąpieniem do lakowania.
-							</p>
+							<div>
+								<h3>Lakowanie</h3>
+								<p>
+									Jest zabiegiem wykonywanym <b>u dzieci</b> w pełni wykształconych zębach stałych, w których anatomiczny kształt
+									bruzd i zagłębień uniemożliwia ich skuteczne oczyszczanie. Płytka bakteryjna zalegająca w takich miejscach powoduje
+									duże ryzyko powstania próchnicy zęba.
+								</p>
+								<p>
+									Polega ono na <b>blokadzie zagłębień anatomicznych</b> specjalnym lakiem, który uszczelnia je mechanicznie oraz
+									uwalnia fluor. Uszczelnione bruzdy <b>przestają być potencjalnym miejscem rozwoju próchnicy</b>.
+									Warunkiem nieinwazyjnego przeprowadzenia zabiegu jest <b>całkowity brak plam próchniczych i ubytków w danym zębie</b>.
+									W przypadku wystąpienia próchnicy konieczne jest jej usunięcie, przed przystąpieniem do lakowania.
+								</p>
+							</div>
 						</div>
 					</div>
 					<ImportantInfo>

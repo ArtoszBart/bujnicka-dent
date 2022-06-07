@@ -3,6 +3,9 @@
 .collapsible {
     padding: 2rem 3rem;
     margin-bottom: 0;
+    @include media-md {
+        padding-inline: 0;
+    }
 
     
     &-header {
@@ -32,6 +35,19 @@
                 transform: rotate(-540deg);
             }
         }
+
+        @include media-sd {
+            gap: 1rem;
+            >h3 {
+                font-size: $font-size-h4;
+            }
+
+            i {
+                min-height: 2.0rem;
+                min-width: 2.0rem;
+                font-size: 1rem;
+            }
+        }
     }
 
     &-body{
@@ -44,6 +60,9 @@
             margin-left: 4.5rem;
             margin-top: 1rem;
             padding-top: 1rem;
+            @include media-md {
+                margin-left: 0;
+            }
 
             .important-info {
                 margin-bottom: 0;

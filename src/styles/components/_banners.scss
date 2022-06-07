@@ -2,22 +2,27 @@
 
 // PAGES
 #main-page {
-	background: set-page-background('../../img/banners/banner_main.jpeg') center bottom;
+	background: set-page-background('../../img/banners/banner_main.jpeg');
+	background-position-x: 30%;
+	background-position-y: 100%;
 }
 
 #appointments {
 	background: set-page-background('../../img/banners/banner_appointment.jpeg');
+	background-position-x: 100%;
 	background-position-y: 35%;
 }
 
 #privacy-policy,
 #about {
 	background: set-page-background('../../img/banners/banner_about.jpeg');
+	background-position-x: 50%;
 	background-position-y: 40%;
 }
 
 #offer {
 	background: set-page-background('../../img/banners/banner_offer.jpeg');
+	background-position-x: 70%;
 	background-position-y: 70%;
 }
 
@@ -34,17 +39,20 @@
 #not-found,
 #faq {
 	background: set-page-background('../../img/banners/banner_faq.jpeg');
+	background-position-x: 100%;
 	background-position-y: 30%;
 }
 
 #contact {
 	background: set-page-background('../../img/banners/banner_contact.jpeg');
+	background-position-x: 100%;
 	background-position-y: 10%;
 }
 
 // OFFERS
 #aesthetic-dentistry {
 	background: set-page-background('../../img/banners/banner_aesthetics.jpeg');
+	background-position-x: 80%;
 	background-position-y: 20%;
 }
 
@@ -56,44 +64,53 @@
 
 #dental-surgery {
 	background: set-page-background('../../img/banners/banner_surgeries.jpeg');
+	background-position-x: 100%;
 	background-position-y: 50%;
 }
 
 #diagnostics {
 	background: set-page-background('../../img/banners/banner_diagnostics.jpeg');
+	background-position-x: 60%;
 	background-position-y: 50%;
 }
 
 #digital-dentistry {
 	background: set-page-background('../../img/banners/banner_digital.jpeg');
+	background-position-x: 100%;
 	background-position-y: 35%;
 }
 
 #endodontics {
 	background: set-page-background('../../img/banners/banner_endodontics.jpeg');
+	background-position-x: 100%;
 	background-position-y: 10%;
 }
 
 #implantology {
 	background: set-page-background('../../img/banners/banner_implants.jpeg');
+	background-position-x: 100%;
 }
 
 #inlay-onlay {
 	background: set-page-background('../../img/banners/banner_inlay_onlay.jpeg');
+	background-position-x: 60%;
 	background-position-y: 40%;
 }
 
 #joints {
 	background: set-page-background('../../img/banners/banner_joints.jpeg');
+	background-position-x: 70%;
 	background-position-y: 60%;
 }
 
 #periodontics {
 	background: set-page-background('../../img/banners/banner_periodontics.jpeg');
+	background-position-x: 100%;
 }
 
 #prevention {
 	background: set-page-background('../../img/banners/banner_prevention.jpeg');
+	background-position-x: 95%;
 	background-position-y: 50%;
 }
 
@@ -111,23 +128,23 @@
 		background-size: cover !important;
 		@include flex-column-center-screen;
 		text-align: center;
+		@include media-md {
+			padding: 3rem;
+		}
 
 		&-title {
 			border-bottom: 2px solid $color-text-secondary;
 		}
 	}
-}
 
-@include media-md {
-	.banner {
-		padding: 5rem;
+	@include media-sd{
+		padding-top: $banner-height-mobile;
+		.banner {
+			height: $banner-height-mobile;
 
-		&-title {
-			max-width: 520px;
-		}
-
-		h1 {
-			font-size: $font-size-h1;
+			h1 {
+					font-size: $font-size-h3;
+			}
 		}
 	}
 }

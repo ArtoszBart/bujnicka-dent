@@ -9,6 +9,20 @@ const ImgComparer = (props) => {
         setDividerPosition(comparerRef.current.offsetWidth / 2);
     }, []);
 
+    useEffect(() => {
+		let isSubscribed = true;
+
+        const img = new Image();
+		img.src = props.img2;
+		img.onload = () => {
+			if (isSubscribed) {
+                setDividerPosition(comparerRef.current.offsetWidth / 2);
+            }
+		};
+        
+		return () => (isSubscribed = false);
+	}, [props.img2]);
+
     const moveDivider = (e) => {
         const mousePositionOnImage = e.clientX - comparerRef.current.getBoundingClientRect().x;
         const imageWidth = comparerRef.current.getBoundingClientRect().width;

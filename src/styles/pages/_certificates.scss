@@ -2,8 +2,18 @@
 
 .gallery {
 	display: grid;
-	grid-template-columns: $gallery-columns;
-	gap: $gallery-gap;
+	grid-template-columns: $gallery-columns-l;
+	gap: $gallery-gap-l;
+	@include media-td {
+		grid-template-columns: $gallery-columns-m;
+	}
+	@include media-md {
+		gap: $gallery-gap-m;
+	}
+	@include media-sd {
+		grid-template-columns: $gallery-columns-s;
+		gap: $gallery-gap-s;
+	}
 
 	img {
 		width: 100%;

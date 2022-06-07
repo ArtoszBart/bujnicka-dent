@@ -14,35 +14,45 @@ function About() {
 			<article className="page-content">
 				<section className="history">
 					<h2>Historia</h2>
-					<p>Historia lekarska w naszej rodzinie zaczęła się w 1953 roku.
-						Moja mama Maria Bałuta, rozpoczęła studia na <span className="nowrap">Wydziale Stomatologicznym Akademii Medycznej w Gdańsku</span>.
-						Po studiach połączyła swoją lekarską pasję z Bohdanem Bujnickim,
-						który w 1959 roku ukończył <span className="nowrap">Wydział Weterynarii w Warszawie</span>.
-					</p><p>
-						Pierwszy gabinet powstał w 1966 roku na Pomorzu Środkowym,
-						a ja wyrastałam w jego sąsiedztwie w atmosferze niesienia pomocy pacjentom.
-						Od wczesnego dzieciństwa wiedziałam, że moim powołaniem jest... również być lekarzem!
-					</p>
-					<p>
-						Drugi gabinet powstał w 1993 roku w Warszawie.
-					</p>
-					<div className="history-pictures">
-						<div className="history-pictures-single">
-							<ImgLoading src={Images.PhotoMaria} className="employee-picture" alt="Maria Bałuta" />
-							<span>Maria Bałuta</span>
-							<span className="text-link"
-								onClick={() => useGalleryOverlay.openGalleryOverlay(1, 0)}>
-								(tablo)
-							</span>
-						</div>
-						<div className="history-pictures-single">
-							<ImgLoading src={Images.PhotoBohdan} className="employee-picture" alt="Bohdan Bujnicki" />
-							<span>Bohdan Bujnicki</span>
-							<span
-								className="text-link"
-								onClick={() => useGalleryOverlay.openGalleryOverlay(0, 0)}>
-								(tablo)
-							</span>
+					<div className="history-text">
+						<p>Historia lekarska w naszej rodzinie zaczęła się w 1953 roku.
+							Moja mama Maria Bałuta, rozpoczęła studia 
+							na Wydziale Stomatologicznym Akademii Medycznej w Gdańsku. Po 
+							studiach połączyła swoją lekarską pasję z Bohdanem Bujnickim,
+							który w 1959 roku ukończył <span className="nowrap">Wydział Weterynarii w Warszawie</span>.
+						</p>
+						<p>
+							Pierwszy gabinet powstał w 1966 roku na Pomorzu Środkowym,
+							a ja wyrastałam w jego sąsiedztwie w atmosferze niesienia pomocy pacjentom.
+							Od wczesnego dzieciństwa wiedziałam, że moim powołaniem jest... również być lekarzem!
+						</p>
+						<p>
+							Drugi gabinet powstał w 1993 roku w Warszawie.
+						</p>
+					</div>
+					<div className="text-img horizontal">
+						<div className="photos">
+							<div className="page-photo">
+								<ImgLoading src={Images.PhotoMaria} className="employee-picture" alt="Maria Bałuta" />
+								<div className="page-photo-text">
+									<span>Maria Bałuta</span>
+									<span className="text-link"
+										onClick={() => useGalleryOverlay.openGalleryOverlay(1, 0)}>
+										(tablo)
+									</span>
+								</div>
+							</div>
+							<div className="page-photo">
+								<ImgLoading src={Images.PhotoBohdan} className="employee-picture" alt="Bohdan Bujnicki" />
+								<div className="page-photo-text">
+									<span>Bohdan Bujnicki</span>
+									<span
+										className="text-link"
+										onClick={() => useGalleryOverlay.openGalleryOverlay(0, 0)}>
+										(tablo)
+									</span>
+								</div>
+							</div>
 						</div>
 					</div>
 					{
@@ -51,14 +61,16 @@ function About() {
 					}
 				</section>
 				<section className="employee">
-					<div className="img-box">
-						<ImgLoading src={Images.PhotoBujnicka} className="employee-picture" alt="Magdalena Bujnicka" />
-					</div>
-					<div className="employee-about">
+					<div className="employee-title">
 						<h2>Magdalena Bujnicka</h2>
 						<p className="subheadder">Lekarz stomatolog</p>
+					</div>
+					<div className="page-photo employee-photo">
+						<ImgLoading src={Images.PhotoBujnicka} alt="Magdalena Bujnicka" />
+					</div>
+					<div className="employee-about">
 						<p>
-							Jestem absolwentką <span className="nowrap">Pomorskiej Akademii Medycznej w Szczecinie</span> i od pierwszych lat studiów
+							Jestem absolwentką Pomorskiej Akademii Medycznej w Szczecinie i od pierwszych lat studiów
 							mogłam liczyć na wsparcie oraz, poparte wieloletnim doświadczeniem, cenne rady rodziców lekarzy.
 							Wpojono mi, że <b>dobro pacjenta jest najwyższą wartością</b>.
 						</p>

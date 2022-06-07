@@ -25,7 +25,7 @@ function Appointment() {
 	}
 
 	return (
-		<main className="page-wrapper wait-wrapper" role="main">
+		<main className="page-wrapper" role="main">
 			<ParallaxBaner id="appointments" text="Zapis na wizytę" />
 			<article className="page-content">
 				<h2>Zapisz się na wizytę</h2>

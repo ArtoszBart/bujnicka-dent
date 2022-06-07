@@ -55,25 +55,23 @@ function ConservativeDentistry() {
 				<section aria-labelledby="dental-caries-treatment">
 					<h2 id="dental-caries-treatment">Leczenie próchnicy</h2>
 					<div className="text-img upright">
-						<div>
-							<div className="photos">
-								<div className="page-photo">
-									<ImgLoading src={Images.Treatment} alt="" />
-									<span>Leczenie próchnicy</span>
-								</div>
+						<div className="photos">
+							<div className="page-photo">
+								<ImgLoading src={Images.Treatment} alt="" />
+								<span>Leczenie próchnicy</span>
 							</div>
-							<p>
-								Zabieg polega na <b>usunięciu zniszczonych tkanek</b> i zastąpieniu ich specjalnie do tego celu przeznaczonym
-								wypełnieniem, potocznie zwanym <b>plombą</b>.
-							</p>
-							<p>
-								Powszechnie stosowanym materiałem do wypełnień jest <b>kompozyt</b>, który występuje w postaci miękkiego,
-								plastycznego materiału kształtowanego przez lekarza w zębie. Aby powstało twarde, odporne na siły gryzienia wypełnienie,
-								potrzebny jest czynnik inicjujący - specjalny rodzaj światła ultrafioletowego, który wywołuje proces <dfn><span className='text-link' onClick={() => UseModal.openModal("Polimeryzacja")}>polimeryzacji</span></dfn>,
-								czyli twardnienia materiału kompozytowego. Aby wypełnienie ściśle i szczelnie przylegało do zęba,
-								lekarz w specjalny sposób przygotowuje tkanki zęba używając <b><span className='text-link' onClick={() => UseModal.openModal("Technika adhezyjna")}>adhezyjnych</span> systemów łączących</b>.
-							</p>
 						</div>
+						<p>
+							Zabieg polega na <b>usunięciu zniszczonych tkanek</b> i zastąpieniu ich specjalnie do tego celu przeznaczonym
+							wypełnieniem, potocznie zwanym <b>plombą</b>.
+						</p>
+						<p>
+							Powszechnie stosowanym materiałem do wypełnień jest <b>kompozyt</b>, który występuje w postaci miękkiego,
+							plastycznego materiału kształtowanego przez lekarza w zębie. Aby powstało twarde, odporne na siły gryzienia wypełnienie,
+							potrzebny jest czynnik inicjujący - specjalny rodzaj światła ultrafioletowego, który wywołuje proces <dfn><span className='text-link' onClick={() => UseModal.openModal("Polimeryzacja")}>polimeryzacji</span></dfn>,
+							czyli twardnienia materiału kompozytowego. Aby wypełnienie ściśle i szczelnie przylegało do zęba,
+							lekarz w specjalny sposób przygotowuje tkanki zęba używając <b><span className='text-link' onClick={() => UseModal.openModal("Technika adhezyjna")}>adhezyjnych</span> systemów łączących</b>.
+						</p>
 					</div>
 					<h3>Współczesne materiały do wypełnień ubytków cechuje:</h3>
 					<ul>

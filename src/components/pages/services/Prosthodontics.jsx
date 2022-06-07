@@ -133,10 +133,22 @@ function Prosthodontics() {
 								miejsca na przyszłą koronę. Zabieg przeprowadzany jest w znieczuleniu miejscowym.
 							</p>
 						</li>
-						<li><p>Pobranie wycisków obydwu szczęk.</p></li>
-						<li><p>Zabezpieczenie oszlifowanego zęba akrylową koroną tymczasową wykonywaną w gabinecie.</p></li>
-						<li><p>Wysłanie wycisków do labolatorium protetycznego.</p></li>
-						<li><p>Na kolejnej wizycie, po otrzymaniu nowej korony z labolatorium, jest ona zacementowywana do zęba.</p></li>
+						<li>
+							<h4>Pobranie wycisków</h4>
+							<p>Pobranie wycisków obydwu szczęk.</p>
+						</li>
+						<li>
+							<h4>Zabezpieczenie</h4>
+							<p>Zabezpieczenie oszlifowanego zęba akrylową koroną tymczasową wykonywaną w gabinecie.</p>
+						</li>
+						<li>
+							<h4>Etap protetyczny</h4>
+							<p>Wysłanie wycisków do labolatorium protetycznego.</p>
+						</li>
+						<li>
+							<h4>Zakończenie</h4>
+							<p>Na kolejnej wizycie, po otrzymaniu nowej korony z labolatorium, jest ona zacementowywana do zęba.</p>
+						</li>
 					</ol>
 
 					<ImportantInfo>
@@ -191,7 +203,7 @@ function Prosthodontics() {
 					<h2 id="dentures">Protezy</h2>
 					<p>Protezy są uzupełnieniami protetycznymi, możliwymi do wyjęcia z ust w dowolnym momencie.</p>
 
-					<div className="text-img normal">
+					<div className="text-img normal reverse">
 						<div>
 							<h3>Protezy akrylowe częściowe lub całkowite</h3>
 							<p>
@@ -224,7 +236,7 @@ function Prosthodontics() {
 
 						</div>
 					</div>
-					<div className="text-img normal">
+					<div className="text-img normal reverse">
 						<div>
 							<h3>Protezy bezklamrowe</h3>
 							<p>

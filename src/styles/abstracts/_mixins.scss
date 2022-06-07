@@ -1,20 +1,20 @@
 @use '../abstracts/sizes' as *;
 
-@mixin set-corner-round {
+@mixin set-corner-round($columns) {
     &:first-child {
         border-top-left-radius: 1rem;
     }
 
-    &:nth-child(#{$tab-nav-columns}) {
+    &:nth-child(#{$columns}) {
         border-top-right-radius: 1rem;
     }
 
-    &:nth-child(#{(floor(calc($tab-child-no / $tab-nav-columns)) * $tab-nav-columns) + (if($tab-child-no % $tab-nav-columns == 0, -$tab-nav-columns+1, 1))}) {
+    &:nth-child(#{(floor(calc($tab-child-no / $columns)) * $columns) + (if($tab-child-no % $columns == 0, -$columns+1, 1))}) {
         border-bottom-left-radius: 1rem;
     }
 
     &:last-child {
-        @if($tab-child-no % $tab-nav-columns ==0) {
+        @if($tab-child-no % $columns ==0) {
             border-bottom-right-radius: 1rem;
         }
     }

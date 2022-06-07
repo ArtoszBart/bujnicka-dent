@@ -17,7 +17,7 @@ function ContactForm() {
 	return (
 		<div>
 			<h3>Napisz do nas!</h3>
-			<form className="contact-form" onSubmit={handleSubmit} noValidate>
+			<form className="contact-form" noValidate>
 				<FormInput
 					type="text"
 					name="name"
@@ -76,7 +76,9 @@ function ContactForm() {
 						{submitInfo.sending && <i className="fa fa-spinner fa-spin"></i>}{` ${submitInfo.message}`}
 					</span>
 				</div>
-				<input type="submit" className="submit button" value="Wyślij wiadomość" tabIndex="5" />
+				<div type="submit" className="submit button" onClick={
+					handleSubmit
+					} tabIndex="5">Wyślij wiadomość</div>
 			</form >
 		</div >
 	);

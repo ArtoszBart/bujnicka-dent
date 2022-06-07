@@ -26,6 +26,10 @@ ul {
     font-size: $font-size-text;
     letter-spacing: 0.3px;
     line-height: 25px;
+    @include media-md {
+        font-size: $font-size-text-small;
+        letter-spacing: initial;
+    }
 
     &.center {
         text-align: center;

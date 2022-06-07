@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const About = () => {
 
 	return (
-		<main className="page-wrapper wait-wrapper" role="main">
+		<main className="page-wrapper" role="main">
 			<div className="banner" id="not-found">
 				<div className="banner-title">
 					<h1><i>404</i></h1>

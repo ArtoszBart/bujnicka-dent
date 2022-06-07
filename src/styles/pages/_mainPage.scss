@@ -5,6 +5,7 @@
 
 	.banner {
 		height: 100vh;
+		// justify-content: flex-start;
 
 		&-title {
 			margin-block: 10vh;
@@ -69,6 +70,36 @@
 				.button {
 					margin-top: 2rem;
 					align-self: center;
+				}
+			}
+		}
+	}
+}
+
+@include media-md {
+	.main-wrapper{
+		.banner{
+			&-title {
+				margin-top: 0;
+
+				h1 {
+					font-size: 2rem;
+				}
+			}
+
+			.quote{
+				right: 1rem;
+				p {
+					font-size: 10px;
+					margin-bottom: 0;
+				}
+
+				q {
+					font-size: 18px;
+				}
+
+				.author {
+					margin-top: 0px;
 				}
 			}
 		}

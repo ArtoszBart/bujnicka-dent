@@ -4,58 +4,58 @@ $time-slow: 0.6s;
 $time-fast: 0.3s;
 
 @mixin transition-ease-fast {
-    transition: all $time-fast ease-in-out;
+	transition: all $time-fast ease-in-out;
 }
 
 @mixin transition-ease-slow {
-    transition: all $time-slow ease-in-out;
+	transition: all $time-slow ease-in-out;
 }
 
 @mixin transition-modal-closing {
-    animation: outAnimation $time-fast ease-out,
+	animation: outAnimation $time-fast ease-out;
 }
 
 @mixin transition-modal-opening {
-    animation: inAnimation $time-fast ease-in
+	animation: inAnimation $time-fast ease-in;
 }
 
 @mixin transition-collapsible {
-    transition: height $time-slow;
+	transition: height $time-slow;
 }
 
 @mixin animation-pulse {
-    animation: pulse $time-slow;
+	animation: pulse $time-slow;
 }
 
 @keyframes pulse {
-    100% {
-        box-shadow: 0 0 0 0 $color-accent;
-    }
+	100% {
+		box-shadow: 0 0 0 0 $color-accent;
+	}
 }
 
 @keyframes inAnimation {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
 
-    100% {
-        opacity: 1;
-        visibility: visible;
-    }
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 @keyframes outAnimation {
-    0% {
-        opacity: 1;
-    }
+	0% {
+		opacity: 1;
+	}
 
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
 }
 
 @function set-item-delay($itemNo) {
-    @return ($itemNo * 0.1s)+0.15s;
+	@return ($itemNo * 0.1s)+0.15s;
 }

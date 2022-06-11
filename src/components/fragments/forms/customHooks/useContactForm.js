@@ -9,7 +9,8 @@ const useContactForm = () => {
 		name: '',
 		email: '',
 		subject: '',
-		message: ''
+		message: '',
+		agreement: false
 	});
 	const [errors, setErrors] = useState({});
 	const [submitInfo, setSubmitInfo] = useState({ message: '' });

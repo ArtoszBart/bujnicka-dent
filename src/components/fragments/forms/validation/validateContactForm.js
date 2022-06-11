@@ -27,5 +27,9 @@ export default function validateContactForm(values) {
 		errors.message = 'length';
 	}
 
+	if (!values.agreement) {
+		errors.agreement = 'required'
+	}
+
 	return decodeErrorMessages(errors);
 };

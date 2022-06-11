@@ -75,7 +75,7 @@ const useContactForm = () => {
 		const currentErrors = validate(values)
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
-			return;
+			// return;
 		}
 
 		setSubmitInfo(sendingState);

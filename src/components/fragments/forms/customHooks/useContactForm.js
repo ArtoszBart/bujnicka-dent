@@ -16,19 +16,29 @@ const useContactForm = () => {
 	const [submitInfo, setSubmitInfo] = useState({ message: '' });
 
 	const handleChange = e => {
-		const { name, value } = e.target;
+		let { name, value } = e.target;
+		if (e.target.type === 'checkbox') {
+			value = e.target.checked
+		}
 		setValues({
 			...values,
 			[name]: value
 		});
+		deleteErrors(name);
 	};
+
+	const deleteErrors = fieldName => {
+		const oldErrors = errors;
+		delete oldErrors[fieldName];
+		setErrors(oldErrors);
+	}
 
 	const handleSubmit = e => {
 		e.preventDefault();
 		const currentErrors = validate(values)
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
-			return;
+			// return;
 		}
 
 		setSubmitInfo(sendingState);

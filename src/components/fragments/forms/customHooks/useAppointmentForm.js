@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import validate from './../validation/validateAppointment';
 import { sendingState, getSuccessState, getErrorState } from '../../../../helpers/sendingStates';
 import { decodeErrorMessages } from './../../../../helpers/validationCommon';
@@ -57,6 +57,12 @@ const useContactForm = () => {
 		delete oldErrors[fieldName];
 		setErrors(oldErrors);
 	}
+
+	useEffect(() => {
+		getFreeDates();
+
+		return getFreeDates();
+	  });
 
 	const getFreeDates = () => {
 		const dateFrom = formatDateSql(weekDays[0]);

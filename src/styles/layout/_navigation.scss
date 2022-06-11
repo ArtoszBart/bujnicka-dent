@@ -6,6 +6,7 @@
 
 .menu-nav {
 	margin: 0;
+	padding: 0;
 	
 	&-item {
 		display: inline;
@@ -22,6 +23,37 @@
 			color: $color-accent;
 			text-decoration: none;
 		}
+	}
+}
+
+.up-btn {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	width: 35px;
+	height: 35px;
+	@include flex-center-screen;
+	border: 1px solid rgba($color-background, 0.7);
+	background-color: rgba($color-background-dark, 0.7);
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 1rem;
+	color: $color-text-secondary;
+	transition: all $time-slow ease-in-out,
+				transform $time-fast ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+	
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&:hover {
+		border: 1px solid $color-background;
+		background-color: rgba($color-background-dark, 0.9);
+		transform: scale(1.1);
 	}
 }
 

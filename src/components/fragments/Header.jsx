@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState, useEffect } from "react"
 import Navigation from './Navigation';
 import logo from './../../img/logo.svg';
 import { Link } from "react-router-dom";
@@ -14,7 +14,11 @@ function Header() {
 		}
 	};
 
-	window.addEventListener('scroll', changeNavbar);
+	useEffect(() => {
+        window.addEventListener('scroll', changeNavbar);
+
+        return () => window.removeEventListener('scroll', changeNavbar);
+    }, []);
 
 	return (
 		<header>

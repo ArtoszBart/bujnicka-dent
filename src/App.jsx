@@ -34,6 +34,8 @@ import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import NotFound from './components/pages/NotFound';
 import ScrollToTop from './helpers/scrollToTop';
 
+import UpButton from './components/fragments/UpButton';
+
 function App() {
   return (
     <Router>
@@ -65,6 +67,8 @@ function App() {
         <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
+      
+      <UpButton />
       <Footer />
     </Router>
   );

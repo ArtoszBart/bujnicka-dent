@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 
-function Header(props) {
+function ParallaxBanner(props) {
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -21,4 +21,4 @@ function Header(props) {
     )
 }
 
-export default Header
+export default ParallaxBanner

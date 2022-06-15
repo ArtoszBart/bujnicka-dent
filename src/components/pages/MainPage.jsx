@@ -5,6 +5,7 @@ import ImgLoading from '../fragments/ImgLoading';
 import DiagnosticsImg from '../../img/texts/diagnostics/plan.jpeg';
 import InlayOnlayImg from '../../img/texts/inlay-onlay/onlay.jpeg';
 import DigitalImg from '../../img/texts/digital/dsd.jpeg';
+import ClearAlignerImg from '../../img/texts/aesthetics/clear_aligner.jpeg';
 
 function MainPage() {
 	const device1st = 'Autorski gabinet stomatologiczny';
@@ -56,10 +57,10 @@ function MainPage() {
 					</div>
 				</section>
 
-				<section aria-labelledby='diagnostic'>
+				<section aria-labelledby='inlay-onlay-overlay'>
 					<div className='main-page-container'>
 						<div className='main-page-title'>
-							<h2 id='diagnostic'>Inley'e, Onley'e, Overley'e</h2>
+							<h2 id='inlay-onlay-overlay'>Inley'e, Onley'e, Overley'e</h2>
 						</div>
 						<div className='main-page-text'>
 							<p>
@@ -76,13 +77,13 @@ function MainPage() {
 					</div>
 				</section>
 
-				<section aria-labelledby='diagnostic'>
+				<section aria-labelledby='digital-dent'>
 					<div className='main-page-container'>
 						<div className='main-page-img'>
 							<ImgLoading src={DigitalImg} alt='' />
 						</div>
 						<div className='main-page-title'>
-							<h2 id='diagnostic'>Stomatologia cyfrowa</h2>
+							<h2 id='digital-dent'>Stomatologia cyfrowa</h2>
 						</div>
 						<div className='main-page-text'>
 							<p>
@@ -92,6 +93,26 @@ function MainPage() {
 							<Link className='button' to='/offer/digital-dentistry'>
 								Zobacz więcej
 							</Link>
+						</div>
+					</div>
+				</section>
+
+				<section aria-labelledby='clear-aligner'>
+					<div className='main-page-container'>
+						<div className='main-page-title'>
+							<h2 id='clear-aligner'>Clear Aligner</h2>
+						</div>
+						<div className='main-page-text'>
+							<p>
+								Małe nieprawidłowości w ustawieniu zębów nie wymagają bezwzględnego zakładania stałego aparatu ortodontycznego.
+								Można je skorygować zestawem przezroczystych szyn nazębnych w ciągu kilku tygodni.
+							</p>
+							<Link className='button' to='/offer/aesthetic-dentistry'>
+								Zobacz więcej
+							</Link>
+						</div>
+						<div className='main-page-img'>
+							<ImgLoading src={ClearAlignerImg} alt='' />
 						</div>
 					</div>
 				</section>

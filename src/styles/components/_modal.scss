@@ -30,7 +30,8 @@
 			@include flex-column;
 
 			img {
-				width: $image-modal-max-width;
+				width: 100%;
+				max-width: $image-modal-max-width;
 			}
 		}
 

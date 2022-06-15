@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const ImgLoading = (props) => {
-
 	const [imgLoaded, setImgLoaded] = useState(false);
 
 	useEffect(() => {
@@ -21,18 +20,14 @@ const ImgLoading = (props) => {
 
 	return (
 		<>
-			{
-				imgLoaded ?
-					<img
-						{...props}
-						alt={props.alt || ""}
-					/>
-					:
-					<div className="loading">
-						<i className="fa fa-spinner fa-spin"></i>
-						<span>Ładowanie zdjęcia</span>
-					</div>
-			}
+			{imgLoaded ? (
+				<img {...props} alt={props.alt || ''} />
+			) : (
+				<div className='loading'>
+					<i className='fa fa-spinner fa-spin'></i>
+					<span>Ładowanie zdjęcia</span>
+				</div>
+			)}
 		</>
 	);
 };

@@ -64,7 +64,7 @@ function GalleryOverlay({ hook, multipleImages }) {
 
 	return (
 		<div
-			className={`gallery-overlay${hook.isMounted ? ' opened' : ' closing'}`}
+			className={`gallery-overlay${hook.isOpened ? ' opened' : ' closing'}`}
 			style={{ height: `${windowHeight}px` }}
 			onAnimationEnd={hook.onAnimationEnd}
 			id='overlay-closing'

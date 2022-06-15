@@ -14,19 +14,18 @@ const useGalleryOverlay = (images) => {
 		setActiveImageSet(images[set]);
 		setOpenedImg(id);
 		setIsMounted(true);
-		if (!isOpened)
-			setIsOpened(true);
+		setIsOpened(true);
 	};
 
 	const onAnimationEnd = () => {
-		if (!isMounted) {
-			setIsOpened(false);
+		if (!isOpened) {
+			setIsMounted(false);
 		}
 	};
 
 	const closeGalleryOverlay = (e) => {
 		if (e.target.id === "overlay-closing") {
-			setIsMounted(false);
+			setIsOpened(false);
 		}
 	};
 

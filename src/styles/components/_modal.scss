@@ -9,11 +9,6 @@
 	overflow: hidden;
 	@include transition-modal-closing;
 
-	// &.opened {
-	// 	opacity: 1;
-	// 	visibility: visible;
-	// 	@include transition-modal-opening;
-	// }
 	&.closing {
 		@include transition-modal-closing;
 	}
@@ -57,5 +52,12 @@
 				background-color: rgba($color-background-dark, 0.5);
 			}
 		}
+	}
+}
+
+@include media-md {
+	.modal-body {
+		padding-inline: 1rem;
+		width: 90%;
 	}
 }

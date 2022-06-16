@@ -65,12 +65,19 @@
 		height: 5%;
 		min-height: 25px;
 		width: 100%;
+		z-index: 1;
+		color: $color-text-secondary;
 		@include flex-center;
 
 		p {
-			margin: 0;
-			color: $color-text-secondary;
+			width: auto;
+			margin: 0 1rem;
 			text-align: center;
+		}
+
+		i {
+			cursor: pointer;
+			padding: 10px;
 		}
 	}
 

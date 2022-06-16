@@ -81,9 +81,11 @@ function GalleryOverlay({ hook, multipleImages }) {
 						<i className='fas fa-chevron-right' />
 					</div>
 					<div className='bottom-pane'>
+						<i className='fas fa-caret-left' onClick={hook.prevImage}></i>
 						<p>
 							{hook.openedImg + 1} / {hook.activeImageSet.length}
 						</p>
+						<i className='fas fa-caret-right' onClick={hook.nextImage}></i>
 					</div>
 				</>
 			)}

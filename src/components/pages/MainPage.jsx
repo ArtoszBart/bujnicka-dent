@@ -64,8 +64,8 @@ function MainPage() {
 						</div>
 						<div className='main-page-text'>
 							<p>
-								Inley'e, Onley'e, Overley'e Luksusowe wypełnienia! Warto wymienić standardowe wypełnienia kompozytowe na
-								najwyższej jakości wypełnienia wykonywane w laboratorium i przyklejane w specjalnej technologii adhezyjnej.
+								Luksusowe wypełnienia! Warto wymienić standardowe wypełnienia kompozytowe na najwyższej jakości wypełnienia
+								wykonywane w laboratorium i przyklejane w specjalnej technologii adhezyjnej.
 							</p>
 							<Link className='button' to='/offer/inlay-onlay'>
 								Zobacz więcej

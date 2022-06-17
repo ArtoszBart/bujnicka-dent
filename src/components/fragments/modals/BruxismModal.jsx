@@ -11,15 +11,14 @@ const BruxismModal = (props) => {
 						Nieprawidłowa aktywność narządu żucia. Odbywa się przeważnie na poziomie nieuświadomionym w postaci zaciskania lub
 						zgrzytania zębami.
 					</p>
-					<p>Występuje zarówno w ciągu dnia jak i w czasie snu.</p>
 					<p>
-						Przyczyną wzmożonej aktywności parafunkcjonalnej mogą być przedwczesne kontakty zwarciowe, powodujące nadmierną
-						aktywność mięśniową. Są one odczuwane jako jako przeszkody na drodze zębów, a typową odpowiedzią organizmu jest
-						uaktywnienie układu mięśniowego w celu pozbycia się czynnika zaburzającego.
+						Występuje zarówno w ciągu dnia jak i w czasie snu. Ma podłoże psychologiczne wynikające z napięć emocjonalnych i
+						sytuacji stresowych. Manifestuje się obecnością na zębach startych powierzchni w postaci niewielkich, płaskich,
+						lśniących fragmentów, nieodpowiadających ich morfologii.
 					</p>
 					<p>
 						Do leczenia bruksizmu wykorzystuje się{' '}
-						<Link className='text-link' to={'/offer/joints'}>
+						<Link className='text-link' id={props.hook.modalClosingId} to={'/offer/joints'}>
 							szyny relaksacyjne
 						</Link>
 						.

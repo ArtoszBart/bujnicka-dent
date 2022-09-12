@@ -1,77 +1,257 @@
 import './styles/main.scss';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import React, { lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/fragments/Header';
 import Footer from './components/fragments/Footer';
-
-import MainPage from './components/pages/MainPage';
-import AboutPage from './components/pages/About';
-import OfferPage from './components/pages/Offer';
-import Prices from './components/pages/Prices';
-import Certificates from './components/pages/Certificates';
-import Faq from './components/pages/Faq';
-import Contact from './components/pages/Contact';
-import Appointment from './components/pages/Appointment';
-
-import AestheticDentistry from './components/pages/services/AestheticDentistry';
-import ConservativeDentistry from './components/pages/services/ConservativeDentistry';
-import DentalSurgery from './components/pages/services/DentalSurgery';
-import Diagnostics from './components/pages/services/Diagnostics';
-import DigitalDentistry from './components/pages/services/DigitalDentistry';
-import Endodontics from './components/pages/services/Endodontics';
-import Implants from './components/pages/services/Implants';
-import Joints from './components/pages/services/Joints';
-import InlayOnlay from './components/pages/services/InlayOnlay';
-import Periodontics from './components/pages/services/Periodontics';
-import Prevention from './components/pages/services/Prevention';
-import Prosthodontics from './components/pages/services/Prosthodontics';
-
-import PrivacyPolicy from './components/pages/PrivacyPolicy';
-import NotFound from './components/pages/NotFound';
 import ScrollToTop from './helpers/scrollToTop';
-
 import UpButton from './components/fragments/UpButton';
 
+const MainPage = lazy(() => import('./components/pages/MainPage'));
+const AboutPage = lazy(() => import('./components/pages/About'));
+const OfferPage = lazy(() => import('./components/pages/Offer'));
+const Prices = lazy(() => import('./components/pages/Prices'));
+const Certificates = lazy(() => import('./components/pages/Certificates'));
+const Faq = lazy(() => import('./components/pages/Faq'));
+const Contact = lazy(() => import('./components/pages/Contact'));
+const Appointment = lazy(() => import('./components/pages/Appointment'));
+
+const AestheticDentistry = lazy(() => import('./components/pages/services/AestheticDentistry'));
+const ConservativeDentistry = lazy(() => import('./components/pages/services/ConservativeDentistry'));
+const DentalSurgery = lazy(() => import('./components/pages/services/DentalSurgery'));
+const Diagnostics = lazy(() => import('./components/pages/services/Diagnostics'));
+const DigitalDentistry = lazy(() => import('./components/pages/services/DigitalDentistry'));
+const Endodontics = lazy(() => import('./components/pages/services/Endodontics'));
+const Implants = lazy(() => import('./components/pages/services/Implants'));
+const Joints = lazy(() => import('./components/pages/services/Joints'));
+const InlayOnlay = lazy(() => import('./components/pages/services/InlayOnlay'));
+const Periodontics = lazy(() => import('./components/pages/services/Periodontics'));
+const Prevention = lazy(() => import('./components/pages/services/Prevention'));
+const Prosthodontics = lazy(() => import('./components/pages/services/Prosthodontics'));
+
+const PrivacyPolicy = lazy(() => import('./components/pages/PrivacyPolicy'));
+const NotFound = lazy(() => import('./components/pages/NotFound'));
+const UnderConstruction = lazy(() => import('./components/pages/UnderConstruction'));
+
 function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <Header />
-      <Routes>
-        <Route exact path='/' element={<MainPage />} />
-        <Route exact path='/about' element={<AboutPage />} />
-        <Route exact path='/offer' element={<OfferPage />} />
-        <Route exact path='/prices' element={<Prices />} />
-        <Route exact path='/certificates' element={<Certificates />} />
-        <Route exact path='/faq' element={<Faq />} />
-        <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/appointment' element={<Appointment />} />
+	return (
+		<Router>
+			<ScrollToTop />
+			<Header />
+			<Routes>
+				<Route
+					exact
+					path='/'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<MainPage />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					path='/about'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<AboutPage />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<OfferPage />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/prices'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Prices />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/certificates'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Certificates />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/faq'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Faq />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/contact'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Contact />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/appointment'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<UnderConstruction />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/artoszbart'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Appointment />
+						</React.Suspense>
+					}
+				/>
 
-        <Route exact path='/offer/aesthetic-dentistry' element={<AestheticDentistry />} />
-        <Route exact path='/offer/conservative-dentistry' element={<ConservativeDentistry />} />
-        <Route exact path='/offer/dental-surgery' element={<DentalSurgery />} />
-        <Route exact path='/offer/diagnostics' element={<Diagnostics />} />
-        <Route exact path='/offer/digital-dentistry' element={<DigitalDentistry />} />
-        <Route exact path='/offer/endodontics' element={<Endodontics />} />
-        <Route exact path='/offer/implants' element={<Implants />} />
-        <Route exact path='/offer/joints' element={<Joints />} />
-        <Route exact path='/offer/inlay-onlay' element={<InlayOnlay />} />
-        <Route exact path='/offer/periodontics' element={<Periodontics />} />
-        <Route exact path='/offer/prevention' element={<Prevention />} />
-        <Route exact path='/offer/prosthodontics' element={<Prosthodontics />} />
+				<Route
+					exact
+					path='/offer/aesthetic-dentistry'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<AestheticDentistry />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/conservative-dentistry'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<ConservativeDentistry />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/dental-surgery'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<DentalSurgery />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/diagnostics'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Diagnostics />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/digital-dentistry'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<DigitalDentistry />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/endodontics'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Endodontics />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/implants'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Implants />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/joints'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Joints />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/inlay-onlay'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<InlayOnlay />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/periodontics'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Periodontics />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/prevention'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Prevention />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					exact
+					path='/offer/prosthodontics'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<Prosthodontics />
+						</React.Suspense>
+					}
+				/>
 
-        <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
-        <Route path='/*' element={<NotFound />} />
-      </Routes>
-      
-      <UpButton />
-      <Footer />
-    </Router>
-  );
+				<Route
+					exact
+					path='/privacy-policy'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<PrivacyPolicy />
+						</React.Suspense>
+					}
+				/>
+				<Route
+					path='/*'
+					element={
+						<React.Suspense fallback={<>...</>}>
+							<NotFound />
+						</React.Suspense>
+					}
+				/>
+			</Routes>
+
+			<UpButton />
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;

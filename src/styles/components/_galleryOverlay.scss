@@ -1,95 +1,112 @@
 @use '../abstracts' as *;
 
 .gallery-overlay {
-    @include fixed-full-width;
-    height: 100vh;
-    z-index: 11;
-    background: $color-background-trans;
+	@include fixed-full-width;
+	height: 100vh;
+	z-index: 11;
+	background: $color-background-trans;
 
-    >* {
-        position: absolute;
-    }
+	> * {
+		position: absolute;
+	}
 
-    &.closing {
-        @include transition-modal-closing;
+	&.closing {
+		@include transition-modal-closing;
+	}
 
-    }
+	&.opened {
+		@include transition-modal-opening;
+	}
 
-    &.opened {
-        @include transition-modal-opening;
-    }
+	.left-pane,
+	.right-pane,
+	.top-pane {
+		z-index: 12;
+		width: $gallery-overlay-nav-size;
+		cursor: pointer;
+		@include flex-center;
+		@include transition-ease-fast;
 
-    .left-pane,
-    .right-pane,
-    .top-pane {
-        z-index: 12;
-        width: $gallery-overlay-nav-size;
-        cursor: pointer;
-        @include flex-center;
-        @include transition-ease-fast;
+		&:hover {
+			background: $color-background-trans-hover;
+			@include transition-ease-fast;
+		}
 
-        &:hover {
-            background: $color-background-trans-hover;
-            @include transition-ease-fast;
-        }
+		i {
+			font-size: $gallery-overlay-icon-size;
+			color: $color-text-secondary;
+		}
+	}
 
-        i {
-            font-size: $gallery-overlay-icon-size;
-            color: $color-text-secondary;
-        }
-    }
+	.top-pane {
+		height: $gallery-overlay-nav-size;
+		right: 0;
+		top: 0;
+	}
 
-    .top-pane {
-        height: $gallery-overlay-nav-size;
-        right: 0;
-        top: 0;
-    }
+	.left-pane {
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
 
-    .left-pane {
-        height: 100%;
-        left: 0;
-        top: 0;
-    }
+	.right-pane {
+		height: calc(100% - $gallery-overlay-nav-size);
+		bottom: 0;
+		right: 0;
 
-    .right-pane {
-        height: calc(100% - $gallery-overlay-nav-size);
-        bottom: 0;
-        right: 0;
+		i {
+			transform: translate(0%, -25px);
+		}
+	}
 
-        i {
-            transform: translate(0%, -50px);
-        }
-    }
+	.bottom-pane {
+		bottom: 0;
+		height: 5%;
+		min-height: 25px;
+		width: 100%;
+		z-index: 1;
+		color: $color-text-secondary;
+		@include flex-center;
 
-    .bottom-pane {
-        bottom: 0;
-        height: 5%;
-        width: 100%;
-        @include flex-center;
+		p {
+			width: auto;
+			margin: 0 1rem;
+			text-align: center;
+		}
 
-        p {
-            margin: 0;
-            color: $color-text-secondary;
-            text-align: center;
-        }
-    }
+		i {
+			cursor: pointer;
+			padding: 10px;
+		}
+	}
 
-    .img-box {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 70%;
-        height: 90%;
-        @include flex-center;
+	.central-pane {
+		height: 100%;
+		left: 50%;
+		display: flex;
+		align-items: center;
+		padding-block: 30px;
+		@include transition-ease-fast;
 
-        .loading {
-            color: $color-text-secondary;
-        }
+		&.user-moving {
+			transition: none;
+		}
 
-        img {
-            z-index: 12;
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }
+		.img-box {
+			width: 100vw;
+			height: 90%;
+			@include flex-center;
+
+			.loading {
+				color: $color-text-secondary;
+			}
+
+			img {
+				z-index: 12;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
 }

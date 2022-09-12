@@ -1,58 +1,64 @@
 @use '../abstracts' as *;
 
 .modal {
-    @include fixed-full-width;
-    height: 100vh;
-    z-index: 20;
-    background-color: $color-background-trans;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    overflow: hidden;
-    @include transition-modal-closing;
+	@include fixed-full-width;
+	height: 100vh;
+	z-index: 20;
+	background-color: $color-background-trans;
+	display: block;
+	overflow: hidden;
+	@include transition-modal-closing;
 
-    &.opened {
-        opacity: 1;
-        visibility: visible;
-        @include transition-modal-opening;
-    }
+	&.closing {
+		@include transition-modal-closing;
+	}
 
-    &-body {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-        background-color: $color-background;
-        padding: 2rem 5rem;
-        border-radius: 0.5rem;
+	&.opened {
+		@include transition-modal-opening;
+	}
+	&-body {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 60%;
+		background-color: $color-background;
+		padding: 2rem 5rem;
+		border-radius: 0.5rem;
 
-        &-content {
-            @include flex-column;
+		&-content {
+			@include flex-column;
 
+			img {
+				width: 100%;
+				max-width: $image-modal-max-width;
+			}
+		}
 
-            img {
-                width: $image-modal-max-width;
-            }
-        }
+		&-close {
+			position: absolute;
+			top: 2rem;
+			right: 2rem;
+			width: 2rem;
+			height: 2rem;
+			padding: 5px;
+			@include flex-center-screen;
+			background-color: rgba($color-background-dark, 0.2);
+			border-radius: 5px;
+			font-size: 1.2rem;
+			cursor: pointer;
+			@include transition-ease-fast;
 
-        &-close {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            width: 2rem;
-            height: 2rem;
-            padding: 5px;
-            @include flex-center-screen;
-            background-color: rgba($color-background-dark, 0.2);
-            border-radius: 5px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            @include transition-ease-fast;
+			&:hover {
+				background-color: rgba($color-background-dark, 0.5);
+			}
+		}
+	}
+}
 
-            &:hover {
-                background-color: rgba($color-background-dark, 0.5);
-            }
-        }
-    }
+@include media-md {
+	.modal-body {
+		padding-inline: 1rem;
+		width: 90%;
+	}
 }

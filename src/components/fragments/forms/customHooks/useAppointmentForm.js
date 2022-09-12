@@ -1,6 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import validate from './../validation/validateAppointment';
-import { sendingState, getSuccessState, getErrorState } from '../../../../helpers/sendingStates';
+import {
+	sendingState,
+	getSuccessState,
+	getErrorState,
+} from '../../../../helpers/sendingStates';
 import { decodeErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 import { formatDateSql } from './../../../../helpers/dateAndTime';
@@ -17,68 +21,68 @@ const useContactForm = () => {
 		description: '',
 		doctorId: '',
 		date: '',
-		agreement: false
+		agreement: false,
 	});
-	const [weekDays, setWeekDays] = useState(
-		() => {
-			let today = new Date();
-			let dayOfWeek = today.getDay() - 1;
-			let monday = new Date();
-			if (dayOfWeek > 4) {
-				monday.setDate(monday.getDate() + 7 - dayOfWeek);
-			} else {
-				monday.setDate(monday.getDate() - dayOfWeek);
-			}
-
-			let thisWeek = [];
-			for (let ii = 0; ii < 5; ii++) {
-				const nextDay = new Date(monday)
-				nextDay.setDate(nextDay.getDate() + ii)
-				thisWeek.push(nextDay)
-			}
-			return thisWeek;
+	const [weekDays, setWeekDays] = useState(() => {
+		let today = new Date();
+		let dayOfWeek = today.getDay() - 1;
+		let monday = new Date();
+		if (dayOfWeek > 4) {
+			monday.setDate(monday.getDate() + 7 - dayOfWeek);
+		} else {
+			monday.setDate(monday.getDate() - dayOfWeek);
 		}
-	);
 
-	const handleChange = e => {
+		let thisWeek = [];
+		for (let ii = 0; ii < 5; ii++) {
+			const nextDay = new Date(monday);
+			nextDay.setDate(nextDay.getDate() + ii);
+			thisWeek.push(nextDay);
+		}
+		return thisWeek;
+	});
+
+	const handleChange = (e) => {
 		let { name, value } = e.target;
 		if (e.target.type === 'checkbox') {
-			value = e.target.checked
+			value = e.target.checked;
 		}
 		setValues({
 			...values,
-			[name]: value
+			[name]: value,
 		});
 		deleteErrors(name);
 	};
 
-	const deleteErrors = fieldName => {
+	const deleteErrors = (fieldName) => {
 		const oldErrors = errors;
 		delete oldErrors[fieldName];
 		setErrors(oldErrors);
-	}
+	};
 
 	useEffect(() => {
 		getFreeDates();
 
 		return getFreeDates();
-	  });
+	});
 
 	const getFreeDates = () => {
 		const dateFrom = formatDateSql(weekDays[0]);
 		const dateTo = formatDateSql(weekDays[weekDays.length - 1]);
-		axios.get(`http://192.168.0.95:4000/api/doctors/${dateFrom},${dateTo}`)
-			.then(res => {
+		axios
+			.get(`/api/doctors/${dateFrom},${dateTo}`)
+			.then((res) => {
 				setDoctors(res.data);
 				setDocsFetched(true);
-			}).catch(error => {
+			})
+			.catch((error) => {
 				setDocsFetched(false);
 			});
 	};
 
-	const handleSubmit = e => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
-		const currentErrors = validate(values)
+		const currentErrors = validate(values);
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
 			// return;
@@ -86,38 +90,54 @@ const useContactForm = () => {
 
 		setSubmitInfo(sendingState);
 
-		axios.post('http://localhost:4000/api/appointments/new', values).then(res => {
-			const doctor = doctors.find(doc => values.doctorId === doc.id.toString());
-			setSubmitInfo(getSuccessState(doctor, values.date));
-			setValues({
-				firstName: '',
-				lastName: '',
-				phoneNo: '',
-				description: '',
-				doctorId: '',
-				date: '',
-				agreement: false
-			});
-			getFreeDates();
-		}).catch(error => {
-			// 400 - validation;
-			// 502 - bad gateway;
-			// 512 - unable to connect to server
-			let code;
-			if (error.response) {
-				if (error.response.status === 400) {
-					setErrors(decodeErrorMessages(error.response.data));
+		axios
+			.post('/api/appointments/new', values)
+			.then((res) => {
+				const doctor = doctors.find(
+					(doc) => values.doctorId === doc.id.toString()
+				);
+				setSubmitInfo(getSuccessState(doctor, values.date));
+				setValues({
+					firstName: '',
+					lastName: '',
+					phoneNo: '',
+					description: '',
+					doctorId: '',
+					date: '',
+					agreement: false,
+				});
+				getFreeDates();
+			})
+			.catch((error) => {
+				// 400 - validation;
+				// 502 - bad gateway;
+				// 512 - unable to connect to server
+				let code;
+				if (error.response) {
+					if (error.response.status === 400) {
+						setErrors(decodeErrorMessages(error.response.data));
+					} else {
+						code = error.response.status;
+					}
 				} else {
-					code = error.response.status;
+					code = 512;
 				}
-			} else {
-				code = 512;
-			}
-			setSubmitInfo(getErrorState(code));
-		});
-	}
+				setSubmitInfo(getErrorState(code));
+			});
+	};
 
-	return { doctors, handleChange, handleSubmit, values, errors, submitInfo, weekDays, setWeekDays, getFreeDates, docsFetched };
+	return {
+		doctors,
+		handleChange,
+		handleSubmit,
+		values,
+		errors,
+		submitInfo,
+		weekDays,
+		setWeekDays,
+		getFreeDates,
+		docsFetched,
+	};
 };
 
 export default useContactForm;

@@ -19,13 +19,8 @@ const BruxismModal = (props) => {
             <p>
                 Bruksizm manifestuje się obecnością na zębach startych powierzchni w postaci niewielkich, płaskich, lśniących fragmentów
                 nieodpowiadających ich morfologii.
-                Przyczyną wzmożonej aktywności parafunkcjonalnej mogą być przedwczesne kontakty zwarciowe (kontakty zębów górnych z dolnymi),
-                powodujące nadmierną aktywność mięśniową. Są one odczuwane jako jako przeszkody zaburzające równowagę nerwowo-mięśniową, a typową
-                odpowiedzią organizmu jest uaktywnienie układu mięśniowego w celu pozbycia się czynnika zaburzającego.
-                Przyczynami powodującymi szukanie pomocy specjalistycznej są:
-                - niewytłumaczalny ból zębów lub mięśni
-                - zmęczenie mięśni
-                - znaczne pogorszenie estetyki uzębienia związane z jego starciem.
+            </p>
+            <p>
                 Do leczenia bruksizmu wykorzystuje się szyny relaksacyjne ( patrz LECZENIE STAWÓW SKRONIOWO-ŻUCHWOWYCH).
                 Może również wystąpić konieczność leczenia farmakologicznego przy zaburzeniach psychologicznych.
             </p>

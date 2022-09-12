@@ -1,6 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
 import validate from './../validation/validateContactForm';
-import { sendingState, successStateSending, getErrorState } from './../../../../helpers/sendingStates';
+import {
+	sendingState,
+	successStateSending,
+	getErrorState,
+} from './../../../../helpers/sendingStates';
 import { decodeErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 
@@ -10,64 +14,67 @@ const useContactForm = () => {
 		email: '',
 		subject: '',
 		message: '',
-		agreement: false
+		agreement: false,
 	});
 	const [errors, setErrors] = useState({});
 	const [submitInfo, setSubmitInfo] = useState({ message: '' });
 
-	const handleChange = e => {
+	const handleChange = (e) => {
 		let { name, value } = e.target;
 		if (e.target.type === 'checkbox') {
-			value = e.target.checked
+			value = e.target.checked;
 		}
 		setValues({
 			...values,
-			[name]: value
+			[name]: value,
 		});
 		deleteErrors(name);
 	};
 
-	const deleteErrors = fieldName => {
+	const deleteErrors = (fieldName) => {
 		const oldErrors = errors;
 		delete oldErrors[fieldName];
 		setErrors(oldErrors);
-	}
+	};
 
-	const handleSubmit = e => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
-		const currentErrors = validate(values)
+		const currentErrors = validate(values);
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
-			// return;
+			return;
 		}
 
 		setSubmitInfo(sendingState);
 		// API CALL
-		axios.post('http://192.168.147.1:4000/api/email/send', values).then(res => {
-			setSubmitInfo(successStateSending);
-			setValues({
-				name: '',
-				email: '',
-				subject: '',
-				message: ''
-			});
-		}).catch(error => {
-			// 400 - validation;
-			// 502 - bad gateway;
-			// 512 - unable to connect to server
-			let code;
-			if (error.response) {
-				if (error.response.status === 400) {
-					setErrors(decodeErrorMessages(error.response.data));
+		axios
+			.post('/api/email/send', values)
+			.then((res) => {
+				setSubmitInfo(successStateSending);
+				setValues({
+					name: '',
+					email: '',
+					subject: '',
+					message: '',
+				});
+			})
+			.catch((error) => {
+				// 400 - validation;
+				// 502 - bad gateway;
+				// 512 - unable to connect to server
+				let code;
+				if (error.response) {
+					if (error.response.status === 400) {
+						setErrors(decodeErrorMessages(error.response.data));
+					} else {
+						code = error.response.status;
+					}
 				} else {
-					code = error.response.status;
+					code = 512;
 				}
-			} else {
-				code = 512;
-			}
-			setSubmitInfo(getErrorState(code));
-		});
-	}
+				setSubmitInfo(getErrorState(code));
+			});
+	};
 
 	return { handleChange, handleSubmit, values, errors, submitInfo };
 };

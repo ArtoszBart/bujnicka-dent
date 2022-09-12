@@ -14,7 +14,7 @@ function Offer() {
 						title="Wizyta Diagnostyczna"
 						link="/offer/diagnostics"
 					>
-						<b>BEZPŁATNA WIZYTA DIAGNOSTYCZNA</b>, na której dowiesz się, co dzieje się z Twoimi wszystkimi zębami.
+						<b>BEZPŁATNA WIZYTA DIAGNOSTYCZNA</b> dostarcza wiedzy na temat wszystkich zębów.
 					</SingleOffer>
 					<SingleOffer
 						image={Images.Prevention}
@@ -53,9 +53,7 @@ function Offer() {
 						title="Protetyka"
 						link="/offer/prosthodontics"
 					>
-						Dział stomatologii zajmujący się uzupełnianiem
-						utraconych zębów, gdy nie jest możliwa ich odbudowa
-						lub zostały one utracone.
+						Dział stomatologii zajmujący się odbudową bardzo zniszczonych zębów lub uzupełnieniem utraconych.
 					</SingleOffer>
 					<SingleOffer
 						image={Images.Conservatives}
@@ -77,21 +75,21 @@ function Offer() {
 						title="Periodontologia"
 						link="/offer/periodontics"
 					>
-						Dziedzina stomatologii zajmująca się leczeniem chorób błony śluzowej i przyzębia (dziąseł).
+						Dziedzina stomatologii zajmująca się leczeniem chorób błony śluzowej i przyzębia.
 					</SingleOffer>
 					<SingleOffer
 						image={Images.Surgeries}
 						title="Chirurgia Stomatologiczna"
 						link="/offer/dental-surgery"
 					>
-						Gdy zęba nie da się już uratować, podejmuję się decyzję o usunięciu jego części lub całości.
+						Gdy zęba nie da się już uratować, podejmuje się decyzję o usunięciu jego części lub całości.
 					</SingleOffer>
 					<SingleOffer
 						image={Images.Implants}
 						title="Implanty"
 						link="/offer/implants"
 					>
-						Uzupełniają brakujący korzeń, cały ząb lub część uzębienia.
+						Uzupełniają brakujący ząb.
 					</SingleOffer>
 					<SingleOffer
 						image={Images.Joints}

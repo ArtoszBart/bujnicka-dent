@@ -46,7 +46,7 @@ function Navigation() {
 					<NavItem
 						opened={opened}
 						setOpened={setOpened}
-						to='/oferta'
+						to='/cennik'
 						label='Cennik'
 						click={handleNavItemClick}
 					/>

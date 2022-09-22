@@ -25,7 +25,7 @@ const BruxismModal = (props) => {
 						<Link
 							className='text-link'
 							id={props.hook.modalClosingId}
-							to={'/offer/joints'}
+							to={'/oferta/leczenie-stawów-skroniowo-zuchwowych'}
 						>
 							szyny relaksacyjne
 						</Link>

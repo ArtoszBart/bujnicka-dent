@@ -11,7 +11,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Diagnostics}
 						title='Wizyta Diagnostyczna'
-						link='/offer/diagnostics'
+						link='/oferta/wizyta-diagnostyczna'
 					>
 						<b>BEZPŁATNA WIZYTA DIAGNOSTYCZNA</b> dostarcza wiedzy
 						na temat wszystkich zębów.
@@ -19,7 +19,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Prevention}
 						title='Profilaktyka'
-						link='/offer/prevention'
+						link='/oferta/profilaktyka'
 					>
 						Profilaktyka, to podstawowy dział stomatologii,
 						zajmujący się zapobieganiem chorób jamy ustnej oraz
@@ -29,7 +29,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Aesthetics}
 						title='Stomatologia Estetyczna'
-						link='/offer/aesthetic-dentistry'
+						link='/oferta/stomatologia-estetyczna'
 					>
 						Stomatologia estetyczna zajmuje się nadaniem zębom jak
 						najbardziej naturalnego wyglądu lub ich upiększeniem,
@@ -38,7 +38,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.DigitalDentistry}
 						title='Stomatologia Cyfrowa'
-						link='/offer/digital-dentistry'
+						link='/oferta/stomatologia-cyfrowa'
 					>
 						Wykorzystując najnowocześniejsze rozwiązania
 						technologiczne, umożliwia pełne zaprojektowanie
@@ -47,7 +47,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.InlayOnlay}
 						title="Onley'e Endokorony"
-						link='/offer/inlay-onlay'
+						link='/oferta/inlay-onlay-overlay-endokorony'
 					>
 						Inaczej wkłady koronowe, są to wypełnienia zębów o
 						bardzo wysokiej jakości.
@@ -55,7 +55,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Prosthodontics}
 						title='Protetyka'
-						link='/offer/prosthodontics'
+						link='/oferta/protetyka'
 					>
 						Dział stomatologii zajmujący się odbudową bardzo
 						zniszczonych zębów lub uzupełnieniem utraconych.
@@ -63,7 +63,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Conservatives}
 						title='Stomatologia Zachowawcza'
-						link='/offer/conservative-dentistry'
+						link='/oferta/stomatologia-zachowawcza'
 					>
 						Stomatologia zachowawcza zajmuje się wykrywaniem i
 						leczeniem najbardziej rozpowszechnionej choroby zębów,
@@ -72,7 +72,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Endodontics}
 						title='Endodoncja'
-						link='/offer/endodontics'
+						link='/oferta/endodontics'
 					>
 						Endodoncja jest dziedziną stomatologii zajmującą się
 						leczeniem kanałów w zębach.
@@ -80,7 +80,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Periodontics}
 						title='Periodontologia'
-						link='/offer/periodontics'
+						link='/oferta/periodontologia'
 					>
 						Dziedzina stomatologii zajmująca się leczeniem chorób
 						błony śluzowej i przyzębia.
@@ -88,7 +88,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Surgeries}
 						title='Chirurgia Stomatologiczna'
-						link='/offer/dental-surgery'
+						link='/oferta/chirurgia-stomatoligiczna'
 					>
 						Gdy zęba nie da się już uratować, podejmuje się decyzję
 						o usunięciu jego części lub całości.
@@ -96,14 +96,14 @@ function Offer() {
 					<SingleOffer
 						image={Images.Implants}
 						title='Implanty'
-						link='/offer/implants'
+						link='/oferta/implanty'
 					>
 						Uzupełniają brakujący ząb.
 					</SingleOffer>
 					<SingleOffer
 						image={Images.Joints}
 						title='Leczenie Stawów'
-						link='/offer/joints'
+						link='/oferta/leczenie-stawów-skroniowo-zuchwowych'
 					>
 						Zaburzenia funkcji stawów skroniowo-żuchwowych są
 						przyczyną poważnych problemów ze szczęką oraz

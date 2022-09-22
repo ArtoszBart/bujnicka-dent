@@ -23,11 +23,19 @@ function MainPage() {
 
 	return (
 		<main className='main-wrapper page-wrapper' role='main'>
-			<ParallaxBanner id='main-page' text={device1st} text2={'\n' + device2nd}>
-				<Link className='button' to='/appointment'>
+			<ParallaxBanner
+				id='main-page'
+				text={device1st}
+				text2={'\n' + device2nd}
+			>
+				{/* <Link className='button' to='/umow-wizyte'>
 					Zapisz się na wizytę
-				</Link>
-				<Link className='scroll-down-button' to='/' onClick={handleScroll}>
+				</Link> */}
+				<Link
+					className='scroll-down-button'
+					to='/'
+					onClick={handleScroll}
+				>
 					<i className='fas fa-chevron-down'></i>
 				</Link>
 				<div className='quote'>
@@ -43,14 +51,21 @@ function MainPage() {
 							<ImgLoading src={DiagnosticsImg} alt='' />
 						</div>
 						<div className='main-page-title'>
-							<h2 id='diagnostic'>Bezpłatna wizyta diagnostyczna!</h2>
+							<h2 id='diagnostic'>
+								Bezpłatna wizyta diagnostyczna!
+							</h2>
 						</div>
 						<div className='main-page-text'>
 							<p>
-								Bezpłatna wizyta diagnostyczna jest propozycją dla osób, które dawno nie były u lekarza stomatologa i obawiają się
-								takiej wizyty. Warto z niej skorzystać i nie czekać na ból zęba.
+								Bezpłatna wizyta diagnostyczna jest propozycją
+								dla osób, które dawno nie były u lekarza
+								stomatologa i obawiają się takiej wizyty. Warto
+								z niej skorzystać i nie czekać na ból zęba.
 							</p>
-							<Link className='button' to='/offer/diagnostics'>
+							<Link
+								className='button'
+								to='/oferta/wizyta-diagnostyczna'
+							>
 								Zobacz więcej
 							</Link>
 						</div>
@@ -60,14 +75,22 @@ function MainPage() {
 				<section aria-labelledby='inlay-onlay-overlay'>
 					<div className='main-page-container'>
 						<div className='main-page-title'>
-							<h2 id='inlay-onlay-overlay'>Inley'e, Onley'e, Overley'e</h2>
+							<h2 id='inlay-onlay-overlay'>
+								Inley'e, Onley'e, Overley'e
+							</h2>
 						</div>
 						<div className='main-page-text'>
 							<p>
-								Luksusowe wypełnienia! Warto wymienić standardowe wypełnienia kompozytowe na najwyższej jakości wypełnienia
-								wykonywane w laboratorium i przyklejane w specjalnej technologii adhezyjnej.
+								Luksusowe wypełnienia! Warto wymienić
+								standardowe wypełnienia kompozytowe na
+								najwyższej jakości wypełnienia wykonywane w
+								laboratorium i przyklejane w specjalnej
+								technologii adhezyjnej.
 							</p>
-							<Link className='button' to='/offer/inlay-onlay'>
+							<Link
+								className='button'
+								to='/oferta/inlay-onlay-overlay-endokorony'
+							>
 								Zobacz więcej
 							</Link>
 						</div>
@@ -87,10 +110,16 @@ function MainPage() {
 						</div>
 						<div className='main-page-text'>
 							<p>
-								Najnowocześniejsza technologia cyfrowa umożliwia zaprojektowanie i prezentację nowego wyglądu zębów. Wizualizacja
-								planu zmiany ich wyglądu przed jego realizacją zdecydowanie ułatwia podjęcie decyzji.
+								Najnowocześniejsza technologia cyfrowa umożliwia
+								zaprojektowanie i prezentację nowego wyglądu
+								zębów. Wizualizacja planu zmiany ich wyglądu
+								przed jego realizacją zdecydowanie ułatwia
+								podjęcie decyzji.
 							</p>
-							<Link className='button' to='/offer/digital-dentistry'>
+							<Link
+								className='button'
+								to='/oferta/stomatologia-cyfrowa'
+							>
 								Zobacz więcej
 							</Link>
 						</div>
@@ -104,10 +133,16 @@ function MainPage() {
 						</div>
 						<div className='main-page-text'>
 							<p>
-								Małe nieprawidłowości w ustawieniu zębów nie wymagają bezwzględnego zakładania stałego aparatu ortodontycznego.
-								Można je skorygować zestawem przezroczystych szyn nazębnych w ciągu kilku tygodni.
+								Małe nieprawidłowości w ustawieniu zębów nie
+								wymagają bezwzględnego zakładania stałego
+								aparatu ortodontycznego. Można je skorygować
+								zestawem przezroczystych szyn nazębnych w ciągu
+								kilku tygodni.
 							</p>
-							<Link className='button' to='/offer/aesthetic-dentistry'>
+							<Link
+								className='button'
+								to='/oferta/stomatologia-estetyczna'
+							>
 								Zobacz więcej
 							</Link>
 						</div>

@@ -10,66 +10,71 @@ function Navigation() {
 		} else {
 			setOpened(false);
 		}
-	}
+	};
 
 	const handleNavItemClick = () => {
 		setOpened(false);
-	}
+	};
 
 	return (
-		<div className="menu">
-			<div className="menu-btn" onClick={handleBurgerClick}>
-				<span className={'menu-btn-burger' + (opened ? ' opened' : '')}></span>
+		<div className='menu'>
+			<div className='menu-btn' onClick={handleBurgerClick}>
+				<span
+					className={'menu-btn-burger' + (opened ? ' opened' : '')}
+				></span>
 			</div>
 
-			<nav className={'nav' + (opened ? ' opened' : '')} aria-label="primary">
+			<nav
+				className={'nav' + (opened ? ' opened' : '')}
+				aria-label='primary'
+			>
 				<ul className={'menu-nav' + (opened ? ' opened' : '')}>
 					<NavItem
 						opened={opened}
 						setOpened={setOpened}
-						to="/about"
-						label="O nas"
+						to='/o-nas'
+						label='O nas'
 						click={handleNavItemClick}
 					/>
 					<NavItem
 						opened={opened}
 						setOpened={setOpened}
-						to="/offer"
-						label="Oferta"
+						to='/oferta'
+						label='Oferta'
 						click={handleNavItemClick}
 					/>
 					<NavItem
 						opened={opened}
 						setOpened={setOpened}
-						to="/prices"
-						label="Cennik"
+						to='/oferta'
+						label='Cennik'
 						click={handleNavItemClick}
 					/>
 					<NavItem
 						opened={opened}
 						setOpened={setOpened}
-						to="/certificates"
-						label="Certyfikaty"
+						to='/certyfikaty'
+						label='Certyfikaty'
 						click={handleNavItemClick}
 					/>
 					<NavItem
 						opened={opened}
 						setOpened={setOpened}
-						to="/faq"
-						label="FAQ"
+						to='/czesto-zadawane-pytania'
+						label='FAQ'
 						click={handleNavItemClick}
 					/>
 					<NavItem
 						opened={opened}
 						setOpened={setOpened}
-						to="/contact"
-						label="Kontakt"
+						to='/kontakt'
+						label='Kontakt'
 						click={handleNavItemClick}
 					/>
 				</ul>
 			</nav>
 		</div>
-	)
+	);
 }
 
-export default Navigation
+export default Navigation;

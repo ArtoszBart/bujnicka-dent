@@ -32,9 +32,9 @@ function Contact() {
 								magdalena.bujnicka@gmail.com
 							</a>
 						</address>
-						<Link to='/appointment' className='button'>
+						{/* <Link to='/umow-wizyte' className='button'>
 							Zapisz się na wizytę
-						</Link>
+						</Link> */}
 					</div>
 					<ContactForm />
 				</section>

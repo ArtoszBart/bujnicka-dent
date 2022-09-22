@@ -7,7 +7,7 @@ function AgreementBox(props) {
 			<div className='agreement-box-input'>
 				<label htmlFor={props.name}>
 					Zapoznałam/em się z{' '}
-					<Link to={'/privacy-policy'} className='text-link'>
+					<Link to={'/polityka-prywatności'} className='text-link'>
 						polityką prywatności
 					</Link>
 					.

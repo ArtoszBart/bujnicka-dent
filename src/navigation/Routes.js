@@ -44,9 +44,9 @@ const Prosthodontics = lazy(() =>
 
 const PrivacyPolicy = lazy(() => import('../components/pages/PrivacyPolicy'));
 const NotFound = lazy(() => import('../components/pages/NotFound'));
-const UnderConstruction = lazy(() =>
-	import('../components/pages/UnderConstruction')
-);
+// const UnderConstruction = lazy(() =>
+// 	import('../components/pages/UnderConstruction')
+// );
 const AppRoutes = () => {
 	return (
 		<Routes>

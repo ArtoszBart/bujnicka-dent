@@ -1,11 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 
-User-agent: Googlebot
-User-agent: AdsBot-Google
-User-agent: Mediapartners-Google
-Allow: /
-
 User-agent: *
-Disallow: /
-
-Sitemap: https://bujnicka-dent.pl/sitemap.xml
+Disallow:

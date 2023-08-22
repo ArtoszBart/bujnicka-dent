@@ -48,7 +48,7 @@ const useContactForm = () => {
 		setSubmitInfo(sendingState);
 		// API CALL
 		axios
-			.post('/api/email/send', values)
+			.post('http://localhost:3000/api/email/send', values)
 			.then((res) => {
 				setSubmitInfo(successStateSending);
 				setValues({

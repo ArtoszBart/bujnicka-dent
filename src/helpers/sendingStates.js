@@ -1,14 +1,24 @@
+export const resetState = {
+	message: '',
+};
+
 export const sendingState = {
 	sending: true,
 	message: 'Wysyłanie',
-	success: null
+	success: null,
 };
 
 export const successStateSending = {
 	sending: false,
 	message: 'Wiadomość została wysłana',
-	success: true
-}
+	success: true,
+};
+
+export const errorState = {
+	sending: false,
+	message: 'Formularz zawiera błędy',
+	success: false,
+};
 
 export function getSuccessState(doctor, date) {
 	let message;
@@ -21,17 +31,19 @@ export function getSuccessState(doctor, date) {
 	const state = {
 		sending: false,
 		message: message,
-		success: true
+		success: true,
 	};
 	return state;
 }
 
 export function getErrorState(code) {
-	const message = code ? `Wystąpił problem, spróbuj ponownie później. Jeśli błąd się będzie powtarzał, daj nam znać podając kod błędu: ${code}` : 'Formularz zawiera błędy';
+	const message = code
+		? `Wystąpił problem, spróbuj ponownie później. Jeśli błąd się będzie powtarzał, daj nam znać podając kod błędu: ${code}`
+		: 'Formularz zawiera błędy';
 	const state = {
 		sending: false,
 		message: message,
-		success: false
+		success: false,
 	};
 	return state;
 }

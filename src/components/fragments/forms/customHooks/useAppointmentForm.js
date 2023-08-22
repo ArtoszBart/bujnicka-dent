@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import validate from './../validation/validateAppointment';
 import {
+	resetState,
 	sendingState,
+	errorState,
 	getSuccessState,
 	getErrorState,
 } from '../../../../helpers/sendingStates';
@@ -14,6 +16,7 @@ const useContactForm = () => {
 	const [doctors, setDoctors] = useState([]);
 	const [errors, setErrors] = useState({});
 	const [submitInfo, setSubmitInfo] = useState({ message: '' });
+	const [isSuccess, setIsSuccess] = useState(false);
 	const [values, setValues] = useState({
 		firstName: '',
 		lastName: '',
@@ -23,54 +26,41 @@ const useContactForm = () => {
 		date: '',
 		agreement: false,
 	});
-	const [weekDays, setWeekDays] = useState(() => {
-		let today = new Date();
-		let dayOfWeek = today.getDay() - 1;
-		let monday = new Date();
-		if (dayOfWeek > 4) {
-			monday.setDate(monday.getDate() + 7 - dayOfWeek);
-		} else {
-			monday.setDate(monday.getDate() - dayOfWeek);
-		}
 
-		let thisWeek = [];
-		for (let ii = 0; ii < 5; ii++) {
-			const nextDay = new Date(monday);
-			nextDay.setDate(nextDay.getDate() + ii);
-			thisWeek.push(nextDay);
-		}
-		return thisWeek;
-	});
+	useEffect(() => {
+		console.log('doctors', doctors);
+	}, [doctors]);
 
 	const handleChange = (e) => {
 		let { name, value } = e.target;
+
 		if (e.target.type === 'checkbox') {
 			value = e.target.checked;
+		} else if (e.target.type === 'select-one') {
+			value = Number(value);
+			values.date = '';
 		}
+
 		setValues({
 			...values,
 			[name]: value,
 		});
+
+		setSubmitInfo(resetState);
 		deleteErrors(name);
 	};
 
 	const deleteErrors = (fieldName) => {
+		// console.log('deleting...', fieldName);
 		const oldErrors = errors;
 		delete oldErrors[fieldName];
+		// console.log(oldErrors);
 		setErrors(oldErrors);
 	};
 
 	useEffect(() => {
-		getFreeDates();
-
-		return getFreeDates();
-	});
-
-	const getFreeDates = () => {
-		const dateFrom = formatDateSql(weekDays[0]);
-		const dateTo = formatDateSql(weekDays[weekDays.length - 1]);
 		axios
-			.get(`/api/doctors/${dateFrom},${dateTo}`)
+			.get(`http://localhost:3000/api/doctors/min`)
 			.then((res) => {
 				setDoctors(res.data);
 				setDocsFetched(true);
@@ -78,35 +68,23 @@ const useContactForm = () => {
 			.catch((error) => {
 				setDocsFetched(false);
 			});
-	};
+	}, []);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const currentErrors = validate(values);
 		setErrors(currentErrors);
 		if (Object.keys(currentErrors).length !== 0) {
-			// return;
+			setSubmitInfo(errorState);
+			return;
 		}
 
 		setSubmitInfo(sendingState);
 
 		axios
-			.post('/api/appointments/new', values)
-			.then((res) => {
-				const doctor = doctors.find(
-					(doc) => values.doctorId === doc.id.toString()
-				);
-				setSubmitInfo(getSuccessState(doctor, values.date));
-				setValues({
-					firstName: '',
-					lastName: '',
-					phoneNo: '',
-					description: '',
-					doctorId: '',
-					date: '',
-					agreement: false,
-				});
-				getFreeDates();
+			.post('http://localhost:3000/api/appointments/', values)
+			.then(() => {
+				setIsSuccess(true);
 			})
 			.catch((error) => {
 				// 400 - validation;
@@ -133,10 +111,8 @@ const useContactForm = () => {
 		values,
 		errors,
 		submitInfo,
-		weekDays,
-		setWeekDays,
-		getFreeDates,
 		docsFetched,
+		isSuccess,
 	};
 };
 

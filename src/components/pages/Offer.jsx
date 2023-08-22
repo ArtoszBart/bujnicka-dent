@@ -72,7 +72,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Endodontics}
 						title='Endodoncja'
-						link='/oferta/endodontics'
+						link='/oferta/endodoncja'
 					>
 						Endodoncja jest dziedziną stomatologii zajmującą się
 						leczeniem kanałów w zębach.

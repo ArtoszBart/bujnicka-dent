@@ -1,7 +1,12 @@
-import { checkRequired, checkTextLengthRange, checkRegex, decodeErrorMessages } from './../../../../helpers/validationCommon';
+import {
+	checkRequired,
+	checkTextLengthRange,
+	checkRegex,
+	decodeErrorMessages,
+} from './../../../../helpers/validationCommon';
 
 export default function validateContactForm(values) {
-	let errors = {}
+	let errors = {};
 
 	if (!checkRequired(values.name)) {
 		errors.name = 'required';
@@ -11,13 +16,18 @@ export default function validateContactForm(values) {
 
 	if (!checkRequired(values.email)) {
 		errors.email = 'required';
-	} else if (!checkRegex(values.email, /^[a-zA-Z0-9._-]{1,30}@[0-1a-zA-Z]{2,20}\.[a-zA-Z]{2,3}$/)) {
+	} else if (
+		!checkRegex(
+			values.email,
+			/^[a-zA-Z0-9._-]{1,30}@[0-1a-zA-Z]{2,20}\.[a-zA-Z]{2,3}$/
+		)
+	) {
 		errors.email = 'format';
 	}
 
 	if (!checkRequired(values.subject)) {
 		errors.subject = 'required';
-	} else if (!checkTextLengthRange(values.subject, 10, 50)) {
+	} else if (!checkTextLengthRange(values.subject, 3, 50)) {
 		errors.subject = 'length';
 	}
 
@@ -28,8 +38,8 @@ export default function validateContactForm(values) {
 	}
 
 	if (!values.agreement) {
-		errors.agreement = 'required'
+		errors.agreement = 'required';
 	}
 
 	return decodeErrorMessages(errors);
-};
+}

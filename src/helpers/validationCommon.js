@@ -50,7 +50,7 @@ export function decodeErrorMessages(errors) {
 		},
 		subject: {
 			required: 'Temat nie może być pusty',
-			length: 'Temat może mieć od 10 do 50 znaków',
+			length: 'Temat może mieć od 3 do 50 znaków',
 		},
 		message: {
 			required: 'Treść nie może być pusta',

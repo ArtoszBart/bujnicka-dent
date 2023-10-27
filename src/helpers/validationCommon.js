@@ -46,6 +46,7 @@ export function decodeErrorMessages(errors) {
 		},
 		email: {
 			required: 'Email nie może być pusty',
+			length: 'Email może mieć od 6 do 50 znaków',
 			format: 'Email niepoprawny',
 		},
 		subject: {

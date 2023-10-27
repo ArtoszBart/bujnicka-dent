@@ -16,10 +16,12 @@ export default function validateContactForm(values) {
 
 	if (!checkRequired(values.email)) {
 		errors.email = 'required';
+	} else if (!checkTextLengthRange(values.name, 6, 50)) {
+		errors.name = 'length';
 	} else if (
 		!checkRegex(
 			values.email,
-			/^[a-zA-Z0-9._-]{1,30}@[0-1a-zA-Z]{2,20}\.[a-zA-Z]{2,3}$/
+			/^[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)?@[a-zA-Z-]+\.[a-zA-Z]{2,3}(\.[a-zA-Z]{2,3})?$/
 		)
 	) {
 		errors.email = 'format';

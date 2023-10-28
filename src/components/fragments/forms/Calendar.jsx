@@ -23,7 +23,9 @@ function Calendar({ doctorId, handleChange, value, error }) {
 							isPrevWeekAvailable ? '' : 'disabled'
 						}`}
 						onClick={() => previousWeek()}
-					/>
+					>
+						p
+					</i>
 					<p>
 						{formatDateLong(weekDays[0])} -{' '}
 						{formatDateLong(weekDays[weekDays.length - 1])}
@@ -33,7 +35,9 @@ function Calendar({ doctorId, handleChange, value, error }) {
 							isNextWeekAvailable ? '' : 'disabled'
 						}`}
 						onClick={() => nextWeek()}
-					/>
+					>
+						n
+					</i>
 				</nav>
 
 				{doctorId === '' ? (

@@ -15,6 +15,11 @@ const useCalendar = (doctorId) => {
 		if (doctorId) fetchFreeDates();
 	}, [doctorId, weekDays]);
 
+	useEffect(() => {
+		setIsNextWeekAvailable(weekNo >= 3 ? false : true);
+		setIsPrevWeekAvailable(weekNo <= 0 ? false : true);
+	}, [weekNo]);
+
 	const fetchFreeDates = () => {
 		axios
 			.get(
@@ -33,26 +38,17 @@ const useCalendar = (doctorId) => {
 		if (!isPrevWeekAvailable) {
 			return;
 		}
-		const newWeek = getNewDays(-7);
-		if (weekNo <= 1) {
-			setIsPrevWeekAvailable(false);
-		}
-		setIsNextWeekAvailable(true);
-		setWeekNo((asd) => asd - 1);
-		setWeekDays(newWeek);
+		setWeekNo((thisWeekNo) => thisWeekNo - 1);
+		setWeekDays(getNewDays(-7));
 	};
 
 	const nextWeek = () => {
 		if (!isNextWeekAvailable) {
 			return;
 		}
-		const newWeek = getNewDays(7);
-		if (weekNo >= 3) {
-			setIsNextWeekAvailable(false);
-		}
-		setIsPrevWeekAvailable(true);
-		setWeekNo((asd) => asd + 1);
-		setWeekDays(newWeek);
+
+		setWeekNo((thisWeekNo) => thisWeekNo + 1);
+		setWeekDays(getNewDays(7));
 	};
 
 	const getNewDays = (days) => {

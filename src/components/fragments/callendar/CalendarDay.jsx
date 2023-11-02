@@ -22,11 +22,7 @@ export default function CalendarDay({
 			<div className='calendar-schedule-times'>
 				{timeSlots?.map((timeSlot, index) => {
 					const dateValue = `${formatDateSql(date)} ${timeSlot.time}`;
-					const nextHour = new Date(
-						new Date().setHours(new Date().getHours() + 1)
-					);
-					const isButtonAvailable =
-						date >= nextHour && !timeSlot.isBooked;
+					const isButtonAvailable = !timeSlot.isBooked;
 					return (
 						<button
 							key={index}

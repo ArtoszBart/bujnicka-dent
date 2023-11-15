@@ -88,7 +88,6 @@ const useContactForm = () => {
 			})
 			.catch((error) => {
 				// 400 - validation;
-				// 502 - bad gateway;
 				// 512 - unable to connect to server
 				let code;
 				if (error.response) {

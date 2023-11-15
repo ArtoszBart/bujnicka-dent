@@ -29,7 +29,7 @@ export default function validateContactForm(values) {
 
 	if (!checkRequired(values.subject)) {
 		errors.subject = 'required';
-	} else if (!checkTextLengthRange(values.subject, 3, 50)) {
+	} else if (!checkTextLengthRange(values.subject, 3, 30)) {
 		errors.subject = 'length';
 	}
 

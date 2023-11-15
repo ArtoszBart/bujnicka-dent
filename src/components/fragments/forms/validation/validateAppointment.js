@@ -22,7 +22,7 @@ export default function validateAppointment(values, doctors) {
 
 	if (!checkRequired(values.phoneNo)) {
 		errors.phoneNo = 'required';
-	} else if (!checkRegex(values.phoneNo, /^\+?[0-9- ]{7,20}$/)) {
+	} else if (!checkRegex(values.phoneNo, /^\+?[0-9- ]{9,15}$/)) {
 		errors.phoneNo = 'format';
 	}
 
@@ -30,9 +30,9 @@ export default function validateAppointment(values, doctors) {
 		errors.description = 'length';
 	}
 
-	// if (!checkRequired(values.doctorId)) {
-	//     errors.doctorId = 'required';
-	// }
+	if (!checkRequired(values.doctor)) {
+		errors.doctor = 'required';
+	}
 
 	if (!checkRequired(values.date)) {
 		errors.date = 'required';

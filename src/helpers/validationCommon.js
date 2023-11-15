@@ -43,6 +43,7 @@ export function decodeErrorMessages(errors) {
 		name: {
 			required: 'Imię nie może być puste',
 			length: 'Imię może mieć od 2 do 30 znaków',
+			xss: 'Imię zawiera niedozwolone znaki',
 		},
 		email: {
 			required: 'Email nie może być pusty',
@@ -52,18 +53,22 @@ export function decodeErrorMessages(errors) {
 		subject: {
 			required: 'Temat nie może być pusty',
 			length: 'Temat może mieć od 3 do 50 znaków',
+			xss: 'Temat zawiera niedozwolone znaki',
 		},
 		message: {
 			required: 'Treść nie może być pusta',
 			length: 'Treść może mieć od 10 do 300 znaków',
+			xss: 'Treść zawiera niedozwolone znaki',
 		},
 		firstName: {
 			required: 'Imię nie może być puste',
 			length: 'Imię może mieć od 2 do 20 znaków',
+			xss: 'Imię zawiera niedozwolone znaki',
 		},
 		lastName: {
 			required: 'Nazwisko nie może być puste',
 			length: 'Nazwisko może mieć od 2 do 30 znaków',
+			xss: 'Nazwisko zawiera niedozwolone znaki',
 		},
 		phoneNo: {
 			required: 'Numer telefonu nie może być pusty',
@@ -71,16 +76,21 @@ export function decodeErrorMessages(errors) {
 		},
 		description: {
 			length: 'Opis może mieć maksymalnie 300 znaków',
-			format: 'Opis zawiera niedozwolone znaki',
+			xss: 'Opis zawiera niedozwolone znaki',
 		},
 		doctorId: {
 			required: 'Lekarz musi być wybrany',
+			format: 'Wystąpił nieoczekiwany błąd',
+			range: 'Wystąpił nieoczekiwany błąd',
 		},
 		date: {
 			required: 'Data musi być wybrana',
-			overlap: 'Godzina w tym dniu jest już zajęta',
-			dateRange: 'Ten termin nie jest poprawny',
-			overlap: 'Ten termin jest zajęty',
+			format: 'Wystąpił nieoczekiwany błąd',
+			min: 'Ten termin nie jest poprawny',
+			max: 'Ten termin nie jest poprawny',
+			exceed: 'Ten termin nie jest poprawny',
+			overlap: 'Ten termin nie jest poprawny',
+			minutes: 'Wystąpił nieoczekiwany błąd',
 		},
 		agreement: {
 			required: 'Wyrażenie zgody jest obowiązkowe',

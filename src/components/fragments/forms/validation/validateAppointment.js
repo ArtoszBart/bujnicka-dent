@@ -6,6 +6,7 @@ import {
 } from './../../../../helpers/validationCommon';
 
 export default function validateAppointment(values, doctors) {
+	console.log(values);
 	let errors = {};
 
 	if (!checkRequired(values.firstName)) {

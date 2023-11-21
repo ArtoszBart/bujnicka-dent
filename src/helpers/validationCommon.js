@@ -78,13 +78,13 @@ export function decodeErrorMessages(errors) {
 			length: 'Opis może mieć maksymalnie 300 znaków',
 			xss: 'Opis zawiera niedozwolone znaki',
 		},
-		doctorId: {
+		doctor: {
 			required: 'Lekarz musi być wybrany',
 			format: 'Wystąpił nieoczekiwany błąd',
 			range: 'Wystąpił nieoczekiwany błąd',
 		},
 		date: {
-			required: 'Data musi być wybrana',
+			required: 'Termin musi zostać wybrany',
 			format: 'Wystąpił nieoczekiwany błąd',
 			min: 'Ten termin nie jest poprawny',
 			max: 'Ten termin nie jest poprawny',

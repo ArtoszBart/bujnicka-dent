@@ -28,9 +28,9 @@ function MainPage() {
 				text={device1st}
 				text2={'\n' + device2nd}
 			>
-				{/* <Link className='button' to='/umow-wizyte'>
+				<Link className='button' to='/umow-wizyte'>
 					Zapisz się na wizytę
-				</Link> */}
+				</Link>
 				<Link
 					className='scroll-down-button'
 					to='/'

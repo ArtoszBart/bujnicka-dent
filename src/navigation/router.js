@@ -17,7 +17,7 @@ export default (
 		<Route path='/oferta/stomatologia-cyfrowa' />
 		<Route path='/oferta/endodoncja' />
 		<Route path='/oferta/implanty' />
-		<Route path='/oferta/leczenie-stawów-skroniowo-zuchwowych' />
+		<Route path='/oferta/leczenie-stawow-skroniowo-zuchwowych' />
 		<Route path='/oferta/inlay-onlay-overlay-endokorony' />
 		<Route path='/oferta/periodontologia' />
 		<Route path='/oferta/profilaktyka' />

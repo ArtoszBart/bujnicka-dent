@@ -16,8 +16,8 @@ export default function validateContactForm(values) {
 
 	if (!checkRequired(values.email)) {
 		errors.email = 'required';
-	} else if (!checkTextLengthRange(values.name, 6, 50)) {
-		errors.name = 'length';
+	} else if (!checkTextLengthRange(values.email, 6, 50)) {
+		errors.email = 'length';
 	} else if (
 		!checkRegex(
 			values.email,

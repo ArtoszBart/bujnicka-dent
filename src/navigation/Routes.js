@@ -189,7 +189,7 @@ const AppRoutes = () => {
 			/>
 			<Route
 				exact
-				path='/oferta/leczenie-stawów-skroniowo-zuchwowych'
+				path='/oferta/leczenie-stawow-skroniowo-zuchwowych'
 				element={
 					<React.Suspense fallback={<>...</>}>
 						<Joints />

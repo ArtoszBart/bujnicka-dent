@@ -103,7 +103,7 @@ function Offer() {
 					<SingleOffer
 						image={Images.Joints}
 						title='Leczenie Stawów'
-						link='/oferta/leczenie-stawów-skroniowo-zuchwowych'
+						link='/oferta/leczenie-stawow-skroniowo-zuchwowych'
 					>
 						Zaburzenia funkcji stawów skroniowo-żuchwowych są
 						przyczyną poważnych problemów ze szczęką oraz

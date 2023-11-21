@@ -18,6 +18,10 @@ function Appointment() {
 		isSuccess,
 	} = useAppointmentForm();
 
+	useEffect(() => {
+		console.log('values', values);
+	}, [values]);
+
 	const getDefaultOptionText = () => {
 		switch (docsFetched) {
 			case null:
@@ -97,17 +101,16 @@ function Appointment() {
 							)}
 						</div>
 						<div className='contact-form-input select-input'>
-							<label htmlFor='doctorId'>Lekarz</label>
+							<label htmlFor='doctor'>Lekarz</label>
 							<select
-								className={errors.doctorId && 'error-input'}
+								className={errors.doctor && 'error-input'}
 								onChange={(e) => handleChange(e)}
-								name='doctorId'
-								id='doctorId'
+								name='doctor'
+								id='doctor'
 								tabIndex='5'
-								value={values.doctorId}
 								disabled={!docsFetched}
 							>
-								<option value={''} disabled hidden>
+								<option value={''} hidden>
 									{getDefaultOptionText()}
 								</option>
 								{doctors.map((doctor, index) => (
@@ -116,15 +119,15 @@ function Appointment() {
 									</option>
 								))}
 							</select>
-							{errors.doctorId && (
+							{errors.doctor && (
 								<span className='error-text'>
-									{errors.doctorId}
+									{errors.doctor}
 								</span>
 							)}
 						</div>
 						<CalendarForm
 							tabIndex='6'
-							doctorId={values.doctorId}
+							doctorId={values.doctor}
 							handleChange={handleChange}
 							value={values.date}
 							error={errors.date}
@@ -156,7 +159,7 @@ function Appointment() {
 				) : (
 					<SuccessPage
 						values={values}
-						doctor={doctors.find((d) => d.id == values.doctorId)}
+						doctor={doctors.find((d) => d.id == values.doctor)}
 					/>
 				)}
 			</article>

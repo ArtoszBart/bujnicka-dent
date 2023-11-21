@@ -22,7 +22,7 @@ const useContactForm = () => {
 		lastName: '',
 		phoneNo: '',
 		description: '',
-		doctorId: '',
+		doctor: '',
 		date: '',
 		agreement: false,
 	});
@@ -74,6 +74,7 @@ const useContactForm = () => {
 		e.preventDefault();
 		const currentErrors = validate(values);
 		setErrors(currentErrors);
+
 		if (Object.keys(currentErrors).length !== 0) {
 			setSubmitInfo(errorState);
 			return;

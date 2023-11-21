@@ -3,7 +3,6 @@ import { formatDateLong } from '../../../helpers/dateAndTime';
 import ImportantInfo from '../pages/ImportantInfo';
 
 function SuccessPage({ values, doctor }) {
-	console.log(doctor);
 	return (
 		<div>
 			<h2>Zapisano na wizytę</h2>

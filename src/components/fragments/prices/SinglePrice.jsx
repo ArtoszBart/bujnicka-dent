@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const SinglePrice = ({ name, price, star }) => {
-
+const SinglePrice = ({ name, price }) => {
 	return (
-		<div className="prices-item">
-			<p>{name}</p><p>{price}{star && <dt>*</dt>}</p>
+		<div className='prices-item'>
+			<p>{name}</p>
+			<p>
+				{price} {/\d/.test(price) ? 'zł' : ''}
+			</p>
 		</div>
 	);
 };

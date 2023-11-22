@@ -1,17 +1,18 @@
-import React from "react";
+import React from 'react';
 
-const MultiplePrices = ({ title, names, prices }) => {
-
+const MultiplePrices = ({ title, prices }) => {
 	return (
-		<div className="prices-item prices-multiple">
+		<div className='prices-item prices-multiple'>
 			<p>{title}:</p>
-			<div className="prices-multiple-items">
-				{names.map((value, index) => {
-					const price = prices[index];
+			<div className='prices-multiple-items'>
+				{prices.map((price, index) => {
 					return (
 						<React.Fragment key={index}>
-							<p>{value}</p>
-							<p>{price}</p>
+							<p>{price.title}</p>
+							<p>
+								{price.price}{' '}
+								{/\d/.test(price.price) ? 'zł' : ''}
+							</p>
 						</React.Fragment>
 					);
 				})}

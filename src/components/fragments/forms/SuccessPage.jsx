@@ -1,6 +1,5 @@
 import React from 'react';
 import { formatDateLong } from '../../../helpers/dateAndTime';
-import ImportantInfo from '../pages/ImportantInfo';
 
 function SuccessPage({ values, doctor }) {
 	return (

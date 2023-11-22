@@ -23,7 +23,7 @@ const TabContent = ({ prices }) => {
 							prices={price.subPrices}
 						/>
 					);
-				}
+				} else return null;
 			})}
 		</section>
 	);

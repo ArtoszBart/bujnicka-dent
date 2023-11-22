@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ParallaxBaner from '../fragments/ParallaxBanner';
 import TabNavItem from '../fragments/tabs/TabNavItem';
 import TabContent from '../fragments/tabs/TabContent';

@@ -159,7 +159,7 @@ function Appointment() {
 				) : (
 					<SuccessPage
 						values={values}
-						doctor={doctors.find((d) => d.id == values.doctor)}
+						doctor={doctors.find((d) => d.id === values.doctor)}
 					/>
 				)}
 			</article>

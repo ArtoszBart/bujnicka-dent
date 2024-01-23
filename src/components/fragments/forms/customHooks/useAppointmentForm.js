@@ -60,7 +60,7 @@ const useContactForm = () => {
 
 	useEffect(() => {
 		axios
-			.get(`http://localhost:3000/api/doctors/min`)
+			.get(`http://localhost:3000/api/employees/doctors`)
 			.then((res) => {
 				setDoctors(res.data);
 				setDocsFetched(true);

@@ -23,7 +23,7 @@ const useCalendar = (doctorId) => {
 	const fetchFreeDates = () => {
 		axios
 			.get(
-				`http://localhost:3000/api/doctors/${doctorId}/schedule?week=${weekNo}`
+				`http://localhost:3000/api/employees/${doctorId}/schedule?week=${weekNo}`
 			)
 			.then((res) => {
 				setfreeSlots(res.data);

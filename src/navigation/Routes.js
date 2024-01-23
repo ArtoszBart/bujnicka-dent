@@ -45,7 +45,6 @@ const Appointment = lazy(() => import('../components/pages/Appointment'));
 
 const PrivacyPolicy = lazy(() => import('../components/pages/PrivacyPolicy'));
 const NotFound = lazy(() => import('../components/pages/NotFound'));
-const Password = lazy(() => import('../components/pages/Password'));
 // const UnderConstruction = lazy(() =>
 // 	import('../components/pages/UnderConstruction')
 // );
@@ -239,15 +238,6 @@ const AppRoutes = () => {
 				element={
 					<React.Suspense fallback={<>...</>}>
 						<PrivacyPolicy />
-					</React.Suspense>
-				}
-			/>
-			<Route
-				// exact
-				path='/password'
-				element={
-					<React.Suspense fallback={<>...</>}>
-						<Password />
 					</React.Suspense>
 				}
 			/>

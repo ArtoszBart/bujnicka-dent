@@ -63,6 +63,7 @@ function Appointment() {
 							onChange={handleChange}
 							error={errors.firstName}
 						/>
+
 						<FormInput
 							type='text'
 							name='lastName'
@@ -72,6 +73,7 @@ function Appointment() {
 							onChange={handleChange}
 							error={errors.lastName}
 						/>
+
 						<FormInput
 							type='text'
 							name='phoneNo'
@@ -81,6 +83,7 @@ function Appointment() {
 							onChange={handleChange}
 							error={errors.phoneNo}
 						/>
+
 						<div className='contact-form-input'>
 							<label htmlFor='description'>Opis</label>
 							<textarea
@@ -100,6 +103,7 @@ function Appointment() {
 								</span>
 							)}
 						</div>
+
 						<div className='contact-form-input select-input'>
 							<label htmlFor='doctor'>Lekarz</label>
 							<select
@@ -125,6 +129,7 @@ function Appointment() {
 								</span>
 							)}
 						</div>
+
 						<CalendarForm
 							tabIndex='6'
 							doctorId={values.doctor}

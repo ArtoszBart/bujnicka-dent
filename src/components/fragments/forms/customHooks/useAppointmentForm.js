@@ -11,7 +11,7 @@ import { decodeErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
 // import { formatDateSql } from './../../../../helpers/dateAndTime';
 
-const useContactForm = () => {
+const useAppointmentForm = () => {
 	const [docsFetched, setDocsFetched] = useState(null);
 	const [doctors, setDoctors] = useState([]);
 	const [errors, setErrors] = useState({});
@@ -116,4 +116,4 @@ const useContactForm = () => {
 	};
 };
 
-export default useContactForm;
+export default useAppointmentForm;

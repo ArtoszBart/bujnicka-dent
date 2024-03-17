@@ -1,6 +1,5 @@
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import Images from '../../../img/texts/prosthodontics';
 import { Link } from 'react-router-dom';
 import PillarToothModal from '../../fragments/modals/PillarToothModal';
 import useModal from '../../fragments/customHooks/useModal';
@@ -19,8 +18,10 @@ function Prosthodontics() {
 						<div className='photos'>
 							<div className='page-photo'>
 								<ImgLoading
-									src={Images.ImplantsDenture}
-									alt=''
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/prosthodontics/implants_denture.jpeg'
+									}
+									alt='Proteza na implantach'
 								/>
 								<span>Proteza na implantach</span>
 							</div>
@@ -120,7 +121,12 @@ function Prosthodontics() {
 					<div className='text-img normal'>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.Crown} alt='veneers' />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/prosthodontics/crown.jpeg'
+									}
+									alt='Korona'
+								/>
 								<span>Korona</span>
 							</div>
 						</div>
@@ -228,7 +234,12 @@ function Prosthodontics() {
 					<div className='text-img upright'>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.Bridge} alt='veneers' />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/prosthodontics/bridge.jpeg'
+									}
+									alt='Most'
+								/>
 								<span>Most</span>
 							</div>
 						</div>
@@ -310,7 +321,12 @@ function Prosthodontics() {
 						</div>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.FullDenture} alt='' />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_prosthodontics.jpeg'
+									}
+									alt='Proteza całkowita'
+								/>
 								<span>Proteza całkowita</span>
 							</div>
 						</div>
@@ -318,7 +334,12 @@ function Prosthodontics() {
 					<div className='text-img normal'>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.FrameDenture} alt='' />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/prosthodontics/frame_denture.jpeg'
+									}
+									alt='Proteza szkieletowa'
+								/>
 								<span>Proteza szkieletowa</span>
 							</div>
 						</div>
@@ -356,7 +377,12 @@ function Prosthodontics() {
 						</div>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.HaspDenture} alt='' />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/prosthodontics/hasp_denture.jpeg'
+									}
+									alt='Proteza bezklamrowa'
+								/>
 								<span>Proteza bezklamrowa</span>
 							</div>
 						</div>

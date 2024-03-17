@@ -1,13 +1,16 @@
 import GalleryOverlay from '../fragments/gallery/GalleryOverlay';
 import GalleryOverlayHook from '../fragments/gallery/customHooks/useGalleryOverlay';
 import ParallaxBaner from '../fragments/ParallaxBanner';
-import Images from '../../img/persons';
 import ImgLoading from '../fragments/ImgLoading';
 
 function About() {
 	const useGalleryOverlay = GalleryOverlayHook([
-		[Images.TablBohdan],
-		[Images.TablMaria],
+		[
+			'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/persons/Tableau_Bohdan.jpg',
+		],
+		[
+			'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/persons/Tableau_Maria.jpg',
+		],
 	]);
 
 	return (
@@ -41,7 +44,9 @@ function About() {
 						<div className='photos'>
 							<div className='page-photo'>
 								<ImgLoading
-									src={Images.PhotoMaria}
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/persons/Maria_Baluta.jpg'
+									}
 									className='employee-picture'
 									alt='Maria Bałuta'
 								/>
@@ -62,7 +67,9 @@ function About() {
 							</div>
 							<div className='page-photo'>
 								<ImgLoading
-									src={Images.PhotoBohdan}
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/persons/Bohdan_Bujnicki.jpg'
+									}
 									className='employee-picture'
 									alt='Bohdan Bujnicki'
 								/>

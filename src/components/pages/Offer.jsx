@@ -1,4 +1,3 @@
-import Images from '../../img/offers';
 import ParallaxBaner from '../fragments/ParallaxBanner';
 import SingleOffer from '../fragments/SingleOffer';
 
@@ -9,7 +8,9 @@ function Offer() {
 			<article className='page-content'>
 				<section className='offers'>
 					<SingleOffer
-						image={Images.Diagnostics}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_diagnostics.jpeg'
+						}
 						title='Wizyta Diagnostyczna'
 						link='/oferta/wizyta-diagnostyczna'
 					>
@@ -17,7 +18,9 @@ function Offer() {
 						na temat wszystkich zębów.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Prevention}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_prevention.jpeg'
+						}
 						title='Profilaktyka'
 						link='/oferta/profilaktyka'
 					>
@@ -27,7 +30,9 @@ function Offer() {
 						prawidłowa higiena.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Aesthetics}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_aesthetics.jpeg'
+						}
 						title='Stomatologia Estetyczna'
 						link='/oferta/stomatologia-estetyczna'
 					>
@@ -36,7 +41,9 @@ function Offer() {
 						czego efektem staje się piękny, naturalny uśmiech.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.DigitalDentistry}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_digital.jpeg'
+						}
 						title='Stomatologia Cyfrowa'
 						link='/oferta/stomatologia-cyfrowa'
 					>
@@ -45,7 +52,9 @@ function Offer() {
 						uśmiechu.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.InlayOnlay}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_inlay_onlay.jpeg'
+						}
 						title="Onley'e Endokorony"
 						link='/oferta/inlay-onlay-overlay-endokorony'
 					>
@@ -53,7 +62,9 @@ function Offer() {
 						bardzo wysokiej jakości.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Prosthodontics}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_prosthodontics.jpeg'
+						}
 						title='Protetyka'
 						link='/oferta/protetyka'
 					>
@@ -61,7 +72,9 @@ function Offer() {
 						zniszczonych zębów lub uzupełnieniem utraconych.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Conservatives}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_conservatives.jpeg'
+						}
 						title='Stomatologia Zachowawcza'
 						link='/oferta/stomatologia-zachowawcza'
 					>
@@ -70,7 +83,9 @@ function Offer() {
 						jaką jest próchnica.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Endodontics}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_endodontics.jpeg'
+						}
 						title='Endodoncja'
 						link='/oferta/endodoncja'
 					>
@@ -78,7 +93,9 @@ function Offer() {
 						leczeniem kanałów w zębach.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Periodontics}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_periodontics.jpeg'
+						}
 						title='Periodontologia'
 						link='/oferta/periodontologia'
 					>
@@ -86,7 +103,9 @@ function Offer() {
 						błony śluzowej i przyzębia.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Surgeries}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_surgeries.jpeg'
+						}
 						title='Chirurgia Stomatologiczna'
 						link='/oferta/chirurgia-stomatoligiczna'
 					>
@@ -94,14 +113,18 @@ function Offer() {
 						o usunięciu jego części lub całości.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Implants}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_implants.jpeg'
+						}
 						title='Implanty'
 						link='/oferta/implanty'
 					>
 						Uzupełniają brakujący ząb.
 					</SingleOffer>
 					<SingleOffer
-						image={Images.Joints}
+						image={
+							'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/offers/offer_joints.jpeg'
+						}
 						title='Leczenie Stawów'
 						link='/oferta/leczenie-stawow-skroniowo-zuchwowych'
 					>

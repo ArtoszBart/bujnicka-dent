@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import Images from '../../../img/texts/aesthetics';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
 import useModal from '../../fragments/customHooks/useModal';
@@ -21,9 +20,13 @@ function AestheticDentistry() {
 					<div className='text-img upright'>
 						<div className='photos'>
 							<ImgComparer
-								img1={Images.WhiteningBefore}
+								img1={
+									'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/aesthetics/whitening_before.jpeg'
+								}
 								label1='Przed'
-								img2={Images.WhiteningAfter}
+								img2={
+									'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/aesthetics/whitening_after.jpeg'
+								}
 								label2='Po'
 							/>
 						</div>
@@ -46,7 +49,9 @@ function AestheticDentistry() {
 						<div className='photos'>
 							<div className='page-photo'>
 								<ImgLoading
-									src={Images.TrayBasedWhitening}
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/aesthetics/tray-based_whitening.jpeg'
+									}
 									alt='Szyna wybielająca'
 								/>
 								<span>Szyna wybielająca</span>
@@ -79,8 +84,10 @@ function AestheticDentistry() {
 							<div className='photos'>
 								<div className='page-photo'>
 									<ImgLoading
-										src={Images.EnamelStains}
-										alt=''
+										src={
+											'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/aesthetics/enamel_stains.jpeg'
+										}
+										alt='Plamy na szkliwie'
 									/>
 									<span>Plamy na szkliwie</span>
 								</div>
@@ -135,8 +142,10 @@ function AestheticDentistry() {
 						<div className='photos'>
 							<div className='page-photo'>
 								<ImgLoading
-									src={Images.Veneers}
-									alt='veneers'
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/aesthetics/veneers.jpeg'
+									}
+									alt='Licówki'
 								/>
 								<span>Licówki</span>
 							</div>
@@ -273,8 +282,10 @@ function AestheticDentistry() {
 							<div className='photos'>
 								<div className='page-photo'>
 									<ImgLoading
-										src={Images.ClearAligner}
-										alt=''
+										src={
+											'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/aesthetics/clear_aligner.jpeg'
+										}
+										alt='Clear Aligner'
 									/>
 									<span>Nakładka Clear Aligner</span>
 								</div>

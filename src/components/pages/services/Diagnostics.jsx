@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import Images from '../../../img/texts/diagnostics';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImgLoading from '../../fragments/ImgLoading';
 
@@ -58,7 +57,12 @@ function Diagnostics() {
 						</div>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.Plan} alt='' />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/diagnostics/plan.jpeg'
+									}
+									alt='Plan leczenia'
+								/>
 							</div>
 						</div>
 					</div>

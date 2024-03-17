@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import Images from '../../../img/texts/conservatives';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import AdhesiveTechniqueModal from '../../fragments/modals/AdhesiveTechniqueModal';
 import PolymerizationModal from '../../fragments/modals/PolymerizationModal';
@@ -35,7 +34,9 @@ function ConservativeDentistry() {
 							<div className='photos'>
 								<div className='page-photo'>
 									<ImgLoading
-										src={Images.Caries}
+										src={
+											'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/conservatives/caries.jpeg'
+										}
 										alt='Próchnica'
 									/>
 									<span>Próchnica</span>
@@ -82,7 +83,12 @@ function ConservativeDentistry() {
 					<div className='text-img upright'>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.Treatment} alt='' />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/conservatives/treatment.jpeg'
+									}
+									alt='Leczenie próchnicy'
+								/>
 								<span>Leczenie próchnicy</span>
 							</div>
 						</div>

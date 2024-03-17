@@ -2,10 +2,6 @@ import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ParallaxBanner from '../fragments/ParallaxBanner';
 import ImgLoading from '../fragments/ImgLoading';
-import DiagnosticsImg from '../../img/texts/diagnostics/plan.jpeg';
-import InlayOnlayImg from '../../img/texts/inlay-onlay/onlay.jpeg';
-import DigitalImg from '../../img/texts/digital/dsd.jpeg';
-import ClearAlignerImg from '../../img/texts/aesthetics/clear_aligner.jpeg';
 
 function MainPage() {
 	const device1st = 'Autorski gabinet stomatologiczny';
@@ -48,7 +44,12 @@ function MainPage() {
 				<section aria-labelledby='diagnostic'>
 					<div className='main-page-container'>
 						<div className='main-page-img'>
-							<ImgLoading src={DiagnosticsImg} alt='' />
+							<ImgLoading
+								src={
+									'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/diagnostics/plan.jpeg'
+								}
+								alt='Plan leczenia'
+							/>
 						</div>
 						<div className='main-page-title'>
 							<h2 id='diagnostic'>
@@ -95,7 +96,12 @@ function MainPage() {
 							</Link>
 						</div>
 						<div className='main-page-img'>
-							<ImgLoading src={InlayOnlayImg} alt='' />
+							<ImgLoading
+								src={
+									'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/inlay-onlay/onlay.jpeg'
+								}
+								alt='Onlay'
+							/>
 						</div>
 					</div>
 				</section>
@@ -103,7 +109,12 @@ function MainPage() {
 				<section aria-labelledby='digital-dent'>
 					<div className='main-page-container'>
 						<div className='main-page-img'>
-							<ImgLoading src={DigitalImg} alt='' />
+							<ImgLoading
+								src={
+									'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/digital/dsd.jpeg'
+								}
+								alt='Stomatologia cyfrowa'
+							/>
 						</div>
 						<div className='main-page-title'>
 							<h2 id='digital-dent'>Stomatologia cyfrowa</h2>
@@ -147,7 +158,12 @@ function MainPage() {
 							</Link>
 						</div>
 						<div className='main-page-img'>
-							<ImgLoading src={ClearAlignerImg} alt='' />
+							<ImgLoading
+								src={
+									'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/aesthetics/clear_aligner.jpeg'
+								}
+								alt='Clear aligner'
+							/>
 						</div>
 					</div>
 				</section>

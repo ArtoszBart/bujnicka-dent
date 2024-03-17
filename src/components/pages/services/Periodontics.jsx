@@ -1,5 +1,4 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import Images from '../../../img/texts/periodontics';
 import { Link } from 'react-router-dom';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImgLoading from '../../fragments/ImgLoading';
@@ -41,7 +40,12 @@ function Periodontics() {
 					<div className='text-img normal'>
 						<div className='photos'>
 							<div className='page-photo'>
-								<ImgLoading src={Images.Cigarette} />
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/periodontics/cigarette.jpeg'
+									}
+									alt='Papieros'
+								/>
 								<span></span>
 							</div>
 						</div>

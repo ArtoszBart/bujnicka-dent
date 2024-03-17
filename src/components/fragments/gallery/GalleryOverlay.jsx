@@ -12,18 +12,26 @@ function GalleryOverlay({ hook, multipleImages }) {
 
 	let centralPaneWidthAndPos = {
 		width: `${hook.activeImageSet.length * 100}vw`,
-		transform: `translateX(calc(-${hook.openedImg * 100 + 50}vw + ${userMove}px))`,
+		transform: `translateX(calc(-${
+			hook.openedImg * 100 + 50
+		}vw + ${userMove}px))`,
 	};
 
 	useEffect(() => {
 		handleResize();
 		window.addEventListener('resize', handleResize);
-		window.addEventListener('touchmove', preventMobileVerticalScroll, { passive: false });
+		window.addEventListener('touchmove', preventMobileVerticalScroll, {
+			passive: false,
+		});
 		document.body.style.overflow = 'hidden';
 
 		return () => {
 			window.removeEventListener('resize', handleResize);
-			window.removeEventListener('touchmove', preventMobileVerticalScroll, { passive: false });
+			window.removeEventListener(
+				'touchmove',
+				preventMobileVerticalScroll,
+				{ passive: false }
+			);
 			document.body.style.overflow = 'initial';
 		};
 	});
@@ -64,12 +72,19 @@ function GalleryOverlay({ hook, multipleImages }) {
 
 	return (
 		<div
-			className={`gallery-overlay${hook.isOpened ? ' opened' : ' closing'}`}
+			className={`gallery-overlay${
+				hook.isOpened ? ' opened' : ' closing'
+			}`}
 			style={{ height: `${windowHeight}px` }}
 			onAnimationEnd={hook.onAnimationEnd}
 			id='overlay-closing'
-			onClick={hook.closeGalleryOverlay}>
-			<div className='top-pane' id='overlay-closing' onClick={hook.closeGalleryOverlay}>
+			onClick={hook.closeGalleryOverlay}
+		>
+			<div
+				className='top-pane'
+				id='overlay-closing'
+				onClick={hook.closeGalleryOverlay}
+			>
 				<i className='fas fa-times' id='overlay-closing' />
 			</div>
 			{multipleImages && (
@@ -81,27 +96,44 @@ function GalleryOverlay({ hook, multipleImages }) {
 						<i className='fas fa-chevron-right' />
 					</div>
 					<div className='bottom-pane'>
-						<i className='fas fa-caret-left' onClick={hook.prevImage}></i>
+						<i
+							className='fas fa-caret-left'
+							onClick={hook.prevImage}
+						></i>
 						<p>
 							{hook.openedImg + 1} / {hook.activeImageSet.length}
 						</p>
-						<i className='fas fa-caret-right' onClick={hook.nextImage}></i>
+						<i
+							className='fas fa-caret-right'
+							onClick={hook.nextImage}
+						></i>
 					</div>
 				</>
 			)}
 
 			<div
-				className={`central-pane${isUserTouchMoving ? ' user-moving' : ''}`}
+				className={`central-pane${
+					isUserTouchMoving ? ' user-moving' : ''
+				}`}
 				id='overlay-closing'
 				onTouchStart={onTouchStart}
 				onTouchMove={onTouchMove}
 				onTouchEnd={onTouchEnd}
 				style={centralPaneWidthAndPos}
-				ref={cenralPaneRef}>
+				ref={cenralPaneRef}
+			>
 				{hook.activeImageSet.map((imgSrc, index) => {
 					return (
-						<div className='img-box' key={index} id='overlay-closing'>
-							<ImgLoading src={imgSrc} alt='Certificate' />
+						<div
+							className='img-box'
+							key={index}
+							id='overlay-closing'
+						>
+							<ImgLoading
+								src={imgSrc}
+								alt='Zdjęcie galerii'
+								loading='lazy'
+							/>
 						</div>
 					);
 				})}

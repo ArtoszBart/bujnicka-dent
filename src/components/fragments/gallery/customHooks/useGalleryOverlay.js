@@ -1,17 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-const useGalleryOverlay = (images) => {
-
+const useGalleryOverlay = (imageSets) => {
 	const [isOpened, setIsOpened] = useState(false);
 	const [isMounted, setIsMounted] = useState(false);
 	const [activeImageSet, setActiveImageSet] = useState(null);
 	const [openedImg, setOpenedImg] = useState(null);
 
 	const openGalleryOverlay = (set, id) => {
-		if (!images) {
+		if (!imageSets) {
 			return;
 		}
-		setActiveImageSet(images[set]);
+		setActiveImageSet(imageSets[set]);
 		setOpenedImg(id);
 		setIsMounted(true);
 		setIsOpened(true);
@@ -24,7 +23,7 @@ const useGalleryOverlay = (images) => {
 	};
 
 	const closeGalleryOverlay = (e) => {
-		if (e.target.id === "overlay-closing") {
+		if (e.target.id === 'overlay-closing') {
 			setIsOpened(false);
 		}
 	};
@@ -52,26 +51,33 @@ const useGalleryOverlay = (images) => {
 	};
 
 	const keyListener = (event) => {
-		if (event.key === "ArrowRight") {
+		if (event.key === 'ArrowRight') {
 			nextImage();
-		} else if (event.key === "ArrowLeft") {
+		} else if (event.key === 'ArrowLeft') {
 			prevImage();
-		} else if (event.key === "Escape") {
+		} else if (event.key === 'Escape') {
 			setIsMounted(false);
 		}
 	};
 
 	useEffect(() => {
-		document.addEventListener("keydown", keyListener);
+		document.addEventListener('keydown', keyListener);
 
 		return () => {
-			document.removeEventListener("keydown", keyListener);
+			document.removeEventListener('keydown', keyListener);
 		};
 	});
 
 	return {
-		isMounted, openedImg, openGalleryOverlay, closeGalleryOverlay, nextImage, prevImage,
-		isOpened, onAnimationEnd, activeImageSet
+		isMounted,
+		openedImg,
+		openGalleryOverlay,
+		closeGalleryOverlay,
+		nextImage,
+		prevImage,
+		isOpened,
+		onAnimationEnd,
+		activeImageSet,
 	};
 };
 

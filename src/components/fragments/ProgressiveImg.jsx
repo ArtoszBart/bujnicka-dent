@@ -1,8 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const ProgressiveImg = ({ placeholderSrc, src, ...props }) => {
 	const [imgSrc, setImgSrc] = useState(placeholderSrc || src);
-	const loadingClass = placeholderSrc && imgSrc === placeholderSrc ? "img-loading" : "img-loaded";
+	const loadingClass =
+		placeholderSrc && imgSrc === placeholderSrc
+			? 'img-loading'
+			: 'img-loaded';
 
 	useEffect(() => {
 		let isSubscribed = true;
@@ -21,8 +24,9 @@ const ProgressiveImg = ({ placeholderSrc, src, ...props }) => {
 	return (
 		<img
 			{...{ src: imgSrc, ...props }}
-			alt={props.alt || ""}
+			alt={props.alt || ''}
 			className={loadingClass}
+			loading='lazy'
 		/>
 	);
 };

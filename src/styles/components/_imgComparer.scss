@@ -16,14 +16,24 @@
         img {
             width: 100%;
         }
-        
-        &-line {
+
+        &-divider {
             position: absolute;
             top: 0;
-            left: calc(50% - ($compare-line-width/2));
+            right: -10;
             height: 100%;
-            width: $compare-line-width;
-            background-color: $color-accent;
+            display: flex;
+            align-items: center;
+
+            &-arrow {
+                color: $color-accent;
+            }
+            
+            &-line {
+                height: 100%;
+                width: $compare-line-width;
+                background-color: $color-accent;
+            }
         }
 
         &-active-img {

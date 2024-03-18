@@ -20,6 +20,18 @@ $media-td-width: 1200px;
 	}
 }
 
+@mixin media-sd-max-or-md-min {
+	@media only screen and (max-width: $media-sd-width), (min-width: $media-md-width) {
+		@content;
+	}
+}
+
+@mixin media-md-min-max {
+	@media only screen and (min-width: $media-sd-width) and (max-width: $media-md-width) {
+		@content;
+	}
+}
+
 @mixin media-md-min {
 	@media screen and (min-width: $media-md-width) {
 		@content;

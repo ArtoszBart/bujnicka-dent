@@ -14,7 +14,7 @@
     }
 
     &:last-child {
-        @if($tab-child-no % $columns ==0) {
+        @if($tab-child-no % $columns == 0) {
             border-bottom-right-radius: 1rem;
         }
     }

@@ -1,42 +1,57 @@
 @use '../abstracts/' as *;
-
-.tabs-nav {
+.prices-wrapper {
+	width: 100%;
 	display: grid;
-	grid-template-columns: repeat($tab-nav-columns-l, 1fr);
-	margin-bottom: 3rem;
-	padding-left: 0px;
-	border: 1px solid rgba($color-text, 0.2);
-	border-radius: 1rem;
+	grid-template-columns: 250px 1fr;
+	gap: 5rem;
+	align-items: start;
+
 	@include media-md {
-		grid-template-columns: repeat($tab-nav-columns-m, 1fr);
-	}
-	@include media-sd {
-		grid-template-columns: repeat($tab-nav-columns-s, 1fr);
+		display: flex;
+		flex-direction: column;
+		gap: 0;
 	}
 
-	li {
-		@include flex-center;
-		padding: 0.5rem;
-		list-style: none;
-		text-align: center;
-		font-weight: 400;
-		cursor: pointer;
-		@include transition-ease-fast;
-		@include set-corner-round($tab-nav-columns-l);
+	.tabs-nav {
+		margin-bottom: 3rem;
+		padding-left: 0px;
+		border: 1px solid rgba($color-text, 0.2);
+		border-radius: 1rem;
+
 		@include media-md {
-			@include set-corner-round($tab-nav-columns-m);
+			display: grid;
+			grid-template-columns: repeat($tab-nav-columns-m, 1fr);
 		}
+
 		@include media-sd {
-			@include set-corner-round($tab-nav-columns-s);
+			grid-template-columns: repeat($tab-nav-columns-s, 1fr);
 		}
 
-		&:hover {
-			background: rgba($color-accent, 0.2);
-		}
+		li {
+			padding: 0.5rem;
+			list-style: none;
+			text-align: center;
+			font-weight: 400;
+			cursor: pointer;
+			@include flex-center;
+			@include transition-ease-fast;
 
-		&.active {
-			color: $color-text-secondary;
-			background: $color-accent;
+			&:hover {
+				background: rgba($color-accent, 0.2);
+			}
+	
+			&.active {
+				color: $color-text-secondary;
+				background: $color-accent;
+			}
+
+			@include media-md-min-max {
+				@include set-corner-round($tab-nav-columns-m);
+			}
+
+			@include media-sd-max-or-md-min {
+				@include set-corner-round($tab-nav-columns-s);
+			}
 		}
 	}
 }

@@ -35,7 +35,7 @@ function ContactForm() {
 				<FormInput
 					type='email'
 					name='email'
-					placeholder='Adres email'
+					placeholder='Twój adres email'
 					tabIndex='2'
 					value={values.email}
 					onChange={handleChange}

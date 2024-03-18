@@ -6,6 +6,7 @@ import CekaModal from '../fragments/modals/CekaModal';
 import PillarToothModal from '../fragments/modals/PillarToothModal';
 import useModal from '../fragments/customHooks/useModal';
 import usePrices from '../fragments/prices/usePrices';
+import CircleLoader from 'react-spinners/CircleLoader';
 
 function Prices() {
 	const [activeTab, setActiveTab] = useState(0);
@@ -18,29 +19,31 @@ function Prices() {
 			<article className='page-content'>
 				{prices && isfetched ? (
 					<>
-						<ul className='tabs-nav'>
-							{prices.map((category, key) => {
-								return (
-									<TabNavItem
-										title={category.title}
-										activeTab={activeTab}
-										setActiveTab={setActiveTab}
-										key={key}
-										id={key}
-									/>
-								);
-							})}
-						</ul>
-
-						<TabContent prices={prices[activeTab]} />
+						<div className='prices-wrapper'>
+							<ul className='tabs-nav'>
+								{prices.map((category, key) => {
+									return (
+										<TabNavItem
+											title={category.title}
+											activeTab={activeTab}
+											setActiveTab={setActiveTab}
+											key={key}
+											id={key}
+										/>
+									);
+								})}
+							</ul>
+							<TabContent prices={prices[activeTab]} />
+						</div>
 					</>
 				) : (
-					<h2>Ładowanie...</h2>
+					<>
+						<CircleLoader color='#3fbbd1' />
+					</>
 				)}
-
-				<CekaModal hook={UseModal} />
-				<PillarToothModal hook={UseModal} />
 			</article>
+			<CekaModal hook={UseModal} />
+			<PillarToothModal hook={UseModal} />
 		</main>
 	);
 }

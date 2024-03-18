@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import CircleLoader from 'react-spinners/CircleLoader';
 
 const ImgLoading = (props) => {
 	const [imgLoaded, setImgLoaded] = useState(false);
@@ -24,8 +25,7 @@ const ImgLoading = (props) => {
 				<img {...props} alt={props.alt || ''} />
 			) : (
 				<div className='loading'>
-					<i className='fa fa-spinner fa-spin'></i>
-					<span>Ładowanie zdjęcia</span>
+					<CircleLoader color='#3fbbd1' />
 				</div>
 			)}
 		</>

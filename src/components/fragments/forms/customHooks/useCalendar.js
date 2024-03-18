@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { formatDateSql } from '../../../../helpers/dateAndTime';
-
 const useCalendar = (doctorId) => {
 	const [isPrevWeekAvailable, setIsPrevWeekAvailable] = useState(false);
 	const [isNextWeekAvailable, setIsNextWeekAvailable] = useState(true);

@@ -19,7 +19,8 @@ p,
 input,
 textarea,
 address,
-ul {
+ul,
+.contact-box p {
     width: 100%;
     margin-bottom: 1rem;
     font-weight: $font-weight-pale;

@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import CircleLoader from 'react-spinners/CircleLoader';
 
 const ImgLoadingLink = (props) => {
-
 	const [imgLoaded, setImgLoaded] = useState(false);
 
 	useEffect(() => {
@@ -20,19 +20,15 @@ const ImgLoadingLink = (props) => {
 
 	return (
 		<>
-			{imgLoaded ?
+			{imgLoaded ? (
 				<Link to={props.to}>
-					<img
-						src={props.src}
-						alt={props.alt || ""}
-					/>
+					<img src={props.src} alt={props.alt || ''} />
 				</Link>
-				:
-				<div className="loading">
-					<i className="fa fa-spinner fa-spin"></i>
-					<span>Ładowanie zdjęcia</span>
+			) : (
+				<div className='loading'>
+					<CircleLoader color='#3fbbd1' />
 				</div>
-			}
+			)}
 		</>
 	);
 };

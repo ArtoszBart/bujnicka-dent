@@ -5,6 +5,7 @@ import useAppointmentForm from '../fragments/forms/customHooks/useAppointmentFor
 import ParallaxBaner from '../fragments/ParallaxBanner';
 import { useEffect } from 'react';
 import SuccessPage from '../fragments/forms/SuccessPage';
+import CircleLoader from 'react-spinners/CircleLoader';
 
 function Appointment() {
 	const {
@@ -149,7 +150,7 @@ function Appointment() {
 						<div className='contact-form-info'>
 							<span className={getInfoClassName()}>
 								{submitInfo.sending && (
-									<i className='fa fa-spinner fa-spin'></i>
+									<CircleLoader color='#3fbbd1' />
 								)}
 								{` ${submitInfo.message}`}
 							</span>

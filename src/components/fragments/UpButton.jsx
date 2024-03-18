@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from 'react';
+import { FaChevronUp } from 'react-icons/fa';
 
 const UpButton = () => {
-
 	const [isVisible, setIsVisible] = useState(false);
 
 	const scrollUp = () => {
@@ -20,16 +20,19 @@ const UpButton = () => {
 	};
 
 	useLayoutEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+		window.addEventListener('scroll', handleScroll);
 
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
-  return (
-	<div className={`up-btn ${isVisible ? 'active' : ''}`} onClick={scrollUp}>
-		<i className="fas fa-chevron-up" aria-hidden="true"></i>
-	</div>
-  );
+	return (
+		<div
+			className={`up-btn ${isVisible ? 'active' : ''}`}
+			onClick={scrollUp}
+		>
+			<FaChevronUp />
+		</div>
+	);
 };
 
 export default UpButton;

@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ContactForm from '../fragments/forms/ContactForm';
 import ParallaxBaner from '../fragments/ParallaxBanner';
+import {
+	FaLocationDot,
+	FaAddressCard,
+	FaMap,
+	FaPhone,
+	FaEnvelope,
+} from 'react-icons/fa6';
+import { IconContext } from 'react-icons';
 
 function Contact() {
 	return (
@@ -11,27 +19,51 @@ function Contact() {
 				<section className='contact'>
 					<div className='contact-info'>
 						<h3>Bujnicka Dent</h3>
-						<address>
-							Gabinet Stomatologiczny Magdalena Bujnicka
-							<br />
-							ul. Hansa Christiana Andersena 6<br />
-							01-911 Warszawa
-							<br />
-							<a className='text-link' href='#map'>
-								Zobacz na mapie
-							</a>
-							<br />
-							<a className='text-link' href='tel:+48609606814'>
-								+48 609-606-814
-							</a>
-							<br />
-							<a
-								className='text-link'
-								href='mailto:magdalena.bujnicka@gmail.com'
-							>
-								magdalena.bujnicka@gmail.com
-							</a>
-						</address>
+						<IconContext.Provider
+							value={{
+								color: '#083a78',
+								size: '1.5rem',
+								className: 'address-icon',
+							}}
+						>
+							<div className='contact-box'>
+								<FaAddressCard />
+								<p>
+									Gabinet Stomatologiczny Magdalena Bujnicka
+								</p>
+							</div>
+							<div className='contact-box'>
+								<FaLocationDot />
+								<address>
+									ul. Hansa Christiana Andersena 6<br />
+									01-911 Warszawa
+								</address>
+							</div>
+							<div className='contact-box'>
+								<FaMap />
+								<a className='text-link' href='#map'>
+									Zobacz na mapie
+								</a>
+							</div>
+							<div className='contact-box'>
+								<FaPhone />
+								<a
+									className='text-link'
+									href='tel:+48609606814'
+								>
+									+48 609-606-814
+								</a>
+							</div>
+							<div className='contact-box'>
+								<FaEnvelope />
+								<a
+									className='text-link'
+									href='mailto:magdalena.bujnicka@gmail.com'
+								>
+									magdalena.bujnicka@gmail.com
+								</a>
+							</div>
+						</IconContext.Provider>
 						<Link to='/umow-wizyte' className='button'>
 							Zapisz się na wizytę
 						</Link>

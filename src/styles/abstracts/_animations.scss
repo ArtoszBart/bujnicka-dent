@@ -1,7 +1,7 @@
 @use './colors' as *;
 
 $time-slow: 0.6s;
-$time-fast: 0.3s;
+$time-fast: 0.2s;
 
 @mixin transition-ease-fast {
 	transition: all $time-fast ease-in-out;

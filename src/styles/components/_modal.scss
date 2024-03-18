@@ -49,6 +49,10 @@
 			cursor: pointer;
 			@include transition-ease-fast;
 
+			&-icon {
+				pointer-events: none;
+			}
+
 			&:hover {
 				background-color: rgba($color-background-dark, 0.5);
 			}

@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ParallaxBanner from '../fragments/ParallaxBanner';
 import ImgLoading from '../fragments/ImgLoading';
+import { FaChevronDown } from 'react-icons/fa';
 
 function MainPage() {
 	const device1st = 'Autorski gabinet stomatologiczny';
@@ -32,7 +33,7 @@ function MainPage() {
 					to='/'
 					onClick={handleScroll}
 				>
-					<i className='fas fa-chevron-down'></i>
+					<FaChevronDown />
 				</Link>
 				<div className='quote'>
 					<q>Salus aegroti suprema lex</q>

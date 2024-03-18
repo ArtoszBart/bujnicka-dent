@@ -55,7 +55,7 @@
 		bottom: 0;
 		right: 0;
 
-		i {
+		* {
 			transform: translate(0%, -25px);
 		}
 	}
@@ -78,6 +78,13 @@
 		i {
 			cursor: pointer;
 			padding: 10px;
+		}
+
+		&-button {
+			cursor: pointer;
+			display: flex;
+			border-radius: 50px;
+			padding: 5px;
 		}
 	}
 

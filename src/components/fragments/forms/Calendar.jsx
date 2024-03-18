@@ -7,7 +7,6 @@ import useCalendar from './customHooks/useCalendar';
 function Calendar({ doctorId, handleChange, value, error }) {
 	const {
 		freeSlots,
-		freeSlotsFetched,
 		isNextWeekAvailable,
 		isPrevWeekAvailable,
 		nextWeek,

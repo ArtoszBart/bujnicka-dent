@@ -1,5 +1,13 @@
 import ImgLoading from '../ImgLoading';
 import { useState, useEffect, useRef } from 'react';
+import { IconContext } from 'react-icons';
+import {
+	FaTimes,
+	FaChevronLeft,
+	FaChevronRight,
+	FaCaretLeft,
+	FaCaretRight,
+} from 'react-icons/fa';
 
 function GalleryOverlay({ hook, multipleImages }) {
 	const cenralPaneRef = useRef();
@@ -80,37 +88,43 @@ function GalleryOverlay({ hook, multipleImages }) {
 			id='overlay-closing'
 			onClick={hook.closeGalleryOverlay}
 		>
-			<div
-				className='top-pane'
-				id='overlay-closing'
-				onClick={hook.closeGalleryOverlay}
-			>
-				<i className='fas fa-times' id='overlay-closing' />
-			</div>
-			{multipleImages && (
-				<>
-					<div className='left-pane' onClick={hook.prevImage}>
-						<i className='fas fa-chevron-left' />
-					</div>
-					<div className='right-pane' onClick={hook.nextImage}>
-						<i className='fas fa-chevron-right' />
-					</div>
-					<div className='bottom-pane'>
-						<i
-							className='fas fa-caret-left'
-							onClick={hook.prevImage}
-						></i>
-						<p>
-							{hook.openedImg + 1} / {hook.activeImageSet.length}
-						</p>
-						<i
-							className='fas fa-caret-right'
-							onClick={hook.nextImage}
-						></i>
-					</div>
-				</>
-			)}
-
+			<IconContext.Provider value={{ color: 'white' }}>
+				<div
+					className='top-pane'
+					id='overlay-closing'
+					onClick={hook.closeGalleryOverlay}
+				>
+					<FaTimes id='overlay-closing' />
+				</div>
+				{multipleImages && (
+					<>
+						<div className='left-pane' onClick={hook.prevImage}>
+							<FaChevronLeft />
+						</div>
+						<div className='right-pane' onClick={hook.nextImage}>
+							<FaChevronRight />
+						</div>
+						<div className='bottom-pane'>
+							<div
+								className='bottom-pane-button'
+								onClick={hook.prevImage}
+							>
+								<FaCaretLeft />
+							</div>
+							<p>
+								{hook.openedImg + 1} /{' '}
+								{hook.activeImageSet.length}
+							</p>
+							<div
+								className='bottom-pane-button'
+								onClick={hook.nextImage}
+							>
+								<FaCaretRight />
+							</div>
+						</div>
+					</>
+				)}
+			</IconContext.Provider>
 			<div
 				className={`central-pane${
 					isUserTouchMoving ? ' user-moving' : ''

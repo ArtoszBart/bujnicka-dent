@@ -28,13 +28,13 @@ function MainPage() {
 				<Link className='button' to='/umow-wizyte'>
 					Zapisz się na wizytę
 				</Link>
-				<Link
+				<div
 					className='scroll-down-button'
 					to='/'
 					onClick={handleScroll}
 				>
 					<FaChevronDown />
-				</Link>
+				</div>
 				<div className='quote'>
 					<q>Salus aegroti suprema lex</q>
 					<p>Dobro chorego najwyższym prawem</p>
@@ -153,7 +153,7 @@ function MainPage() {
 							</p>
 							<Link
 								className='button'
-								to='/oferta/stomatologia-estetyczna'
+								to='/oferta/stomatologia-estetyczna#clear-aligner'
 							>
 								Zobacz więcej
 							</Link>

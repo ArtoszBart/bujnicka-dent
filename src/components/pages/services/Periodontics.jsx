@@ -196,7 +196,7 @@ function Periodontics() {
 								, jakim jest płytka bakteryjna, co odbywa się
 								podczas zabiegu{' '}
 								<Link
-									to='/oferta/profilaktyka'
+									to='/oferta/profilaktyka#preventive-treatments'
 									className='text-link'
 								>
 									<b>scalingu</b>
@@ -235,7 +235,7 @@ function Periodontics() {
 								<li>usunięcie nawisów wypełnień</li>
 								<li>
 									<Link
-										to='/oferta/stomatologia-estetyczna'
+										to='/oferta/stomatologia-estetyczna#fillings-replacement'
 										className='text-link'
 									>
 										wymianę nieprawidłowych wypełnień
@@ -243,7 +243,7 @@ function Periodontics() {
 								</li>
 								<li>
 									<Link
-										to='/oferta/stomatologia-zachowawcza'
+										to='/oferta/stomatologia-zachowawcza#dental-caries-treatment'
 										className='text-link'
 									>
 										leczenie próchnicy
@@ -270,16 +270,16 @@ function Periodontics() {
 									higieny jamy ustnej
 								</b>
 								. Pozwala to na wykonanie zaplanowanych w fazie
-								przygotowawczej zabiegów{' '}
+								przygotowawczej{' '}
 								<Link
 									to='/oferta/chirurgia-stomatoligiczna'
 									className='text-link'
 								>
-									chirurgicznych
+									zabiegów chirurgicznych
 								</Link>
 								, ortodontycznych lub{' '}
 								<Link
-									to='/oferta/chirurgia-stomatoligiczna'
+									to='/oferta/protetyka'
 									className='text-link'
 								>
 									protetycznych

@@ -67,7 +67,7 @@ const Faq = () => {
 						<b>leczeniu ortodontycznym</b> lub przy{' '}
 						<Link
 							className='text-link'
-							to='/oferta/leczenie-stawów-skroniowo-zuchwowych'
+							to='/oferta/leczenie-stawow-skroniowo-zuchwowych'
 						>
 							schorzeniach stawu skroniowo-żuchwowego
 						</Link>
@@ -90,7 +90,7 @@ const Faq = () => {
 					<p>
 						<Link
 							className='text-link'
-							to='/oferta/chirurgia-stomatoligiczna'
+							to='/oferta/chirurgia-stomatoligiczna#8th-removal'
 						>
 							Więcej o usuwaniu ósemek
 						</Link>
@@ -143,7 +143,7 @@ const Faq = () => {
 						<b>Rozwiązaniem problemu</b> jest{' '}
 						<Link
 							className='text-link'
-							to='/oferta/stomatologia-estetyczna'
+							to='/oferta/stomatologia-estetyczna#fillings-replacement'
 						>
 							wymiana wypełnień
 						</Link>{' '}
@@ -151,7 +151,7 @@ const Faq = () => {
 						pozostaje jedzenie lub{' '}
 						<Link
 							className='text-link'
-							to='/oferta/stomatologia-estetyczna'
+							to='/oferta/stomatologia-estetyczna#veneers'
 						>
 							wykonanie licówek
 						</Link>{' '}
@@ -183,7 +183,10 @@ const Faq = () => {
 							overlay, endokoronę
 						</Link>{' '}
 						lub{' '}
-						<Link className='text-link' to='/oferta/protetyka'>
+						<Link
+							className='text-link'
+							to='/oferta/protetyka#prosthetic-crowns'
+						>
 							koronę protetyczną
 						</Link>
 						.
@@ -199,7 +202,10 @@ const Faq = () => {
 						uciśnięta przez protezę.
 					</p>
 					<p>
-						<Link className='text-link' to='/oferta/protetyka'>
+						<Link
+							className='text-link'
+							to='/oferta/protetyka#dentures'
+						>
 							Więcej o protezach
 						</Link>
 					</p>

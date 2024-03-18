@@ -41,9 +41,9 @@ function Contact() {
 							</div>
 							<div className='contact-box'>
 								<FaMap />
-								<a className='text-link' href='#map'>
+								<Link className='text-link' to='#map'>
 									Zobacz na mapie
-								</a>
+								</Link>
 							</div>
 							<div className='contact-box'>
 								<FaPhone />

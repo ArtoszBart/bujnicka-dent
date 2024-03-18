@@ -70,7 +70,7 @@ function Prosthodontics() {
 					<p>
 						To wszystko ma wpływ na relację między szczęką a żuchwą
 						i <b>może doprowadzić do</b>{' '}
-						<Link to='/oferta/leczenie-stawów-skroniowo-zuchwowych'>
+						<Link to='/oferta/leczenie-stawow-skroniowo-zuchwowych'>
 							chorób stawów skroniowo-żuchwowych
 						</Link>
 						, nieprawidłowości zgryzowych, utraty kolejnych zębów
@@ -90,12 +90,10 @@ function Prosthodontics() {
 						odtwarzają utracone tkanki zęba.
 					</p>
 					<p>
-						(
+						Pełny artykuł o wkładach koronowych znaduje się{' '}
 						<Link to='/oferta/inlay-onlay-overlay-endokorony'>
-							Pełny artykuł o wkładach koronowych znaduje się
 							tutaj
 						</Link>
-						)
 					</p>
 
 					<h3>Wkłady koronowo-korzeniowe</h3>

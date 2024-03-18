@@ -59,7 +59,7 @@ function DentalSurgery() {
 						</li>
 					</ul>
 
-					<h3>Usuwanie Ósemek</h3>
+					<h3 id='8th-removal'>Usuwanie Ósemek</h3>
 					<div className='text-img upright'>
 						<div className='photos'>
 							<div className='page-photo'>

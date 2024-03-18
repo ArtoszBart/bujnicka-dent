@@ -1,6 +1,7 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImgLoading from '../../fragments/ImgLoading';
+import { Link } from 'react-router-dom';
 
 function Prevention() {
 	return (
@@ -110,9 +111,9 @@ function Prevention() {
 								ultradżwięków.
 							</p>
 							<p>
-								<a href='#services' className='text-link'>
+								<Link to='#services' className='text-link'>
 									<b>Scaling</b>
-								</a>{' '}
+								</Link>{' '}
 								powinien być wykonywany{' '}
 								<b>
 									jak najwcześniej po pojawieniu się kamienia

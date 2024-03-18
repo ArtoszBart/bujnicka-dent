@@ -188,7 +188,7 @@ function AestheticDentistry() {
 							parafunkcje typu zgrzytanie, zaciskanie zębów.
 							Konieczne jest najpierw{' '}
 							<Link
-								to='/oferta/leczenie-stawów-skroniowo-zuchwowych'
+								to='/oferta/leczenie-stawow-skroniowo-zuchwowych'
 								className='text-link'
 							>
 								Leczenie Stawów Skroniowo-Żuchwowych

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 	const creationDate = 2022;
@@ -15,10 +16,11 @@ function Footer() {
 		<footer>
 			<p>
 				&copy; {getCopyrightYears()}{' '}
-				<a className='text-link' href='/'>
-					<span className='nowrap'>Bujnicka-Dent.pl</span>
-				</a>
+				<Link className='text-link' to='/'>
+					<span className='nowrap'>Bujnicka Dent</span>
+				</Link>
 			</p>
+			|
 			<p>
 				Developed by <span className='nowrap'>Bartosz Art</span>
 			</p>

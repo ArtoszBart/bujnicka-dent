@@ -37,6 +37,10 @@ ul,
     }
 }
 
+textarea {
+    resize: none;
+}
+
 ul {
     font-size: $font-size-ul;
     padding-left: 3rem;

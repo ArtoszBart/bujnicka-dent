@@ -26,18 +26,18 @@ function DigitalDentistry() {
 						lekarzem prowadzącym i zespołem wykonującym plan
 						leczenia.
 					</p>
-					<div className='text-img downright'>
-						<div>
-							<div className='photos'>
-								<div className='page-photo'>
-									<ImgLoading
-										src={
-											'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/digital/dsd.jpeg'
-										}
-										alt='Digital Smile Design'
-									/>
-								</div>
+					<div className='text-img upright'>
+						<div className='photos'>
+							<div className='page-photo'>
+								<ImgLoading
+									src={
+										'https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/texts/digital/dsd.jpeg'
+									}
+									alt='Digital Smile Design'
+								/>
 							</div>
+						</div>
+						<div>
 							<h3>
 								Jak działa{' '}
 								<abbr title='Digital Smile Design'>DSD</abbr>?

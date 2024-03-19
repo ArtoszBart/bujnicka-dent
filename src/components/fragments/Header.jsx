@@ -6,19 +6,19 @@ import { Link } from 'react-router-dom';
 function Header() {
 	const [navbar, setNavbar] = useState(false);
 
-	const changeNavbar = () => {
-		if (window.scrollY >= 149) {
-			setNavbar(true);
-		} else {
-			setNavbar(false);
-		}
-	};
+	// const changeNavbar = () => {
+	// 	if (window.scrollY >= 149) {
+	// 		setNavbar(true);
+	// 	} else {
+	// 		setNavbar(false);
+	// 	}
+	// };
 
-	useEffect(() => {
-		window.addEventListener('scroll', changeNavbar);
+	// useEffect(() => {
+	// 	window.addEventListener('scroll', changeNavbar);
 
-		return () => window.removeEventListener('scroll', changeNavbar);
-	}, []);
+	// 	return () => window.removeEventListener('scroll', changeNavbar);
+	// }, []);
 
 	return (
 		<header>

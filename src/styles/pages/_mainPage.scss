@@ -16,11 +16,24 @@
 			font-size: 2vw;
 			color: $color-background;
 			cursor: pointer;
+			
+			* {
+				@include transition-ease-fast;
+			}
 
+			@include media-md {
+				font-size: 1.5rem;
+			}
+			
 			&:hover {
-				i {
+				* {
 					color: $color-accent;
-					font-size: 3vw;
+					font-size: 2.5vw;
+					@include transition-ease-fast;
+					
+					@include media-md {
+						font-size: 2rem;
+					}
 				}
 			}
 		}

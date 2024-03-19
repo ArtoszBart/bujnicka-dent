@@ -9,6 +9,11 @@
 .text-link {
     color: $color-accent;
 
+    a {
+        color: $color-accent;
+        text-decoration: none;
+    }
+
     &:hover {
         text-decoration: underline;
     }
@@ -18,11 +23,11 @@
     border-radius: 10rem;
     font-size: $font-size-button;
     color: $color-text-secondary;
-    background-color: $color-accent;
+    background-color: $color-secondary;
     @include transition-ease-fast;
     
     &:hover {
-        background-color: $color-accent-light;
+        background-color: $color-accent;
     }
 }
 
@@ -40,9 +45,9 @@
     @include transition-ease-slow;
 
     &:hover {
-        background-color: $color-accent;
+        background-color: $color-secondary;
         border-color: rgba($color-background, 0.3);
         @include animation-pulse;
-        box-shadow: 0 0 0 2rem rgba(#000, 0);
+        box-shadow: 0 0 0 2rem rgba(red, 0);
     }
 }

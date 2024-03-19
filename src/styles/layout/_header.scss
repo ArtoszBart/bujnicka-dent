@@ -1,7 +1,9 @@
 @use '../abstracts' as *;
 
 header {
-	@include fixed-full-width;
+	position: absolute;
+    top: 0;
+    width: 100%;
 	@include media-md {
 		position: absolute;
 		background-color: rgba($color-text, 0.5);
@@ -16,9 +18,14 @@ header {
 		@include transition-ease-fast;
 
 		.logo img {
-			width: 100%;
-			min-width: 150px;
+			min-width: 300px;
 			@include transition-ease-fast;
+			@include media-md {
+				min-width: 250px;
+			}
+			@include media-sd {
+				min-width: 150px;
+			}
 		}
 	}
 	

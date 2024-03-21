@@ -16,13 +16,20 @@ abbr {
 }
 
 p,
+textarea,
+address,
+ul,
+.contact-box p {
+    margin-bottom: 1rem;
+}
+
+p,
 input,
 textarea,
 address,
 ul,
 .contact-box p {
     width: 100%;
-    margin-bottom: 1rem;
     font-weight: $font-weight-pale;
     font-size: $font-size-text;
     letter-spacing: 0.3px;

@@ -263,14 +263,20 @@ function AestheticDentistry() {
 					<h3>Korony estetyczne</h3>
 					<p>
 						Pełen opis koron estetycznych znajduje się w zakładce{' '}
-						<Link to='/oferta/protetyka' className='text-link'>
+						<Link
+							to='/oferta/protetyka#prosthetic-crowns'
+							className='text-link'
+						>
 							Protetyka
 						</Link>
 					</p>
 					<h3>Mosty</h3>
 					<p>
 						Pełen opis mostów znajduje się w zakładce{' '}
-						<Link to='/oferta/protetyka' className='text-link'>
+						<Link
+							to='/oferta/protetyka#prosthetic-bridges'
+							className='text-link'
+						>
 							Protetyka
 						</Link>
 					</p>

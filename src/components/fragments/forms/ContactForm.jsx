@@ -3,6 +3,7 @@ import useContactForm from './customHooks/useContactForm';
 import FormInput from './FormInput';
 import AgreementBox from './AgreementBox';
 import CircleLoader from 'react-spinners/CircleLoader';
+import { FaAt, FaIdCard, FaMessage, FaT } from 'react-icons/fa6';
 
 function ContactForm() {
 	const { handleChange, handleSubmit, values, errors, submitInfo } =
@@ -31,6 +32,7 @@ function ContactForm() {
 					value={values.name}
 					onChange={handleChange}
 					error={errors.name}
+					Icon={<FaIdCard />}
 				/>
 				<FormInput
 					type='email'
@@ -40,6 +42,7 @@ function ContactForm() {
 					value={values.email}
 					onChange={handleChange}
 					error={errors.email}
+					Icon={<FaAt />}
 				/>
 				<FormInput
 					type='text'
@@ -49,25 +52,18 @@ function ContactForm() {
 					value={values.subject}
 					onChange={handleChange}
 					error={errors.subject}
+					Icon={<FaT />}
 				/>
-
-				<div className='contact-form-input'>
-					<label htmlFor='message'>Treść wiadomości</label>
-					<textarea
-						className={errors.message && 'error-input'}
-						name='message'
-						id='message'
-						placeholder='Treść wiadomości'
-						cols='30'
-						rows='5'
-						tabIndex='4'
-						value={values.message}
-						onChange={handleChange}
-					></textarea>
-					{errors.message && (
-						<span className='error-text'>{errors.message}</span>
-					)}
-				</div>
+				<FormInput
+					type='text-area'
+					name='message'
+					placeholder='Treść wiadomości'
+					tabIndex='4'
+					value={values.message}
+					onChange={handleChange}
+					error={errors.message}
+					Icon={<FaMessage />}
+				/>
 				<AgreementBox
 					type='checkbox'
 					name='agreement'

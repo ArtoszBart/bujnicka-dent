@@ -6,6 +6,8 @@ import ParallaxBaner from '../fragments/ParallaxBanner';
 import { useEffect } from 'react';
 import SuccessPage from '../fragments/forms/SuccessPage';
 import CircleLoader from 'react-spinners/CircleLoader';
+import { FaIdCard, FaMessage, FaPhone, FaUserDoctor } from 'react-icons/fa6';
+import { IconContext } from 'react-icons';
 
 function Appointment() {
 	const {
@@ -63,6 +65,7 @@ function Appointment() {
 							value={values.firstName}
 							onChange={handleChange}
 							error={errors.firstName}
+							Icon={<FaIdCard />}
 						/>
 
 						<FormInput
@@ -73,6 +76,7 @@ function Appointment() {
 							value={values.lastName}
 							onChange={handleChange}
 							error={errors.lastName}
+							Icon={<FaIdCard />}
 						/>
 
 						<FormInput
@@ -83,52 +87,49 @@ function Appointment() {
 							value={values.phoneNo}
 							onChange={handleChange}
 							error={errors.phoneNo}
+							Icon={<FaPhone />}
 						/>
 
-						<div className='contact-form-input'>
-							<label htmlFor='description'>Opis</label>
-							<textarea
-								className={errors.description && 'error-input'}
-								name='description'
-								id='description'
-								placeholder='Opis (opcjonalnie)'
-								cols='30'
-								rows='5'
-								tabIndex='4'
-								value={values.description}
-								onChange={handleChange}
-							></textarea>
-							{errors.description && (
-								<span className='error-text'>
-									{errors.description}
-								</span>
-							)}
-						</div>
+						<FormInput
+							type='text-area'
+							name='description'
+							placeholder='Opis (opcjonalnie)'
+							tabIndex='4'
+							value={values.message}
+							onChange={handleChange}
+							error={errors.message}
+							Icon={<FaMessage />}
+						/>
 
 						<div className='contact-form-input select-input'>
 							<label htmlFor='doctor'>Lekarz</label>
-							<select
-								className={errors.doctor && 'error-input'}
-								onChange={(e) => handleChange(e)}
-								name='doctor'
-								id='doctor'
-								tabIndex='5'
-								disabled={!docsFetched}
-							>
-								<option value={''} hidden>
-									{getDefaultOptionText()}
-								</option>
-								{doctors.map((doctor, index) => (
-									<option key={index} value={doctor.id}>
-										{`${doctor.firstName} ${doctor.lastName}`}
+							<div className='contact-form-input-box'>
+								<IconContext.Provider
+									value={{
+										className: 'form-icon select',
+									}}
+								>
+									<FaUserDoctor />
+								</IconContext.Provider>
+								<select
+									className={errors.doctor && 'error-input'}
+									onChange={(e) => handleChange(e)}
+									name='doctor'
+									id='doctor'
+									tabIndex='5'
+									disabled={!docsFetched}
+								>
+									<option value={''} hidden>
+										{getDefaultOptionText()}
 									</option>
-								))}
-							</select>
-							{errors.doctor && (
-								<span className='error-text'>
-									{errors.doctor}
-								</span>
-							)}
+									{doctors.map((doctor, index) => (
+										<option key={index} value={doctor.id}>
+											{`${doctor.firstName} ${doctor.lastName}`}
+										</option>
+									))}
+								</select>
+							</div>
+							<span className='error-text'>{errors.doctor}</span>
 						</div>
 
 						<CalendarForm

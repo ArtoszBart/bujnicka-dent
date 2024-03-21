@@ -5,6 +5,22 @@
     @include flex-column;
 
 	&-input {
+
+        &-box {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .form-icon {
+            color: $color-secondary;
+            font-size: 1.2rem;
+        }
+
+        .form-icon:not(.select) {
+            margin-top: 3px;
+        }
+
+
         label {
             display: none;
         }
@@ -12,7 +28,7 @@
 		input,
 		textarea,
 		select {
-            margin-block: 1rem 0rem;
+            width: 100%;
 			border: none;
 			border-bottom: 1px solid $color-text;
 			background-color: $color-background;
@@ -39,14 +55,16 @@
 		.error-input {
 			border-bottom: 1px solid $color-error;
 		}
+
+        .error-text {
+            display: inline-block;
+            color: $color-error;
+            font-family: inherit;
+            font-size: 0.8rem;
+            min-height: 20px;
+        }
 	}
 
-    .error-text {
-        color: $color-error;
-        font-family: inherit;
-        font-size: 0.8rem;
-        min-height: 20px;
-    }
     
 	.submit {
         margin: 1rem auto 0;

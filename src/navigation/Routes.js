@@ -1,6 +1,9 @@
 import React, { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+import DentalSurgery from '../components/pages/services/DentalSurgery';
+import Joints from '../components/pages/services/Joints';
+import Prosthodontics from '../components/pages/services/Prosthodontics';
 const MainPage = lazy(() => import('../components/pages/MainPage'));
 const AboutPage = lazy(() => import('../components/pages/About'));
 const OfferPage = lazy(() => import('../components/pages/Offer'));
@@ -15,9 +18,6 @@ const AestheticDentistry = lazy(() =>
 const ConservativeDentistry = lazy(() =>
 	import('../components/pages/services/ConservativeDentistry')
 );
-const DentalSurgery = lazy(() =>
-	import('../components/pages/services/DentalSurgery')
-);
 const Diagnostics = lazy(() =>
 	import('../components/pages/services/Diagnostics')
 );
@@ -28,7 +28,6 @@ const Endodontics = lazy(() =>
 	import('../components/pages/services/Endodontics')
 );
 const Implants = lazy(() => import('../components/pages/services/Implants'));
-const Joints = lazy(() => import('../components/pages/services/Joints'));
 const InlayOnlay = lazy(() =>
 	import('../components/pages/services/InlayOnlay')
 );
@@ -37,9 +36,6 @@ const Periodontics = lazy(() =>
 );
 const Prevention = lazy(() =>
 	import('../components/pages/services/Prevention')
-);
-const Prosthodontics = lazy(() =>
-	import('../components/pages/services/Prosthodontics')
 );
 const Appointment = lazy(() => import('../components/pages/Appointment'));
 
@@ -234,7 +230,7 @@ const AppRoutes = () => {
 
 			<Route
 				exact
-				path='/polityka-prywatności'
+				path='/polityka-prywatnosci'
 				element={
 					<React.Suspense fallback={<>...</>}>
 						<PrivacyPolicy />

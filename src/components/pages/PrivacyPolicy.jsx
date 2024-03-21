@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
 						pacjenta i Rzecznika Praw Pacjenta); 4. Ewentualnie
 						Pana/Pani dane moga by przetwarzane w celu dochodzenia
 						roszczen zwiazanych z zawarta z Panem/Pania umowa na
-						swiadczenie ustug medycznych - wöwczas podstawe prawn
+						swiadczenie ustug medycznych - wówczas podstawe prawn
 						przetwarzania danych stanowi niezbednosé przetwarzania
 						danych do realizacji prawnie uzasadnionego interesu
 						administratora, którym jest mozliwosé dochodzenia

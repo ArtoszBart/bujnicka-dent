@@ -5,10 +5,6 @@
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 5rem;
 	max-width: 1400px;
-
-	.select-input {
-		@include flex-column;
-	}
 	
 	.calendar {
 		text-align: center;
@@ -25,7 +21,7 @@
 		}
 
 		&-nav {
-			background-color: $color-accent;
+			background-color: $color-secondary;
 			display: flex;
 			align-items: center;
 			padding-inline: 1rem;
@@ -36,22 +32,26 @@
 				padding: 1rem;
 			}
 
-			i {
-				cursor: pointer;
-				color: $color-text-secondary;
-				font-size: 1.5rem;
-				width: 1.5rem;
-
-				&:hover {
-					font-size: 1.7rem;
+			&-button {			
+				svg {
+					margin-top: 5px;
+					cursor: pointer;
+					color: $color-text-secondary;
+					font-size: 1.5rem;
+					width: 1.5rem;
+					@include transition-ease-fast;
 				}
 
+				&:not(.disabled) {
+					&:hover * {
+						font-size: 1.7rem;
+					}
+				}
+				
 				&.disabled {
-					color: $color-text-secondary-disabled;
-					cursor: not-allowed;
-
-					&:hover {
-						font-size: 1.5rem;
+					svg {
+						cursor: not-allowed;
+						color: $color-text-secondary-disabled;
 					}
 				}
 			}
@@ -99,17 +99,14 @@
 				background-color: $color-background;
 				border-radius: 1rem;
 				padding-block: 5px;
-				// padding-inline: 1rem;
-				// padding-inline: 15px;
 				max-width: 70px;
 				width: 100%;
 				min-width: 45px;
-				// width: 10px;
 				cursor: pointer;
 				@include transition-ease-fast;
 				
 				&:disabled,
-				&[disabled]{
+				&[disabled] {
 					background-color: $color-text-secondary-disabled;
 					pointer-events: none;
 				}
@@ -121,9 +118,9 @@
 			}
 
 			.time-selected {
-				background-color: $color-accent;
+				background-color: $color-secondary;
 				color: $color-background;
-				border-color: $color-accent;
+				cursor: default;
 			}
 		}
 	}

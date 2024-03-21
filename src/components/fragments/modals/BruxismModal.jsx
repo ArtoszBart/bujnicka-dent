@@ -1,8 +1,10 @@
 import React from 'react';
 import Modal from '../Modal';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const BruxismModal = (props) => {
+	const location = useLocation();
+
 	return (
 		<>
 			{props.hook.openedModal === 'Bruksizm' && (
@@ -22,15 +24,19 @@ const BruxismModal = (props) => {
 					</p>
 					<p>
 						Do leczenia bruksizmu wykorzystuje się{' '}
-						<Link
-							className='text-link'
-							id={props.hook.modalClosingId}
-							to={
-								'/oferta/leczenie-stawow-skroniowo-zuchwowych#relaxation-rails'
-							}
-						>
-							szyny relaksacyjne
-						</Link>
+						{!location.pathname.includes('stawow') ? (
+							<Link
+								className='text-link'
+								id={props.hook.modalClosingId}
+								to={
+									'/oferta/leczenie-stawow-skroniowo-zuchwowych#relaxation-rails'
+								}
+							>
+								szyny relaksacyjne
+							</Link>
+						) : (
+							<>szyny relaksacyjne</>
+						)}
 						.
 					</p>
 				</Modal>

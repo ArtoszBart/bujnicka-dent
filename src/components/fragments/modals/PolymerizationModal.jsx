@@ -27,7 +27,7 @@ const PolymerizationModal = (props) => {
 							</p>
 							<p>
 								W przeciwieństwie do kompozytów utwardzanych na
-								drodze reakcji chemicznej polimeryzacja
+								drodze reakcji chemicznej, polimeryzacja
 								kompozytów światłoutwardzalnych{' '}
 								<b>niweluje konieczność czekania</b> na
 								możliwość jedzenia po wykonaniu wypełnienia.

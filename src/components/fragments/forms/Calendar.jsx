@@ -3,6 +3,7 @@ import React from 'react';
 import { formatDateLong } from '../../../helpers/dateAndTime';
 import CalendarDay from '../callendar/CalendarDay';
 import useCalendar from './customHooks/useCalendar';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 function Calendar({ doctorId, handleChange, value, error }) {
 	const {
@@ -17,26 +18,28 @@ function Calendar({ doctorId, handleChange, value, error }) {
 		<div className={`calendar${error ? ' error-calendar' : ''}`}>
 			<div className='calendar-wrapper'>
 				<nav className='calendar-nav' aria-label='calendar navigation'>
-					<i
-						className={`fas fa-chevron-left ${
-							isPrevWeekAvailable ? '' : 'disabled'
+					<div
+						className={`calendar-nav-button${
+							isPrevWeekAvailable ? '' : ' disabled'
 						}`}
+						to='/'
 						onClick={() => previousWeek()}
 					>
-						p
-					</i>
+						<FaChevronLeft />
+					</div>
 					<p>
 						{formatDateLong(weekDays[0])} -{' '}
 						{formatDateLong(weekDays[weekDays.length - 1])}
 					</p>
-					<i
-						className={`fas fa-chevron-right ${
-							isNextWeekAvailable ? '' : 'disabled'
+					<div
+						className={`calendar-nav-button${
+							isNextWeekAvailable ? '' : ' disabled'
 						}`}
+						to='/'
 						onClick={() => nextWeek()}
 					>
-						n
-					</i>
+						<FaChevronRight />
+					</div>
 				</nav>
 
 				{doctorId === '' ? (

@@ -1,5 +1,5 @@
 import ImportantInfo from '../../fragments/pages/ImportantInfo';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import ParallaxBaner from '../../fragments/ParallaxBanner';
 import ImgLoading from '../../fragments/ImgLoading';
 
@@ -307,14 +307,13 @@ function Periodontics() {
 									pozwalająca na odtworzenie brakującej kości
 								</li>
 								<li>
-									<b>hemisekcja lub radektomia</b> (patrz{' '}
-									<Link
-										to='/oferta/chirurgia-stomatoligiczna'
+									<NavLink
+										to='/oferta/chirurgia-stomatoligiczna#hemisection-and-radectomy'
 										className='text-link'
 									>
-										Chirurgia Stomatologiczna
-									</Link>
-									), wykonywane w sytuacji, gdy jeden z
+										<b>hemisekcja lub radektomia</b>
+									</NavLink>
+									{', '}wykonywane w sytuacji, gdy jeden z
 									korzeni objęty jest rozległym zanikiem
 									kości, która przy pozostałych korzeniach
 									jest zachowana dobrze.

@@ -24,7 +24,7 @@ function Header() {
 		<header>
 			<div className={'header-container' + (navbar ? ' scrolled' : '')}>
 				<div className='logo'>
-					<Link to='/' preventScrollReset={true}>
+					<Link to='/'>
 						<img src={logo} alt='logo' />
 					</Link>
 				</div>

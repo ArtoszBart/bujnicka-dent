@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import DentalSurgery from '../components/pages/services/DentalSurgery';
 import Joints from '../components/pages/services/Joints';
 import Prosthodontics from '../components/pages/services/Prosthodontics';
+import Loading from '../components/Loading';
 const MainPage = lazy(() => import('../components/pages/MainPage'));
 const AboutPage = lazy(() => import('../components/pages/About'));
 const OfferPage = lazy(() => import('../components/pages/Offer'));
@@ -51,7 +52,7 @@ const AppRoutes = () => {
 				exact
 				path='/'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<MainPage />
 					</React.Suspense>
 				}
@@ -59,7 +60,7 @@ const AppRoutes = () => {
 			<Route
 				path='/o-nas'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<AboutPage />
 					</React.Suspense>
 				}
@@ -68,7 +69,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<OfferPage />
 					</React.Suspense>
 				}
@@ -77,7 +78,7 @@ const AppRoutes = () => {
 				exact
 				path='/cennik'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Prices />
 					</React.Suspense>
 				}
@@ -86,7 +87,7 @@ const AppRoutes = () => {
 				exact
 				path='/certyfikaty'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Certificates />
 					</React.Suspense>
 				}
@@ -95,7 +96,7 @@ const AppRoutes = () => {
 				exact
 				path='/czesto-zadawane-pytania'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Faq />
 					</React.Suspense>
 				}
@@ -104,7 +105,7 @@ const AppRoutes = () => {
 				exact
 				path='/kontakt'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Contact />
 					</React.Suspense>
 				}
@@ -113,7 +114,7 @@ const AppRoutes = () => {
 				exact
 				path='/umow-wizyte'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Appointment />
 					</React.Suspense>
 				}
@@ -123,7 +124,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/stomatologia-estetyczna'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<AestheticDentistry />
 					</React.Suspense>
 				}
@@ -132,7 +133,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/stomatologia-zachowawcza'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<ConservativeDentistry />
 					</React.Suspense>
 				}
@@ -141,7 +142,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/chirurgia-stomatoligiczna'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<DentalSurgery />
 					</React.Suspense>
 				}
@@ -150,7 +151,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/wizyta-diagnostyczna'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Diagnostics />
 					</React.Suspense>
 				}
@@ -159,7 +160,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/stomatologia-cyfrowa'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<DigitalDentistry />
 					</React.Suspense>
 				}
@@ -168,7 +169,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/endodoncja'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Endodontics />
 					</React.Suspense>
 				}
@@ -177,7 +178,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/implanty'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Implants />
 					</React.Suspense>
 				}
@@ -186,7 +187,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/leczenie-stawow-skroniowo-zuchwowych'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Joints />
 					</React.Suspense>
 				}
@@ -195,7 +196,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/inlay-onlay-overlay-endokorony'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<InlayOnlay />
 					</React.Suspense>
 				}
@@ -204,7 +205,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/periodontologia'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Periodontics />
 					</React.Suspense>
 				}
@@ -213,7 +214,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/profilaktyka'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Prevention />
 					</React.Suspense>
 				}
@@ -222,7 +223,7 @@ const AppRoutes = () => {
 				exact
 				path='/oferta/protetyka'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<Prosthodontics />
 					</React.Suspense>
 				}
@@ -232,7 +233,7 @@ const AppRoutes = () => {
 				exact
 				path='/polityka-prywatnosci'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<PrivacyPolicy />
 					</React.Suspense>
 				}
@@ -240,7 +241,7 @@ const AppRoutes = () => {
 			<Route
 				path='/*'
 				element={
-					<React.Suspense fallback={<>...</>}>
+					<React.Suspense fallback={<Loading />}>
 						<NotFound />
 					</React.Suspense>
 				}

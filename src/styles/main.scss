@@ -11,3 +11,10 @@ body {
 i {
 	@include transition-ease-fast;
 }
+
+article.loading {
+	min-height: calc(100vh - 73px);
+	background-color: $color-text-secondary-disabled;
+	display: flex;
+	justify-content: center;
+}

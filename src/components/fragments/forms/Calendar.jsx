@@ -98,6 +98,16 @@ function Calendar({ doctorId, handleChange, value, error }) {
 							selectedDate={value}
 							handleChange={handleChange}
 						/>
+						<CalendarDay
+							date={weekDays[5]}
+							timeSlots={
+								freeSlots.find(
+									(weekDay) => weekDay.dayOfWeek === 6
+								)?.timeSlots
+							}
+							selectedDate={value}
+							handleChange={handleChange}
+						/>
 					</div>
 				)}
 			</div>

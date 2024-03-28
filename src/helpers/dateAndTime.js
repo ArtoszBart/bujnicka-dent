@@ -19,7 +19,7 @@ export function addHourToStringTime(date) {
 }
 
 export function formatDateShort(date) {
-	const days = ['pon.', 'wt.', 'śr.', 'czw.', 'pt.'];
+	const days = ['pon.', 'wt.', 'śr.', 'czw.', 'pt.', 'so.'];
 	const weekDay = days[date.getDay() - 1];
 	const day = date.getDate();
 	const month = (date.getMonth() + 1).toString().padStart(2, '0');

@@ -6,12 +6,13 @@ const MultiplePrices = ({ title, prices }) => {
 			<p>{title}:</p>
 			<div className='prices-multiple-items'>
 				{prices.map((price, index) => {
+					const priceValue =
+						price.price === '0' ? 'BEZPŁATNIE' : price.price;
 					return (
 						<React.Fragment key={index}>
 							<p>{price.title}</p>
 							<p>
-								{price.price}{' '}
-								{/\d/.test(price.price) ? 'zł' : ''}
+								{priceValue} {/\d/.test(priceValue) ? 'zł' : ''}
 							</p>
 						</React.Fragment>
 					);

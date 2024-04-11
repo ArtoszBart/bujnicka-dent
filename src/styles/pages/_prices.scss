@@ -42,7 +42,7 @@
 	
 			&.active {
 				color: $color-text-secondary;
-				background: $color-accent;
+				background: $color-secondary;
 			}
 
 			@include media-md-min-max {

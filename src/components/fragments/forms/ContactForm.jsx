@@ -74,9 +74,11 @@ function ContactForm() {
 					error={errors.agreement}
 				/>
 				<div className='contact-form-info'>
+					{submitInfo.sending && (
+						<CircleLoader color='#1b3c7b' size={30} />
+					)}
 					<span className={getInfoClassName()}>
-						{submitInfo.sending && <CircleLoader color='#3fbbd1' />}
-						{` ${submitInfo.message}`}
+						{`${submitInfo.message}`}
 					</span>
 				</div>
 				<div

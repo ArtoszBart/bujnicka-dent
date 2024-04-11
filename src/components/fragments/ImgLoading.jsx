@@ -25,7 +25,7 @@ const ImgLoading = (props) => {
 				<img {...props} alt={props.alt || ''} />
 			) : (
 				<div className='loading'>
-					<CircleLoader color='#3fbbd1' />
+					<CircleLoader color='#1b3c7b' />
 				</div>
 			)}
 		</>

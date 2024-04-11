@@ -18,7 +18,6 @@
 		
 		.contact-box {
 			display: flex;
-			// flex-direction: column;
 			align-items: center;
 			gap: 1rem;
 
@@ -66,4 +65,10 @@
 		margin-top: 2rem;
 		border: none;
 	}
+}
+
+.contact-form-info {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }

@@ -4,6 +4,7 @@ import { formatDateLong } from '../../../helpers/dateAndTime';
 import CalendarDay from '../callendar/CalendarDay';
 import useCalendar from './customHooks/useCalendar';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import CircleLoader from 'react-spinners/CircleLoader';
 
 function Calendar({ doctorId, handleChange, value, error }) {
 	const {
@@ -13,6 +14,7 @@ function Calendar({ doctorId, handleChange, value, error }) {
 		nextWeek,
 		previousWeek,
 		weekDays,
+		isLoading,
 	} = useCalendar(doctorId);
 	return (
 		<div className={`calendar${error ? ' error-calendar' : ''}`}>
@@ -48,6 +50,13 @@ function Calendar({ doctorId, handleChange, value, error }) {
 					</span>
 				) : (
 					<div className='calendar-schedule'>
+						<div
+							className={`calendar-schedule-loader${
+								isLoading ? ' loading' : ''
+							}`}
+						>
+							<CircleLoader color='#1b3c7b' />
+						</div>
 						<CalendarDay
 							date={weekDays[0]}
 							timeSlots={

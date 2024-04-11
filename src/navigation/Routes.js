@@ -42,9 +42,9 @@ const Appointment = lazy(() => import('../components/pages/Appointment'));
 
 const PrivacyPolicy = lazy(() => import('../components/pages/PrivacyPolicy'));
 const NotFound = lazy(() => import('../components/pages/NotFound'));
-// const UnderConstruction = lazy(() =>
-// 	import('../components/pages/UnderConstruction')
-// );
+const UnderConstruction = lazy(() =>
+	import('../components/pages/UnderConstruction')
+);
 const AppRoutes = () => {
 	return (
 		<Routes>
@@ -113,6 +113,15 @@ const AppRoutes = () => {
 			<Route
 				exact
 				path='/umow-wizyte'
+				element={
+					<React.Suspense fallback={<Loading />}>
+						<UnderConstruction />
+					</React.Suspense>
+				}
+			/>
+			<Route
+				exact
+				path='/testing-artoszbart'
 				element={
 					<React.Suspense fallback={<Loading />}>
 						<Appointment />

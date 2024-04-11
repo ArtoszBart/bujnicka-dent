@@ -3,7 +3,6 @@ import AgreementBox from '../fragments/forms/AgreementBox';
 import CalendarForm from '../fragments/forms/Calendar';
 import useAppointmentForm from '../fragments/forms/customHooks/useAppointmentForm';
 import ParallaxBaner from '../fragments/ParallaxBanner';
-import { useEffect } from 'react';
 import SuccessPage from '../fragments/forms/SuccessPage';
 import CircleLoader from 'react-spinners/CircleLoader';
 import { FaIdCard, FaMessage, FaPhone, FaUserDoctor } from 'react-icons/fa6';
@@ -20,10 +19,6 @@ function Appointment() {
 		docsFetched,
 		isSuccess,
 	} = useAppointmentForm();
-
-	useEffect(() => {
-		console.log('values', values);
-	}, [values]);
 
 	const getDefaultOptionText = () => {
 		switch (docsFetched) {
@@ -149,11 +144,11 @@ function Appointment() {
 							error={errors.agreement}
 						/>
 						<div className='contact-form-info'>
+							{submitInfo.sending && (
+								<CircleLoader color='#1b3c7b' size={30} />
+							)}
 							<span className={getInfoClassName()}>
-								{submitInfo.sending && (
-									<CircleLoader color='#3fbbd1' />
-								)}
-								{` ${submitInfo.message}`}
+								{`${submitInfo.message}`}
 							</span>
 						</div>
 						<input

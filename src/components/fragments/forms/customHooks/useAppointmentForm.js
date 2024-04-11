@@ -4,12 +4,10 @@ import {
 	resetState,
 	sendingState,
 	errorState,
-	// getSuccessState,
 	getErrorState,
 } from '../../../../helpers/sendingStates';
 import { decodeErrorMessages } from './../../../../helpers/validationCommon';
 import axios from 'axios';
-// import { formatDateSql } from './../../../../helpers/dateAndTime';
 
 const useAppointmentForm = () => {
 	const [docsFetched, setDocsFetched] = useState(null);
@@ -26,10 +24,6 @@ const useAppointmentForm = () => {
 		date: '',
 		agreement: false,
 	});
-
-	useEffect(() => {
-		console.log('doctors', doctors);
-	}, [doctors]);
 
 	const handleChange = (e) => {
 		let { name, value } = e.target;
@@ -51,10 +45,8 @@ const useAppointmentForm = () => {
 	};
 
 	const deleteErrors = (fieldName) => {
-		// console.log('deleting...', fieldName);
 		const oldErrors = errors;
 		delete oldErrors[fieldName];
-		// console.log(oldErrors);
 		setErrors(oldErrors);
 	};
 

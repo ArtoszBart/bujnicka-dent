@@ -4,6 +4,7 @@ import axios from 'axios';
 const useCalendar = (doctorId) => {
 	const [isPrevWeekAvailable, setIsPrevWeekAvailable] = useState(false);
 	const [isNextWeekAvailable, setIsNextWeekAvailable] = useState(true);
+	const [isLoading, setIsLoading] = useState(false);
 	const [freeSlots, setfreeSlots] = useState([]);
 	const [freeSlotsFetched, setFreeSlotsFetched] = useState();
 	const [weekDays, setWeekDays] = useState(getInitWeek());
@@ -19,6 +20,7 @@ const useCalendar = (doctorId) => {
 	}, [weekNo]);
 
 	const fetchFreeDates = () => {
+		setIsLoading(true);
 		axios
 			.get(
 				`http://localhost:3000/api/employees/${doctorId}/schedule?week=${weekNo}`
@@ -26,6 +28,7 @@ const useCalendar = (doctorId) => {
 			.then((res) => {
 				setfreeSlots(res.data);
 				setFreeSlotsFetched(true);
+				setIsLoading(false);
 			})
 			.catch((error) => {
 				setFreeSlotsFetched(false);
@@ -67,6 +70,7 @@ const useCalendar = (doctorId) => {
 		freeSlotsFetched,
 		previousWeek,
 		nextWeek,
+		isLoading,
 	};
 };
 

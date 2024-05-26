@@ -22,7 +22,17 @@ function Footer() {
 			</p>
 			|
 			<p>
-				Developed by <span className='nowrap'>Bartosz Art</span>
+				Developed by{' '}
+				<span className='nowrap'>
+					<a
+						className='author'
+						href='https://bartart.dev/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						Bartosz Art
+					</a>
+				</span>
 			</p>
 		</footer>
 	);

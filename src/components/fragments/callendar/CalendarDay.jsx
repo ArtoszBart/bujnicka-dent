@@ -4,23 +4,21 @@ import { formatDateShort, formatDateSql } from '../../../helpers/dateAndTime';
 
 export default function CalendarDay({
 	date,
-	timeSlots,
+	data,
 	selectedDate,
 	handleChange,
 }) {
 	return (
 		<>
-			<div className='calendar-schedule-day'>
+			<div
+				className={`calendar-schedule-day${
+					data?.feast ? ' feast' : ''
+				}`}
+			>
 				<p className='center'>{`${formatDateShort(date)}`}</p>
-
-				{timeSlots?.length === 0 ? (
-					<span>Brak wolnych terminów</span>
-				) : (
-					<></>
-				)}
 			</div>
 			<div className='calendar-schedule-times'>
-				{timeSlots?.map((timeSlot, index) => {
+				{data?.timeSlots.map((timeSlot, index) => {
 					const dateValue = `${formatDateSql(date)} ${timeSlot.time}`;
 					const isButtonAvailable = !timeSlot.isBooked;
 					return (

@@ -13,7 +13,9 @@ const useCalendar = (doctorId) => {
 	const fetchFreeDates = useCallback(() => {
 		setIsLoading(true);
 		axios
-			.get(`/api/employees/${doctorId}/schedule?week=${weekNo}`)
+			.get(
+				`https://bujnicka-dent.pl/api/employees/${doctorId}/schedule?week=${weekNo}`
+			)
 			.then((res) => {
 				setfreeSlots(res.data);
 				setFreeSlotsFetched(true);

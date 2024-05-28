@@ -7,7 +7,7 @@ const usePrices = () => {
 
 	useEffect(() => {
 		axios
-			.get(`/api/prices`)
+			.get(`https://bujnicka-dent.pl/api/prices`)
 			.then((res) => {
 				setIsfetched(true);
 				setPrices(res.data);

@@ -52,7 +52,7 @@ const useAppointmentForm = () => {
 
 	useEffect(() => {
 		axios
-			.get(`/api/employees/doctors`)
+			.get(`https://bujnicka-dent.pl/api/employees/doctors`)
 			.then((res) => {
 				setDoctors(res.data);
 				setDocsFetched(true);
@@ -75,7 +75,7 @@ const useAppointmentForm = () => {
 		setSubmitInfo(sendingState);
 
 		axios
-			.post('/api/appointments/', values)
+			.post('https://bujnicka-dent.pl/api/appointments/', values)
 			.then(() => {
 				setIsSuccess(true);
 			})

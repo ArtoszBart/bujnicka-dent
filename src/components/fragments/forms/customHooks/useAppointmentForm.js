@@ -52,7 +52,7 @@ const useAppointmentForm = () => {
 
 	useEffect(() => {
 		axios
-			.get(`http://localhost:3000/api/employees/doctors`)
+			.get(`/api/employees/doctors`)
 			.then((res) => {
 				setDoctors(res.data);
 				setDocsFetched(true);
@@ -75,7 +75,7 @@ const useAppointmentForm = () => {
 		setSubmitInfo(sendingState);
 
 		axios
-			.post('http://localhost:3000/api/appointments/', values)
+			.post('/api/appointments/', values)
 			.then(() => {
 				setIsSuccess(true);
 			})

@@ -13,9 +13,7 @@ const useCalendar = (doctorId) => {
 	const fetchFreeDates = useCallback(() => {
 		setIsLoading(true);
 		axios
-			.get(
-				`http://localhost:3000/api/employees/${doctorId}/schedule?week=${weekNo}`
-			)
+			.get(`/api/employees/${doctorId}/schedule?week=${weekNo}`)
 			.then((res) => {
 				setfreeSlots(res.data);
 				setFreeSlotsFetched(true);

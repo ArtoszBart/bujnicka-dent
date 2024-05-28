@@ -7,7 +7,7 @@ const usePrices = () => {
 
 	useEffect(() => {
 		axios
-			.get(`http://localhost:3000/api/prices`)
+			.get(`/api/prices`)
 			.then((res) => {
 				setIsfetched(true);
 				setPrices(res.data);

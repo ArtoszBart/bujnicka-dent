@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import Navigation from './Navigation';
 import logo from './../../img/logo.svg';
 import { Link } from 'react-router-dom';
 
 function Header() {
-	const [navbar, setNavbar] = useState(false);
+	// const [navbar, setNavbar] = useState(false);
 
 	// const changeNavbar = () => {
 	// 	if (window.scrollY >= 149) {
@@ -22,7 +21,12 @@ function Header() {
 
 	return (
 		<header>
-			<div className={'header-container' + (navbar ? ' scrolled' : '')}>
+			<div
+				className={
+					'header-container'
+					//  + (navbar ? ' scrolled' : '')
+				}
+			>
 				<div className='logo'>
 					<Link to='/'>
 						<img src={logo} alt='logo' />

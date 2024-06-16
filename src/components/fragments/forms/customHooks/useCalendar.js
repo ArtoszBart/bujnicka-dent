@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 
 const useCalendar = (doctorId) => {
@@ -10,16 +10,7 @@ const useCalendar = (doctorId) => {
 	const [weekDays, setWeekDays] = useState(getInitWeek());
 	const [weekNo, setWeekNo] = useState(0);
 
-	useEffect(() => {
-		if (doctorId) fetchFreeDates();
-	}, [doctorId, weekDays]);
-
-	useEffect(() => {
-		setIsNextWeekAvailable(weekNo >= 3 ? false : true);
-		setIsPrevWeekAvailable(weekNo <= 0 ? false : true);
-	}, [weekNo]);
-
-	function fetchFreeDates() {
+	const fetchFreeDates = useCallback(() => {
 		setIsLoading(true);
 		axios
 			.get(
@@ -32,8 +23,18 @@ const useCalendar = (doctorId) => {
 			})
 			.catch((error) => {
 				setFreeSlotsFetched(false);
+				setIsLoading(false);
 			});
-	}
+	}, [doctorId, weekNo]);
+
+	useEffect(() => {
+		if (doctorId) fetchFreeDates();
+	}, [doctorId, weekDays, fetchFreeDates]);
+
+	useEffect(() => {
+		setIsNextWeekAvailable(weekNo >= 3 ? false : true);
+		setIsPrevWeekAvailable(weekNo <= 0 ? false : true);
+	}, []);
 
 	const previousWeek = () => {
 		if (!isPrevWeekAvailable) {

@@ -1,10 +1,10 @@
 import React from 'react';
+import CircleLoader from 'react-spinners/CircleLoader';
 
 import { formatDateLong } from '../../../helpers/dateAndTime';
 import CalendarDay from '../callendar/CalendarDay';
 import useCalendar from './customHooks/useCalendar';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import CircleLoader from 'react-spinners/CircleLoader';
 
 function Calendar({ doctorId, handleChange, value, error }) {
 	const {
@@ -50,70 +50,56 @@ function Calendar({ doctorId, handleChange, value, error }) {
 					</span>
 				) : (
 					<div className='calendar-schedule'>
-						<div
-							className={`calendar-schedule-loader${
-								isLoading ? ' loading' : ''
-							}`}
-						>
-							<CircleLoader color='#1b3c7b' />
-						</div>
+						{isLoading && (
+							<div className='calendar-schedule-loader'>
+								<CircleLoader color='#1b3c7b' />
+							</div>
+						)}
 						<CalendarDay
 							date={weekDays[0]}
-							timeSlots={
-								freeSlots.find((weekDay) => {
-									return weekDay.dayOfWeek === 1;
-								})?.timeSlots
-							}
+							data={freeSlots.find((weekDay) => {
+								return weekDay.dayOfWeek === 1;
+							})}
 							selectedDate={value}
 							handleChange={handleChange}
 						/>
 						<CalendarDay
 							date={weekDays[1]}
-							timeSlots={
-								freeSlots.find(
-									(weekDay) => weekDay.dayOfWeek === 2
-								)?.timeSlots
-							}
+							data={freeSlots.find(
+								(weekDay) => weekDay.dayOfWeek === 2
+							)}
 							selectedDate={value}
 							handleChange={handleChange}
 						/>
 						<CalendarDay
 							date={weekDays[2]}
-							timeSlots={
-								freeSlots.find(
-									(weekDay) => weekDay.dayOfWeek === 3
-								)?.timeSlots
-							}
+							data={freeSlots.find(
+								(weekDay) => weekDay.dayOfWeek === 3
+							)}
 							selectedDate={value}
 							handleChange={handleChange}
 						/>
 						<CalendarDay
 							date={weekDays[3]}
-							timeSlots={
-								freeSlots.find(
-									(weekDay) => weekDay.dayOfWeek === 4
-								)?.timeSlots
-							}
+							data={freeSlots.find(
+								(weekDay) => weekDay.dayOfWeek === 4
+							)}
 							selectedDate={value}
 							handleChange={handleChange}
 						/>
 						<CalendarDay
 							date={weekDays[4]}
-							timeSlots={
-								freeSlots.find(
-									(weekDay) => weekDay.dayOfWeek === 5
-								)?.timeSlots
-							}
+							data={freeSlots.find(
+								(weekDay) => weekDay.dayOfWeek === 5
+							)}
 							selectedDate={value}
 							handleChange={handleChange}
 						/>
 						<CalendarDay
 							date={weekDays[5]}
-							timeSlots={
-								freeSlots.find(
-									(weekDay) => weekDay.dayOfWeek === 6
-								)?.timeSlots
-							}
+							data={freeSlots.find(
+								(weekDay) => weekDay.dayOfWeek === 6
+							)}
 							selectedDate={value}
 							handleChange={handleChange}
 						/>

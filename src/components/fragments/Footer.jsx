@@ -24,10 +24,10 @@ function Footer() {
 			<p>
 				Developed by{' '}
 				<a
-					className='text-link'
+					className='author'
 					href='https://bartart.dev/'
-					rel='noreferrer'
 					target='_blank'
+					rel='noreferrer'
 				>
 					<span className='nowrap'>Bartosz Art</span>
 				</a>

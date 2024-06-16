@@ -19,11 +19,11 @@ const useCalendar = (doctorId) => {
 		setIsPrevWeekAvailable(weekNo <= 0 ? false : true);
 	}, [weekNo]);
 
-	const fetchFreeDates = () => {
+	function fetchFreeDates() {
 		setIsLoading(true);
 		axios
 			.get(
-				`http://localhost:3000/api/employees/${doctorId}/schedule?week=${weekNo}`
+				`https://bujnicka-dent.pl/api/employees/${doctorId}/schedule?week=${weekNo}`
 			)
 			.then((res) => {
 				setfreeSlots(res.data);
@@ -33,7 +33,7 @@ const useCalendar = (doctorId) => {
 			.catch((error) => {
 				setFreeSlotsFetched(false);
 			});
-	};
+	}
 
 	const previousWeek = () => {
 		if (!isPrevWeekAvailable) {

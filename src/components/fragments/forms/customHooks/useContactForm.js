@@ -48,7 +48,7 @@ const useContactForm = () => {
 		setSubmitInfo(sendingState);
 		// API CALL
 		axios
-			.post('http://localhost:3000/api/email/send', values)
+			.post('https://bujnicka-dent.pl/api/email/send', values)
 			.then((res) => {
 				setSubmitInfo(successStateSending);
 				setValues({

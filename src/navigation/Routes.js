@@ -115,15 +115,6 @@ const AppRoutes = () => {
 				path='/umow-wizyte'
 				element={
 					<React.Suspense fallback={<Loading />}>
-						<UnderConstruction />
-					</React.Suspense>
-				}
-			/>
-			<Route
-				exact
-				path='/testing-artoszbart'
-				element={
-					<React.Suspense fallback={<Loading />}>
 						<Appointment />
 					</React.Suspense>
 				}

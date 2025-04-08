@@ -113,41 +113,6 @@ function About() {
 						gwarantują najlepszy możliwy standard usług stomatologicznych!
 					</p>
 				</EmployeeInfo>
-
-				<EmployeeInfo
-					name='Monika Zborowska-Repelewicz'
-					title='Lekarz stomatolog'
-					photoUrl='https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/persons/Monika_Zborowska-Repelewicz.jpg'
-				>
-					<p>
-						Jestem absolwentką Wydziału Lekarsko-Dentystycznego Akademii
-						Medycznej w Łodzi, a stomatologia to nie tylko moja praca, ale i
-						pasja, która nie była na początku tak oczywista. Jako dziecko miałam
-						ogromny lęk przed wizytami u dentysty, dlatego{' '}
-						<b>doskonale rozumiem stres, jaki może towarzyszyć pacjentom</b>.
-						Dziś, dzięki zdobytemu doświadczeniu i empatycznemu podejściu,{' '}
-						<b>pomagam osobom, które boją się wizyt stomatologicznych</b>,
-						przezwyciężyć ich obawy, zapewniając{' '}
-						<b>komfortowe i bezbolesne leczenie</b>.
-					</p>
-					<p>
-						Specjalizuję się w stomatologii zachowawczej, chirurgii
-						stomatologicznej, protetyce, profilaktyce oraz endodoncji, która
-						szczególnie mnie interesuje i daje mi najwięcej satysfakcji.
-						Regularnie uczestniczę w szkoleniach, aby{' '}
-						<b>oferować moim pacjentom jak najlepsze leczenie</b>. W pracy
-						wykorzystuję <b>nowoczesne technologie</b>, takie jak mikroskop i
-						lupy stomatologiczne, co pozwala na{' '}
-						<b>precyzyjne i skuteczne przeprowadzanie zabiegów</b>.
-					</p>
-					<p>
-						W pracy <b>najważniejszy jest dla mnie pacjent</b> - jego komfort,
-						zdrowie i poczucie bezpieczeństwa. Dokładam wszelkich starań, aby
-						każda wizyta przebiegała w <b>przyjaznej atmosferze</b>, a
-						indywidualne podejście sprawia, że nawet{' '}
-						<b>najbardziej zestresowani pacjenci mogą poczuć się swobodnie</b>.
-					</p>
-				</EmployeeInfo>
 			</article>
 		</main>
 	);

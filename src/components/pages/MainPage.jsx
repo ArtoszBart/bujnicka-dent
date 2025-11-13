@@ -1,8 +1,9 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import ParallaxBanner from '../fragments/ParallaxBanner';
-import ImgLoading from '../fragments/ImgLoading';
 import { FaChevronDown } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
+import ImgLoading from '../fragments/ImgLoading';
+import ParallaxBanner from '../fragments/ParallaxBanner';
 
 function MainPage() {
 	const device1st = 'Autorski gabinet stomatologiczny';
@@ -34,6 +35,12 @@ function MainPage() {
 					onClick={handleScroll}
 				>
 					<FaChevronDown />
+				</div>
+				<div className='contact-box'>
+					<FaPhone />
+					<a className='text-link' href='tel:+48609606814'>
+						+48 609-606-814
+					</a>
 				</div>
 				<div className='quote'>
 					<q>Salus aegroti suprema lex</q>

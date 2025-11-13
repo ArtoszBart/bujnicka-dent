@@ -113,35 +113,6 @@ function About() {
             gwarantują najlepszy możliwy standard usług stomatologicznych!
           </p>
         </EmployeeInfo>
-        <EmployeeInfo
-          name='Karolina Leska'
-          title='Asystentka Stomatologiczna'
-          photoUrl='https://bujnickadentstorage.blob.core.windows.net/bunicka-dent-images/persons/Karolina_Leska.jpg'
-        >
-          <p>
-            Jako asystentka stomatologiczna dbam o <b>sprawną organizację</b>{' '}
-            pracy w gabinecie oraz <b>komfort</b> i <b>bezpieczeństwo</b>{' '}
-            pacjentów.
-          </p>
-          <p>
-            Na co dzień <b>wspieram leczenie</b> w zakresie stomatologii
-            zachowawczej, endodoncji i protetyki. Pracuję z pełnym
-            zaangażowaniem, <b>zwracając uwagę na każdy detal</b> - od
-            przygotowania stanowiska, po budowanie <b>przyjaznej atmosfery</b>{' '}
-            podczas wizyty.
-          </p>
-          <p>
-            <b>Indywidualne podejście do pacjenta</b> jest dla mnie kluczowe.
-            Wiem, jak stresujące mogą być wizyty u dentysty, dlatego dokładam
-            wszelkich starań, aby zapewnić <b>spokój i wsparcie</b> od momentu
-            wejścia do gabinetu aż po zakończenie wizyty
-          </p>
-          <p>
-            Praca w gabinecie to dla mnie nie tylko obowiązki - to również
-            pasja, możliwość rozwoju i codzienna{' '}
-            <b>satysfakcja z pomagania innym</b>.
-          </p>
-        </EmployeeInfo>
       </article>
     </main>
   );
